@@ -78,6 +78,7 @@ Per-paper detail: `docs/pdf-pilot/qa_report.md`.
 7. **Media notes** (video/audio) are a plain quoted paragraph with a URL. A small icon/box would be nicer; the URL points at PubPub's CDN which is fine while PubPub is up.
 8. **Vector figures** (SVG → PDF via ImageMagick) rasterise. `rsvg-convert` or `cairosvg` would keep them vector; not installed on the build machine.
 9. **Small-text metric** conflates scaled tables with text inside figures. Masking figure regions would fix it.
+10. **Table header rule in the wrong place (probably every table).** Seen 2026-10-16 after revision 4 (nime2022_52, the ANOVA tables): toprule, an empty row, midrule, then the real header set as a body row, bottomrule. Cause: PubPub tables have no `<th>` cells, so pandoc's HTML reader emits an *empty* header row and puts `\midrule` after it; the authors' header is just the first body row (usually bold). Fix in `fix_table`: drop the empty header row and its midrule; then pick the header as the leading run of rows whose non-empty cells are all `\textbf{}` (or a single-cell title row followed by a bold row, as in the screenshot) and insert one `\midrule` after it. If no bold row exists, treat the first row as the header. Keep a `\midrule` after a title-only row too, or use `\addlinespace`. Not yet implemented.
 
 ## 7. How to run
 

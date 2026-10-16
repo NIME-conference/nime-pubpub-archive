@@ -43,6 +43,7 @@ python3 -I scripts/build_site.py $R ~/src/nime/pubpub-archive docs
 ```
 
 Suggested next steps, in order:
+0. Quick win first: table header rule placement (log §6 item 10). Every table is affected; the fix is local to `fix_table` in `make_pdf.py`.
 1. Decide the reference-style question; if parsing, try AnyStyle on the `pub-notes` text of three 2021 papers.
 2. Run the full 144-paper batch into `pdf-pilot/all/`, read `qa_report.md`, fix the top recurring flag, repeat. Log each revision in `PDF-CONVERSION-LOG.md` §4–5.
 3. Add the regenerated PDFs to the item pages on the site next to the PubPub PDF link.
