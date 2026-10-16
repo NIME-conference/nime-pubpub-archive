@@ -1,6 +1,6 @@
 \documentclass[sigconf]{nimeart}
 \usepackage{bm}
-\usepackage{array,calc}
+\usepackage{array,calc,adjustbox}
 \DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
 \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
 \DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
@@ -15,7 +15,7 @@
 \settopmatter{printacmref=false}\acmISBN{}
 \providecommand{\pandocbounded}[1]{#1}
 \begin{document}
-\title{HyperModels - A Framework for GPU Accelerated Physical Modelling Sound Synthesis}
+\title[HyperModels - A Framework for GPU Accelerated Physical Modelling…]{HyperModels - A Framework for GPU Accelerated Physical Modelling Sound Synthesis}
 \author{Harri Renney}
 \affiliation{\institution{University of the West of England,}\country{}}
 \author{Silvin Willemsen}
@@ -46,23 +46,14 @@ In this paper, we present HyperModels, a framework for describing high-resolutio
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/s1offg3s_31643575623977.PNG}\caption{Vector graphics and physical model description for {\emph{u}} and {\emph{v}} in system {\emph{a}}.}\end{figure}
 
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
 The rest of this paper provides details of the HyperModels framework as a design and implementation, including an analysis of how it performs compared to equivalent hand-written GPU simulations. To demonstrate the system in practice, two existing designs based on physical modelling instruments are implemented using HyperModels. The first is the \emph{Hyper Drumhead}, previously demonstrated by Zappi et al. in hand optimised GPU code \cite{Zappi2017Shader,Renney2019OpenCL}. The second is a variant of Willemsen et al. hammered dulcimer \cite{Willemsen2019Real}, that originally operated with a plate model of 17x6 points running on the CPU, this has been ported to the GPU using HyperModels to support resolutions up to 256x256. The remaining sections of the paper are structured as follows:
 
@@ -89,15 +80,21 @@ One of the most foundational numerical methods used for approximating derivative
 
 The simple harmonic oscillator is one of the core building blocks of digital audio synthesis. A simple harmonic oscillator can also be formed as a physical model using an ordinary differential equation (ODE). An ODE is a differential equation containing one or more functions of one independent variable and the derivatives of those functions \cite{Butcher2008Numerical}. The ODE for the simple harmonic oscillator is:
 
-{}{{{{\[u_{tt} = - \omega^{2}_{0}u\]}}}}{(1)}
 
-where state variable $u = u(t)$ describes the displacement of the mass from its equilibrium (in m), $u_{tt} = \frac{\partial^2 u}{\partial t^2}${\hspace{0pt}}{{{}}}{}{=}{}{{}{{}{{{{{{}{{{∂}{{t}{{{{{{}{{2}}}}}}}}}}}{{}{}}{{}{{{{∂}{{{{{{}{{2}}}}}}}}{u}}}}}{\hspace{0pt}}}{{{}}}}}{}}} is its acceleration and $\omega_0${\hspace{0pt}}{{{}}} is the angular frequency of oscillation (in rad/s). To solve this using finite differences, the state of the mass as well as the derivatives must be approximated, or discretised. Using $t=nT$, with time index $n = 0, 1, ...$ and time step $T$, the simple harmonic oscillator in \hyperref[nechhmbidyq]{Equation 1} can be discretised to:
+\begin{equation}u_{tt} = - \omega^{2}_{0}u\end{equation}
 
-{}{{{{\[\frac{u^{n+1} - 2 u^{n} + u^{n-1}}{T^2} = - \omega^{2}_{0}u^n\]}}}}{(2)}
+
+where state variable $u = u(t)$ describes the displacement of the mass from its equilibrium (in m), $u_{tt} = \frac{\partial^2 u}{\partial t^2}$ is its acceleration and $\omega_0$ is the angular frequency of oscillation (in rad/s). To solve this using finite differences, the state of the mass as well as the derivatives must be approximated, or discretised. Using $t=nT$, with time index $n = 0, 1, ...$ and time step $T$, the simple harmonic oscillator in \hyperref[nechhmbidyq]{Equation 1} can be discretised to:
+
+
+\begin{equation}\frac{u^{n+1} - 2 u^{n} + u^{n-1}}{T^2} = - \omega^{2}_{0}u^n\end{equation}
+
 
 Here, $u^{n+1}$ refers to the value of the oscillator at the next timestep $n+1$. Using values of the current timestep $u^n$ and previous timestep $u^{n-1}$ along with the size of the timestep $T$, the value of the oscillator at the next timestep can be computed by rearranging \hyperref[n2y8cujnxry]{Equation 2} to the following update equation:
 
-{}{{{{\[u^{n+1} = \left(2 - \omega^{2}_{0} T^2\right) u^n  - u^{n-1}\]}}}}{(3)}
+
+\begin{equation}u^{n+1} = \left(2 - \omega^{2}_{0} T^2\right) u^n  - u^{n-1}\end{equation}
+
 
 By stepping through time and recursively calculating \hyperref[nlendxkv2cd]{Equation 3}, the simple harmonic oscillator is simulated. \hyperref[fig:ode_fd]{Image 3} shows that at each timestep, the explicit scheme depends on $u^{n}$ and $u^{n-1}$ to calculate $u^{n+1}$. As $u^{n+2}$ depends on the result of $u^{n+1}$, the scheme can only be processed serially by a single processor, as there is only one stream of values to simulate that depend on each other.
 
@@ -109,17 +106,21 @@ By stepping through time and recursively calculating \hyperref[nlendxkv2cd]{Equa
 
 Partial differential equations (PDE) are an extension to the concept of ODEs, like the simple harmonic oscillator discussed in \hyperref[nechhmbidyq]{Equation 1}. Where ODEs involved a single independent variable, PDEs involve two or more independent variables \cite{Evans2012Numerical}. The 1-dimensional wave equation is an example of a partial differential equation:
 
-{}{{{{\[u_{tt} = c^2 u_{xx}\]}}}}{(4)}
+
+\begin{equation}u_{tt} = c^2 u_{xx}\end{equation}
+
 
 where state variable $u = u(x,t)$ is now dependent on time $t$ as well as spatial coordinate $x$. Assuming a system of length $L$ (in m), the spatial domain becomes $x\in [0, L]$. Furthermore, $c$ is the wave speed (in m/s).
 
-To approximate \hyperref[nw8bshou95n]{Equation 4}, one can subdivide the spatial domain into $N$ intervals with equal length $X$. The spatial coordinate can then be approximated according to $x=lX$ with spatial index $l = \{0, ..., N\}$. Using the spatial index as well as the temporal index $n$ described above, one can define grid function $u_l^n${\hspace{0pt}}{{{}}} which is a discrete approximation to $u(x,t)$.
+To approximate \hyperref[nw8bshou95n]{Equation 4}, one can subdivide the spatial domain into $N$ intervals with equal length $X$. The spatial coordinate can then be approximated according to $x=lX$ with spatial index $l = \{0, ..., N\}$. Using the spatial index as well as the temporal index $n$ described above, one can define grid function $u_l^n$ which is a discrete approximation to $u(x,t)$.
 
-Approximating $u_{tt}${\hspace{0pt}}{{{}}} and $u_{xx}${\hspace{0pt}}{{{}}} using finite-differences, the following recursively solvable explicit scheme can be formed:
+Approximating $u_{tt}$ and $u_{xx}$ using finite-differences, the following recursively solvable explicit scheme can be formed:
 
-{}{{{{\[u_{l}^{n+1} = 2 u_{l}^{n} + \lambda^2 (u_{l+1}^{n} - 2 u_{l}^{n} + u_{l-1}^{n}) - u_{l}^{n-1}\]}}}}{(5)}
 
-where $\lambda = c T/X$ is the Courant number and needs to abide the condition for the scheme to be stable \cite{Courant1928Über}: $\lambda \leq 1$. To solve this scheme, the simulation now needs to calculate $u_l^{n+1}${\hspace{0pt}}{{{}}} not just for one position, but for $N+1$ positions in the model. All of these positions will need to calculate \hyperref[noztvyc4q27]{Equation 5} and store the result in $u^{n+1}_{l}${{}{{{n}{+}{1}}}}{\hspace{0pt}}{{{}}} for all $l$ positions as shown in \hyperref[fig:pde_fd]{Image 4}. These calculations do not interfere or depend on each other, making each spatial point for the timestep solvable in parallel. Parallel streams of processing like those found on the GPU can each handle a single grid point and provided $N$ is big enough to fully utilize all parallel processors, speed up the calculation of the system for each timestep.
+\begin{equation}u_{l}^{n+1} = 2 u_{l}^{n} + \lambda^2 (u_{l+1}^{n} - 2 u_{l}^{n} + u_{l-1}^{n}) - u_{l}^{n-1}\end{equation}
+
+
+where $\lambda = c T/X$ is the Courant number and needs to abide the condition for the scheme to be stable \cite{Courant1928Über}: $\lambda \leq 1$. To solve this scheme, the simulation now needs to calculate $u_l^{n+1}$ not just for one position, but for $N+1$ positions in the model. All of these positions will need to calculate \hyperref[noztvyc4q27]{Equation 5} and store the result in $u^{n+1}_{l}$ for all $l$ positions as shown in \hyperref[fig:pde_fd]{Image 4}. These calculations do not interfere or depend on each other, making each spatial point for the timestep solvable in parallel. Parallel streams of processing like those found on the GPU can each handle a single grid point and provided $N$ is big enough to fully utilize all parallel processors, speed up the calculation of the system for each timestep.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/7m0ht5vo_21643575623955.png}\caption{Parallel processing of PDE finite-difference schemes.}\end{figure}
@@ -129,15 +130,19 @@ where $\lambda = c T/X$ is the Courant number and needs to abide the condition f
 
 One can extend the 1-dimensional wave equation in \hyperref[nw8bshou95n]{Equation 4} to 2 dimensions. The 2-dimensional wave equation is defined as
 
-{}{{{{\[v_{tt} = c^2 (v_{xx} + v_{yy})\]}}}}{(6)}
 
-with wave speed $c$ (in m/s) and where state variable $v=v(x,y,t)$ is defined over two spatial dimensions $x$ and $y$.\footnote{Notice that we use state variable {\emph{v}} here (instead of {\emph{u}}) for consistency with later sections.} For a rectangular system of side lengths $L_x${\hspace{0pt}}{{{}}} (in m) and $L_y${\hspace{0pt}}{{{}}} (in m), $(x,y)\in \mathcal{D}$ where $\mathcal{D} \in [0, L_x]\times[0, L_y]${\hspace{0pt}}{{{}}}{{]}}{}{×}{}{{}{{[}}{0}{,}{}{{L}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{{]}}}.
+\begin{equation}v_{tt} = c^2 (v_{xx} + v_{yy})\end{equation}
 
-Similar to before, \hyperref[n6j81f9bqbr]{Equation 6} this can be discretised using finite differences. Discretising time as usual ($t = nT$), space can be subdivided into $N_x${\hspace{0pt}}{{{}}} intervals in the $x$-direction and $N_y${\hspace{0pt}}{{{}}} intervals in the $y$-direction, yielding $x = l X$ and $y = mX$,\footnote{We assume the same grid spacing in the {\emph{x}} and {\emph{y}}-direction.} with $l \in \{0, ..., N_x\}${\hspace{0pt}}{{{}}}{\}} and $m \in \{0, ..., N_y\}${\hspace{0pt}}{{{}}}{\}}. Using these definitions, the state variable $v(x,y,t)$ can then be approximated using grid function $v_{l,m}^n${{}{{n}}}{\hspace{0pt}}{{{}}}. Discretising \hyperref[n6j81f9bqbr]{Equation 6} and solving for $v_{l,m}^{n+1}${{}{{{n}{+}{1}}}}{\hspace{0pt}}{{{}}}, yields the following update equation:
 
-{}{{{{\[v^{n+1}_{l,m} = 2 v^{n}_{l,m} - v^{n-1}_{l,m} + \lambda^2 (v^{n}_{l+1,m} + v^{n}_{l-1,m} + v^{n}_{l,m+1} + v^{n}_{l,m-1} - 4 v^{n}_{l,m})\]}}}}{(7)}
+with wave speed $c$ (in m/s) and where state variable $v=v(x,y,t)$ is defined over two spatial dimensions $x$ and $y$.\footnote{Notice that we use state variable {\emph{v}} here (instead of {\emph{u}}) for consistency with later sections.} For a rectangular system of side lengths $L_x$ (in m) and $L_y$ (in m), $(x,y)\in \mathcal{D}$ where $\mathcal{D} \in [0, L_x]\times[0, L_y]$.
 
-where the following stablitlity condition must be satisfied \cite{Bilbao2009Numerical}: $\lambda \leq \frac{1}{\sqrt{2}}${{}{}}{{}{{{1}}}}{\hspace{0pt}}{{{}}}{}.
+Similar to before, \hyperref[n6j81f9bqbr]{Equation 6} this can be discretised using finite differences. Discretising time as usual ($t = nT$), space can be subdivided into $N_x$ intervals in the $x$-direction and $N_y$ intervals in the $y$-direction, yielding $x = l X$ and $y = mX$,\footnote{We assume the same grid spacing in the {\emph{x}} and {\emph{y}}-direction.} with $l \in \{0, ..., N_x\}$ and $m \in \{0, ..., N_y\}$. Using these definitions, the state variable $v(x,y,t)$ can then be approximated using grid function $v_{l,m}^n$. Discretising \hyperref[n6j81f9bqbr]{Equation 6} and solving for $v_{l,m}^{n+1}$, yields the following update equation:
+
+
+\begin{equation}v^{n+1}_{l,m} = 2 v^{n}_{l,m} - v^{n-1}_{l,m} + \lambda^2 (v^{n}_{l+1,m} + v^{n}_{l-1,m} + v^{n}_{l,m+1} + v^{n}_{l,m-1} - 4 v^{n}_{l,m})\end{equation}
+
+
+where the following stablitlity condition must be satisfied \cite{Bilbao2009Numerical}: $\lambda \leq \frac{1}{\sqrt{2}}$.
 
 \section{GPU Acceleration}\label{gpu-acceleration}
 
@@ -159,7 +164,7 @@ The HyperModels framework is outlined in \hyperref[fig:framework]{Image 6}. Ther
 
 \subsection{Model to GPU Mapping}\label{model-to-gpu-mapping}
 
-Mapping finite-difference equations into a parallel processing environment requires defining an appropriate representation and program structure. Here, we define the GPU as system $a$ with a grid of $C_x \times C_y${\hspace{0pt}}{{{}}}{}{×}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}} cores. A single core is denoted by $a_{c_x, c_y}${\hspace{0pt}}{{{}}}{,}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{\hspace{0pt}}{{{}}} where $c_x\in\{1, ..., C_x\}${\hspace{0pt}}{{{}}}{}{∈}{}{{}{\{}{1}{,}{}{...}{,}{}{{C}{{{{{{}{{x}}}}{\hspace{0pt}}}{{{}}}}}}{\}}} and $c_y\in\{1, ..., C_y\}${\hspace{0pt}}{{{}}}{}{∈}{}{{}{\{}{1}{,}{}{...}{,}{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{\}}} are the core indices in the horizontal and vertical direction of the GPU grid respectively. The update equation of one grid point can then be assigned to a single core, such that these can be executed in parallel. Considering the 2D system presented in \hyperref[n84x2zbxjv7]{Equation 7}, mapping a grid point of a scheme with spatial index $(l,m)$ to a core with index $(c_x,c_y)${\hspace{0pt}}{{{}}}{,}{}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{)} is denoted by $a_{c_x, c_y}\Leftarrow v_{l,m}${\hspace{0pt}}{{{}}}{,}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{\hspace{0pt}}{{{}}}{}{⇐}{}{{}{{v}{{{{{{}{{{l}{,}{m}}}}}{\hspace{0pt}}}{{{}}}}}}}.
+Mapping finite-difference equations into a parallel processing environment requires defining an appropriate representation and program structure. Here, we define the GPU as system $a$ with a grid of $C_x \times C_y$ cores. A single core is denoted by $a_{c_x, c_y}$ where $c_x\in\{1, ..., C_x\}$ and $c_y\in\{1, ..., C_y\}$ are the core indices in the horizontal and vertical direction of the GPU grid respectively. The update equation of one grid point can then be assigned to a single core, such that these can be executed in parallel. Considering the 2D system presented in \hyperref[n84x2zbxjv7]{Equation 7}, mapping a grid point of a scheme with spatial index $(l,m)$ to a core with index $(c_x,c_y)$ is denoted by $a_{c_x, c_y}\Leftarrow v_{l,m}$.
 
 The cores of the GPU $a$ must then be processed by recursively traversing the two-dimensional system $a$ and calculating the values of $a^{n+1}$ at each position depending on what models are assigned at each position. This process is repeated recursively and once all of $a^{n+1}$ is calculated, time index $n$ can be incremented. A serial representation of this process would be formed using two nested for loops:
 
@@ -167,15 +172,15 @@ The cores of the GPU $a$ must then be processed by recursively traversing the tw
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/93e6ctrd_41643624524313.png}\caption{}\end{figure}
 
 
-Here, every position in the grid is visited by iterating over all possible values for x and y. These are first used to check if the position in the two-dimensional grid is inside the model $u$. If it is, then \hyperref[n84x2zbxjv7]{Equation 7} is used to calculate the value at $a^{n+1}_{c_x,c_y}${\hspace{0pt}}{{{}}}{,}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{{}{{{n}{+}{1}}}}{\hspace{0pt}}{{{}}}. In the equation, components such as $a^{n}_{c_x+1,c_y}${\hspace{0pt}}{{{}}}{+}{1}{,}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{{}{{{n}}}}{\hspace{0pt}}{{{}}} require accessing neighbouring values of the currently considered position at $c_x${\hspace{0pt}}{{{}}} and $c_y${\hspace{0pt}}{{{}}} by adding $1$ to x, leading to a{[}n{]}{[}x+1{]}{[}cy{]}. This is done for all neighbouring values. This serial approach can be rewritten to the following, so that it is suitable for parallel processing:
+Here, every position in the grid is visited by iterating over all possible values for x and y. These are first used to check if the position in the two-dimensional grid is inside the model $u$. If it is, then \hyperref[n84x2zbxjv7]{Equation 7} is used to calculate the value at $a^{n+1}_{c_x,c_y}$. In the equation, components such as $a^{n}_{c_x+1,c_y}$ require accessing neighbouring values of the currently considered position at $c_x$ and $c_y$ by adding $1$ to x, leading to a{[}n{]}{[}x+1{]}{[}cy{]}. This is done for all neighbouring values. This serial approach can be rewritten to the following, so that it is suitable for parallel processing:
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/k6mki7xm_11643628690000.png}\caption{}\end{figure}
 
 
-Here the nested for loops are implicit, with the loop's indices represented through the identifiers getGridX() and getGridY(), respectively, where $C_x \times C_y${\hspace{0pt}}{{{}}}{}{×}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}} process streams are dispatched to the processor. Thus, instead of iterating over two nested for loops, the ID of each process stream is used to check which model's equation to use, such as $u$ for accessing $a$ to calculate the next timestep $a^{n+1}$. The state of the system $a$ is contained in global GPU memory as it is only directly accessed once by each PE.
+Here the nested for loops are implicit, with the loop's indices represented through the identifiers getGridX() and getGridY(), respectively, where $C_x \times C_y$ process streams are dispatched to the processor. Thus, instead of iterating over two nested for loops, the ID of each process stream is used to check which model's equation to use, such as $u$ for accessing $a$ to calculate the next timestep $a^{n+1}$. The state of the system $a$ is contained in global GPU memory as it is only directly accessed once by each PE.
 
-Multiple models can be added to the simulation, where the equation at each position in the system $a$ depends on the $c_x${\hspace{0pt}}{{{}}} and $c_y${\hspace{0pt}}{{{}}} coordinates. For example, one can add the 1D wave equation described in \hyperref[noztvyc4q27]{Equation 5} as a second model to the GPU. This one-dimensional equation can be mapped into the system $a$ according to $a_{c_x, c_y} \Leftarrow u_l${\hspace{0pt}}{{{}}}{,}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{\hspace{0pt}}{{{}}}{}{⇐}{}{{}{{u}{{{{{{}{{l}}}}{\hspace{0pt}}}{{{}}}}}}}. The code then includes an additional conditional statement checking if the coordinate $(c_x, c_y)${\hspace{0pt}}{{{}}}{,}{}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{)} identifies $u$:
+Multiple models can be added to the simulation, where the equation at each position in the system $a$ depends on the $c_x$ and $c_y$ coordinates. For example, one can add the 1D wave equation described in \hyperref[noztvyc4q27]{Equation 5} as a second model to the GPU. This one-dimensional equation can be mapped into the system $a$ according to $a_{c_x, c_y} \Leftarrow u_l$. The code then includes an additional conditional statement checking if the coordinate $(c_x, c_y)$ identifies $u$:
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/nq3d4nv1_21643628747906.png}\caption{}\end{figure}
@@ -208,7 +213,6 @@ Simulating the physical models using finite-difference based methods requires a 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/z7em2a2l_01643628917064.png}\caption{Interface tessellation and rasterization of single rectangle.}\end{figure}
 
 
-\hfill\break
 
 First, the SVG description is tessellated, this produces a set of triangles that when considered holistically, form the original shape. These triangles prepare the shape for rasterization, where all points inside the respective shape's triangles are populated with the ID of the shape. Here, the \emph{rect} with a height of 10 and width of 2 is tessellated and points inside the triangles are filled with the shape ID inside the 12x8 simulation grid. The output of the parser is then used to populate a JSON object with the following data:
 
@@ -313,17 +317,17 @@ Manually writing the GPU program provides opportunities for a competent develope
 
 \subsection{Results}\label{results}
 
-The test results for \emph{simple single model} are shown in \hyperref[nl45g5y70df]{Image 13}. Considering the GPU auto-generated and manual versions, grid resolutions between $C_x = C_y = 64${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{64}} and $C_x = C_y = 256${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{256}} appear to show comparatively marginal difference. However, from $C_x = C_y > 256${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{\textgreater{}}{}}{{}{256}}, the disparity begins to emerge, where the manually written program begins to perform increasingly better. With this projection, the manually written version can operate at higher resolutions up to around $C_x = C_y = 700${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{700}}, while the auto-generated version reaches $C_x = C_y = 512${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{512}}. The limited scope of the \emph{simple single model} test means the only notable optimisation added to the manual version is the constant folding of all redundant calculations. This is where any constant values involved in the equations defined for the model are calculated once on the CPU and uploaded as one constant coefficient to the GPU, instead of redundantly calculating it on the GPU. This optimisation appears effective for this test as it is applied across $88\%$ of the simulated space. Therefore, as expected, optimisations that reduce computation in the model's scheme are effective.
+The test results for \emph{simple single model} are shown in \hyperref[nl45g5y70df]{Image 13}. Considering the GPU auto-generated and manual versions, grid resolutions between $C_x = C_y = 64$ and $C_x = C_y = 256$ appear to show comparatively marginal difference. However, from $C_x = C_y > 256$, the disparity begins to emerge, where the manually written program begins to perform increasingly better. With this projection, the manually written version can operate at higher resolutions up to around $C_x = C_y = 700$, while the auto-generated version reaches $C_x = C_y = 512$. The limited scope of the \emph{simple single model} test means the only notable optimisation added to the manual version is the constant folding of all redundant calculations. This is where any constant values involved in the equations defined for the model are calculated once on the CPU and uploaded as one constant coefficient to the GPU, instead of redundantly calculating it on the GPU. This optimisation appears effective for this test as it is applied across $88\%$ of the simulated space. Therefore, as expected, optimisations that reduce computation in the model's scheme are effective.
 
-When considering the performance of the CPU against the CPU, the GPU can support far higher resolution models than the CPU. For this single model test, the manually written CPU version can almost support $C_x = C_y = 128${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{128}} which would involve 16384 grid points. The auto-generated GPU version can support $C_x = C_y = 512${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{512}} that involves a considerably higher 262144 grid points, 16X more than the CPU can support.\\
+When considering the performance of the CPU against the CPU, the GPU can support far higher resolution models than the CPU. For this single model test, the manually written CPU version can almost support $C_x = C_y = 128$ which would involve 16384 grid points. The auto-generated GPU version can support $C_x = C_y = 512$ that involves a considerably higher 262144 grid points, 16X more than the CPU can support.\\
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/j8qyb5he_71643629632972.png}\caption{Execution time for a second\textquotesingle s worth of sample at 44.1KHz for the simple single model test.}\end{figure}
 
 
-\hyperref[nbyp5baah13]{Image 14} displays the results recorded for the \emph{Complex Multiple Models} test. The results follow a similar trend as the \emph{Simple Single Model} test, however, the differences between the auto-generated and manual versions are negligible. Both the GPU versions support resolutions up to around $C_x = C_y < 700${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{\textless{}}{}}{{}{700}}. It appears for the test that involves advanced models and connections, the manual optimisations are less effective. This might be partly because the constant folding optimisation is less effective for the smaller grid utilisation of $51\%$. This test involves two connection points between the three models yet the performance does not appear to be negatively effected by this. This suggests the technique used for the connections in the design is effective, at least for few connection points. However, it can not be assumed to extrapolate as more connections are added, comprehensive experimentation is needed to establish how this scales for hundreds of connections.
+\hyperref[nbyp5baah13]{Image 14} displays the results recorded for the \emph{Complex Multiple Models} test. The results follow a similar trend as the \emph{Simple Single Model} test, however, the differences between the auto-generated and manual versions are negligible. Both the GPU versions support resolutions up to around $C_x = C_y < 700$. It appears for the test that involves advanced models and connections, the manual optimisations are less effective. This might be partly because the constant folding optimisation is less effective for the smaller grid utilisation of $51\%$. This test involves two connection points between the three models yet the performance does not appear to be negatively effected by this. This suggests the technique used for the connections in the design is effective, at least for few connection points. However, it can not be assumed to extrapolate as more connections are added, comprehensive experimentation is needed to establish how this scales for hundreds of connections.
 
-The results presented here support the effectiveness of the HyperModels auto-generated programs. For the majority of the tests, the performance difference was a negligible 6\% in favour of the GPU manual version over the auto-generated equivalent. Although, under certain contexts the manual version was significantly faster. For example, the manual version of \emph{simple single model} test at $C_x = C_y = 700${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{700}} was 50\% faster than the auto-generated program.
+The results presented here support the effectiveness of the HyperModels auto-generated programs. For the majority of the tests, the performance difference was a negligible 6\% in favour of the GPU manual version over the auto-generated equivalent. Although, under certain contexts the manual version was significantly faster. For example, the manual version of \emph{simple single model} test at $C_x = C_y = 700$ was 50\% faster than the auto-generated program.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/7dliaijy_71643629729516.png}\caption{Execution time for a second\textquotesingle s worth of sample at 44.1KHz for the complex multiple model test.}\end{figure}
@@ -331,7 +335,7 @@ The results presented here support the effectiveness of the HyperModels auto-gen
 
 \section{Case Studies}\label{case-studies}
 
-Two instruments will be presented here to demonstrate the expressiveness of the HyperModels framework. Both instruments will operate within the system $a$ defined in HyperModels that will have a resolution of $(C_x, C_y)${\hspace{0pt}}{{{}}}{,}{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{)} where models can be defined to operate at specific positions determined by the vector based description of the model shapes.
+Two instruments will be presented here to demonstrate the expressiveness of the HyperModels framework. Both instruments will operate within the system $a$ defined in HyperModels that will have a resolution of $(C_x, C_y)$ where models can be defined to operate at specific positions determined by the vector based description of the model shapes.
 
 \subsection{Instrument 1: Hyper Drumhead}\label{instrument-1-hyper-drumhead}
 
@@ -339,16 +343,18 @@ Two instruments will be presented here to demonstrate the expressiveness of the 
 \begin{quote}\small\textbf{Video 1.} \subsection{Instrument 1: Hyper Drumhead}\label{instrument-one} Available at \url{https://assets.pubpub.org/2eff7v7e/61643630474204.mp4}.\end{quote}
 
 
-Instrument 1 implements the \emph{Hyper Drumhead} physical model from \cite{Zappi2017Shader,Zappi2017hyper}. In their implementation, the \emph{Hyper Drumhead} is a two-dimensional drumhead simulation that has been accelerated on the GPU using the graphics pipeline. The \emph{Hyper Drumhead} was reported to support resolutions up to 320x320 for most of the systems tested on. In their implementation, Zappi et al. mapped the audio domain of the physical model directly into the graphical domain using the OpenGL graphics rendering API. By conforming to the graphical domain, this design requires an additional field of knowledge and imposes some limitations. For Instrument 1, the \emph{Hyper Drumhead} will be ported to the HyperModels framework with an extended resolution of $C_x = C_y = 512${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{512}}. The source code and recordings of this instrument are publicly available online \footnote{https://github.com/Harri-Renney/-NIME2022-\/-\/-InstrumentOne}.
+Instrument 1 implements the \emph{Hyper Drumhead} physical model from \cite{Zappi2017Shader,Zappi2017hyper}. In their implementation, the \emph{Hyper Drumhead} is a two-dimensional drumhead simulation that has been accelerated on the GPU using the graphics pipeline. The \emph{Hyper Drumhead} was reported to support resolutions up to 320x320 for most of the systems tested on. In their implementation, Zappi et al. mapped the audio domain of the physical model directly into the graphical domain using the OpenGL graphics rendering API. By conforming to the graphical domain, this design requires an additional field of knowledge and imposes some limitations. For Instrument 1, the \emph{Hyper Drumhead} will be ported to the HyperModels framework with an extended resolution of $C_x = C_y = 512$. The source code and recordings of this instrument are publicly available online \footnote{https://github.com/Harri-Renney/-NIME2022-\/-\/-InstrumentOne}.
 
-The physical model PDE used in the \emph{Hyper Drumhead} is based on the two-dimensional wave equations with a frequency independent damping component \cite{Renardy2006introduction}. \hyperref[noztvyc4q27]{Equation 5} can be extended to include damping, and the recursively solvable explicit scheme used for the $q$\textsuperscript{th} model $v_q${\hspace{0pt}}{{{}}} where $q = 1, 2$ will be defined as:
+The physical model PDE used in the \emph{Hyper Drumhead} is based on the two-dimensional wave equations with a frequency independent damping component \cite{Renardy2006introduction}. \hyperref[noztvyc4q27]{Equation 5} can be extended to include damping, and the recursively solvable explicit scheme used for the $q$\textsuperscript{th} model $v_q$ where $q = 1, 2$ will be defined as:
 
-{}{{{{\[\begin{aligned}
+
+\begin{equation}\begin{aligned}
     (1 + \sigma_{q})v^{n+1}_{q,l,m} &= 2 v^{n}_{q,l,m} - (1 - \sigma_q) v^{n-1}_{q,l,m} \\
     & + (\lambda_{q})^2 (v^{n}_{q,l+1,m} + v^{n}_{q,l-1,m} + v^{n}_{q,l,m+1} + v^{n}_{q,l,m-1} - 4 v^{n}_{q,l,m})
-\end{aligned}\]}}}}{(8)}
+\end{aligned}\end{equation}
 
-where the Courant number $\lambda_q${\hspace{0pt}}{{{}}} is defined as in \hyperref[noztvyc4q27]{Equation 5}, and $\sigma_q${\hspace{0pt}}{{{}}} is the frequency independent damping coefficient (in s$^{-1}$). To maintain stability inside the model, the conditions $\lambda \leq \frac{1}{\sqrt{2}}${{}{}}{{}{{{1}}}}{\hspace{0pt}}{{{}}}{} and $0 < \sigma < 1$ must be met. The mapping of $v_q${\hspace{0pt}}{{{}}} into the grid of cores in $a$ is illustrated as an SVG in \hyperref[fig:sub2]{Image 2}. The physical model described so far is then contained in the \emph{instrument} component in the application visualised in \hyperref[fig:usecaseone]{Image 15}. Here, the CPU application program written in the JUCE\footnote{\url{https://juce.com}} audio framework interfaces with the GPU instrument program requesting 44100 samples per second. However, the input/output samples between CPU and GPU uses a buffering technique. Therefore, data transfers occur at a rate of $\frac{f_s}{b_s}${\hspace{0pt}}{{{}}}{{}{}}{{}{{{{f}{{{{{{}{{s}}}}{\hspace{0pt}}}{{{}}}}}}}}}{\hspace{0pt}}{{{}}}{}. So for a buffer length $b_s = 256${\hspace{0pt}}{{{}}}{}{=}{}{{}{256}} at $f_s = 44100${\hspace{0pt}}{{{}}}{}{=}{}{{}{44100}}, there are $\frac{44100}{256} = 173${{}{}}{{}{{{44100}}}}{\hspace{0pt}}{{{}}}{}{}{=}{}{{}{173}}Hz data transfers per second. The state of the system $a$ stays in the GPU global memory and is not transferred back to the CPU. Instead, for the on-screen visualisation of the model an OpenGL graphics program is called at a rate of 15Hz. This efficiently maps the state of the instrument into coloured pixels that are then sent directly to a display device. Interactions with the instrument are controlled using two Sensel Morphs \footnote{\url{https://github.com/sensel/sensel-api}}. The Sensel morph is a high-resolution pressure sensor that detects the position and amount of pressure of contacts. The two Sensel morph's have been connected to the application, one mapping to model $v_1${\hspace{0pt}}{{{}}} and the other to $v_2${\hspace{0pt}}{{{}}} by adding excitation to the system $a_{c_x,c_y}${\hspace{0pt}}{{{}}}{,}{{c}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{\hspace{0pt}}{{{}}} at a position $c_{x}${\hspace{0pt}}{{{}}} and $c_{y}${\hspace{0pt}}{{{}}} that is detected by the Sensels. The sensel's are polled for contacts at a rate of 150Hz as this provides a maximum detection latency of 6.6ms \cite{Willemsen2019Real}. A screenshot of Instrument 1's application GUI is shown in \hyperref[fig:sub1]{Image 1}.
+
+where the Courant number $\lambda_q$ is defined as in \hyperref[noztvyc4q27]{Equation 5}, and $\sigma_q$ is the frequency independent damping coefficient (in s$^{-1}$). To maintain stability inside the model, the conditions $\lambda \leq \frac{1}{\sqrt{2}}$ and $0 < \sigma < 1$ must be met. The mapping of $v_q$ into the grid of cores in $a$ is illustrated as an SVG in \hyperref[fig:sub2]{Image 2}. The physical model described so far is then contained in the \emph{instrument} component in the application visualised in \hyperref[fig:usecaseone]{Image 15}. Here, the CPU application program written in the JUCE\footnote{\url{https://juce.com}} audio framework interfaces with the GPU instrument program requesting 44100 samples per second. However, the input/output samples between CPU and GPU uses a buffering technique. Therefore, data transfers occur at a rate of $\frac{f_s}{b_s}$. So for a buffer length $b_s = 256$ at $f_s = 44100$, there are $\frac{44100}{256} = 173$Hz data transfers per second. The state of the system $a$ stays in the GPU global memory and is not transferred back to the CPU. Instead, for the on-screen visualisation of the model an OpenGL graphics program is called at a rate of 15Hz. This efficiently maps the state of the instrument into coloured pixels that are then sent directly to a display device. Interactions with the instrument are controlled using two Sensel Morphs \footnote{\url{https://github.com/sensel/sensel-api}}. The Sensel morph is a high-resolution pressure sensor that detects the position and amount of pressure of contacts. The two Sensel morph's have been connected to the application, one mapping to model $v_1$ and the other to $v_2$ by adding excitation to the system $a_{c_x,c_y}$ at a position $c_{x}$ and $c_{y}$ that is detected by the Sensels. The sensel's are polled for contacts at a rate of 150Hz as this provides a maximum detection latency of 6.6ms \cite{Willemsen2019Real}. A screenshot of Instrument 1's application GUI is shown in \hyperref[fig:sub1]{Image 1}.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/f8eheycz_11643575623970.png}\caption{Application overview for Instrument 1: Hyper Drumhead.}\end{figure}
@@ -360,36 +366,40 @@ where the Courant number $\lambda_q${\hspace{0pt}}{{{}}} is defined as in \hyper
 \begin{quote}\small\textbf{Video 2.} \subsection{Instrument 2: String-Plate Connections}\label{instrument-two} Available at \url{https://assets.pubpub.org/3cgm99pw/51643655601730.mp4}.\end{quote}
 
 
-Instrument 2 aims to demonstrate that complex, interconnected models can be represented by the GPU accelerated framework. In \cite{Willemsen2019Real}, Willemsen et al. design instruments using strings and plate models that are connected together to form instruments such as the sitar, hammered dulcimer and Hurdy Gurdy. In their implementation, the instruments were executed on the CPU and operated for small resolutions, with strings involving a maximum of 50 points and plates of 20x10. The GPU accelerated implementation will support higher resolution models with multiple strings of 280 points and a plate of 236x121 inside an environment $a$ with $C_x = C_y = 256${\hspace{0pt}}{{{}}}{}{=}{}{{}{{C}{{{{{{}{{y}}}}{\hspace{0pt}}}{{{}}}}}}{}{=}{}}{{}{256}}. A plate model $v$ and multiple strings $u_q${\hspace{0pt}}{{{}}} will be defined where the subscript $q$ is used to identify each string between $q = 1, \dots, 13$.
+Instrument 2 aims to demonstrate that complex, interconnected models can be represented by the GPU accelerated framework. In \cite{Willemsen2019Real}, Willemsen et al. design instruments using strings and plate models that are connected together to form instruments such as the sitar, hammered dulcimer and Hurdy Gurdy. In their implementation, the instruments were executed on the CPU and operated for small resolutions, with strings involving a maximum of 50 points and plates of 20x10. The GPU accelerated implementation will support higher resolution models with multiple strings of 280 points and a plate of 236x121 inside an environment $a$ with $C_x = C_y = 256$. A plate model $v$ and multiple strings $u_q$ will be defined where the subscript $q$ is used to identify each string between $q = 1, \dots, 13$.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/9dr9bsaa_51643631403400.png}\caption{Application overview for Instrument 2: String-Plate Connections application.}\end{figure}
 
 
-The string models are defined as using the stiff string equation \cite{Willemsen2021emulated} along with frequency independent and frequency dependant components \cite{Bensa2003simulation}. Using finite-differences, the recursively solvable explicit form $u^{n}_{q,l}${{}{{{n}}}}{\hspace{0pt}}{{{}}} is formed:
+The string models are defined as using the stiff string equation \cite{Willemsen2021emulated} along with frequency independent and frequency dependant components \cite{Bensa2003simulation}. Using finite-differences, the recursively solvable explicit form $u^{n}_{q,l}$ is formed:
 
-{}{{{{\[\begin{aligned}
+
+\begin{equation}\begin{aligned}
     (1 + \sigma_{q,0} T) u^{n+1}_{q,l} &=  \left(2 - 2 (\lambda_q)^2 - 6 (\mu_q)^2 \frac{4\sigma_{q,1} T}{X^2}\right) u^{n}_{q,l}\\
     &  \left((\lambda_q)^2 + 4(\mu_q)^2 + \frac{2\sigma_{q,1} T}{X^2}\right)(u^{n}_{q,l+1} + u^{n}_{q,l-1})\\
     & - (\mu_q)^2 (u^{n}_{q,l+2} + u^{n}_{q,l-2})\\
     & + \left(-1 + \sigma_{q,0} T + \frac{4 \sigma_{q,1} T}{X^2} \right) u^{n-1}_{q,l}\\
     & - \frac{2 \sigma_{q,1} T}{X^2} \left(u^{n-1}_{q,l+1} + u^{n-1}_{q,l-1}\right)
-\end{aligned}\]}}}}{(9)}
+\end{aligned}\end{equation}
 
-with $\mu_q = \frac{\kappa_q T}{X^2}${\hspace{0pt}}{{{}}}{}{=}{}{{}{{}{{{{{{}{{{{X}{{{{{{}{{2}}}}}}}}}}}{{}{}}{{}{{{{κ}{{{{{{}{{q}}}}{\hspace{0pt}}}{{{}}}}}}{T}}}}}{\hspace{0pt}}}{{{}}}}}{}}}, stiffness coefficient $\kappa_q${\hspace{0pt}}{{{}}}, frequency independent damping $\sigma_{q,0}${\hspace{0pt}}{{{}}} and frequency dependant damping $\sigma_{q,1}${\hspace{0pt}}{{{}}}.
+
+with $\mu_q = \frac{\kappa_q T}{X^2}$, stiffness coefficient $\kappa_q$, frequency independent damping $\sigma_{q,0}$ and frequency dependant damping $\sigma_{q,1}$.
 
 The linear plate equation \cite{Morse1986Theoretical} uses a similar description of physics as the stiff string including frequency independent and dependant components, but is extended to operate across two-dimensions. By discretising the equation using finite-differences, the following recursively solvable explicit scheme is formed.
 
-{}{{{{\[\begin{aligned}
+
+\begin{equation}\begin{aligned}
     (1 + \sigma_0 T) v^{n+1}_{l,m} &= (2-20\mu^2-4 S)  v^{n}_{l,m}\\
     & + (8\mu^2 + S)(v^{n}_{l+1,m} + v^{n}_{l-1,m} + v^{n}_{l,m+1} + v^{n}_{l,m-1})\\
                                     & - 2 \mu^2 (v^{n}_{l+1,m+1} + v^{n}_{l+1,m-1} + v^{n}_{l-1,m+1} + v^{n}_{l-1,m-1})\\
                                     & - \mu^2 (v^{n}_{l+2,m} + v^{n}_{l-2,m} + v^{n}_{l,m+2} + v^{n}_{l,m-2})\\
                                     & + (\sigma_0 T - 1 + 4S) v^{n-1}_{l,m}\\
                                     & - S (v^{n-1}_{l+1,m} + v^{n-1}_{l-1,m} + v^{n-1}_{l,m+1} + v^{n-1}_{l,m-1})
-    \end{aligned}\]}}}}{(10)}
+    \end{aligned}\end{equation}
 
-Where parameters are the same as in \hyperref[nxd67h1zdnt]{Equation 9} but with the additional coefficient $S = \frac{2 \sigma_1 T}{X^2}${{}{}}{{}{{{2}{{σ}{{{{{{}{{1}}}}{\hspace{0pt}}}{{{}}}}}}{T}}}}{\hspace{0pt}}{{{}}}{}.
+
+Where parameters are the same as in \hyperref[nxd67h1zdnt]{Equation 9} but with the additional coefficient $S = \frac{2 \sigma_1 T}{X^2}$.
 
 The geometry for instrument 2 is displayed in the SVG in \hyperref[fig:instrument2svg]{Image 18}. Again, a JUCE application running on the CPU interfaces with the instrument on the GPU at a samplerate of 44100Hz as shown in the instrument overview in \hyperref[nsfqfw82kbm]{Image 16}. The Sensel Morphs are used as input, one being mapped to pluck across the strings $u^q$ and the other to strike the plate $v$. The key difference in this arrangement is that the visualisation of the instrument is processed on the CPU using the JUCE framework. Therefore, the state of the grid must be transferred from the GPU to the CPU to update the JUCE graphical components to then load onto the GPU at a frame rate of 15Hz. A screenshot of the Instrument 2 application is shown in \hyperref[fig:instrument2screenshot]{Image 17} and the recordings and source code are available online \footnote{https://github.com/Harri-Renney/NIME2022-\/-\/-InstrumentTwo}.
 
@@ -399,19 +409,12 @@ The geometry for instrument 2 is displayed in the SVG in \hyperref[fig:instrumen
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/2a2tudx8_51643575623980.PNG}\caption{Vector graphics and physical model description for {\emph{u}\textsubscript{\emph{q}}} and {\emph{v}} in system {\emph{a}}.}\end{figure}
 
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
-\hfill\break
 
 \section{Conclusion}\label{conclusion}
 

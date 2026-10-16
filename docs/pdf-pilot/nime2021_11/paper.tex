@@ -1,6 +1,6 @@
 \documentclass[sigconf]{nimeart}
 \usepackage{bm}
-\usepackage{array,calc}
+\usepackage{array,calc,adjustbox}
 \DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
 \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
 \DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
@@ -8,13 +8,14 @@
 \DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
 \DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
 \DeclareUnicodeCharacter{2713}{\checkmark}\DeclareUnicodeCharacter{2717}{\ensuremath{\times}}\DeclareUnicodeCharacter{25B6}{\ensuremath{\blacktriangleright}}\DeclareUnicodeCharacter{2B06}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2B07}{\ensuremath{\downarrow}}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}\DeclareUnicodeCharacter{03B9}{\ensuremath{\iota}}\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}\DeclareUnicodeCharacter{03C6}{\ensuremath{\varphi}}\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}\DeclareUnicodeCharacter{2207}{\ensuremath{\nabla}}\DeclareUnicodeCharacter{221A}{\ensuremath{\surd}}\DeclareUnicodeCharacter{221D}{\ensuremath{\propto}}\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}\DeclareUnicodeCharacter{220F}{\ensuremath{\prod}}\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}\DeclareUnicodeCharacter{2229}{\ensuremath{\cap}}\DeclareUnicodeCharacter{222A}{\ensuremath{\cup}}\DeclareUnicodeCharacter{2282}{\ensuremath{\subset}}\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}\DeclareUnicodeCharacter{2261}{\ensuremath{\equiv}}\DeclareUnicodeCharacter{21D0}{\ensuremath{\Leftarrow}}\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}\DeclareUnicodeCharacter{21D4}{\ensuremath{\Leftrightarrow}}\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}\DeclareUnicodeCharacter{2026}{\ensuremath{\ldots}}\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}\DeclareUnicodeCharacter{2218}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2205}{\ensuremath{\emptyset}}\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}\DeclareUnicodeCharacter{00F7}{\ensuremath{\div}}\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}\DeclareUnicodeCharacter{2225}{\ensuremath{\parallel}}\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\DeclareUnicodeCharacter{2299}{\ensuremath{\odot}}\DeclareUnicodeCharacter{25CB}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2062}{}\DeclareUnicodeCharacter{2061}{}
 \AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
 \setcopyright{cc}\copyrightyear{2021}\acmYear{2021}\acmDOI{10.21428/92fbeb44.47175201}
 \acmConference[NIME '21]{International Conference on New Interfaces for Musical Expression}{June 14--18, 2021}{Shanghai, China}
 \settopmatter{printacmref=false}\acmISBN{}
 \providecommand{\pandocbounded}[1]{#1}
 \begin{document}
-\title{MapLooper: Live-looping of distributed gesture-to-sound mappings}
+\title[MapLooper: Live-looping of distributed gesture-to-sound mappings]{MapLooper: Live-looping of distributed gesture-to-sound mappings}
 \author{Christian Frisson}
 \affiliation{\institution{Input Devices and Music Interaction Laboratory (IDMIL), Centre for Interdisciplinary Research in Music Media and Technology (CIRMMT), McGill University,}\country{}}
 \author{Mathias Bredholt}
@@ -98,7 +99,7 @@ Streams of control data such as MIDI or Open Sound Control (OSC) messages or ana
 We provide a comparison of related work versus our tool \emph{MapLooper} in \hyperref[nig9qxt62qc]{Table 1}. \emph{Interact} refers to the gestural interface where \emph{*(x)} means all devices supported by \emph{x}. \emph{Loop} refers to the interface for switching recording and playback state. \emph{Quantize} refers to time quantization. \emph{Manipulate} refers to any real-time processing of the recorded loops.
 
 \begin{table}[htbp]\centering\small
-\begin{tabular}{@{}llllllll@{}}
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}llllllll@{}}
 \toprule\noalign{}
 
 
@@ -113,7 +114,7 @@ Project & Stream & Interact & Loop & Quantize & Synchronize & Manipulate & Map \
 \emph{Tetrapad} & Control & Touch & Touch & Yes & Yes & CV & Explicit \\
 \emph{Drile} & Both & 6-DoF & 6-DoF & Yes & No & No & Explicit \\
 \emph{MapLooper} & Control & *(\emph{libmapper}) & *(\emph{libmapper}) & Yes & Yes & Random & Open-ended \\
-\end{tabular}\end{table}
+\end{tabular}\end{adjustbox}\end{table}
 
 While most of the tools reviewed contain their own gestural interface; only \emph{MidiRex} and \emph{Midilooper} can use external gestural interfaces. However, with these two tools, the recording and playback state can only be controlled using a button. All of the reviewed tools feature either time quantization, external synchronization, or loop manipulation. Most of the tools' mapping strategies are explicit, except for \emph{SoundGrasp}, which employs mapping using machine learning.
 
@@ -186,9 +187,9 @@ We measured round-trip latency, jitter, and package loss for data transmitted th
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/b1nfu8zj_41618020287436.pdf}\caption{Histogram of round-trip latency measurement with power saving feature disabled. A 100 Hz is signal measured over a period of 100 seconds. The dashed line shows the mean round-trip latency of 4.81 ms.}\end{figure}
 
 
-We found that the ESP32 has a WiFi power-saving feature enabled by default. Disabling this feature had a significant impact on low latency performance. We performed measurements with power-saving enabled or disabled. The mean of the round-trip latency was 406 ms with power saving enabled and 4.81 ms when disabled. According to our results, in a one-way communication situation, where the ESP32 is only transmitting data, an average end-to-end latency $L_m = 2.41\;\mathrm{ms}${\hspace{0pt}}{{{}}}{}{=}{}{{}{2}{.}{4}{1}{}{{m}{s}}} (half of round-trip) can be expected.
+We found that the ESP32 has a WiFi power-saving feature enabled by default. Disabling this feature had a significant impact on low latency performance. We performed measurements with power-saving enabled or disabled. The mean of the round-trip latency was 406 ms with power saving enabled and 4.81 ms when disabled. According to our results, in a one-way communication situation, where the ESP32 is only transmitting data, an average end-to-end latency $L_m = 2.41\;\mathrm{ms}$ (half of round-trip) can be expected.
 
-We performed three more measurements at increasing rates for testing latency, jitter; and packet loss $P_L${\hspace{0pt}}{{{}}} at different signal rates. The results are in \hyperref[fig:latency-frequency]{Image 8}.
+We performed three more measurements at increasing rates for testing latency, jitter; and packet loss $P_L$ at different signal rates. The results are in \hyperref[fig:latency-frequency]{Image 8}.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/wllr6j51_11612044161545.png}\caption{Histograms of round-trip latency of test signals at 100 Hz, 200 Hz, 500 Hz, and 1000 Hz, with 10,000 test points recorded for each signal. Packet loss {\emph{P}\textsubscript{\emph{L}}} and frequency is listed in the title of each histogram.}\end{figure}
@@ -197,18 +198,18 @@ We performed three more measurements at increasing rates for testing latency, ji
 We found that the system has a significant packet loss for signals at 500 Hz. For signals at 1000 Hz, the packet loss is substantial, with 55\% of packets being dropped. The jitter also increases with frequency, which can be observed in the increase of the standard deviation of the latency listed in . There is no significant change in the mean latency for signals at 100 Hz and 200 Hz. For signals at 500 Hz, the latency increases by a factor of 3. Signals at 500 Hz and 1000 Hz had similar performance in terms of latency and jitter, but the packet loss increases from 7.8\% at 500 Hz to 55\% at 1000 Hz. \hyperref[n1sxcw62xn5]{Table 2} provides results from latency measurements.
 
 \begin{table}[htbp]\centering\small
-\begin{tabular}{@{}llll@{}}
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}llll@{}}
 \toprule\noalign{}
 
 
 \bottomrule\noalign{}
 
-Signal rate {[}Hz{]} & Mean latency {[}ms{]} & Std. dev. of latency {[}ms{]} & Packet loss $P_L${\hspace{0pt}}{{{}}} \\
+Signal rate {[}Hz{]} & Mean latency {[}ms{]} & Std. dev. of latency {[}ms{]} & Packet loss $P_L$ \\
 100 & 4.81 & 1.56 & 0.0 \\
 200 & 4.78 & 1.86 & 0.0001 \\
 500 & 16.6 & 1.92 & 0.078 \\
 1000 & 17.9 & 1.98 & 0.55 \\
-\end{tabular}\end{table}
+\end{tabular}\end{adjustbox}\end{table}
 
 Our results for the embedded \emph{libmapper} implementation were slightly better than previous studies by Wang et al. \cite{c27}, who conducted tests of latency and jitter with OSC communication over WiFi using ESP32. They measured a mean round-trip latency of 6.62 ms, which is slightly higher than the 4.81 ms we measured in this project, both at 100 Hz. Both measurements remain well below the ``acceptable upper bound on the computer's audible reaction to gesture at 10 ms'' proposed by Wessel and Wright \cite{c9}.
 
@@ -261,11 +262,15 @@ We can build a digital looper by adding feedback to a delay-line. A digital dela
 
 For a loop to be synchronized to a meter, the length $D$ of the delay-line should be specified in terms of tempo {[}bpm{]} $T$ and duration in beats $B$
 
-{}{{{\(D = \frac{B \cdot 60}{T}\)}}}{(1)}
+
+\begin{equation}D = \frac{B \cdot 60}{T}\end{equation}
+
 
 For a 1-bar loop with a tempo of 140 bpm and time signature 4/4, this results in
 
-{}{{{\(D = \frac{4\;\text{beats}\cdot60\;\text{s}}{140\;\text{beats/min}} = 1.7142857143\;\text{s}\)}}}{(2)}
+
+\begin{equation}D = \frac{4\;\text{beats}\cdot60\;\text{s}}{140\;\text{beats/min}} = 1.7142857143\;\text{s}\end{equation}
+
 
 At the time of our initial implementation, delay-lines in \emph{libmapper} were non-interpolating in terms of delay-length. We first solved this issue by sampling the input at a rate given by an integer subdivision of the tempo, ensuring that delay-lengths were always an integer multiple of the loop-length in beats. We have since added fractional delay lengths to \emph{libmapper}.
 
@@ -290,7 +295,7 @@ The uniform noise generator creates a noise signal with a range between {[}-1, 1
 \emph{MapLooper} instantiates a \emph{libmapper} device and initiates a Link session. The control interface consists of five signals (\hyperref[nzulbavu87u]{Table 3}): \emph{record}, \emph{length}, \emph{division}, \emph{modulation}, and \emph{mute}.
 
 \begin{table}[htbp]\centering\small
-\begin{tabular}{@{}lllll@{}}
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}lllll@{}}
 \toprule\noalign{}
 
 
@@ -302,7 +307,7 @@ length & Length of the loop & beats & 1 & 100* \\
 division & Time quantization & PPQN & 1 & 100 \\
 modulation & Amount of modulation & - & 0 & 1 \\
 mute & Controls whether output is active & - & 0 & 1 \\
-\end{tabular}\end{table}
+\end{tabular}\end{adjustbox}\end{table}
 
 The \emph{record} signal represents the $r[t]$ signal in . The \emph{length} and \emph{division} signals determine the length $D$ of the delay-line by the relation: $D = \text{length} \cdot \text{division}$. The \emph{length} signal is limited by the current maximum of 100 samples of delay in \emph{libmapper}, though the library can be recompiled with additional memory. The \emph{modulation} signal represents the $m[t]$ signal in . The \emph{mute} signal was added to control whether the output from \emph{local/recv} propagates to the \emph{output} signal.
 

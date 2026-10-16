@@ -1,6 +1,6 @@
 \documentclass[sigconf]{nimeart}
 \usepackage{bm}
-\usepackage{array,calc}
+\usepackage{array,calc,adjustbox}
 \DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
 \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
 \DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
@@ -8,13 +8,14 @@
 \DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
 \DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
 \DeclareUnicodeCharacter{2713}{\checkmark}\DeclareUnicodeCharacter{2717}{\ensuremath{\times}}\DeclareUnicodeCharacter{25B6}{\ensuremath{\blacktriangleright}}\DeclareUnicodeCharacter{2B06}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2B07}{\ensuremath{\downarrow}}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}\DeclareUnicodeCharacter{03B9}{\ensuremath{\iota}}\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}\DeclareUnicodeCharacter{03C6}{\ensuremath{\varphi}}\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}\DeclareUnicodeCharacter{2207}{\ensuremath{\nabla}}\DeclareUnicodeCharacter{221A}{\ensuremath{\surd}}\DeclareUnicodeCharacter{221D}{\ensuremath{\propto}}\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}\DeclareUnicodeCharacter{220F}{\ensuremath{\prod}}\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}\DeclareUnicodeCharacter{2229}{\ensuremath{\cap}}\DeclareUnicodeCharacter{222A}{\ensuremath{\cup}}\DeclareUnicodeCharacter{2282}{\ensuremath{\subset}}\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}\DeclareUnicodeCharacter{2261}{\ensuremath{\equiv}}\DeclareUnicodeCharacter{21D0}{\ensuremath{\Leftarrow}}\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}\DeclareUnicodeCharacter{21D4}{\ensuremath{\Leftrightarrow}}\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}\DeclareUnicodeCharacter{2026}{\ensuremath{\ldots}}\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}\DeclareUnicodeCharacter{2218}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2205}{\ensuremath{\emptyset}}\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}\DeclareUnicodeCharacter{00F7}{\ensuremath{\div}}\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}\DeclareUnicodeCharacter{2225}{\ensuremath{\parallel}}\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\DeclareUnicodeCharacter{2299}{\ensuremath{\odot}}\DeclareUnicodeCharacter{25CB}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2062}{}\DeclareUnicodeCharacter{2061}{}
 \AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
 \setcopyright{cc}\copyrightyear{2022}\acmYear{2022}\acmDOI{10.21428/92fbeb44.79d0b38f}
 \acmConference[NIME '22]{International Conference on New Interfaces for Musical Expression}{June 28--July 1, 2022}{Auckland, New Zealand}
 \settopmatter{printacmref=false}\acmISBN{}
 \providecommand{\pandocbounded}[1]{#1}
 \begin{document}
-\title{Quantitative evaluation of aspects of embodiment in new digital musical instruments}
+\title[Quantitative evaluation of aspects of embodiment in new digital…]{Quantitative evaluation of aspects of embodiment in new digital musical instruments}
 \author{Andrea Guidi}
 \affiliation{\institution{Queen Mary University of London}\country{}}
 \author{Andrew McPherson}
@@ -132,7 +133,7 @@ In part 2, the code also starts an LFO that affects the sensitivity of the Magpi
 The strength of the relation between the envelope played by the performer and the reference envelope, reference envelope and LFO envelope is assessed through Pearson's correlation tests in the two parts of the study.
 
 \begin{table}[htbp]\centering\small
-\begin{tabular}{@{}lll@{}}
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}lll@{}}
 \toprule\noalign{}
 
 
@@ -143,7 +144,7 @@ The strength of the relation between the envelope played by the performer and th
 Part 1 Performance Envelope & and & Part 1 Reference Envelope \\
 Part 2 Performance Envelope & and & Part 2 Reference Envelope \\
 Part 2 Performance Envelope & and & Part 2 LFO Envelope \\
-\end{tabular}\end{table}
+\end{tabular}\end{adjustbox}\end{table}
 
 The Pearson's test determines the significance and the direction of the relation with an index that comprises between 1 and -1. 1 means that the variables evolve in the same direction, 0 means that they are independent (hence, they have no relation), and -1 means that the variables evolve in opposite directions.
 
@@ -153,110 +154,20 @@ The Pearson's test is meant to evaluate a linear relationship between the variab
 
 The scatter plot in Image 1 shows the regression line between the performance and the reference envelopes while Image 2 shows the normality of residuals. Breusch-Pagan test shows the data are characterised by homoscedasticity with p \textless{} 2.2e-16 while Image 3 shows the residuals vs Fitted plot line. Computing Cook's distance lines did not show any influential outlier. The linear regression model presents a slope value of 0.56 (i.e. a change of 1 unit in the reference envelope yields a change of 0.56 in the performance envelope) with p \textless{} 2e-16. The residual standard error is 0.17 while the R\textsuperscript{2} value is 0.26 with p \textless{} 2e-16. The Pearson's product-moment correlation test returns a correlation coefficient of 0.51 with a 95\% confidence interval between 0.5 and 0.52 with p \textless{} 2.2e-16.
 
-\begin{table}[htbp]\centering\small
-\begin{tabular}{@{}  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-
-\toprule\noalign{}
-
-
-\bottomrule\noalign{}
-
-\begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/yziwmpk1_41650066198493.png}
-\strut
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/932zcg3e_51650066228205.png}
-\strut
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/aa53gfl2_21650066240679.png}
-\strut
-\end{minipage} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
-Part 1 - Performance and Reference Envelope} \\
-\end{tabular}\end{table}
+\begin{figure*}[htbp]\centering
+\includegraphics[width=0.32\textwidth]{figures/yziwmpk1_41650066198493.png}\includegraphics[width=0.32\textwidth]{figures/932zcg3e_51650066228205.png}\includegraphics[width=0.32\textwidth]{figures/aa53gfl2_21650066240679.png}\\[2pt]\caption{> p > p > p @ minipage t minipage minipage t minipage minipage t minipage \\ 3 @ > p @ Part 1 - Performance and Reference Envelope \\}\end{figure*}
 
 \section{Part 2: sensitivity disruption}\label{part-2-sensitivity-disruption}
 
 The scatter plot in Image 4 shows the regression line between the \emph{performance envelope} and the \emph{reference envelope} while \emph{} Image 5 presents the normality of residuals. Breusch-Pagan test shows the data are characterised by homoscedasticity with p \textless{} 2.2e-16 while Image 6 shows the residuals vs fitted plotline. Computing Cook's distance lines did not show any influential outlier. The linear regression model presents a slope value of 0.45 with p \textless{} 2e-16. The residual standard error is 0.15 while the R\textsuperscript{2} value is 0.25 with p \textless{} 2e-16. The Pearson's product-moment correlation test returns a correlation coefficient of 0.52 with a 95\% confidence interval between 0.51 and 0.53 with p \textless{} 2.2e-16.
 
-\begin{table}[htbp]\centering\small
-\begin{tabular}{@{}  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-
-\toprule\noalign{}
-
-
-\bottomrule\noalign{}
-
-\begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/op13gadw_01650023811667.png}
-\strut
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/cxmxpey0_61650023837088.png}
-\strut
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/aqezaxfh_71650023844752.png}
-\strut
-\end{minipage} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
-Part 2 - Performance and Reference Envelope} \\
-\end{tabular}\end{table}
+\begin{figure*}[htbp]\centering
+\includegraphics[width=0.32\textwidth]{figures/op13gadw_01650023811667.png}\includegraphics[width=0.32\textwidth]{figures/cxmxpey0_61650023837088.png}\includegraphics[width=0.32\textwidth]{figures/aqezaxfh_71650023844752.png}\\[2pt]\caption{> p > p > p @ minipage t minipage minipage t minipage minipage t minipage \\ 3 @ > p @ Part 2 - Performance and Reference Envelope \\}\end{figure*}
 
 The scatter plot in Image 7 shows the regression line between the \emph{performance envelope} and the \emph{LFO signal} while \emph{} Image 8 presents the normality of residuals. Breusch-Pagan test shows the data are characterised by homoscedasticity with p \textless{} 2.2e-16 while Image 9 shows the residuals vs Fitted plot line. Computing Cook's distance lines did not show any influential outlier. The linear regression model presents a slope value of 0.44 with p \textless{} 2e-16. The residual standard error is 0.19 while the R\textsuperscript{2} value is 0.1 with p \textless{} 2e-16. The Pearson's product-moment correlation test returns a correlation coefficient of 0.21 with a 95\% confidence interval between 0.2 and 0.22 with p \textless{} 2.2e-16.
 
-\begin{table}[htbp]\centering\small
-\begin{tabular}{@{}  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-
-\toprule\noalign{}
-
-
-\bottomrule\noalign{}
-
-\begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/nqf26tlh_21650023897664.png}
-\strut
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/slnto2pk_21650023913069.png}
-\strut
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-\hfill\break
-
-
-\includegraphics[width=0.90\linewidth]{figures/gwt7zb8r_21650024901756.png}
-\strut
-\end{minipage} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
-Part 2 - Performance and LFO Envelope} \\
-\end{tabular}\end{table}
+\begin{figure*}[htbp]\centering
+\includegraphics[width=0.32\textwidth]{figures/nqf26tlh_21650023897664.png}\includegraphics[width=0.32\textwidth]{figures/slnto2pk_21650023913069.png}\includegraphics[width=0.32\textwidth]{figures/gwt7zb8r_21650024901756.png}\\[2pt]\caption{> p > p > p @ minipage t minipage minipage t minipage minipage t minipage \\ 3 @ > p @ Part 2 - Performance and LFO Envelope \\}\end{figure*}
 
 \section{Discussion}\label{discussion}
 

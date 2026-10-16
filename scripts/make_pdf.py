@@ -21,7 +21,7 @@ ITEM = pathlib.Path(args.item); OUT = pathlib.Path(args.out); OUT.mkdir(parents=
 uuid = next(p.stem for p in ITEM.glob("*.xml"))
 xml = (ITEM / f"{uuid}.xml").read_text(errors="replace"); htm = (ITEM / f"{uuid}.html").read_text(errors="replace")
 
-def run(cmd, **kw): return subprocess.run(cmd, capture_output=True, text=True, **kw)
+def run(cmd, **kw): return subprocess.run(cmd, capture_output=True, text=True, errors="replace", **kw)
 def tex_escape(s): return re.sub(r"([&%$#_{}])", r"\\\1", s).replace("~", "\\textasciitilde{}").replace("^", "\\textasciicircum{}")
 def h2tex(fragment):
     fragment = re.sub(r'<div class="csl-(?:bib-body|entry)"[^>]*>|</div>', "", fragment)
@@ -83,8 +83,21 @@ def fn(mm):
     tag = mm.group(0); val = html.unescape(re.search(r'data-value="([^"]*)"', tag).group(1)) if 'data-value="' in tag else ""
     return tok("FN", h2tex(val))
 body = re.sub(r'<a [^>]*data-node-type="footnote"[^>]*>.*?</a>', fn, body, flags=re.S)
-body = re.sub(r'<span data-node-type="math-inline" data-value="([^"]*)">.*?</span></span></span></span>', lambda mm: tok("MI", html.unescape(mm.group(1))), body, flags=re.S)
-body = re.sub(r'<div id="[^"]*" data-node-type="math-block" data-value="([^"]*)">.*?</span></span></span></span></div>', lambda mm: tok("MB", html.unescape(mm.group(1))), body, flags=re.S)
+def replace_balanced(src, open_re, tag, kind):
+    """Replace each element matched by open_re (whole start tag, group 1 = data-value) and its balanced closing tag with a token."""
+    out, pos = [], 0
+    for m in re.finditer(open_re, src):
+        if m.start() < pos: continue
+        depth, i = 1, m.end()
+        while depth and i < len(src):
+            o = src.find(f"<{tag}", i); c = src.find(f"</{tag}>", i)
+            if c == -1: break
+            if o != -1 and o < c: depth += 1; i = o + 1
+            else: depth -= 1; i = c + len(tag) + 3
+        out.append(src[pos:m.start()]); out.append(tok(kind, html.unescape(m.group(1)))); pos = i
+    out.append(src[pos:]); return "".join(out)
+body = replace_balanced(body, r'<div[^>]*data-node-type="math-block"[^>]*data-value="([^"]*)"[^>]*>', "div", "MB")
+body = replace_balanced(body, r'<span[^>]*data-node-type="math-inline"[^>]*data-value="([^"]*)"[^>]*>', "span", "MI")
 def local_graphic(url):
     url = resize_to_asset(html.unescape(url)); rel = url.split("assets.pubpub.org/", 1)[-1]
     src = ITEM / "pubpub_assets" / rel; dst = OUT / "figures" / rel.replace("/", "_"); dst.parent.mkdir(parents=True, exist_ok=True)
@@ -151,6 +164,7 @@ if abs_m:
     body = body.replace(abs_m.group(0), "")
 
 tex = run(["pandoc", "-f", "html", "-t", "latex", "--wrap=none", "--top-level-division=section"], input=body).stdout
+(OUT / "body_raw.tex").write_text(tex)
 
 # ---- expand tokens ----------------------------------------------------------------
 def expand(mm):
@@ -160,7 +174,7 @@ def expand(mm):
     if kind == "CITE": return f"\\cite{{{p}}}"
     if kind == "FN": return f"\\footnote{{{p}}}"
     if kind == "MI": return f"${p}$"
-    if kind == "MB": return f"\\begin{{equation*}}{p}\\end{{equation*}}"
+    if kind == "MB": return f"\n\\begin{{equation}}{p}\\end{{equation}}\n"
     if kind == "IMG": return f"\\includegraphics[width=\\linewidth]{{{p}}}" if p else "[missing image]"
     if kind == "FIG":
         if not p["path"]: return f"[Figure {p['n']} not in archive]"
@@ -175,6 +189,8 @@ def expand(mm):
 tex = re.sub(r"ZZ[A-Z]+\d{4}ZZ", expand, tex)
 tex = re.sub(r"(\\cite\{[^}]+\})(\s*\\cite\{[^}]+\})+", lambda mm: "\\cite{" + ",".join(re.findall(r"\\cite\{([^}]+)\}", mm.group(0))) + "}", tex)
 tex = tex.replace("\\tightlist", "")
+tex = re.sub(r"^\\hfill\\break\s*$", "", tex, flags=re.M)
+tex = tex.replace("\\hfill\\break\n", "")
 # tables: pandoc longtable -> tabular inside table (two-column friendly); shrink wide ones
 def fix_table(mm):
     spec = mm.group(1); inner = mm.group(2)
@@ -182,10 +198,27 @@ def fix_table(mm):
     inner = re.sub(r"\\endfirsthead|\\endhead|\\endlastfoot|\\endfoot", "", inner)
     cap = re.search(r"\\caption\{(.*?)\}\\tabularnewline", inner, re.S)
     inner = inner.replace(cap.group(0), "") if cap else inner
+    capline = f"\\caption{{{cap.group(1)}}}" if cap and not re.fullmatch(r"\s*Table\s*\d+\s*", cap.group(1)) else ""
+    # image gallery tables (PubPub authors often lay figures out in a table): figure* with images side by side
+    imgs = re.findall(r"\\begin\{figure\}\[htbp\]\\centering(\\includegraphics\[[^\]]*\]\{[^}]+\})\\caption\{(.*?)\}\\end\{figure\}|(\\includegraphics\[[^\]]*\]\{[^}]+\})", inner, re.S)
+    stripped = re.sub(r"\\begin\{figure\}.*?\\end\{figure\}|\\includegraphics\[[^\]]*\]\{[^}]+\}", " ", inner, flags=re.S)
+    stripped = re.sub(r"\\multicolumn\{\d+\}\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}\{%?", " ", stripped)
+    words = re.sub(r"\\[A-Za-z]+\*?(?:\[[^\]]*\])?|[&{}\[\]%]|\(\\?[a-z]+ - \d+\\?[a-z]+\) \* \\?real\{[\d.]+\}( \+ \d\\?[a-z]+)?", " ", stripped)
+    words = re.sub(r"\s+", " ", words).strip()
+    if imgs and len(words) < 160:
+        rows = [r for r in re.split(r"\\tabularnewline|\\\\", inner) if "includegraphics" in r]
+        out = []
+        for r in rows:
+            cells = re.findall(r"\\includegraphics\[[^\]]*\]\{([^}]+)\}", r)
+            w = round(0.95 / max(len(cells), 1), 2)
+            out.append("".join(f"\\includegraphics[width={w}\\textwidth]{{{c}}}" for c in cells) + "\\\\[2pt]")
+        capt = cap.group(1) if cap and capline else words
+        env = "figure*" if len(cells) > 1 else "figure"
+        return f"\\begin{{{env}}}[htbp]\\centering\n" + "\n".join(out) + (f"\\caption{{{capt}}}" if capt else "") + f"\\end{{{env}}}"
     inner = re.sub(r"\\begin\{figure\}\[htbp\]\\centering(\\includegraphics\[[^\]]*\]\{[^}]+\})\\caption\{(.*?)\}\\end\{figure\}", lambda f: f.group(1) + (" " + f.group(2) if f.group(2).strip() else ""), inner, flags=re.S)
     inner = inner.replace("\\includegraphics[width=\\linewidth]", f"\\includegraphics[width={0.9/ncol:.2f}\\linewidth]")
-    capline = f"\\caption{{{cap.group(1)}}}" if cap and not re.fullmatch(r"\s*Table\s*\d+\s*", cap.group(1)) else ""
-    return f"\\begin{{table}}[htbp]\\centering\\small{capline}\n\\begin{{tabular}}{{{spec}}}{inner}\\end{{tabular}}\\end{{table}}"
+    spec_fixed = spec.replace("\\linewidth - ", "\\columnwidth - ")
+    return f"\\begin{{table}}[htbp]\\centering\\small{capline}\n\\begin{{adjustbox}}{{max width=\\columnwidth}}\\begin{{tabular}}{{{spec_fixed}}}{inner}\\end{{tabular}}\\end{{adjustbox}}\\end{{table}}"
 tex = re.sub(r"\\begin\{longtable\}\[\]\{(.*?)\}\n(.*?)\\end\{longtable\}", fix_table, tex, flags=re.S)
 tex = tex.replace("\\real{", "\\real{")
 # references
@@ -204,12 +237,16 @@ for nm, afl in authors:
     if nm in orcids: a += f"\n\\orcid{{{orcids[nm]}}}"
     for af in (afl or [""]): a += "\n\\affiliation{\\institution{" + tex_escape(af) + "}\\country{}}"
     auth_tex.append(a)
+short_title = title if len(title) <= 70 else re.sub(r"\s+\S*$", "", title[:67]) + "…"
 short = authors[0][0].split()[-1] + (" et al." if len(authors) > 2 else (" and " + authors[1][0].split()[-1] if len(authors) == 2 else "")) if authors else ""
+GREEK = {0x3B1:"alpha",0x3B2:"beta",0x3B3:"gamma",0x3B4:"delta",0x3B5:"varepsilon",0x3B6:"zeta",0x3B7:"eta",0x3B8:"theta",0x3B9:"iota",0x3BA:"kappa",0x3BB:"lambda",0x3BC:"mu",0x3BD:"nu",0x3BE:"xi",0x3C0:"pi",0x3C1:"rho",0x3C3:"sigma",0x3C4:"tau",0x3C5:"upsilon",0x3C6:"varphi",0x3C7:"chi",0x3C8:"psi",0x3C9:"omega",0x393:"Gamma",0x394:"Delta",0x398:"Theta",0x39B:"Lambda",0x39E:"Xi",0x3A0:"Pi",0x3A3:"Sigma",0x3A6:"Phi",0x3A8:"Psi",0x3A9:"Omega",
+ 0x2202:"partial",0x2207:"nabla",0x221A:"surd",0x221D:"propto",0x2211:"sum",0x220F:"prod",0x222B:"int",0x2229:"cap",0x222A:"cup",0x2282:"subset",0x2286:"subseteq",0x2260:"neq",0x2261:"equiv",0x21D0:"Leftarrow",0x21D2:"Rightarrow",0x21D4:"Leftrightarrow",0x2190:"leftarrow",0x2194:"leftrightarrow",0x2191:"uparrow",0x2193:"downarrow",0x2026:"ldots",0x2217:"ast",0x2218:"circ",0x2205:"emptyset",0x2200:"forall",0x2203:"exists",0x00D7:"times",0x00F7:"div",0x2032:"prime",0x2225:"parallel",0x22A5:"perp",0x2220:"angle",0x2297:"otimes",0x2295:"oplus",0x2299:"odot",0x25CB:"circ",0x2062:"",0x2061:""}
+uni_block = "".join("\\DeclareUnicodeCharacter{%04X}{\\ensuremath{\\%s}}" % (c, n) if n else "\\DeclareUnicodeCharacter{%04X}{}" % c for c, n in GREEK.items())
 ccs_block = "".join("\\ccsdesc{" + tex_escape(c).replace("\\textasciitilde{}", "~") + "}\n" for c in ccs)
 kw_block = ("\\keywords{" + tex_escape(keywords) + "}") if keywords else ""
 doc = f"""\\documentclass[sigconf]{{nimeart}}
 \\usepackage{{bm}}
-\\usepackage{{array,calc}}
+\\usepackage{{array,calc,adjustbox}}
 \\DeclareUnicodeCharacter{{202F}}{{\\,}}\\DeclareUnicodeCharacter{{2009}}{{\\,}}\\DeclareUnicodeCharacter{{200B}}{{}}\\DeclareUnicodeCharacter{{FEFF}}{{}}\\DeclareUnicodeCharacter{{22C5}}{{\\ensuremath{{\\cdot}}}}\\DeclareUnicodeCharacter{{21A9}}{{}}\\DeclareUnicodeCharacter{{2192}}{{\\ensuremath{{\\rightarrow}}}}
 \\DeclareUnicodeCharacter{{2248}}{{\\ensuremath{{\\approx}}}}\\DeclareUnicodeCharacter{{2264}}{{\\ensuremath{{\\leq}}}}\\DeclareUnicodeCharacter{{2265}}{{\\ensuremath{{\\geq}}}}
 \\DeclareUnicodeCharacter{{2208}}{{\\ensuremath{{\\in}}}}\\DeclareUnicodeCharacter{{221E}}{{\\ensuremath{{\\infty}}}}\\DeclareUnicodeCharacter{{223C}}{{\\ensuremath{{\\sim}}}}
@@ -217,13 +254,14 @@ doc = f"""\\documentclass[sigconf]{{nimeart}}
 \\DeclareUnicodeCharacter{{03BC}}{{\\ensuremath{{\\mu}}}}\\DeclareUnicodeCharacter{{03C0}}{{\\ensuremath{{\\pi}}}}\\DeclareUnicodeCharacter{{0394}}{{\\ensuremath{{\\Delta}}}}\\DeclareUnicodeCharacter{{03B1}}{{\\ensuremath{{\\alpha}}}}
 \\DeclareUnicodeCharacter{{03B2}}{{\\ensuremath{{\\beta}}}}\\DeclareUnicodeCharacter{{03C3}}{{\\ensuremath{{\\sigma}}}}\\DeclareUnicodeCharacter{{03C4}}{{\\ensuremath{{\\tau}}}}\\DeclareUnicodeCharacter{{03C9}}{{\\ensuremath{{\\omega}}}}
 \\DeclareUnicodeCharacter{{2713}}{{\\checkmark}}\\DeclareUnicodeCharacter{{2717}}{{\\ensuremath{{\\times}}}}\\DeclareUnicodeCharacter{{25B6}}{{\\ensuremath{{\\blacktriangleright}}}}\\DeclareUnicodeCharacter{{2B06}}{{\\ensuremath{{\\uparrow}}}}\\DeclareUnicodeCharacter{{2B07}}{{\\ensuremath{{\\downarrow}}}}
+{uni_block}
 \\AtBeginDocument{{\\providecommand\\BibTeX{{{{Bib\\TeX}}}}}}
 \\setcopyright{{cc}}\\copyrightyear{{{year}}}\\acmYear{{{year}}}\\acmDOI{{{doi}}}
 \\acmConference[{conf[0]}]{{International Conference on New Interfaces for Musical Expression}}{{{conf[1]}}}{{{conf[2]}}}
 \\settopmatter{{printacmref=false}}\\acmISBN{{}}
 \\providecommand{{\\pandocbounded}}[1]{{#1}}
 \\begin{{document}}
-\\title{{{tex_escape(title)}}}
+\\title[{tex_escape(short_title)}]{{{tex_escape(title)}}}
 {chr(10).join(auth_tex)}
 \\renewcommand{{\\shortauthors}}{{{tex_escape(short)}}}
 \\begin{{abstract}}
