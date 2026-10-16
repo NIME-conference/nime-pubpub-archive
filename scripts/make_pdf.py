@@ -12,7 +12,7 @@ Pipeline
 """
 import sys, re, json, subprocess, pathlib, shutil, html, argparse, base64
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from pubpub_tex import table_caption_text
+from pubpub_tex import table_caption_text, brace_groups
 
 HERE = pathlib.Path(__file__).resolve().parent
 TEMPLATE = HERE / "pdf-pilot" / "template"
@@ -197,7 +197,13 @@ tex = tex.replace("\\hfill\\break\n", "")
 def fix_table(mm):
     spec = mm.group(1); inner = mm.group(2)
     ncol = len(re.findall(r"(?<!\\)[lcrp]|>\{", re.sub(r"\{[^{}]*\}", "", spec))) or 1
-    inner = re.sub(r"\\endfirsthead|\\endhead|\\endlastfoot|\\endfoot", "", inner)
+    # pandoc's longtable scaffolding: toprule lives in the first head, bottomrule in the last foot
+    inner = re.sub(r"\\toprule\\noalign\{\}\s*\\endfirsthead", lambda m: "\\toprule", inner)
+    inner = inner.replace("\\endfirsthead", "")
+    inner = re.sub(r"(\\midrule\\noalign\{\}\s*)?\\endhead", lambda m: "\\midrule", inner)
+    inner = re.sub(r"\\bottomrule\\noalign\{\}\s*\\endlastfoot", lambda m: "", inner)
+    inner = inner.replace("\\endlastfoot", "").replace("\\endfoot", "")
+    if "\\bottomrule" not in inner: inner = inner.rstrip() + "\n\\bottomrule\n"
     cap = re.search(r"\\caption\{(.*?)\}\\tabularnewline", inner, re.S)
     inner = inner.replace(cap.group(0), "") if cap else inner
     capline = f"\\caption{{{cap.group(1)}}}" if cap and not re.fullmatch(r"\s*Table\s*\d+\s*", cap.group(1)) else ""
@@ -217,8 +223,56 @@ def fix_table(mm):
     inner = re.sub(r"\\begin\{figure\}\[htbp\]\\centering(\\includegraphics\[[^\]]*\]\{[^}]+\})\\caption\{(.*?)\}\\end\{figure\}", lambda f: f.group(1) + (" " + f.group(2) if f.group(2).strip() else ""), inner, flags=re.S)
     inner = inner.replace("\\includegraphics[width=\\linewidth]", f"\\includegraphics[width={0.9/ncol:.2f}\\linewidth]")
     spec_fixed = spec.replace("\\linewidth - ", "\\columnwidth - ")
+    # text tables: if no cell is long, use natural-width columns (then adjustbox scales the table to the column)
+    cells = [plain_cell for plain_cell in re.split(r"&|\\tabularnewline|\\\\", re.sub(r"\\begin\{minipage\}[^\n]*|\\end\{minipage\}|\\strut|\\multicolumn\{\d+\}\{[lcr]\}", "", inner))]
+    longest = max((len(re.sub(r"\\[A-Za-z]+\*?|[{}]", "", c).strip()) for c in cells), default=0)
+    if longest <= 70 and "includegraphics" not in inner:
+        align = re.findall(r">\{\\(raggedright|centering|raggedleft)", spec)
+        cols = "".join({"raggedright": "l", "centering": "c", "raggedleft": "r"}.get(a, "l") for a in align) or "l" * ncol
+        spec_fixed = cols
+        inner = re.sub(r"\\begin\{minipage\}\[t\]\{\\linewidth\}\\(?:raggedright|centering|raggedleft)\s*", "", inner)
+        inner = inner.replace("\\end{minipage}", "").replace("\\strut", "")
+        inner = re.sub(r"\\multirow\{(\d+)\}\{=\}", r"\\multirow{\1}{*}", inner)
+        def _mr(m):
+            g, end = brace_groups(inner, m.end())
+            return None
+        k = 0
+        while True:
+            k = inner.find("\\multirow", k)
+            if k < 0: break
+            mg, mend = brace_groups(inner, k + len("\\multirow"))
+            if len(mg) >= 3:
+                rep = "\\multirow{%s}{%s}{%s}" % (mg[0], mg[1], re.sub(r"\\\\\s*", " ", mg[2]).strip())
+                inner = inner[:k] + rep + inner[mend:]; k += len(rep)
+            else: k += 1
+        inner = re.sub(r"\n\s*\n", "\n", inner)
     return f"\\begin{{table}}[htbp]\\centering\\small{capline}\n\\begin{{adjustbox}}{{max width=\\columnwidth}}\\begin{{tabular}}{{{spec_fixed}}}{inner}\\end{{tabular}}\\end{{adjustbox}}\\end{{table}}"
-tex = re.sub(r"\\begin\{longtable\}\[\]\{(.*?)\}\n(.*?)\\end\{longtable\}", fix_table, tex, flags=re.S)
+class _M:
+    def __init__(self, a, b): self._g = (None, a, b)
+    def group(self, i): return self._g[i]
+def _fix_all_tables(t):
+    out, pos = [], 0
+    while True:
+        i = t.find("\\begin{longtable}", pos)
+        if i < 0: break
+        groups, end = brace_groups(t, i + len("\\begin{longtable}"))
+        j = t.find("\\end{longtable}", end)
+        spec = re.sub(r"\s+", " ", groups[0]).strip()
+        inner = t[end:j]
+        # normalise multicolumn specs (nested braces) to simple alignment so later regexes stay simple
+        k = 0
+        while True:
+            k = inner.find("\\multicolumn", k)
+            if k < 0: break
+            mg, mend = brace_groups(inner, k + len("\\multicolumn"))
+            if len(mg) >= 3:
+                al = "c" if "centering" in mg[1] else "r" if "raggedleft" in mg[1] else "l"
+                rep = "\\multicolumn{%s}{%s}{%s}" % (mg[0], al, mg[2])
+                inner = inner[:k] + rep + inner[mend:]; k += len(rep)
+            else: k += 1
+        out.append(t[pos:i]); out.append(fix_table(_M(spec, inner))); pos = j + len("\\end{longtable}")
+    out.append(t[pos:]); return "".join(out)
+tex = _fix_all_tables(tex)
 tex = tex.replace("\\real{", "\\real{")
 # references
 if structured:

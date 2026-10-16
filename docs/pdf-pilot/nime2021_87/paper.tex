@@ -134,28 +134,18 @@ We also conducted a listening test recruiting 14 participants who enjoy listenin
 Reconstruction error of transition analysis methods.
 
 \begin{table}[htbp]\centering\small
-\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
-
-\toprule\noalign{}
-
-
-\bottomrule\noalign{}
-
-\multirow{2}{=}{Method} & \multicolumn{4}{>{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.8000} + 6\tabcolsep}@{}}{%
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{lllll}
+\toprule
+\midrule
+\multirow{2}{*}{Method} & \multicolumn{4}{l}{%
 RMSE (dB)} \\
 & All & Low & Mid & High \\
 Linear crossfading (baseline) & 7.687 & 8.928 & 7.497 & 7.629 \\
 Single-band analysis~\cite{c17} & 7.428 & 8.191 & 7.278 & 7.426 \\
-\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
-Sub-band analysis\\
-+sub-band scaling\strut
-\end{minipage}} & 7.333 & 7.953 & 7.042 & 7.563 \\
+\multirow{2}{*}{Sub-band analysis +sub-band scaling} & 7.333 & 7.953 & 7.042 & 7.563 \\
 & \textbf{6.895} & \textbf{7.904} & \textbf{6.798} & \textbf{6.741} \\
 The best of the three methods & 6.714 & 7.810 & 6.533 & 6.675 \\
+\bottomrule
 \end{tabular}\end{adjustbox}\end{table}
 
 Table~1 shows the results of the reconstruction error measured by RMSE in dB. The single-band analysis improves the baseline method, showing that the optimizing gains of crossfader better reconstruct the original mix. The three-band analysis outperforms the single-band analysis. With the sub-band scaling, the improvement is more significant. We observed that high-band gains are not analyzed correctly without the sub-band scaling because the high-band spectrograms have relatively lower energy and thus they do not contribute to the loss of convex optimization. We also report the best of the three methods, which achieves lower reconstruction errors than the sub-analysis method. This result indicates that the best gain estimate depends on the type of DJ mixing control as discussed in Subsection~3.4 (Explaining the Mixing Control of DJs).
@@ -173,14 +163,12 @@ Figure~2 shows the number of transitions where each of the methods has the lowes
 The listening test result: the number of votes for the most similar reconstruction to the original DJ mix in the transition regions.
 
 \begin{table}[htbp]\centering\small
-\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}lll@{}}
-\toprule\noalign{}
-
-
-\bottomrule\noalign{}
-
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{lll}
+\toprule
+\midrule
 Linear crossfading & Single-band & Sub-band (with scaling) \\
 13 (18.6\%) & 10 (14.3\%) & 47 (67.1\%) \\
+\bottomrule
 \end{tabular}\end{adjustbox}\end{table}
 
 The number of votes for the most similar reconstruction to the original DJ mix is summarized in Table~2 for each method. This result confirms that the sub-band transition analysis reconstructs the original mix best. The linear crossfading and single-band transition analysis methods have a similar number of votes. This indicates that the difference in the RMSE in Table~2 is not discernible between the two methods.

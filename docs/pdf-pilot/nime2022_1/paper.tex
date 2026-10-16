@@ -1,6 +1,6 @@
 \documentclass[sigconf]{nimeart}
 \usepackage{bm}
-\usepackage{array,calc,adjustbox}
+\usepackage{array,calc,adjustbox,multirow}
 \DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
 \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
 \DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
@@ -133,17 +133,15 @@ In part 2, the code also starts an LFO that affects the sensitivity of the Magpi
 The strength of the relation between the envelope played by the performer and the reference envelope, reference envelope and LFO envelope is assessed through Pearson's correlation tests in the two parts of the study.
 
 \begin{table}[htbp]\centering\small
-\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{@{}lll@{}}
-\toprule\noalign{}
-
-
-\bottomrule\noalign{}
-
-\multicolumn{3}{@{}l@{}}{%
+\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{lll}
+\toprule
+\midrule
+\multicolumn{3}{l}{%
 \textbf{Correlation Tests}} \\
 Part 1 Performance Envelope & and & Part 1 Reference Envelope \\
 Part 2 Performance Envelope & and & Part 2 Reference Envelope \\
 Part 2 Performance Envelope & and & Part 2 LFO Envelope \\
+\bottomrule
 \end{tabular}\end{adjustbox}\end{table}
 
 The Pearson's test determines the significance and the direction of the relation with an index that comprises between 1 and -1. 1 means that the variables evolve in the same direction, 0 means that they are independent (hence, they have no relation), and -1 means that the variables evolve in opposite directions.
