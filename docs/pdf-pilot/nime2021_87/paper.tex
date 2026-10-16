@@ -1,0 +1,210 @@
+\documentclass[sigconf]{nimeart}
+\usepackage{bm}
+\usepackage{array,calc}
+\DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}\DeclareUnicodeCharacter{00B1}{\ensuremath{\pm}}\DeclareUnicodeCharacter{2032}{\ensuremath{'}}\DeclareUnicodeCharacter{2A09}{\ensuremath{\times}}
+\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
+\DeclareUnicodeCharacter{2713}{\checkmark}\DeclareUnicodeCharacter{2717}{\ensuremath{\times}}\DeclareUnicodeCharacter{25B6}{\ensuremath{\blacktriangleright}}\DeclareUnicodeCharacter{2B06}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2B07}{\ensuremath{\downarrow}}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}\DeclareUnicodeCharacter{03B9}{\ensuremath{\iota}}\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}\DeclareUnicodeCharacter{03C6}{\ensuremath{\varphi}}\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}\DeclareUnicodeCharacter{2207}{\ensuremath{\nabla}}\DeclareUnicodeCharacter{221A}{\ensuremath{\surd}}\DeclareUnicodeCharacter{221D}{\ensuremath{\propto}}\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}\DeclareUnicodeCharacter{220F}{\ensuremath{\prod}}\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}\DeclareUnicodeCharacter{2229}{\ensuremath{\cap}}\DeclareUnicodeCharacter{222A}{\ensuremath{\cup}}\DeclareUnicodeCharacter{2282}{\ensuremath{\subset}}\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}\DeclareUnicodeCharacter{2261}{\ensuremath{\equiv}}\DeclareUnicodeCharacter{21D0}{\ensuremath{\Leftarrow}}\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}\DeclareUnicodeCharacter{21D4}{\ensuremath{\Leftrightarrow}}\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}\DeclareUnicodeCharacter{2026}{\ensuremath{\ldots}}\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}\DeclareUnicodeCharacter{2218}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2205}{\ensuremath{\emptyset}}\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}\DeclareUnicodeCharacter{00F7}{\ensuremath{\div}}\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}\DeclareUnicodeCharacter{2225}{\ensuremath{\parallel}}\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\DeclareUnicodeCharacter{2299}{\ensuremath{\odot}}\DeclareUnicodeCharacter{25CB}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2062}{}\DeclareUnicodeCharacter{2061}{}
+\AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
+\setcopyright{cc}\copyrightyear{2021}\acmYear{2021}\acmDOI{10.21428/92fbeb44.4b2fc7b9}
+\acmConference[NIME '21]{International Conference on New Interfaces for Musical Expression}{June 14--18, 2021}{Shanghai, China}
+\settopmatter{printacmref=false}\acmISBN{}
+\providecommand{\pandocbounded}[1]{#1}
+\begin{document}
+\title{Reverse-Engineering The Transition Regions of Real-World DJ Mixes using Sub-band Analysis with Convex Optimization}
+\author{Taejun Kim}
+\affiliation{\institution{Graduate School of Culture Technology, KAIST, South Korea,}\country{}}
+\author{Yi-Hsuan Yang}
+\affiliation{\institution{Research Center for IT Innovation, Academia Sincia, Taiwan}\country{}}
+\author{Juhan Nam}
+\affiliation{\institution{Graduate School of Culture Technology, KAIST, South Korea,}\country{}}
+\renewcommand{\shortauthors}{Kim et al.}
+\begin{abstract}
+The basic role of DJs is creating a seamless sequence of music tracks. In order to make the DJ mix a single continuous audio stream, DJs control various audio effects on a DJ mixer system particularly in the transition region between one track and the next track and modify the audio signals in terms of volume, timbre, tempo, and other musical elements. There have been research efforts to imitate the DJ mixing techniques but they are mainly rule-based approaches based on domain knowledge. In this paper, we propose a method to analyze the DJ mixer control from real-world DJ mixes toward a data-driven approach to imitate the DJ performance. Specifically, we estimate the mixing gain trajectories between the two tracks using sub-band analysis with constrained convex optimization. We evaluate the method by reconstructing the original tracks using the two source tracks and the gain estimate, and show that the proposed method outperforms the linear crossfading as a baseline and the single-band analysis. A listening test from the survey of 14 participants also confirms that our proposed method is superior among them. A web demo is available at \href{https://mir-aidj.github.io/transition-analysis/}{this link}.
+\end{abstract}
+\ccsdesc{Applied computing~Sound and music computing;•Information systems~Music retrieval;•Mathematics of computing~Convex optimization}
+
+\keywords{DJ mix, reverse-engineering, convex optimization, mixing, dance music}
+\maketitle
+\section{Introduction}\label{introduction}
+
+A DJ mix is a sequence of music tracks that are arranged to flow seamlessly by a Disc Jockey (DJ) mainly in the context of electronic dance music. The role of DJs includes not only selecting the tracks and deciding the play order as a music \emph{curator} but also making two consecutive tracks crossfade naturally or artistically as a \emph{performer}. To make seamless transition from one track to another, DJs use dedicated mixer systems that allow them to control the musical characteristics of each track.
+
+There have been significant research efforts to mimic DJs as a music curator, which is a task often called \emph{playlist generation}~\cite{c1,c2,c3,c4,c5}. Systems imitating DJs as a performer, namely \emph{automatic DJ}, has also drawn research interests~\cite{c6,c7,c8,c9,c10,c11}. While the playlist generation research has been studied mainly in a data-driven way using user listening history or curated playlists, most prior arts in automatic DJs have used rule-based methods that capitalize domain knowledge rather than data-driven methods that learn from information extracted from real-world DJ mixes. Some previous studies attempted to analyze DJ mixes for potential use in automatic DJ. However, they are limited to track-level information such as track identification~\cite{c12,c13,c14} or mix segmentation~\cite{c15,c16}. A few studies introduced methods to analyze DJ mixes but they used artificially generated datasets~\cite{c17,c18}.
+
+A recent study collected 1,557 real-world DJ mixes and 13,728 tracks played in the mixes, and conducted large-scale mix-to-track subsequence alignment to extract the musical actions from DJs~\cite{c19}. From the mix-to-track subsequence alignment, they estimated cue points that indicate the start and end positions of the tracks as a musical decision of professional DJs. Using the cue points, in turn, they located the transition region where two consecutive tracks crossfade. Through statistical analysis of the alignment, cue points and transition regions, they showed that 1) DJs tend not to change tempo/key of original tracks much, 2) DJs take care of musical structures when they make transitions, and 3) DJs select similar cue points. However, this study focused on musicological analysis using beat-level audio features and the statistical results are not directly applicable to automatic DJ.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/z57f4d97_21612012919350.png}\caption{A screenshot of web demo based on three-band analysis results. The top and bottom spectrograms are of original tracks, which are mixed by a DJ in the DJ mix shown as a spectrogram at the middle. The colored lines can explain how the DJ adjusted each sub-band gain of the previous/next track over time using a crossfader and three-band EQs. As the example audio is being played, the EQ knobs on the right side are changed according to the extracted EQ value at the current time position which is indicated by the vertical white line.}\end{figure}
+
+
+In this paper, we take a deep dive into the transition region in the DJ mix to extract DJ mixer control. DJs modify volume, timbre or even tempo on a DJ mixer system when they switch one track to another. The transition region is the period that DJs use their skills significantly to make the mix seamless and creative. In order to extract the actions from DJs, we reverse-engineer the transition region using sub-band analysis with constrained convex optimization. Figure~1 visualizes a result example of the sub-band analysis. The optimization is performed by minimizing the distance between DJ mixes and mixed tracks with sub-band gains. We evaluate the accuracy of the sub-band gain trajectories by reconstructing the original mix using the two source tracks and the estimated gain trajectories. For quantitative evaluation, we compute the reconstruction errors, comparing the proposed method to a linear crossfading and the previous approach based on a single band analysis. From the best method of each transition region, we also analyze how often DJs control the audio effect between crossfader and EQs. Furthermore, we recruit 14 participants and conducted a listening test for qualitative evaluation. The results show that our approach is superior in both objective and subjective tests.
+
+\section{Transition Analysis Methods}\label{transition-analysis-methods}
+
+In this section, we describe two transition analysis methods which extract temporal gain trajectories that explain how DJs control the DJ mixer system. First, we describe single-band analysis which assume DJs used a single crossfader, which is firstly proposed in~\cite{c17}. Then, we extend the method to sub-band analysis, which assumes DJs use three-band EQs along with the faders.
+
+\subsection{Single-band Analysis}\label{single-band-analysis}
+
+Let $\bm{S} \in \mathbb{R}^{T \times F}$ denote the power spectrogram of a transition region which has $T$ frames and $F$ frequency bins, and $\bm{g} \in \mathbb{R}^T$ denote a time-series vector for a track which contains the gain value at each time frame. $\bm{S}$ is normalized by the minimum and maximum levels so that it has a range of $[0, 1]$. Let $\bm{S}_{prev}${\hspace{0pt}}{{{}}} and $\bm{g}_{prev}${\hspace{0pt}}{{{}}} denote the power spectrogram and the gain vector of the previous track, and $\bm{S}_{next}${\hspace{0pt}}{{{}}} and $\bm{g}_{next}${\hspace{0pt}}{{{}}} denote those of the next track. Then, we define the power spectrogram of their mix $\bm{S}_{mix}${\hspace{0pt}}{{{}}} as follows:
+
+{}{{{\(\bm{S}_{mix} = \bm{S}_{prev} \odot \bm{g}_{prev} + \bm{S}_{next} \odot \bm{g}_{next}, \)}}}{(1)}
+
+where $\odot$ denotes the Hadamard product (or element-wise multiplication). The gain vectors $\bm{g}_{prev}${\hspace{0pt}}{{{}}} and $\bm{g}_{next}${\hspace{0pt}}{{{}}} are optimized so that $\bm{S}_{mix}${\hspace{0pt}}{{{}}} approximates the power spectrogram of the original DJ mix $\bm{S}_{dj}${\hspace{0pt}}{{{}}} through the following convex optimization that minimizes the mean squared error (MSE) between $\bm{S}_{mix}${\hspace{0pt}}{{{}}} and $\bm{S}_{dj}${\hspace{0pt}}{{{}}}
+
+{}{{{\(\begin{aligned}
+\underset{\bm{g}}{\text{minimize }} &\frac{1}{T \times F}(\bm{S}_{mix} - \bm{S}_{dj})^2, \\[10px]
+\end{aligned}\)}}}{(2)}
+
+{}{{{\(\begin{aligned}
+\text{subject to }
+& 0 \leq \bm{g} \leq 1,\\
+& \Delta \bm{g}_{prev} \leq 0, \Delta \bm{g}_{next} \geq 0,\\
+& \bm{g}_{prev} + \bm{g}_{next} = 1. \end{aligned}\)}}}{(3)}
+
+We assume that $\bm{S}_{prev}${\hspace{0pt}}{{{}}} and $\bm{S}_{next}${\hspace{0pt}}{{{}}} are aligned to $\bm{S}_{dj}${\hspace{0pt}}{{{}}} so that their beats are synchronous. The gain values are forced to have a range of $[0, 1]$ by the first line of Eq.~3, and the gain of the previous track $\bm{g}_{prev}${\hspace{0pt}}{{{}}} always decreases and the gain of the next track $\bm{g}_{next}${\hspace{0pt}}{{{}}} always increases in the second line of Eq.~3. The sum of gains are always one by the last line of Eq.~3 because we assume that DJs use constant power crossfaders.
+
+\subsection{Sub-band Analysis}\label{sub-band-analysis}
+
+The single-band analysis estimates the control of a single volume crossfader between two tracks. In practice, the most commonly used setting in DJ mixer systems is three-band EQs and one fader for each track. DJs control the EQs and fader considering the musical characteristics of each sub-band. In our sub-band analysis setup, we ignore the fader as a variable to estimate because it can be approximated by adjusting the three-band EQs simultaneously (also, adding the fader as a variable to the objective function makes the optimization problem non-convex). Therefore, the estimate results can be regarded as the lumped sub-band gains from the three-band EQs and faders.
+
+The definition of the mixed power spectrogram in sub-band analysis is similar to Eq.~1 but the power spectrograms are mixed in each sub-band and the gain vectors are also defined for each sub-band. Let $i$ denote the index of a sub-band, and $\bm{S}^i$ and $\bm{g}^i$ denote the power spectrogram and gain vector of the $i$-th sub-band. Then, the mixed power spectrogram for the $i$-th sub-band is defined as:
+
+{}{{{\(\bm{S}_{mix}^i = \bm{S}_{prev}^i \odot \bm{g}_{prev}^i + \bm{S}_{next}^i \odot \bm{g}_{next}^i.\)}}}{(4)}
+
+The convex optimization can be performed aggregating the MSE values over sub-bands as follows:
+
+{}{{{\(\begin{aligned}
+\underset{\bm{g}}{\text{minimize }} &\frac{1}{T \times F}\sum_i (\bm{S}_{mix}^i - \bm{S}_{dj}^i)^2, \\[5pt]
+\end{aligned}\)}}}{(5)}
+
+{}{{{\(\begin{aligned}
+\text{subject to }
+& 0 \leq \bm{g} \leq 1, \\
+& \Delta \bm{g}_{prev} \leq 0, \Delta \bm{g}_{next} \geq 0.\end{aligned}\)}}}{(6)}
+
+We observed that the lower frequency bins generally have more energy than the higher frequency bins and, as a result, the optimizer tend to focus on lower frequencies bins. To solve this problem, we normalized $\bm{S}$ for each sub-band spectrogram $\bm{S}^i$ so that each sub-band has a range of $[0, 1]$ using the following equation:
+
+{}{{{\(\bm{S}_{norm}^i =\frac{\bm{S}^i}{\max_{t,f}(\bm{S}_{dj}^i, \bm{S}_{prev}^i, \bm{S}_{next}^i)}.\)}}}{(7)}
+
+We call this normalization \emph{sub-band scaling}. The denominator is the maximum peak as a scalar value computed over time $t$ and frequency $f$ of the three power spectrograms so that their original relative energy differences are preserved.
+
+\section{Experiments}\label{experiments}
+
+\subsection{Dataset}\label{dataset}
+
+We used the DJ mix dataset that contains metadata collected from \emph{1001Tracklists}\footnote{\url{https://www.1001tracklists.com}} and audio files downloaded separately using links to media services~\cite{c19}. The number of transitions were 20,756 in the dataset but we filtered out the transitions where the previous and next tracks are not fully overlapping in the transition region. As a result, we used 3,930 transition regions. The filtered transitions are from 1,216 DJ mixes and include 5,105 unique tracks.
+
+\subsection{Implementation}\label{implementation}
+
+Before the transition analysis, we temporally aligned the tracks to the mixes using a subsequence dynamic time warping (DTW) following the previous study~\cite{c19} and then applied the waveform similarity and overlap add (WSOLA) to the tracks so that the tracks are time-scaled and synchronized to the mix on the same beats. We used Librosa~\cite{c20} for DTW and PyTSMod~\cite{c21} for WSOLA. We detected the transition regions from the result of the previous study~\cite{c19} and sliced the power spectrogram of the transition region with some margin to contain at least 140 beats.
+
+All audio tracks have a sampling rate of 44,100Hz and mel-spectrograms with 128 mel bins are used for the power spectrogram. We computed the spectrograms using Librosa~\cite{c20} with a hop size of 2,756 samples (16ms) and a window size of 5,512 samples (32ms). As a result, the gain vector have 16 elements (or frames) per second. Following a popular DJ mixer, we use three bands for sub-band analysis, of which low and high cut-off frequencies are 180Hz and 3000Hz, respectively. We used CVXPY~\cite{c22} for convex optimization. The \href{https://github.com/mir-aidj/transition-analysis}{source code}\footnote{\href{}{https://github.com/mir-aidj/transition-analysis}} and the \href{https://mir-aidj.github.io/transition-analysis}{web demo}\footnote{\href{}{https://mir-aidj.github.io/transition-analysis/}} in Figure 1 are available at the links.
+
+\subsection{Quantitative Evaluation}\label{quantitative-evaluation}
+
+To evaluate the performance of the transition analysis methods, we reconstructed the mixes using the analysis results and the original tracks, and compared the reconstructed mixes to the original DJ mixes using root mean square error (RMSE) between their log compressed spectrograms in decibel (dB) units. Also, the reconstruction error is computed for each sub-band. In case of the single-band analysis, the reconstructed mix signal is generated multiplying the optimized gain value to the track signals for each time frame. For the reconstruction of sub-band analysis results, we implemented three-band EQs using the 2nd order digital Butterworth filter and applied the EQs to the tracks using the optimized sub-band gain values at each time frame. We also evaluated the effect of the sub-band scaling method. As a baseline experiment, we also evaluate a method where two tracks linearly crossfade over time to have a constant power without any optimization. Note that the reconstruction is processed in the time domain using the original tracks and the three-band EQs but the evaluation is processed in the time-frequency domain to compute the RMSE of the spectrograms. We used the default parameters of Librosa to compute the spectrograms for evaluation.
+
+\subsection{Explaining the Mixing Control of DJs}\label{explaining-the-mixing-control-of-djs}
+
+In real-world DJ mixing, DJs may control only the crossfader, both the EQs and faders or their combinations. Thus, the best analysis method that minimizes the reconstruction error can be different at each transition region. In fact, the best analysis method may explain the DJs' control action. For example, if the single-band analysis has the lowest reconstruction error at a transition region, we can assume that the DJ made the transition using the crossfader only. On the other hand, if the sub-band analysis has the lowest reconstruction error at a transition region, we can assume that the DJ used the EQs as well. Therefore, we report the best of the three compared methods and also count the number of having the lowest reconstruction error.
+
+\subsection{Perceptual Evaluation}\label{perceptual-evaluation}
+
+We also conducted a listening test recruiting 14 participants who enjoy listening to music. For each trial, given a transition audio segment from a DJ mix, the participants were asked to listen and select the most similar reconstructed audio among three different methods. The three audio clips were reconstructed from the baseline method, single-band analysis and sub-band analysis. The order of three methods are changed for every trial, and the number of total trials were five for each subject and they were selected randomly excluding the mixes with DJ voices. All audio tracks had a length of 48 seconds.
+
+\section{Results}\label{results}
+
+\subsection{Reconstruction Error}\label{reconstruction-error}
+
+Reconstruction error of transition analysis methods.
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{@{}  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+
+\toprule\noalign{}
+
+
+\bottomrule\noalign{}
+
+\multirow{2}{=}{Method} & \multicolumn{4}{>{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.8000} + 6\tabcolsep}@{}}{%
+RMSE (dB)} \\
+& All & Low & Mid & High \\
+Linear crossfading (baseline) & 7.687 & 8.928 & 7.497 & 7.629 \\
+Single-band analysis~\cite{c17} & 7.428 & 8.191 & 7.278 & 7.426 \\
+\multirow{2}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+Sub-band analysis\\
++sub-band scaling\strut
+\end{minipage}} & 7.333 & 7.953 & 7.042 & 7.563 \\
+& \textbf{6.895} & \textbf{7.904} & \textbf{6.798} & \textbf{6.741} \\
+The best of the three methods & 6.714 & 7.810 & 6.533 & 6.675 \\
+\end{tabular}\end{table}
+
+Table~1 shows the results of the reconstruction error measured by RMSE in dB. The single-band analysis improves the baseline method, showing that the optimizing gains of crossfader better reconstruct the original mix. The three-band analysis outperforms the single-band analysis. With the sub-band scaling, the improvement is more significant. We observed that high-band gains are not analyzed correctly without the sub-band scaling because the high-band spectrograms have relatively lower energy and thus they do not contribute to the loss of convex optimization. We also report the best of the three methods, which achieves lower reconstruction errors than the sub-analysis method. This result indicates that the best gain estimate depends on the type of DJ mixing control as discussed in Subsection~3.4 (Explaining the Mixing Control of DJs).
+
+\subsection{Mixing Control Types}\label{mixing-control-types}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/4lddbh9q_01611999145420.png}\caption{The number of transitions where each of the methods has the lowest reconstruction error.}\end{figure}
+
+
+Figure~2 shows the number of transitions where each of the methods has the lowest reconstruction error. This indicates that DJs use the crossfader only in 28\% of cases and use EQs with faders in 72\%. We also checked the transitions where the linear crossfading has the lowest errors. We found that the transitions contain DJ voices or beat tracking was not correctly performed, which made the two optimization methods fail to estimate the gains.
+
+\subsection{Listening Test}\label{listening-test}
+
+The listening test result: the number of votes for the most similar reconstruction to the original DJ mix in the transition regions.
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{@{}lll@{}}
+\toprule\noalign{}
+
+
+\bottomrule\noalign{}
+
+Linear crossfading & Single-band & Sub-band (with scaling) \\
+13 (18.6\%) & 10 (14.3\%) & 47 (67.1\%) \\
+\end{tabular}\end{table}
+
+The number of votes for the most similar reconstruction to the original DJ mix is summarized in Table~2 for each method. This result confirms that the sub-band transition analysis reconstructs the original mix best. The linear crossfading and single-band transition analysis methods have a similar number of votes. This indicates that the difference in the RMSE in Table~2 is not discernible between the two methods.
+
+\section{Conclusions}\label{conclusions}
+
+We proposed a method to analyze the DJ mixer control from real-world DJ mixes. We estimated the mixing gain trajectories using sub-band analysis with constrained convex optimization. We evaluated the reverse-engineering method by reconstructing the original tracks and showed that the proposed method is superior in both quantitative and qualitative tests. In addition, by finding the best estimate among the compared methods, we predicted the mixing control type on the DJ mixer systems. As future work, we plan to use the estimated gain trajectory and mixing control type as training data to model automatic DJ.
+
+\section{Acknowledgments}\label{acknowledgments}
+
+This research was supported by Basic Science Research Program through the National Research Foundation of Korea (NRF-2019R1F1A1062908).
+
+\begin{thebibliography}{22}
+\bibitem{c1} {{ }}  Bonnin, G., \& Jannach, D. (2013). A comparison of playlist generation strategies for music recommendation and a new baseline scheme. In \emph{Proc. Workshops at the aaai conference on artificial intelligence}.{}
+\bibitem{c2} {{ }}  Bonnin, G., \& Jannach, D. (2015). Automated generation of music playlists: Survey and experiments. \emph{ACM Computing Surveys (CSUR)}, \emph{47}(2), 26.{}
+\bibitem{c3} {{ }}  Bittner, R. M., \& others. (2017). Automatic playlist sequencing and transitions. In \emph{Proc. International society for music information retrieval conference (ISMIR)} (pp. 442--448).{}
+\bibitem{c4} {{ }}  Flexer, A., Schnitzer, D., Gasser, M., \& Widmer, G. (2008). Playlist generation using start and end songs. In \emph{Proc. International society for music information retrieval conference (ISMIR)} (pp. 173--178).{}
+\bibitem{c5} {{ }}  Shih, S.-Y., \& Chi, H.-Y. (2018). Automatic, personalized, and flexible playlist generation using reinforcement learning. In \emph{Proc. International society for music information retrieval conference (ISMIR)} (pp. 168--174).{}
+\bibitem{c6} {{ }}  Lin, Y.-T., Lee, C.-L., Jang, J.-S., \& Wu, J.-L. (2014). Bridging music via sound effects. In \emph{2014 ieee international symposium on multimedia} (pp. 116--122). IEEE.{}
+\bibitem{c7} {{ }}  Schwarz, D., Schindler, D., \& Spadavecchia, S. (2018). A heuristic algorithm for DJ cue point estimation. In \emph{Proc. Sound and music computing (SMC) conference}.{}
+\bibitem{c8} {{ }}  Veire, L. V., \& De Bie, T. (2018). From raw audio to a seamless mix: Creating an automated DJ system for drum and bass. \emph{EURASIP Journal on Audio, Speech, and Music Processing}, \emph{2018}(1), 13.{}
+\bibitem{c9} {{ }}  Kim, A., Park, S., Park, J., Ha, J.-W., Kwon, T., \& Nam, J. (2017). Automatic DJ mix generation using highlight detection. In \emph{International society for music information retrieval conference (ISMIR), late-breaking paper}.{}
+\bibitem{c10} {{ }}  Huang, Y.-S., Chou, S.-Y., \& Yang, Y.-H. (2018). Generating music medleys via playing music puzzle games. In \emph{Proc. AAAI}.{}
+\bibitem{c11} {{ }}  Huang, Y.-S., Chou, S.-Y., \& Yang, Y.-H. (2017). DJnet: A dream for making an automatic DJ. In \emph{International society for music information retrieval conference (ISMIR), late-breaking paper}.{}
+\bibitem{c12} {{ }}  Sonnleitner, R., Arzt, A., \& Widmer, G. (2016). Landmark-based audio fingerprinting for DJ mix monitoring. In \emph{Proc. International society for music information retrieval conference (ISMIR)}.{}
+\bibitem{c13} {{ }}  Manzano, P. S. (2016). \emph{Audio fingerprinting techniques for sample identification in electronic music}. Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Erlangen, Germany.{}
+\bibitem{c14} {{ }}  Lopez Serrano Erickson, P. (2019). \emph{Analyzing sample-based electronic music using audio processing techniques}. Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Erlangen, Germany.{}
+\bibitem{c15} {{ }}  Glazyrin, N. (2014). Towards automatic content-based separation of DJ mixes into single tracks. In \emph{Proc. International society for music information retrieval conference (ISMIR)} (pp. 149--154).{}
+\bibitem{c16} {{ }}  Scarfe, T., Koolen, W., \& Kalnishkan, Y. (2014). Segmentation of electronic dance music. \emph{International Journal of Engineering Intelligent Systems for Electrical Engineering and Communications}, \emph{22}(3), 4.{}
+\bibitem{c17} {{ }}  Werthen-Brabants, L. (2018). \emph{Ground truth extraction \& transition analysis of DJ mixes}. Ghent University, Ghent, Belgium.{}
+\bibitem{c18} {{ }}  Schwarz, D., \& Fourer, D. (2019). Methods and datasets for DJ-mix reverse engineering. In \emph{Proc. International symp. On computer music multidisciplinary research (cmmr)} (pp. 426--437).{}
+\bibitem{c19} {{ }}  Kim, T., Choi, M., Sacks, E., Yang, Y.-H., \& Nam, J. (2020). A computational analysis of real-world dj mixes using mix-to-track subsequence alignment. In \emph{Proc. International society for music information retrieval conference (ISMIR)} (pp. 764--770).{}
+\bibitem{c20} {{ }}  McFee, B., Raffel, C., Liang, D., Ellis, D. P., McVicar, M., Battenberg, E., \& Nieto, O. (2015). Librosa: Audio and music signal analysis in python. In \emph{Proc. Python in science conference} (Vol. 8, pp. 18--25).{}
+\bibitem{c21} {{ }}  Yong, S., Choi, S., \& Nam, J. (2020). PyTSMod: A python implementation of time-scale modification algorithm. In \emph{International society for music information retrieval conference (ISMIR), late-breaking paper}.{}
+\bibitem{c22} {{ }}  Diamond, S., \& Boyd, S. (2016). CVXPY: A Python-embedded modeling language for convex optimization. \emph{Journal of Machine Learning Research}, \emph{17}(83), 1--5.{}
+\end{thebibliography}
+\end{document}
