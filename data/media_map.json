@@ -1,0 +1,5975 @@
+{
+ "https://assets.pubpub.org/031o9fgz/41648540554423.svg": {
+  "web": "031o9fgz/41648540554423.svg",
+  "bytes": 956356
+ },
+ "https://assets.pubpub.org/076fiqgy/51643861419973.mp4": {
+  "poster": "posters/076fiqgy/51643861419973.jpg",
+  "bytes": 27431,
+  "duration": "413.913021",
+  "source_file": "2022/in_proceedings/papers/nime2022_2/video1.mp4"
+ },
+ "https://assets.pubpub.org/01b7cy37/31617832959068.mp4": {
+  "poster": "posters/01b7cy37/31617832959068.jpg",
+  "bytes": 15718,
+  "duration": "361.173333",
+  "source_file": "2021/in_proceedings/installations/nime20201_installations_1/video1.mp4"
+ },
+ "https://assets.pubpub.org/018v4rth/01652241280110.mp4": {
+  "poster": "posters/018v4rth/01652241280110.jpg",
+  "bytes": 35448,
+  "duration": "905.080000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_8/video1.mp4"
+ },
+ "https://assets.pubpub.org/00rp5f98/21649836023438.jpg": {
+  "web": "00rp5f98/21649836023438.jpg",
+  "bytes": 68579
+ },
+ "https://assets.pubpub.org/045t7zkz/11647899738898.jpg": {
+  "web": "045t7zkz/11647899738898.jpg",
+  "bytes": 155430
+ },
+ "https://assets.pubpub.org/099p78qt/11649077390395.png": {
+  "web": "099p78qt/11649077390395.png",
+  "bytes": 34824
+ },
+ "https://assets.pubpub.org/06izs1ym/31612053941880.png": {
+  "web": "06izs1ym/31612053941880.jpg",
+  "bytes": 93823
+ },
+ "https://assets.pubpub.org/01siirpm/51623730433035.png": {
+  "web": "01siirpm/51623730433035.jpg",
+  "bytes": 101028
+ },
+ "https://assets.pubpub.org/0azlxegi/71613701258192.jpg": {
+  "web": "0azlxegi/71613701258192.jpg",
+  "bytes": 175631
+ },
+ "https://assets.pubpub.org/059337jq/71643658818972.jpeg": {
+  "web": "059337jq/71643658818972.jpg",
+  "bytes": 26000
+ },
+ "https://assets.pubpub.org/0cpf3tlz/71642459064065.jpg": {
+  "web": "0cpf3tlz/71642459064065.jpg",
+  "bytes": 138434
+ },
+ "https://assets.pubpub.org/0ge7k9mp/21617790453415.svg": {
+  "web": "0ge7k9mp/21617790453415.svg",
+  "bytes": 233757
+ },
+ "https://assets.pubpub.org/033pwr10/11643339159743.png": {
+  "web": "033pwr10/11643339159743.jpg",
+  "bytes": 86389
+ },
+ "https://assets.pubpub.org/0d47my77/01611255907128.png": {
+  "web": "0d47my77/01611255907128.jpg",
+  "bytes": 75541
+ },
+ "https://assets.pubpub.org/0j6rzm1e/11643558057758.mp4": {
+  "poster": "posters/0j6rzm1e/11643558057758.jpg",
+  "bytes": 32565,
+  "duration": "13.780433",
+  "source_file": "2022/in_proceedings/papers/nime2022_22/video2.mp4"
+ },
+ "https://assets.pubpub.org/0j7akbsl/11642798772896.JPG": {
+  "web": "0j7akbsl/11642798772896.jpg",
+  "bytes": 62952
+ },
+ "https://assets.pubpub.org/0gzkvj1h/41612119810172.svg": {
+  "web": "0gzkvj1h/41612119810172.svg",
+  "bytes": 59043
+ },
+ "https://assets.pubpub.org/0kg5ez4h/31617981851344.JPG": {
+  "web": "0kg5ez4h/31617981851344.jpg",
+  "bytes": 176236
+ },
+ "https://assets.pubpub.org/0cn0oykc/51612140553240.jpg": {
+  "web": "0cn0oykc/51612140553240.jpg",
+  "bytes": 186304
+ },
+ "https://assets.pubpub.org/0g7jxd87/01618011128865.png": {
+  "web": "0g7jxd87/01618011128865.jpg",
+  "bytes": 182605
+ },
+ "https://assets.pubpub.org/0oqr5vwk/61648631508507.mp4": {
+  "poster": "posters/0oqr5vwk/61648631508507.jpg",
+  "bytes": 55472,
+  "duration": "19.728042",
+  "source_file": "2022/other/demo/18/video1.mp4"
+ },
+ "https://assets.pubpub.org/0nf82uox/11611499590899.png": {
+  "web": "0nf82uox/11611499590899.png",
+  "bytes": 19964
+ },
+ "https://assets.pubpub.org/0mj5eigk/11611351341337.jpg": {
+  "web": "0mj5eigk/11611351341337.jpg",
+  "bytes": 56375
+ },
+ "https://assets.pubpub.org/0dnr9fby/01633219772187.png": {
+  "web": "0dnr9fby/01633219772187.png",
+  "bytes": 160579
+ },
+ "https://assets.pubpub.org/0ny21am4/21642849571842.png": {
+  "web": "0ny21am4/21642849571842.png",
+  "bytes": 24786
+ },
+ "https://assets.pubpub.org/0ow5p4q0/01612040288046.png": {
+  "web": "0ow5p4q0/01612040288046.png",
+  "bytes": 29937
+ },
+ "https://assets.pubpub.org/0tr5k9yf/31642886199885.mp4": {
+  "poster": "posters/0tr5k9yf/31642886199885.jpg",
+  "bytes": 78799,
+  "duration": "92.437000",
+  "source_file": "2022/in_proceedings/papers/nime2022_24/video6.mp4"
+ },
+ "https://assets.pubpub.org/0age3esi/31643656532413.png": {
+  "web": "0age3esi/31643656532413.png",
+  "bytes": 355516
+ },
+ "https://assets.pubpub.org/0xyykmr6/41642724882726.mp4": {
+  "poster": "posters/0xyykmr6/41642724882726.jpg",
+  "bytes": 51126,
+  "duration": "408.120000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_13/video1.mp4"
+ },
+ "https://assets.pubpub.org/0s1pt5yq/31617884186503.svg": {
+  "web": "0s1pt5yq/31617884186503.svg",
+  "bytes": 296211
+ },
+ "https://assets.pubpub.org/0qi8wlh6/71617604691798.PNG": {
+  "web": "0qi8wlh6/71617604691798.jpg",
+  "bytes": 39138
+ },
+ "https://assets.pubpub.org/0ydbwpf2/21617605347942.mp4": {
+  "poster": "posters/0ydbwpf2/21617605347942.jpg",
+  "bytes": 43175,
+  "duration": "111.780862",
+  "source_file": "2021/other/work-in-progress_showcase/34/video2.mp4"
+ },
+ "https://assets.pubpub.org/0phq1gv2/31619217287302.png": {
+  "web": "0phq1gv2/31619217287302.jpg",
+  "bytes": 47566
+ },
+ "https://assets.pubpub.org/0yob6mc2/21649966179797.png": {
+  "web": "0yob6mc2/21649966179797.png",
+  "bytes": 23244
+ },
+ "https://assets.pubpub.org/0xwmu5aq/31642844751343.jpg": {
+  "web": "0xwmu5aq/31642844751343.jpg",
+  "bytes": 375266
+ },
+ "https://assets.pubpub.org/10xs9f5m/41643593037693.png": {
+  "web": "10xs9f5m/41643593037693.png",
+  "bytes": 34786
+ },
+ "https://assets.pubpub.org/15fyibdj/51613758634063.jpeg": {
+  "web": "15fyibdj/51613758634063.jpg",
+  "bytes": 48646
+ },
+ "https://assets.pubpub.org/0nf2nwtc/51612053143434.png": {
+  "web": "0nf2nwtc/51612053143434.png",
+  "bytes": 99657
+ },
+ "https://assets.pubpub.org/0tdv2ll4/41617842565320.jpg": {
+  "web": "0tdv2ll4/41617842565320.jpg",
+  "bytes": 172964
+ },
+ "https://assets.pubpub.org/14nv9l4z/51611054557261.png": {
+  "web": "14nv9l4z/51611054557261.jpg",
+  "bytes": 50551
+ },
+ "https://assets.pubpub.org/13s34txu/11617842992061.jpg": {
+  "web": "13s34txu/11617842992061.jpg",
+  "bytes": 159458
+ },
+ "https://assets.pubpub.org/0tosm97g/31618657066940.png": {
+  "web": "0tosm97g/31618657066940.jpg",
+  "bytes": 232682
+ },
+ "https://assets.pubpub.org/16a94hii/21649966400086.png": {
+  "web": "16a94hii/21649966400086.png",
+  "bytes": 59014
+ },
+ "https://assets.pubpub.org/17wq5gn9/71650741231926.jpg": {
+  "web": "17wq5gn9/71650741231926.jpg",
+  "bytes": 9775
+ },
+ "https://assets.pubpub.org/1afeixgm/61650155505604.mp4": {
+  "poster": "posters/1afeixgm/61650155505604.jpg",
+  "bytes": 43715,
+  "duration": "47.850667",
+  "source_file": "2022/in_proceedings/papers/nime2022_24/video1.mp4"
+ },
+ "https://assets.pubpub.org/1b0ah9ey/31643312419559.svg": {
+  "web": "1b0ah9ey/31643312419559.svg",
+  "bytes": 535393
+ },
+ "https://assets.pubpub.org/19dvhdo1/21643862655555.jpg": {
+  "web": "19dvhdo1/21643862655555.jpg",
+  "bytes": 325006
+ },
+ "https://assets.pubpub.org/03zicqke/21618078741656.png": {
+  "web": "03zicqke/21618078741656.jpg",
+  "bytes": 69667
+ },
+ "https://assets.pubpub.org/1ar3ondl/01612044157824.png": {
+  "web": "1ar3ondl/01612044157824.png",
+  "bytes": 34988
+ },
+ "https://assets.pubpub.org/1b9vxr3e/21642218397250.mp4": {
+  "poster": "posters/1b9vxr3e/21642218397250.jpg",
+  "bytes": 76713,
+  "duration": "430.346583",
+  "source_file": "2022/in_proceedings/music/nime2022_music_2/video1.mp4"
+ },
+ "https://assets.pubpub.org/15ve0q4d/41618103099833.png": {
+  "web": "15ve0q4d/41618103099833.png",
+  "bytes": 112506
+ },
+ "https://assets.pubpub.org/1it5rlwb/01641102998545.jpg": {
+  "web": "1it5rlwb/01641102998545.jpg",
+  "bytes": 69715
+ },
+ "https://assets.pubpub.org/1cfvk5zs/31610996200810.png": {
+  "web": "1cfvk5zs/31610996200810.png",
+  "bytes": 111523
+ },
+ "https://assets.pubpub.org/1lvl17li/71618073360210.png": {
+  "web": "1lvl17li/71618073360210.png",
+  "bytes": 33684
+ },
+ "https://assets.pubpub.org/1o6z715s/71642207781451.jpg": {
+  "web": "1o6z715s/71642207781451.jpg",
+  "bytes": 108664
+ },
+ "https://assets.pubpub.org/09dvzpay/31643281621366.png": {
+  "web": "09dvzpay/31643281621366.jpg",
+  "bytes": 129698
+ },
+ "https://assets.pubpub.org/1aidyv9s/51648582462687.png": {
+  "web": "1aidyv9s/51648582462687.jpg",
+  "bytes": 131371
+ },
+ "https://assets.pubpub.org/1q0s6g8p/31617883992986.svg": {
+  "web": "1q0s6g8p/31617883992986.svg",
+  "bytes": 60115
+ },
+ "https://assets.pubpub.org/1oyncocp/51611314349251.jpg": {
+  "web": "1oyncocp/51611314349251.jpg",
+  "bytes": 64611
+ },
+ "https://assets.pubpub.org/1o7vmosz/31611591069635.jpg": {
+  "web": "1o7vmosz/31611591069635.jpg",
+  "bytes": 47015
+ },
+ "https://assets.pubpub.org/1hgpp4xw/11610997639034.png": {
+  "web": "1hgpp4xw/11610997639034.png",
+  "bytes": 71581
+ },
+ "https://assets.pubpub.org/1te0fkzu/71648862145927.mp4": {
+  "poster": "posters/1te0fkzu/71648862145927.jpg",
+  "bytes": 28475,
+  "duration": "726.668481",
+  "source_file": "2022/other/demo/5/video1.mp4"
+ },
+ "https://assets.pubpub.org/1rq5cc98/01611854951204.svg": {
+  "web": "1rq5cc98/01611854951204.svg",
+  "bytes": 118865
+ },
+ "https://assets.pubpub.org/1txyzonq/31643630730737.svg": {
+  "web": "1txyzonq/31643630730737.svg",
+  "bytes": 66632
+ },
+ "https://assets.pubpub.org/1q0nnshh/11642656640920.jpg": {
+  "web": "1q0nnshh/11642656640920.jpg",
+  "bytes": 123956
+ },
+ "https://assets.pubpub.org/1v7nxbwf/51610824088727.jpg": {
+  "web": "1v7nxbwf/51610824088727.jpg",
+  "bytes": 49611
+ },
+ "https://assets.pubpub.org/1uatrwm6/71643682265058.jpg": {
+  "web": "1uatrwm6/71643682265058.jpg",
+  "bytes": 49905
+ },
+ "https://assets.pubpub.org/1vd3hx30/41649980648289.png": {
+  "web": "1vd3hx30/41649980648289.png",
+  "bytes": 80748
+ },
+ "https://assets.pubpub.org/1cv68n06/41650151348407.png": {
+  "web": "1cv68n06/41650151348407.png",
+  "bytes": 42523
+ },
+ "https://assets.pubpub.org/1x5k53pk/31612957142395.JPG": {
+  "web": "1x5k53pk/31612957142395.jpg",
+  "bytes": 150212
+ },
+ "https://assets.pubpub.org/15n6n7ph/01613691648667.png": {
+  "web": "15n6n7ph/01613691648667.png",
+  "bytes": 2165592
+ },
+ "https://assets.pubpub.org/1vqsgi6h/41617787333569.jpg": {
+  "web": "1vqsgi6h/41617787333569.jpg",
+  "bytes": 103748
+ },
+ "https://assets.pubpub.org/1y3vragw/41612957063960.JPG": {
+  "web": "1y3vragw/41612957063960.jpg",
+  "bytes": 162828
+ },
+ "https://assets.pubpub.org/1xdxigfg/71617918674254.jpg": {
+  "web": "1xdxigfg/71617918674254.jpg",
+  "bytes": 94982
+ },
+ "https://assets.pubpub.org/1vs2nd2m/01612221063168.png": {
+  "web": "1vs2nd2m/01612221063168.png",
+  "bytes": 19010
+ },
+ "https://assets.pubpub.org/235seap3/61616631963232.png": {
+  "web": "235seap3/61616631963232.png",
+  "bytes": 33647
+ },
+ "https://assets.pubpub.org/1vosphvf/21643038278365.png": {
+  "web": "1vosphvf/21643038278365.jpg",
+  "bytes": 82635
+ },
+ "https://assets.pubpub.org/23gjbhu1/01643592294742.png": {
+  "web": "23gjbhu1/01643592294742.png",
+  "bytes": 13993
+ },
+ "https://assets.pubpub.org/263zeakg/01613625539364.mp4": {
+  "poster": "posters/263zeakg/01613625539364.jpg",
+  "bytes": 58921,
+  "duration": "163.008000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_14/video1.mp4"
+ },
+ "https://assets.pubpub.org/23u1id66/11617709448708.jpg": {
+  "web": "23u1id66/11617709448708.jpg",
+  "bytes": 97515
+ },
+ "https://assets.pubpub.org/1fm2yj3p/11649769861148.png": {
+  "web": "1fm2yj3p/11649769861148.jpg",
+  "bytes": 306971
+ },
+ "https://assets.pubpub.org/285sp3z9/61612010391636.png": {
+  "web": "285sp3z9/61612010391636.png",
+  "bytes": 17598
+ },
+ "https://assets.pubpub.org/2a2tudx8/51643575623980.PNG": {
+  "web": "2a2tudx8/51643575623980.png",
+  "bytes": 14188
+ },
+ "https://assets.pubpub.org/29lzpmtk/21610471662929.png": {
+  "web": "29lzpmtk/21610471662929.jpg",
+  "bytes": 97804
+ },
+ "https://assets.pubpub.org/28vg1kwg/71612877621428.jpg": {
+  "web": "28vg1kwg/71612877621428.jpg",
+  "bytes": 115342
+ },
+ "https://assets.pubpub.org/2bw1veau/41616505152415.mp4": {
+  "poster": "posters/2bw1veau/41616505152415.jpg",
+  "bytes": 28894,
+  "duration": "135.760000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_80/video1.mp4"
+ },
+ "https://assets.pubpub.org/2a3g9qb8/01612053057867.jpg": {
+  "web": "2a3g9qb8/01612053057867.jpg",
+  "bytes": 99345
+ },
+ "https://assets.pubpub.org/28wq7f86/31642633991828.png": {
+  "web": "28wq7f86/31642633991828.png",
+  "bytes": 509105
+ },
+ "https://assets.pubpub.org/2dwnte8c/11642905632432.JPG": {
+  "web": "2dwnte8c/11642905632432.jpg",
+  "bytes": 398913
+ },
+ "https://assets.pubpub.org/1q4yo6wi/41618071589869.png": {
+  "web": "1q4yo6wi/41618071589869.jpg",
+  "bytes": 158091
+ },
+ "https://assets.pubpub.org/2ek4w7cd/11618107074706.mp4": {
+  "poster": "posters/2ek4w7cd/11618107074706.jpg",
+  "bytes": 35219,
+  "duration": "95.616000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_49/video1.mp4"
+ },
+ "https://assets.pubpub.org/2eff7v7e/61643630474204.mp4": {
+  "poster": "posters/2eff7v7e/61643630474204.jpg",
+  "bytes": 25030,
+  "duration": "54.218594",
+  "source_file": "2022/in_proceedings/papers/nime2022_4/video1.mp4"
+ },
+ "https://assets.pubpub.org/2f6cth1q/41617995317532.mp4": {
+  "poster": "posters/2f6cth1q/41617995317532.jpg",
+  "bytes": 8381,
+  "duration": "360.426733",
+  "source_file": "2021/other/work-in-progress_showcase/35/video1.mp4"
+ },
+ "https://assets.pubpub.org/2czo76ml/11617246492029.jpg": {
+  "web": "2czo76ml/11617246492029.jpg",
+  "bytes": 115574
+ },
+ "https://assets.pubpub.org/15p4oe8s/01617814636314.png": {
+  "web": "15p4oe8s/01617814636314.jpg",
+  "bytes": 196111
+ },
+ "https://assets.pubpub.org/2c4uxpbi/61650064205401.png": {
+  "web": "2c4uxpbi/61650064205401.jpg",
+  "bytes": 57269
+ },
+ "https://assets.pubpub.org/2idpn56f/41643712443396.png": {
+  "web": "2idpn56f/41643712443396.jpg",
+  "bytes": 91321
+ },
+ "https://assets.pubpub.org/2l8uc4sg/31617887256012.svg": {
+  "web": "2l8uc4sg/31617887256012.svg",
+  "bytes": 63920
+ },
+ "https://assets.pubpub.org/2icwk0l5/11611941822588.png": {
+  "web": "2icwk0l5/11611941822588.jpg",
+  "bytes": 98111
+ },
+ "https://assets.pubpub.org/2lheryoi/51642426472819.mp4": {
+  "poster": "posters/2lheryoi/51642426472819.jpg",
+  "bytes": 5621,
+  "duration": "569.502268",
+  "source_file": "2022/in_proceedings/music/nime2022_music_6/video1.mp4"
+ },
+ "https://assets.pubpub.org/2jw0cytk/11612000090144.png": {
+  "web": "2jw0cytk/11612000090144.png",
+  "bytes": 32641
+ },
+ "https://assets.pubpub.org/2lyold3h/71613700028380.mp4": {
+  "poster": "posters/2lyold3h/71613700028380.jpg",
+  "bytes": 131925,
+  "duration": "43.933333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_35/video1.mp4"
+ },
+ "https://assets.pubpub.org/23pmes00/31643695450121.png": {
+  "web": "23pmes00/31643695450121.png",
+  "bytes": 1846907
+ },
+ "https://assets.pubpub.org/2ihhdgoa/01611700856082.jpg": {
+  "web": "2ihhdgoa/01611700856082.jpg",
+  "bytes": 115342
+ },
+ "https://assets.pubpub.org/2ol6zy9p/71642774274438.jpg": {
+  "web": "2ol6zy9p/71642774274438.jpg",
+  "bytes": 415924
+ },
+ "https://assets.pubpub.org/2msv71cd/61610475001030.png": {
+  "web": "2msv71cd/61610475001030.png",
+  "bytes": 39866
+ },
+ "https://assets.pubpub.org/2l6bmuwc/31642749881110.png": {
+  "web": "2l6bmuwc/31642749881110.png",
+  "bytes": 263619
+ },
+ "https://assets.pubpub.org/2pxak7dk/71649682327416.mp4": {
+  "poster": "posters/2pxak7dk/71649682327416.jpg",
+  "bytes": 15225,
+  "duration": "160.085000",
+  "source_file": "2022/in_proceedings/papers/nime2022_35/figure2.mp4"
+ },
+ "https://assets.pubpub.org/2idz2nr6/71643658860113.jpeg": {
+  "web": "2idz2nr6/71643658860113.jpg",
+  "bytes": 18403
+ },
+ "https://assets.pubpub.org/2op6qdli/21648946558094.gif": {
+  "web": "2op6qdli/21648946558094.gif",
+  "bytes": 10053
+ },
+ "https://assets.pubpub.org/1x5q3bz0/01617864084964.png": {
+  "web": "1x5q3bz0/01617864084964.jpg",
+  "bytes": 428816
+ },
+ "https://assets.pubpub.org/2svguvkf/61612121199441.png": {
+  "web": "2svguvkf/61612121199441.png",
+  "bytes": 80173
+ },
+ "https://assets.pubpub.org/2tdhcdg0/01612044159943.png": {
+  "web": "2tdhcdg0/01612044159943.jpg",
+  "bytes": 92649
+ },
+ "https://assets.pubpub.org/2uoq3l8y/61642960833371.svg": {
+  "web": "2uoq3l8y/61642960833371.svg",
+  "bytes": 99609
+ },
+ "https://assets.pubpub.org/2y78aqwv/31618049066771.mp4": {
+  "poster": "posters/2y78aqwv/31618049066771.jpg",
+  "bytes": 44902,
+  "duration": "494.500000",
+  "source_file": "2021/other/work-in-progress_showcase/1/video1.mp4"
+ },
+ "https://assets.pubpub.org/2yhedihi/51617803992573.svg": {
+  "web": "2yhedihi/51617803992573.svg",
+  "bytes": 652312
+ },
+ "https://assets.pubpub.org/2pda1o56/51633217854803.png": {
+  "web": "2pda1o56/51633217854803.jpg",
+  "bytes": 144962
+ },
+ "https://assets.pubpub.org/2tcd4lzi/71643587221469.png": {
+  "web": "2tcd4lzi/71643587221469.jpg",
+  "bytes": 85209
+ },
+ "https://assets.pubpub.org/31u33lhp/21610721090664.jpg": {
+  "web": "31u33lhp/21610721090664.jpg",
+  "bytes": 206820
+ },
+ "https://assets.pubpub.org/34pv3yp3/41618103480463.mp4": {
+  "poster": "posters/34pv3yp3/41618103480463.jpg",
+  "bytes": 75558,
+  "duration": "145.895750",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_58/video3.mp4"
+ },
+ "https://assets.pubpub.org/2xtivu8j/01612106998015.png": {
+  "web": "2xtivu8j/01612106998015.jpg",
+  "bytes": 27490
+ },
+ "https://assets.pubpub.org/2yzvhr5v/71612086654330.png": {
+  "web": "2yzvhr5v/71612086654330.jpg",
+  "bytes": 31294
+ },
+ "https://assets.pubpub.org/2uolyjzl/51650011016273.jpg": {
+  "web": "2uolyjzl/51650011016273.jpg",
+  "bytes": 76266
+ },
+ "https://assets.pubpub.org/34dat77d/41633217806772.png": {
+  "web": "34dat77d/41633217806772.jpg",
+  "bytes": 159645
+ },
+ "https://assets.pubpub.org/37gv4sbu/41620041715457.mp4": {
+  "poster": "posters/37gv4sbu/41620041715457.jpg",
+  "bytes": 74071,
+  "duration": "198.233333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_26/video1.mp4"
+ },
+ "https://assets.pubpub.org/34u8dnce/21643034571819.png": {
+  "web": "34u8dnce/21643034571819.jpg",
+  "bytes": 143816
+ },
+ "https://assets.pubpub.org/3auv7ys6/71612930787731.png": {
+  "web": "3auv7ys6/71612930787731.png",
+  "bytes": 6616
+ },
+ "https://assets.pubpub.org/386t71ob/61618084854206.jpg": {
+  "web": "386t71ob/61618084854206.jpg",
+  "bytes": 206446
+ },
+ "https://assets.pubpub.org/3cgm99pw/51643655601730.mp4": {
+  "poster": "posters/3cgm99pw/51643655601730.jpg",
+  "bytes": 120913,
+  "duration": "84.381315",
+  "source_file": "2022/in_proceedings/papers/nime2022_4/video2.mp4"
+ },
+ "https://assets.pubpub.org/3dy67rcr/51643716566421.mp4": {
+  "poster": "posters/3dy67rcr/51643716566421.jpg",
+  "bytes": 28464,
+  "duration": "8.608604",
+  "source_file": "2022/other/demo/15/pubpub_assets/3dy67rcr/51643716566421.mp4"
+ },
+ "https://assets.pubpub.org/1w8anlut/41642633609528.png": {
+  "web": "1w8anlut/41642633609528.jpg",
+  "bytes": 157316
+ },
+ "https://assets.pubpub.org/3bf238je/41613794488623.jpg": {
+  "web": "3bf238je/41613794488623.jpg",
+  "bytes": 208785
+ },
+ "https://assets.pubpub.org/0yxvbn5s/21648747996695.png": {
+  "web": "0yxvbn5s/21648747996695.png",
+  "bytes": 1739249
+ },
+ "https://assets.pubpub.org/3d6gevxt/71650740950591.jpg": {
+  "web": "3d6gevxt/71650740950591.jpg",
+  "bytes": 47163
+ },
+ "https://assets.pubpub.org/3749djoh/71612086209934.png": {
+  "web": "3749djoh/71612086209934.png",
+  "bytes": 988766
+ },
+ "https://assets.pubpub.org/3341l77e/61613761950723.png": {
+  "web": "3341l77e/61613761950723.jpg",
+  "bytes": 264312
+ },
+ "https://assets.pubpub.org/3fd1ywio/11618098640945.mp4": {
+  "poster": "posters/3fd1ywio/11618098640945.jpg",
+  "bytes": 26240,
+  "duration": "121.287833",
+  "source_file": "2021/in_proceedings/installations/nime20201_installations_6/video1.mp4"
+ },
+ "https://assets.pubpub.org/3fic5tey/71648826292981.mp4": {
+  "poster": "posters/3fic5tey/71648826292981.jpg",
+  "bytes": 83359,
+  "duration": "321.045333",
+  "source_file": "2022/other/demo/12/71648826292981.mp4"
+ },
+ "https://assets.pubpub.org/3iq6vd0n/61618021153322.mp4": {
+  "poster": "posters/3iq6vd0n/61618021153322.jpg",
+  "bytes": 47174,
+  "duration": "69.583333",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_11/video3.mp4"
+ },
+ "https://assets.pubpub.org/36rdlmfr/11611460693116.png": {
+  "web": "36rdlmfr/11611460693116.jpg",
+  "bytes": 115099
+ },
+ "https://assets.pubpub.org/3lwdm3y6/01618118757181.mp4": {
+  "poster": "posters/3lwdm3y6/01618118757181.jpg",
+  "bytes": 41455,
+  "duration": "182.485313",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_41/video1.mp4"
+ },
+ "https://assets.pubpub.org/3ihq8pb5/01648632340828.png": {
+  "web": "3ihq8pb5/01648632340828.jpg",
+  "bytes": 56082
+ },
+ "https://assets.pubpub.org/3mk9farx/61617979572442.png": {
+  "web": "3mk9farx/61617979572442.png",
+  "bytes": 356969
+ },
+ "https://assets.pubpub.org/3f339idj/51642794662119.png": {
+  "web": "3f339idj/51642794662119.png",
+  "bytes": 295144
+ },
+ "https://assets.pubpub.org/3oezfd6c/31618088107496.svg": {
+  "web": "3oezfd6c/31618088107496.svg",
+  "bytes": 66267
+ },
+ "https://assets.pubpub.org/3o2c6pb3/41618078993822.png": {
+  "web": "3o2c6pb3/41618078993822.jpg",
+  "bytes": 168227
+ },
+ "https://assets.pubpub.org/3py6afr9/11617658060915.mp4": {
+  "poster": "posters/3py6afr9/11617658060915.jpg",
+  "bytes": 16004,
+  "duration": "59.440000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_7/video1.mp4"
+ },
+ "https://assets.pubpub.org/3pq6mssj/21611149533835.png": {
+  "web": "3pq6mssj/21611149533835.jpg",
+  "bytes": 11065
+ },
+ "https://assets.pubpub.org/3gc4omzx/01648748317540.png": {
+  "web": "3gc4omzx/01648748317540.jpg",
+  "bytes": 59387
+ },
+ "https://assets.pubpub.org/2xzh99ls/41642724819198.png": {
+  "web": "2xzh99ls/41642724819198.jpg",
+  "bytes": 103048
+ },
+ "https://assets.pubpub.org/3vps1wwv/31652407237031.mp4": {
+  "poster": "posters/3vps1wwv/31652407237031.jpg",
+  "bytes": 72063,
+  "duration": "414.714300",
+  "source_file": "2022/in_proceedings/music/nime2022_music_19/video1.mp4",
+  "note": "matched by item (CDN size unknown)"
+ },
+ "https://assets.pubpub.org/3nc4l10u/21643576959866.jpg": {
+  "web": "3nc4l10u/21643576959866.jpg",
+  "bytes": 234837
+ },
+ "https://assets.pubpub.org/3t9uku54/31642792878676.png": {
+  "web": "3t9uku54/31642792878676.png",
+  "bytes": 1703
+ },
+ "https://assets.pubpub.org/3giddkxw/01618079467852.jpg": {
+  "web": "3giddkxw/01618079467852.jpg",
+  "bytes": 164258
+ },
+ "https://assets.pubpub.org/3kyuykmg/11643654802258.png": {
+  "web": "3kyuykmg/11643654802258.png",
+  "bytes": 701365
+ },
+ "https://assets.pubpub.org/3pmydal4/51642924114777.png": {
+  "web": "3pmydal4/51642924114777.png",
+  "bytes": 56163
+ },
+ "https://assets.pubpub.org/3vmgk9fu/41642835372804.png": {
+  "web": "3vmgk9fu/41642835372804.jpg",
+  "bytes": 75117
+ },
+ "https://assets.pubpub.org/3sm52t4p/71613331272724.png": {
+  "web": "3sm52t4p/71613331272724.jpg",
+  "bytes": 126601
+ },
+ "https://assets.pubpub.org/40jnrk4j/11643747302804.JPG": {
+  "web": "40jnrk4j/11643747302804.jpg",
+  "bytes": 312841
+ },
+ "https://assets.pubpub.org/3xtzpvcm/11611149720851.png": {
+  "web": "3xtzpvcm/11611149720851.jpg",
+  "bytes": 33394
+ },
+ "https://assets.pubpub.org/3ytptitw/61611334331012.jpg": {
+  "web": "3ytptitw/61611334331012.jpg",
+  "bytes": 144336
+ },
+ "https://assets.pubpub.org/3xk772u5/61612052129072.png": {
+  "web": "3xk772u5/61612052129072.jpg",
+  "bytes": 78481
+ },
+ "https://assets.pubpub.org/41lieya2/71612053925031.png": {
+  "web": "41lieya2/71612053925031.jpg",
+  "bytes": 84424
+ },
+ "https://assets.pubpub.org/12my8x6k/71617786978777.png": {
+  "web": "12my8x6k/71617786978777.jpg",
+  "bytes": 131718
+ },
+ "https://assets.pubpub.org/3oicot7c/51612173653554.png": {
+  "web": "3oicot7c/51612173653554.jpg",
+  "bytes": 141988
+ },
+ "https://assets.pubpub.org/41ra3g3u/71643509807427.jpg": {
+  "web": "41ra3g3u/71643509807427.jpg",
+  "bytes": 43770
+ },
+ "https://assets.pubpub.org/3y5rja8t/61643863177407.jpeg": {
+  "web": "3y5rja8t/61643863177407.jpg",
+  "bytes": 147534
+ },
+ "https://assets.pubpub.org/4575rafj/31617922344125.mp4": {
+  "poster": "posters/4575rafj/31617922344125.jpg",
+  "bytes": 14729,
+  "duration": "362.005333",
+  "source_file": "2021/in_proceedings/installations/nime20201_installations_2/video1.mp4"
+ },
+ "https://assets.pubpub.org/4448j18v/41643321373018.jpg": {
+  "web": "4448j18v/41643321373018.jpg",
+  "bytes": 69420
+ },
+ "https://assets.pubpub.org/48m6sxlr/11616837880695.jpeg": {
+  "web": "48m6sxlr/11616837880695.jpg",
+  "bytes": 56570
+ },
+ "https://assets.pubpub.org/44qc6sit/21643238955891.mp4": {
+  "poster": "posters/44qc6sit/21643238955891.jpg",
+  "bytes": 131578,
+  "duration": "154.983333",
+  "source_file": "2022/in_proceedings/music/nime2022_music_26/pubpub_assets/44qc6sit/21643238955891.mp4"
+ },
+ "https://assets.pubpub.org/3yxz5p6z/21649966487632.png": {
+  "web": "3yxz5p6z/21649966487632.png",
+  "bytes": 153301
+ },
+ "https://assets.pubpub.org/08g8h17d/51618138257343.png": {
+  "web": "08g8h17d/51618138257343.jpg",
+  "bytes": 92599
+ },
+ "https://assets.pubpub.org/4bjcd1b2/61622630311216.jpg": {
+  "web": "4bjcd1b2/61622630311216.jpg",
+  "bytes": 83564
+ },
+ "https://assets.pubpub.org/473s4iyc/41618112151268.jpg": {
+  "web": "473s4iyc/41618112151268.jpg",
+  "bytes": 50147
+ },
+ "https://assets.pubpub.org/499hi4d0/21617028246917.png": {
+  "web": "499hi4d0/21617028246917.png",
+  "bytes": 60912
+ },
+ "https://assets.pubpub.org/3pvrg774/41612087526403.png": {
+  "web": "3pvrg774/41612087526403.png",
+  "bytes": 1552425
+ },
+ "https://assets.pubpub.org/4fdplu2w/51612105567840.JPG": {
+  "web": "4fdplu2w/51612105567840.jpg",
+  "bytes": 265069
+ },
+ "https://assets.pubpub.org/4d597ie8/11643674745613.svg": {
+  "web": "4d597ie8/11643674745613.svg",
+  "bytes": 296050
+ },
+ "https://assets.pubpub.org/4kthozi9/11649999086999.jpg": {
+  "web": "4kthozi9/11649999086999.jpg",
+  "bytes": 9088
+ },
+ "https://assets.pubpub.org/4h1oo2hx/21618103000123.mp4": {
+  "poster": "posters/4h1oo2hx/21618103000123.jpg",
+  "bytes": 40112,
+  "duration": "138.138000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_57/video1.mp4"
+ },
+ "https://assets.pubpub.org/4f0ohdqv/31611499652413.png": {
+  "web": "4f0ohdqv/31611499652413.png",
+  "bytes": 17109
+ },
+ "https://assets.pubpub.org/4kzs8dvw/21612117063833.svg": {
+  "web": "4kzs8dvw/21612117063833.svg",
+  "bytes": 513853
+ },
+ "https://assets.pubpub.org/41sf24tx/41611984818183.jpg": {
+  "web": "41sf24tx/41611984818183.jpg",
+  "bytes": 589169
+ },
+ "https://assets.pubpub.org/4du7l55y/51613762057886.jpg": {
+  "web": "4du7l55y/51613762057886.jpg",
+  "bytes": 416814
+ },
+ "https://assets.pubpub.org/4pod2joo/61650028476095.jpg": {
+  "web": "4pod2joo/61650028476095.jpg",
+  "bytes": 30757
+ },
+ "https://assets.pubpub.org/4pyrekfc/41613808283567.mp4": {
+  "poster": "posters/4pyrekfc/41613808283567.jpg",
+  "bytes": 97482,
+  "duration": "3896.200000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_21/video1.mp4"
+ },
+ "https://assets.pubpub.org/4owwkfjp/01622630653773.svg": {
+  "web": "4owwkfjp/01622630653773.svg",
+  "bytes": 1472170
+ },
+ "https://assets.pubpub.org/4lddbh9q/01611999145420.png": {
+  "web": "4lddbh9q/01611999145420.jpg",
+  "bytes": 56012
+ },
+ "https://assets.pubpub.org/4pvq06mk/11610166420883.jpg": {
+  "web": "4pvq06mk/11610166420883.jpg",
+  "bytes": 48453
+ },
+ "https://assets.pubpub.org/4tgrcdql/51617830747835.mp4": {
+  "poster": "posters/4tgrcdql/51617830747835.jpg",
+  "bytes": 94736,
+  "duration": "155.855708",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_38/video1.mp4"
+ },
+ "https://assets.pubpub.org/4mnd00az/01643699699850.jpg": {
+  "web": "4mnd00az/01643699699850.jpg",
+  "bytes": 227717
+ },
+ "https://assets.pubpub.org/42b0lya6/71614202359021.png": {
+  "web": "42b0lya6/71614202359021.png",
+  "bytes": 593189
+ },
+ "https://assets.pubpub.org/4sw0b084/61611334348742.jpg": {
+  "web": "4sw0b084/61611334348742.jpg",
+  "bytes": 159530
+ },
+ "https://assets.pubpub.org/44fphvmt/51612870496339.jpg": {
+  "web": "44fphvmt/51612870496339.jpg",
+  "bytes": 50420
+ },
+ "https://assets.pubpub.org/4r58944u/21618045012030.png": {
+  "web": "4r58944u/21618045012030.jpg",
+  "bytes": 19375
+ },
+ "https://assets.pubpub.org/4xov63fg/71643575623935.PNG": {
+  "web": "4xov63fg/71643575623935.png",
+  "bytes": 12846
+ },
+ "https://assets.pubpub.org/4vaz7y7f/31611695497129.JPG": {
+  "web": "4vaz7y7f/31611695497129.jpg",
+  "bytes": 117881
+ },
+ "https://assets.pubpub.org/4qmxr8mf/61643432410649.jpeg": {
+  "web": "4qmxr8mf/61643432410649.jpg",
+  "bytes": 199773
+ },
+ "https://assets.pubpub.org/4z3ge4py/31642761070216.mp4": {
+  "poster": "posters/4z3ge4py/31642761070216.jpg",
+  "bytes": 54695,
+  "duration": "342.003787",
+  "source_file": "2022/in_proceedings/music/nime2022_music_15/video1.mp4"
+ },
+ "https://assets.pubpub.org/50muj4w1/51642819086584.mp4": {
+  "poster": "posters/50muj4w1/51642819086584.jpg",
+  "bytes": 107810,
+  "duration": "52.480000",
+  "source_file": "2022/in_proceedings/papers/nime2022_20/video2.mp4"
+ },
+ "https://assets.pubpub.org/4y00pmso/71618014984975.jpg": {
+  "web": "4y00pmso/71618014984975.jpg",
+  "bytes": 75313
+ },
+ "https://assets.pubpub.org/53t240sg/71611685814421.svg": {
+  "web": "53t240sg/71611685814421.svg",
+  "bytes": 373854
+ },
+ "https://assets.pubpub.org/4ew0wl4f/41642207941813.jpg": {
+  "web": "4ew0wl4f/41642207941813.jpg",
+  "bytes": 160255
+ },
+ "https://assets.pubpub.org/53rwmlpz/71618107380962.mp4": {
+  "poster": "posters/53rwmlpz/71618107380962.jpg",
+  "bytes": 70923,
+  "duration": "21.333333",
+  "source_file": "2021/other/work-in-progress_showcase/11/video2.mp4"
+ },
+ "https://assets.pubpub.org/4skejg9b/01617719389251.png": {
+  "web": "4skejg9b/01617719389251.jpg",
+  "bytes": 35192
+ },
+ "https://assets.pubpub.org/5994iz61/11642758895962.mp4": {
+  "poster": "posters/5994iz61/11642758895962.jpg",
+  "bytes": 12537,
+  "duration": "21.600000",
+  "source_file": "2022/in_proceedings/papers/nime2022_18/video2.mp4"
+ },
+ "https://assets.pubpub.org/57tahtr5/01612139898647.jpg": {
+  "web": "57tahtr5/01612139898647.jpg",
+  "bytes": 74178
+ },
+ "https://assets.pubpub.org/59rdroxi/31654739160466.mp4": {
+  "poster": "posters/59rdroxi/31654739160466.jpg",
+  "bytes": 82195,
+  "duration": "174.133991",
+  "source_file": "2022/other/workshops/6/video2.mp4"
+ },
+ "https://assets.pubpub.org/57ic6f7j/11611198173698.jpg": {
+  "web": "57ic6f7j/11611198173698.jpg",
+  "bytes": 311316
+ },
+ "https://assets.pubpub.org/52oxvt0c/11648582653725.png": {
+  "web": "52oxvt0c/11648582653725.jpg",
+  "bytes": 88814
+ },
+ "https://assets.pubpub.org/4ri51luh/31611701855858.png": {
+  "web": "4ri51luh/31611701855858.jpg",
+  "bytes": 103510
+ },
+ "https://assets.pubpub.org/55mt04fu/51618071589866.png": {
+  "web": "55mt04fu/51618071589866.jpg",
+  "bytes": 40823
+ },
+ "https://assets.pubpub.org/5do5bsng/41617901813561.svg": {
+  "web": "5do5bsng/41617901813561.svg",
+  "bytes": 46694
+ },
+ "https://assets.pubpub.org/5crwvorz/71611754181441.jpg": {
+  "web": "5crwvorz/71611754181441.jpg",
+  "bytes": 110469
+ },
+ "https://assets.pubpub.org/5dl3i4xd/71642426261529.jpg": {
+  "web": "5dl3i4xd/71642426261529.jpg",
+  "bytes": 296112
+ },
+ "https://assets.pubpub.org/5es6emtm/71617605118646.mp4": {
+  "poster": "posters/5es6emtm/71617605118646.jpg",
+  "bytes": 58151,
+  "duration": "298.910476",
+  "source_file": "2021/other/work-in-progress_showcase/34/video1.mp4"
+ },
+ "https://assets.pubpub.org/5f2z6cs8/71650740644253.jpg": {
+  "web": "5f2z6cs8/71650740644253.jpg",
+  "bytes": 22427
+ },
+ "https://assets.pubpub.org/5e6ur0sb/31611992310836.jpg": {
+  "web": "5e6ur0sb/31611992310836.jpg",
+  "bytes": 251574
+ },
+ "https://assets.pubpub.org/5fbjnesv/61642457083752.svg": {
+  "web": "5fbjnesv/61642457083752.svg",
+  "bytes": 480585
+ },
+ "https://assets.pubpub.org/5iqluvl6/71617922183239.jpg": {
+  "web": "5iqluvl6/71617922183239.jpg",
+  "bytes": 82827
+ },
+ "https://assets.pubpub.org/5npt8whr/21617899855338.svg": {
+  "web": "5npt8whr/21617899855338.svg",
+  "bytes": 249809
+ },
+ "https://assets.pubpub.org/5hwy9i58/51641781605154.jpg": {
+  "web": "5hwy9i58/51641781605154.jpg",
+  "bytes": 193330
+ },
+ "https://assets.pubpub.org/59762vts/51648824588107.png": {
+  "web": "59762vts/51648824588107.png",
+  "bytes": 408862
+ },
+ "https://assets.pubpub.org/5q49qpwh/11616836712151.mp4": {
+  "poster": "posters/5q49qpwh/11616836712151.jpg",
+  "bytes": 151674,
+  "duration": "76.600000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_25/video5.mp4"
+ },
+ "https://assets.pubpub.org/5j785234/11613698562116.jpg": {
+  "web": "5j785234/11613698562116.jpg",
+  "bytes": 277009
+ },
+ "https://assets.pubpub.org/5n7ol5dn/61610474465432.png": {
+  "web": "5n7ol5dn/61610474465432.png",
+  "bytes": 106204
+ },
+ "https://assets.pubpub.org/5pl41ktg/71642462777197.jpg": {
+  "web": "5pl41ktg/71642462777197.jpg",
+  "bytes": 318803
+ },
+ "https://assets.pubpub.org/5hi0wl8k/31653556137916.png": {
+  "web": "5hi0wl8k/31653556137916.jpg",
+  "bytes": 79238
+ },
+ "https://assets.pubpub.org/4troltfp/51649970108733.png": {
+  "web": "4troltfp/51649970108733.jpg",
+  "bytes": 265598
+ },
+ "https://assets.pubpub.org/5rzzrhhj/11613656440121.mp4": {
+  "poster": "posters/5rzzrhhj/11613656440121.jpg",
+  "bytes": 25975,
+  "duration": "105.600000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_34/video1.mp4"
+ },
+ "https://assets.pubpub.org/5w5sicnj/01612013662567.svg": {
+  "web": "5w5sicnj/01612013662567.svg",
+  "bytes": 185813
+ },
+ "https://assets.pubpub.org/5vy2o3uj/61618021575037.jpg": {
+  "web": "5vy2o3uj/61618021575037.jpg",
+  "bytes": 180043
+ },
+ "https://assets.pubpub.org/5t22r907/01611984438261.jpg": {
+  "web": "5t22r907/01611984438261.jpg",
+  "bytes": 214398
+ },
+ "https://assets.pubpub.org/5pkebsjw/51642789692057.png": {
+  "web": "5pkebsjw/51642789692057.png",
+  "bytes": 26094
+ },
+ "https://assets.pubpub.org/5ura7chb/71612121188492.png": {
+  "web": "5ura7chb/71612121188492.jpg",
+  "bytes": 73691
+ },
+ "https://assets.pubpub.org/5v672uyc/41650017815538.png": {
+  "web": "5v672uyc/41650017815538.jpg",
+  "bytes": 40366
+ },
+ "https://assets.pubpub.org/5zzwblt7/11618081555076.mp4": {
+  "poster": "posters/5zzwblt7/11618081555076.jpg",
+  "bytes": 17624,
+  "duration": "83.359000",
+  "source_file": "2021/in_proceedings/installations/nime20201_installations_8/video1.mp4"
+ },
+ "https://assets.pubpub.org/5yto5crp/71643057232154.jpg": {
+  "web": "5yto5crp/71643057232154.jpg",
+  "bytes": 63695
+ },
+ "https://assets.pubpub.org/5yr3uft1/01642796058349.png": {
+  "web": "5yr3uft1/01642796058349.png",
+  "bytes": 6501
+ },
+ "https://assets.pubpub.org/612e2e4l/31618502056105.png": {
+  "web": "612e2e4l/31618502056105.png",
+  "bytes": 21673
+ },
+ "https://assets.pubpub.org/66y5yj5e/01642655920187.mp4": {
+  "poster": "posters/66y5yj5e/01642655920187.jpg",
+  "bytes": 33169,
+  "duration": "339.882000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_11/video1.mp4"
+ },
+ "https://assets.pubpub.org/5s5lzbj0/61617648411486.jpg": {
+  "web": "5s5lzbj0/61617648411486.jpg",
+  "bytes": 288984
+ },
+ "https://assets.pubpub.org/62yb96tp/01642105758148.png": {
+  "web": "62yb96tp/01642105758148.jpg",
+  "bytes": 143282
+ },
+ "https://assets.pubpub.org/6535ilpy/61617714225163.png": {
+  "web": "6535ilpy/61617714225163.png",
+  "bytes": 20453
+ },
+ "https://assets.pubpub.org/60497njs/41643346247462.png": {
+  "web": "60497njs/41643346247462.jpg",
+  "bytes": 54074
+ },
+ "https://assets.pubpub.org/642ct5yf/41617854226541.png": {
+  "web": "642ct5yf/41617854226541.png",
+  "bytes": 277798
+ },
+ "https://assets.pubpub.org/6cs3f08t/31617704089915.mp4": {
+  "poster": "posters/6cs3f08t/31617704089915.jpg",
+  "bytes": 36146,
+  "duration": "333.000000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_88/video1.mp4"
+ },
+ "https://assets.pubpub.org/61j9fnek/71643658791844.jpg": {
+  "web": "61j9fnek/71643658791844.jpg",
+  "bytes": 16417
+ },
+ "https://assets.pubpub.org/6dyxbk7j/41617704043040.webm": {
+  "poster": "posters/6dyxbk7j/41617704043040.jpg",
+  "bytes": 47123,
+  "duration": "142.223000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_55/video1.webm"
+ },
+ "https://assets.pubpub.org/67wfe7d6/51643711886063.png": {
+  "web": "67wfe7d6/51643711886063.png",
+  "bytes": 65175
+ },
+ "https://assets.pubpub.org/64j23t2h/61611673649743.jpg": {
+  "web": "64j23t2h/61611673649743.jpg",
+  "bytes": 268927
+ },
+ "https://assets.pubpub.org/2h8wg9uo/11618137972768.png": {
+  "web": "2h8wg9uo/11618137972768.jpg",
+  "bytes": 92599
+ },
+ "https://assets.pubpub.org/6d64g58x/41642795599225.png": {
+  "web": "6d64g58x/41642795599225.png",
+  "bytes": 25521
+ },
+ "https://assets.pubpub.org/6ggweh93/21612256077221.svg": {
+  "web": "6ggweh93/21612256077221.svg",
+  "bytes": 4420751
+ },
+ "https://assets.pubpub.org/6imw1wcb/11617979782566.mp4": {
+  "poster": "posters/6imw1wcb/11617979782566.jpg",
+  "bytes": 18603,
+  "duration": "108.200000",
+  "source_file": "2021/other/work-in-progress_showcase/16/video1.mp4"
+ },
+ "https://assets.pubpub.org/6fsouaam/31612121199047.png": {
+  "web": "6fsouaam/31612121199047.png",
+  "bytes": 51832
+ },
+ "https://assets.pubpub.org/6dmjcx0g/41613762263353.jpg": {
+  "web": "6dmjcx0g/41613762263353.jpg",
+  "bytes": 43905
+ },
+ "https://assets.pubpub.org/6ktc80os/61643566617533.PNG": {
+  "web": "6ktc80os/61643566617533.jpg",
+  "bytes": 45962
+ },
+ "https://assets.pubpub.org/6hs7flc8/01642426302549.jpg": {
+  "web": "6hs7flc8/01642426302549.jpg",
+  "bytes": 369929
+ },
+ "https://assets.pubpub.org/5yabnsdw/51616515410970.png": {
+  "web": "5yabnsdw/51616515410970.png",
+  "bytes": 96482
+ },
+ "https://assets.pubpub.org/6gy9cdjd/31648748352920.png": {
+  "web": "6gy9cdjd/31648748352920.jpg",
+  "bytes": 120717
+ },
+ "https://assets.pubpub.org/6n6kyvpx/51617984218305.svg": {
+  "web": "6n6kyvpx/51617984218305.svg",
+  "bytes": 35928
+ },
+ "https://assets.pubpub.org/6oaeakci/21612218264763.svg": {
+  "web": "6oaeakci/21612218264763.svg",
+  "bytes": 45370
+ },
+ "https://assets.pubpub.org/6iwyjc8a/21617797284961.png": {
+  "web": "6iwyjc8a/21617797284961.png",
+  "bytes": 72818
+ },
+ "https://assets.pubpub.org/6ovfl4s0/11643222961589.svg": {
+  "web": "6ovfl4s0/11643222961589.svg",
+  "bytes": 22341
+ },
+ "https://assets.pubpub.org/6i4fjtx7/71618065906801.png": {
+  "web": "6i4fjtx7/71618065906801.png",
+  "bytes": 18315
+ },
+ "https://assets.pubpub.org/6calk7do/51617864218981.png": {
+  "web": "6calk7do/51617864218981.jpg",
+  "bytes": 111577
+ },
+ "https://assets.pubpub.org/6pd4cavx/51612007413535.svg": {
+  "web": "6pd4cavx/51612007413535.svg",
+  "bytes": 403895
+ },
+ "https://assets.pubpub.org/6qx0pfnn/41650023715934.mp4": {
+  "poster": "posters/6qx0pfnn/41650023715934.jpg",
+  "bytes": 109868,
+  "duration": "19.413000",
+  "source_file": "2022/in_proceedings/papers/nime2022_42/video2.mp4"
+ },
+ "https://assets.pubpub.org/6oqnqazp/51619217287307.png": {
+  "web": "6oqnqazp/51619217287307.jpg",
+  "bytes": 27419
+ },
+ "https://assets.pubpub.org/6uhpj6as/71649977865815.mp4": {
+  "poster": "posters/6uhpj6as/71649977865815.jpg",
+  "bytes": 18035,
+  "duration": "480.533333",
+  "source_file": "2022/in_proceedings/papers/nime2022_17/video4.mp4"
+ },
+ "https://assets.pubpub.org/6qqzlxur/11617787403394.mp4": {
+  "poster": "posters/6qqzlxur/11617787403394.jpg",
+  "bytes": 24043,
+  "duration": "84.717967",
+  "source_file": "2021/other/work-in-progress_showcase/12/video1.mp4"
+ },
+ "https://assets.pubpub.org/6qbxn7xp/21618283642031.jpeg": {
+  "web": "6qbxn7xp/21618283642031.jpg",
+  "bytes": 73924
+ },
+ "https://assets.pubpub.org/6xv32ym1/41650042743494.jpg": {
+  "web": "6xv32ym1/41650042743494.jpg",
+  "bytes": 115755
+ },
+ "https://assets.pubpub.org/6qyut98h/31612930535622.png": {
+  "web": "6qyut98h/31612930535622.png",
+  "bytes": 111786
+ },
+ "https://assets.pubpub.org/6v9ka7br/41618071589870.png": {
+  "web": "6v9ka7br/41618071589870.jpg",
+  "bytes": 130006
+ },
+ "https://assets.pubpub.org/6y6oq906/41611322514703.svg": {
+  "web": "6y6oq906/41611322514703.svg",
+  "bytes": 167825
+ },
+ "https://assets.pubpub.org/6q70sbso/31610754905694.png": {
+  "web": "6q70sbso/31610754905694.jpg",
+  "bytes": 68949
+ },
+ "https://assets.pubpub.org/51bsyzjy/11612066489122.png": {
+  "web": "51bsyzjy/11612066489122.png",
+  "bytes": 1274475
+ },
+ "https://assets.pubpub.org/6yjsh1kl/71642689431744.png": {
+  "web": "6yjsh1kl/71642689431744.png",
+  "bytes": 11964
+ },
+ "https://assets.pubpub.org/4ta77v0x/21618137737379.png": {
+  "web": "4ta77v0x/21618137737379.jpg",
+  "bytes": 339304
+ },
+ "https://assets.pubpub.org/722mijkk/11618283728362.mp4": {
+  "poster": "posters/722mijkk/11618283728362.jpg",
+  "bytes": 5621,
+  "duration": "60.994271",
+  "source_file": "2021/in_proceedings/installations/nime20201_installations_12/video1.mp4"
+ },
+ "https://assets.pubpub.org/71y03wxb/01617658128390.mp4": {
+  "poster": "posters/71y03wxb/01617658128390.jpg",
+  "bytes": 16232,
+  "duration": "57.080000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_7/video2.mp4"
+ },
+ "https://assets.pubpub.org/74ng08ek/51617985361473.mp4": {
+  "poster": "posters/74ng08ek/51617985361473.jpg",
+  "bytes": 63753,
+  "duration": "1653.200000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_66/video1.mp4"
+ },
+ "https://assets.pubpub.org/6xp5zr4y/11642426350802.jpeg": {
+  "web": "6xp5zr4y/11642426350802.jpg",
+  "bytes": 447395
+ },
+ "https://assets.pubpub.org/6yh8yw9e/71607607689662.png": {
+  "web": "6yh8yw9e/71607607689662.jpg",
+  "bytes": 53123
+ },
+ "https://assets.pubpub.org/6jj258i6/01648736242165.jpg": {
+  "web": "6jj258i6/01648736242165.jpg",
+  "bytes": 75244
+ },
+ "https://assets.pubpub.org/78sz631p/51618041324574.mp4": {
+  "poster": "posters/78sz631p/51618041324574.jpg",
+  "bytes": 45715,
+  "duration": "357.056708",
+  "source_file": "2021/other/work-in-progress_showcase/24/video4.mp4"
+ },
+ "https://assets.pubpub.org/70ky7oxo/21613762090601.jpg": {
+  "web": "70ky7oxo/21613762090601.jpg",
+  "bytes": 503087
+ },
+ "https://assets.pubpub.org/6e1c9w45/61643697701306.png": {
+  "web": "6e1c9w45/61643697701306.jpg",
+  "bytes": 197549
+ },
+ "https://assets.pubpub.org/79hu474n/01650414700084.mp4": {
+  "poster": "posters/79hu474n/01650414700084.jpg",
+  "bytes": 80845,
+  "duration": "176.720000",
+  "source_file": "2022/in_proceedings/papers/nime2022_46/figure3.mp4"
+ },
+ "https://assets.pubpub.org/77zvk9k2/11617922183253.png": {
+  "web": "77zvk9k2/11617922183253.png",
+  "bytes": 16573
+ },
+ "https://assets.pubpub.org/79w4n2to/71611847176079.jpg": {
+  "web": "79w4n2to/71611847176079.jpg",
+  "bytes": 34898
+ },
+ "https://assets.pubpub.org/7c2wua48/51617981834790.JPG": {
+  "web": "7c2wua48/51617981834790.jpg",
+  "bytes": 156949
+ },
+ "https://assets.pubpub.org/715d7cc8/31611344287326.jpg": {
+  "web": "715d7cc8/31611344287326.jpg",
+  "bytes": 25554
+ },
+ "https://assets.pubpub.org/7dhccmpf/51609853459529.png": {
+  "web": "7dhccmpf/51609853459529.png",
+  "bytes": 9635
+ },
+ "https://assets.pubpub.org/7a6124tv/31643338276131.png": {
+  "web": "7a6124tv/31643338276131.jpg",
+  "bytes": 96670
+ },
+ "https://assets.pubpub.org/6t6828dd/21617976208811.PNG": {
+  "web": "6t6828dd/21617976208811.jpg",
+  "bytes": 39555
+ },
+ "https://assets.pubpub.org/7hglxchc/51617790437431.svg": {
+  "web": "7hglxchc/51617790437431.svg",
+  "bytes": 248834
+ },
+ "https://assets.pubpub.org/7dliaijy/71643629729516.png": {
+  "web": "7dliaijy/71643629729516.jpg",
+  "bytes": 40852
+ },
+ "https://assets.pubpub.org/7ffyjnd3/61610358142911.jpg": {
+  "web": "7ffyjnd3/61610358142911.jpg",
+  "bytes": 136219
+ },
+ "https://assets.pubpub.org/7fwbw4wb/01649421923267.png": {
+  "web": "7fwbw4wb/01649421923267.png",
+  "bytes": 15197
+ },
+ "https://assets.pubpub.org/6pv0l73a/11612099931056.png": {
+  "web": "6pv0l73a/11612099931056.jpg",
+  "bytes": 174727
+ },
+ "https://assets.pubpub.org/7jesmkkz/61643032900799.jpg": {
+  "web": "7jesmkkz/61643032900799.jpg",
+  "bytes": 71967
+ },
+ "https://assets.pubpub.org/7g56gadm/41610666183642.png": {
+  "web": "7g56gadm/41610666183642.jpg",
+  "bytes": 46292
+ },
+ "https://assets.pubpub.org/6z8lhj0p/01648828283523.jpg": {
+  "web": "6z8lhj0p/01648828283523.jpg",
+  "bytes": 234920
+ },
+ "https://assets.pubpub.org/7k3jf4zr/21617912891601.png": {
+  "web": "7k3jf4zr/21617912891601.png",
+  "bytes": 11737
+ },
+ "https://assets.pubpub.org/7ntg7jpm/51639158934420.JPG": {
+  "web": "7ntg7jpm/51639158934420.jpg",
+  "bytes": 161503
+ },
+ "https://assets.pubpub.org/7m0ht5vo/21643575623955.png": {
+  "web": "7m0ht5vo/21643575623955.png",
+  "bytes": 6840
+ },
+ "https://assets.pubpub.org/7ikiphy1/11617825488928.png": {
+  "web": "7ikiphy1/11617825488928.png",
+  "bytes": 155880
+ },
+ "https://assets.pubpub.org/7p8a7ale/41618088090996.svg": {
+  "web": "7p8a7ale/41618088090996.svg",
+  "bytes": 83573
+ },
+ "https://assets.pubpub.org/7nxdj3ky/71611266694119.jpg": {
+  "web": "7nxdj3ky/71611266694119.jpg",
+  "bytes": 86214
+ },
+ "https://assets.pubpub.org/76jxszib/71618078838333.jpg": {
+  "web": "76jxszib/71618078838333.jpg",
+  "bytes": 262184
+ },
+ "https://assets.pubpub.org/7r0v2i5u/31642876510299.svg": {
+  "web": "7r0v2i5u/31642876510299.svg",
+  "bytes": 1508606
+ },
+ "https://assets.pubpub.org/7hhje6sq/21643566617552.jpg": {
+  "web": "7hhje6sq/21643566617552.jpg",
+  "bytes": 189449
+ },
+ "https://assets.pubpub.org/7ttdo9jk/71618077698655.jpeg": {
+  "web": "7ttdo9jk/71618077698655.jpg",
+  "bytes": 14701
+ },
+ "https://assets.pubpub.org/7bbzrtqr/41643340715711.png": {
+  "web": "7bbzrtqr/41643340715711.jpg",
+  "bytes": 66426
+ },
+ "https://assets.pubpub.org/7x56y2gw/71612002778137.jpg": {
+  "web": "7x56y2gw/71612002778137.jpg",
+  "bytes": 87588
+ },
+ "https://assets.pubpub.org/7sb84v6u/51618054136666.png": {
+  "web": "7sb84v6u/51618054136666.jpg",
+  "bytes": 266015
+ },
+ "https://assets.pubpub.org/7vsjokxj/01613762122154.jpg": {
+  "web": "7vsjokxj/01613762122154.jpg",
+  "bytes": 417550
+ },
+ "https://assets.pubpub.org/7mk0klvd/21650064206765.png": {
+  "web": "7mk0klvd/21650064206765.jpg",
+  "bytes": 43694
+ },
+ "https://assets.pubpub.org/7xc8besx/51642787989497.jpg": {
+  "web": "7xc8besx/51642787989497.jpg",
+  "bytes": 71492
+ },
+ "https://assets.pubpub.org/7w2k6axx/71642458403359.jpg": {
+  "web": "7w2k6axx/71642458403359.jpg",
+  "bytes": 157902
+ },
+ "https://assets.pubpub.org/7xjjetu2/11642751910779.png": {
+  "web": "7xjjetu2/11642751910779.png",
+  "bytes": 18065
+ },
+ "https://assets.pubpub.org/7ytpj5a3/51643413263489.jpg": {
+  "web": "7ytpj5a3/51643413263489.jpg",
+  "bytes": 85952
+ },
+ "https://assets.pubpub.org/7achkjk4/21641507975078.png": {
+  "web": "7achkjk4/21641507975078.jpg",
+  "bytes": 61091
+ },
+ "https://assets.pubpub.org/813al850/01611071060659.png": {
+  "web": "813al850/01611071060659.png",
+  "bytes": 118927
+ },
+ "https://assets.pubpub.org/7xtlc7mw/41613758649032.jpeg": {
+  "web": "7xtlc7mw/41613758649032.jpg",
+  "bytes": 40723
+ },
+ "https://assets.pubpub.org/80v28ysq/51617979490181.png": {
+  "web": "80v28ysq/51617979490181.png",
+  "bytes": 495546
+ },
+ "https://assets.pubpub.org/7p1m41fh/21642686117485.png": {
+  "web": "7p1m41fh/21642686117485.png",
+  "bytes": 2102215
+ },
+ "https://assets.pubpub.org/82rgttlc/61643152531823.jpeg": {
+  "web": "82rgttlc/61643152531823.jpg",
+  "bytes": 135447
+ },
+ "https://assets.pubpub.org/86os0o4a/51621413943940.mp4": {
+  "poster": "posters/86os0o4a/51621413943940.jpg",
+  "bytes": 16227,
+  "duration": "734.233333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_18/video1.mp4"
+ },
+ "https://assets.pubpub.org/7xgglvft/01642793516574.png": {
+  "web": "7xgglvft/01642793516574.png",
+  "bytes": 174873
+ },
+ "https://assets.pubpub.org/86dqgeny/71619217287305.png": {
+  "web": "86dqgeny/71619217287305.jpg",
+  "bytes": 24155
+ },
+ "https://assets.pubpub.org/845nzaju/01642792718690.png": {
+  "web": "845nzaju/01642792718690.jpg",
+  "bytes": 77072
+ },
+ "https://assets.pubpub.org/7teeax9g/31648567938875.png": {
+  "web": "7teeax9g/31648567938875.jpg",
+  "bytes": 90655
+ },
+ "https://assets.pubpub.org/7ema9v3g/61618102187454.png": {
+  "web": "7ema9v3g/61618102187454.png",
+  "bytes": 959906
+ },
+ "https://assets.pubpub.org/856cepsu/41643166515131.png": {
+  "web": "856cepsu/41643166515131.jpg",
+  "bytes": 99572
+ },
+ "https://assets.pubpub.org/827ui5be/61618117496160.jpg": {
+  "web": "827ui5be/61618117496160.jpg",
+  "bytes": 89770
+ },
+ "https://assets.pubpub.org/86t3fgk5/31618075283583.png": {
+  "web": "86t3fgk5/31618075283583.png",
+  "bytes": 34934
+ },
+ "https://assets.pubpub.org/8dpzd8my/11612084663196.svg": {
+  "web": "8dpzd8my/11612084663196.svg",
+  "bytes": 50594
+ },
+ "https://assets.pubpub.org/87sxy6c0/01611350836764.jpg": {
+  "web": "87sxy6c0/01611350836764.jpg",
+  "bytes": 59650
+ },
+ "https://assets.pubpub.org/8bquhr75/21643258956496.png": {
+  "web": "8bquhr75/21643258956496.png",
+  "bytes": 60407
+ },
+ "https://assets.pubpub.org/8gqwmm93/61612110105509.svg": {
+  "web": "8gqwmm93/61612110105509.svg",
+  "bytes": 71965
+ },
+ "https://assets.pubpub.org/8fju3egz/01653571591971.mp4": {
+  "poster": "posters/8fju3egz/01653571591971.jpg",
+  "bytes": 92970,
+  "duration": "753.466667",
+  "source_file": "2022/in_proceedings/music/nime2022_music_28/video1.mp4"
+ },
+ "https://assets.pubpub.org/80rsk7au/31617786695394.png": {
+  "web": "80rsk7au/31617786695394.jpg",
+  "bytes": 31947
+ },
+ "https://assets.pubpub.org/8htltm7d/21611695208503.mp4": {
+  "poster": "posters/8htltm7d/21611695208503.jpg",
+  "bytes": 33909,
+  "duration": "271.061333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_20/video1.mp4"
+ },
+ "https://assets.pubpub.org/74wyyavx/21618347334019.png": {
+  "web": "74wyyavx/21618347334019.png",
+  "bytes": 1137036
+ },
+ "https://assets.pubpub.org/8egrnmon/61642877436986.svg": {
+  "web": "8egrnmon/61642877436986.svg",
+  "bytes": 2792938
+ },
+ "https://assets.pubpub.org/8d0f0ocq/41652547289200.jpg": {
+  "web": "8d0f0ocq/41652547289200.jpg",
+  "bytes": 129427
+ },
+ "https://assets.pubpub.org/8k644gx5/31612130361120.svg": {
+  "web": "8k644gx5/31612130361120.svg",
+  "bytes": 12100
+ },
+ "https://assets.pubpub.org/8ii3w4y1/11642824111065.jpg": {
+  "web": "8ii3w4y1/11642824111065.jpg",
+  "bytes": 20011
+ },
+ "https://assets.pubpub.org/7rs4yp9m/51612236566207.png": {
+  "web": "7rs4yp9m/51612236566207.jpg",
+  "bytes": 74633
+ },
+ "https://assets.pubpub.org/8j460ria/71633218245804.mp4": {
+  "poster": "posters/8j460ria/71633218245804.jpg",
+  "bytes": 70059,
+  "duration": "299.816054",
+  "source_file": "2022/other/demo/11/video2.mp4"
+ },
+ "https://assets.pubpub.org/8detje2m/21611699389248.png": {
+  "web": "8detje2m/21611699389248.jpg",
+  "bytes": 266395
+ },
+ "https://assets.pubpub.org/8lawlqts/21614049838312.jpg": {
+  "web": "8lawlqts/21614049838312.jpg",
+  "bytes": 189865
+ },
+ "https://assets.pubpub.org/8h19tnk0/41623731948044.jpg": {
+  "web": "8h19tnk0/41623731948044.jpg",
+  "bytes": 113879
+ },
+ "https://assets.pubpub.org/8l5nbwzi/01613626321116.jpg": {
+  "web": "8l5nbwzi/01613626321116.jpg",
+  "bytes": 279769
+ },
+ "https://assets.pubpub.org/8lhihtkh/11643673822018.svg": {
+  "web": "8lhihtkh/11643673822018.svg",
+  "bytes": 7229
+ },
+ "https://assets.pubpub.org/8mb2baok/31613745829713.JPG": {
+  "web": "8mb2baok/31613745829713.jpg",
+  "bytes": 76993
+ },
+ "https://assets.pubpub.org/8txqg0tl/31643571248137.mp4": {
+  "poster": "posters/8txqg0tl/31643571248137.jpg",
+  "bytes": 11485,
+  "duration": "32.725292",
+  "source_file": "2022/in_proceedings/papers/nime2022_9/video2.mp4"
+ },
+ "https://assets.pubpub.org/8twoyevr/01611673195866.JPG": {
+  "web": "8twoyevr/01611673195866.jpg",
+  "bytes": 235346
+ },
+ "https://assets.pubpub.org/8rd5ux7j/01618027125957.jpg": {
+  "web": "8rd5ux7j/01618027125957.jpg",
+  "bytes": 63425
+ },
+ "https://assets.pubpub.org/8t881vco/41612036994545.png": {
+  "web": "8t881vco/41612036994545.png",
+  "bytes": 4909
+ },
+ "https://assets.pubpub.org/8n318wrh/61610660575340.png": {
+  "web": "8n318wrh/61610660575340.png",
+  "bytes": 52574
+ },
+ "https://assets.pubpub.org/8yhbgeky/51617842782288.jpg": {
+  "web": "8yhbgeky/51617842782288.jpg",
+  "bytes": 131901
+ },
+ "https://assets.pubpub.org/922hy1lu/51642845959479.mp4": {
+  "poster": "posters/922hy1lu/51642845959479.jpg",
+  "bytes": 38490,
+  "duration": "42.623979",
+  "source_file": "2022/other/demo/20/video2.mp4"
+ },
+ "https://assets.pubpub.org/8syizdel/11642207901236.jpg": {
+  "web": "8syizdel/11642207901236.jpg",
+  "bytes": 77641
+ },
+ "https://assets.pubpub.org/8vhkty2x/71642689446062.png": {
+  "web": "8vhkty2x/71642689446062.png",
+  "bytes": 15830
+ },
+ "https://assets.pubpub.org/8bjn3ov3/21642699624111.png": {
+  "web": "8bjn3ov3/21642699624111.jpg",
+  "bytes": 115295
+ },
+ "https://assets.pubpub.org/8xf3dx6o/41613763019087.jpg": {
+  "web": "8xf3dx6o/41613763019087.jpg",
+  "bytes": 57651
+ },
+ "https://assets.pubpub.org/932zcg3e/51650066228205.png": {
+  "web": "932zcg3e/51650066228205.png",
+  "bytes": 11112
+ },
+ "https://assets.pubpub.org/92s5ehbv/11610665607532.png": {
+  "web": "92s5ehbv/11610665607532.jpg",
+  "bytes": 7984
+ },
+ "https://assets.pubpub.org/92o45rqm/21611123860505.svg": {
+  "web": "92o45rqm/21611123860505.svg",
+  "bytes": 11375
+ },
+ "https://assets.pubpub.org/93e6ctrd/41643624524313.png": {
+  "web": "93e6ctrd/41643624524313.png",
+  "bytes": 25266
+ },
+ "https://assets.pubpub.org/8w9yzg8e/51612221773163.png": {
+  "web": "8w9yzg8e/51612221773163.png",
+  "bytes": 81646
+ },
+ "https://assets.pubpub.org/95dadfv5/21656194654621.png": {
+  "web": "95dadfv5/21656194654621.png",
+  "bytes": 1146
+ },
+ "https://assets.pubpub.org/97m2mc7e/41618027111288.png": {
+  "web": "97m2mc7e/41618027111288.png",
+  "bytes": 106805
+ },
+ "https://assets.pubpub.org/8twa39gd/11643575623944.png": {
+  "web": "8twa39gd/11643575623944.jpg",
+  "bytes": 88925
+ },
+ "https://assets.pubpub.org/99ha7dh8/61612256169368.svg": {
+  "web": "99ha7dh8/61612256169368.svg",
+  "bytes": 4420954
+ },
+ "https://assets.pubpub.org/9cq9vp4x/51617793618099.svg": {
+  "web": "9cq9vp4x/51617793618099.svg",
+  "bytes": 408824
+ },
+ "https://assets.pubpub.org/8oew3n5i/01608048608312.png": {
+  "web": "8oew3n5i/01608048608312.jpg",
+  "bytes": 98985
+ },
+ "https://assets.pubpub.org/97q0ytid/61611378382792.jpg": {
+  "web": "97q0ytid/61611378382792.jpg",
+  "bytes": 156395
+ },
+ "https://assets.pubpub.org/9bp9aodj/41649966659728.JPG": {
+  "web": "9bp9aodj/41649966659728.jpg",
+  "bytes": 73074
+ },
+ "https://assets.pubpub.org/9b5ekn85/51643862588060.jpg": {
+  "web": "9b5ekn85/51643862588060.jpg",
+  "bytes": 221136
+ },
+ "https://assets.pubpub.org/7vqaywfx/61611091637888.png": {
+  "web": "7vqaywfx/61611091637888.png",
+  "bytes": 1730355
+ },
+ "https://assets.pubpub.org/9f8d9ob7/61649074227443.svg": {
+  "web": "9f8d9ob7/61649074227443.svg",
+  "bytes": 53043
+ },
+ "https://assets.pubpub.org/9dh29k47/71618071589874.png": {
+  "web": "9dh29k47/71618071589874.jpg",
+  "bytes": 56632
+ },
+ "https://assets.pubpub.org/9dr9bsaa/51643631403400.png": {
+  "web": "9dr9bsaa/51643631403400.png",
+  "bytes": 51432
+ },
+ "https://assets.pubpub.org/9gtn1vod/61618947037709.png": {
+  "web": "9gtn1vod/61618947037709.jpg",
+  "bytes": 120059
+ },
+ "https://assets.pubpub.org/9g572tws/51643344812134.png": {
+  "web": "9g572tws/51643344812134.jpg",
+  "bytes": 29871
+ },
+ "https://assets.pubpub.org/93zrgkuo/11611112667224.png": {
+  "web": "93zrgkuo/11611112667224.jpg",
+  "bytes": 101587
+ },
+ "https://assets.pubpub.org/9i3haw4n/01617780358974.svg": {
+  "web": "9i3haw4n/01617780358974.svg",
+  "bytes": 344744
+ },
+ "https://assets.pubpub.org/9k1ahwac/61612027234782.png": {
+  "web": "9k1ahwac/61612027234782.jpg",
+  "bytes": 8895
+ },
+ "https://assets.pubpub.org/9eisvaq6/51618054112424.png": {
+  "web": "9eisvaq6/51618054112424.jpg",
+  "bytes": 358250
+ },
+ "https://assets.pubpub.org/9lusvlzu/61642185563390.JPG": {
+  "web": "9lusvlzu/61642185563390.jpg",
+  "bytes": 331517
+ },
+ "https://assets.pubpub.org/9klz38c3/61650740896111.jpg": {
+  "web": "9klz38c3/61650740896111.jpg",
+  "bytes": 27757
+ },
+ "https://assets.pubpub.org/9gy9cibk/51611312622269.png": {
+  "web": "9gy9cibk/51611312622269.png",
+  "bytes": 313789
+ },
+ "https://assets.pubpub.org/9ljqnk63/71649999067706.jpg": {
+  "web": "9ljqnk63/71649999067706.jpg",
+  "bytes": 22938
+ },
+ "https://assets.pubpub.org/9lx3ms2d/51617712478076.svg": {
+  "web": "9lx3ms2d/51617712478076.svg",
+  "bytes": 945921
+ },
+ "https://assets.pubpub.org/9lmd21sg/71650741244191.jpg": {
+  "web": "9lmd21sg/71650741244191.jpg",
+  "bytes": 11450
+ },
+ "https://assets.pubpub.org/9l6sddj6/01610372542797.jpg": {
+  "web": "9l6sddj6/01610372542797.jpg",
+  "bytes": 358133
+ },
+ "https://assets.pubpub.org/9pz5drbd/51617913723946.jpg": {
+  "web": "9pz5drbd/51617913723946.jpg",
+  "bytes": 86218
+ },
+ "https://assets.pubpub.org/8aacv9n8/41643659081831.gif": {
+  "web": "8aacv9n8/41643659081831.gif",
+  "bytes": 1120077
+ },
+ "https://assets.pubpub.org/9uoik0ai/41610402554258.jpeg": {
+  "web": "9uoik0ai/41610402554258.jpg",
+  "bytes": 212542
+ },
+ "https://assets.pubpub.org/99h8yb82/61642847916832.png": {
+  "web": "99h8yb82/61642847916832.jpg",
+  "bytes": 208810
+ },
+ "https://assets.pubpub.org/9rq37p0l/61648748458812.png": {
+  "web": "9rq37p0l/61648748458812.png",
+  "bytes": 299569
+ },
+ "https://assets.pubpub.org/9vfnhic7/11643481289549.mp4": {
+  "poster": "posters/9vfnhic7/11643481289549.jpg",
+  "bytes": 75026,
+  "duration": "108.675873",
+  "source_file": "2022/in_proceedings/papers/nime2022_56/video2.mp4"
+ },
+ "https://assets.pubpub.org/9rt53jxg/41643672134771.png": {
+  "web": "9rt53jxg/41643672134771.jpg",
+  "bytes": 53477
+ },
+ "https://assets.pubpub.org/9re8bbwg/61611701363649.jpg": {
+  "web": "9re8bbwg/61611701363649.jpg",
+  "bytes": 68594
+ },
+ "https://assets.pubpub.org/9r10kiks/71612877883447.jpg": {
+  "web": "9r10kiks/71612877883447.jpg",
+  "bytes": 68594
+ },
+ "https://assets.pubpub.org/9y434jem/11643867031239.jpeg": {
+  "web": "9y434jem/11643867031239.jpg",
+  "bytes": 225186
+ },
+ "https://assets.pubpub.org/9rjs9cme/11643475983871.jpeg": {
+  "web": "9rjs9cme/11643475983871.jpg",
+  "bytes": 254689
+ },
+ "https://assets.pubpub.org/9d48w251/11653315537089.png": {
+  "web": "9d48w251/11653315537089.jpg",
+  "bytes": 249044
+ },
+ "https://assets.pubpub.org/9jxt5ujz/71642624050770.png": {
+  "web": "9jxt5ujz/71642624050770.jpg",
+  "bytes": 237025
+ },
+ "https://assets.pubpub.org/a01jfq4e/31650064204109.png": {
+  "web": "a01jfq4e/31650064204109.png",
+  "bytes": 39954
+ },
+ "https://assets.pubpub.org/a08y4w4n/21617905276723.png": {
+  "web": "a08y4w4n/21617905276723.jpg",
+  "bytes": 43364
+ },
+ "https://assets.pubpub.org/a1ptdqko/51650157526797.png": {
+  "web": "a1ptdqko/51650157526797.jpg",
+  "bytes": 12973
+ },
+ "https://assets.pubpub.org/a0rh6lk5/51643603216482.png": {
+  "web": "a0rh6lk5/51643603216482.png",
+  "bytes": 31123
+ },
+ "https://assets.pubpub.org/a1wwtvci/31642533757867.png": {
+  "web": "a1wwtvci/31642533757867.jpg",
+  "bytes": 15801
+ },
+ "https://assets.pubpub.org/a3fm7cnn/01650327430780.png": {
+  "web": "a3fm7cnn/01650327430780.png",
+  "bytes": 30565
+ },
+ "https://assets.pubpub.org/a393ag26/61643562266169.png": {
+  "web": "a393ag26/61643562266169.png",
+  "bytes": 7674
+ },
+ "https://assets.pubpub.org/a2k5lbz5/11642463492101.jpg": {
+  "web": "a2k5lbz5/11642463492101.jpg",
+  "bytes": 114228
+ },
+ "https://assets.pubpub.org/a6pxetoe/11642847660414.mp4": {
+  "poster": "posters/a6pxetoe/11642847660414.jpg",
+  "bytes": 38745,
+  "duration": "25.322646",
+  "source_file": "2022/other/demo/20/video3.mp4"
+ },
+ "https://assets.pubpub.org/a5vz48cf/61619217287309.jpeg": {
+  "web": "a5vz48cf/61619217287309.jpg",
+  "bytes": 25785
+ },
+ "https://assets.pubpub.org/aaw4l4g4/01613393691523.mp4": {
+  "poster": "posters/aaw4l4g4/01613393691523.jpg",
+  "bytes": 92486,
+  "duration": "716.671000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_16/video1.mp4"
+ },
+ "https://assets.pubpub.org/9uz4n5f9/41616632520996.png": {
+  "web": "9uz4n5f9/41616632520996.png",
+  "bytes": 468169
+ },
+ "https://assets.pubpub.org/aad1zyhs/21614592469704.jpg": {
+  "web": "aad1zyhs/21614592469704.jpg",
+  "bytes": 384393
+ },
+ "https://assets.pubpub.org/a3r2j6gr/41618138598347.jpg": {
+  "web": "a3r2j6gr/41618138598347.jpg",
+  "bytes": 165015
+ },
+ "https://assets.pubpub.org/aa53gfl2/21650066240679.png": {
+  "web": "aa53gfl2/21650066240679.jpg",
+  "bytes": 50298
+ },
+ "https://assets.pubpub.org/ag4nmomw/21618108048389.mp4": {
+  "poster": "posters/ag4nmomw/21618108048389.jpg",
+  "bytes": 69336,
+  "duration": "25.290833",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_49/video4.mp4"
+ },
+ "https://assets.pubpub.org/ad5henjj/31650740936424.jpg": {
+  "web": "ad5henjj/31650740936424.jpg",
+  "bytes": 44810
+ },
+ "https://assets.pubpub.org/aboseced/41618534967727.jpg": {
+  "web": "aboseced/41618534967727.jpg",
+  "bytes": 123355
+ },
+ "https://assets.pubpub.org/aay4e7ad/71618099253303.png": {
+  "web": "aay4e7ad/71618099253303.jpg",
+  "bytes": 169452
+ },
+ "https://assets.pubpub.org/aez0fi2m/71610824461569.jpg": {
+  "web": "aez0fi2m/71610824461569.jpg",
+  "bytes": 29007
+ },
+ "https://assets.pubpub.org/agf0d0zv/11617646930530.mp4": {
+  "poster": "posters/agf0d0zv/11617646930530.jpg",
+  "bytes": 33726,
+  "duration": "654.780000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_8/video1.mp4"
+ },
+ "https://assets.pubpub.org/ap8npirb/71622630416628.webm": {
+  "poster": "posters/ap8npirb/71622630416628.jpg",
+  "bytes": 71677,
+  "duration": "32.436000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_2/video1.webm"
+ },
+ "https://assets.pubpub.org/ala7g43o/01611351300044.jpg": {
+  "web": "ala7g43o/01611351300044.jpg",
+  "bytes": 85485
+ },
+ "https://assets.pubpub.org/aqezaxfh/71650023844752.png": {
+  "web": "aqezaxfh/71650023844752.jpg",
+  "bytes": 46051
+ },
+ "https://assets.pubpub.org/9wvruiw4/11613771432717.png": {
+  "web": "9wvruiw4/11613771432717.jpg",
+  "bytes": 144272
+ },
+ "https://assets.pubpub.org/adwpk8hx/41612174260624.jpg": {
+  "web": "adwpk8hx/41612174260624.jpg",
+  "bytes": 159985
+ },
+ "https://assets.pubpub.org/as29fx97/41611960827541.jpg": {
+  "web": "as29fx97/41611960827541.jpg",
+  "bytes": 215593
+ },
+ "https://assets.pubpub.org/aqp774f7/41613331766947.png": {
+  "web": "aqp774f7/41613331766947.jpg",
+  "bytes": 29345
+ },
+ "https://assets.pubpub.org/at2ri3ft/31650740900077.jpg": {
+  "web": "at2ri3ft/31650740900077.jpg",
+  "bytes": 29955
+ },
+ "https://assets.pubpub.org/ax0ky5hi/51611915943876.jpg": {
+  "web": "ax0ky5hi/51611915943876.jpg",
+  "bytes": 65292
+ },
+ "https://assets.pubpub.org/avbahscy/61623730517785.png": {
+  "web": "avbahscy/61623730517785.jpg",
+  "bytes": 42781
+ },
+ "https://assets.pubpub.org/aetoi5mf/21611992460654.jpg": {
+  "web": "aetoi5mf/21611992460654.jpg",
+  "bytes": 199686
+ },
+ "https://assets.pubpub.org/979bqded/71649966014253.png": {
+  "web": "979bqded/71649966014253.png",
+  "bytes": 1319842
+ },
+ "https://assets.pubpub.org/ax40kcyv/31648946452056.png": {
+  "web": "ax40kcyv/31648946452056.png",
+  "bytes": 21331
+ },
+ "https://assets.pubpub.org/b1gamwvs/51650023677865.mp4": {
+  "poster": "posters/b1gamwvs/51650023677865.jpg",
+  "bytes": 101790,
+  "duration": "226.240000",
+  "source_file": "2022/in_proceedings/papers/nime2022_42/video3.mp4"
+ },
+ "https://assets.pubpub.org/a0mi9dbv/31642439430033.png": {
+  "web": "a0mi9dbv/31642439430033.png",
+  "bytes": 687456
+ },
+ "https://assets.pubpub.org/b49sp7hm/71642758725095.mp4": {
+  "poster": "posters/b49sp7hm/71642758725095.jpg",
+  "bytes": 13466,
+  "duration": "19.633333",
+  "source_file": "2022/in_proceedings/papers/nime2022_18/video1.mp4"
+ },
+ "https://assets.pubpub.org/atoxjznu/21642760901947.png": {
+  "web": "atoxjznu/21642760901947.jpg",
+  "bytes": 312795
+ },
+ "https://assets.pubpub.org/avbbaa24/51613755066916.jpg": {
+  "web": "avbbaa24/51613755066916.jpg",
+  "bytes": 145835
+ },
+ "https://assets.pubpub.org/b5dufq16/51612847781289.mp4": {
+  "poster": "posters/b5dufq16/51612847781289.jpg",
+  "bytes": 60705,
+  "duration": "425.625000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_25/video2.mp4"
+ },
+ "https://assets.pubpub.org/awa6ccgt/41617648357214.jpg": {
+  "web": "awa6ccgt/41617648357214.jpg",
+  "bytes": 110547
+ },
+ "https://assets.pubpub.org/b1k9inc8/31618088740261.svg": {
+  "web": "b1k9inc8/31618088740261.svg",
+  "bytes": 45930
+ },
+ "https://assets.pubpub.org/b1nfu8zj/41618020287436.svg": {
+  "web": "b1nfu8zj/41618020287436.svg",
+  "bytes": 52206
+ },
+ "https://assets.pubpub.org/ax9wy5t8/41643238218140.png": {
+  "web": "ax9wy5t8/41643238218140.jpg",
+  "bytes": 72621
+ },
+ "https://assets.pubpub.org/ay5h3740/21611591948812.jpg": {
+  "web": "ay5h3740/21611591948812.jpg",
+  "bytes": 74433
+ },
+ "https://assets.pubpub.org/b75i6q5i/61617694287541.svg": {
+  "web": "b75i6q5i/61617694287541.svg",
+  "bytes": 104860
+ },
+ "https://assets.pubpub.org/9iklafsu/31642635228419.png": {
+  "web": "9iklafsu/31642635228419.jpg",
+  "bytes": 153792
+ },
+ "https://assets.pubpub.org/b8waqrbr/61616836394359.mp4": {
+  "poster": "posters/b8waqrbr/61616836394359.jpg",
+  "bytes": 217131,
+  "duration": "95.760000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_25/video2.mp4"
+ },
+ "https://assets.pubpub.org/b7obe6bz/61612008566588.jpg": {
+  "web": "b7obe6bz/61612008566588.jpg",
+  "bytes": 197357
+ },
+ "https://assets.pubpub.org/b1zw2ll1/51648864147511.jpg": {
+  "web": "b1zw2ll1/51648864147511.jpg",
+  "bytes": 104718
+ },
+ "https://assets.pubpub.org/b6s7zskp/51605801849843.png": {
+  "web": "b6s7zskp/51605801849843.png",
+  "bytes": 24206
+ },
+ "https://assets.pubpub.org/b8ci3mep/51643054069968.jpg": {
+  "web": "b8ci3mep/51643054069968.jpg",
+  "bytes": 106264
+ },
+ "https://assets.pubpub.org/bayj2e9g/71610824589155.jpg": {
+  "web": "bayj2e9g/71610824589155.jpg",
+  "bytes": 42186
+ },
+ "https://assets.pubpub.org/bfnoiffy/01642884580461.mp4": {
+  "poster": "posters/bfnoiffy/01642884580461.jpg",
+  "bytes": 81969,
+  "duration": "511.440000",
+  "source_file": "2022/in_proceedings/installations/nime20202_installations_5/video1.mp4"
+ },
+ "https://assets.pubpub.org/bgfrj06g/71618106120030.mp4": {
+  "poster": "posters/bgfrj06g/71618106120030.jpg",
+  "bytes": 83106,
+  "duration": "196.783333",
+  "source_file": "2021/other/work-in-progress_showcase/11/video1.mp4"
+ },
+ "https://assets.pubpub.org/b991nsbi/51643509963587.jpg": {
+  "web": "b991nsbi/51643509963587.jpg",
+  "bytes": 244309
+ },
+ "https://assets.pubpub.org/bkalhw3w/61643481987715.JPG": {
+  "web": "bkalhw3w/61643481987715.jpg",
+  "bytes": 321878
+ },
+ "https://assets.pubpub.org/9upiuzm2/01642724860068.png": {
+  "web": "9upiuzm2/01642724860068.jpg",
+  "bytes": 146616
+ },
+ "https://assets.pubpub.org/8ex6elg0/21617786983086.png": {
+  "web": "8ex6elg0/21617786983086.jpg",
+  "bytes": 82392
+ },
+ "https://assets.pubpub.org/bh0fcfge/01611915943889.jpg": {
+  "web": "bh0fcfge/01611915943889.jpg",
+  "bytes": 62537
+ },
+ "https://assets.pubpub.org/bi87e0gd/11643660528358.jpg": {
+  "web": "bi87e0gd/11643660528358.jpg",
+  "bytes": 39528
+ },
+ "https://assets.pubpub.org/bdj6y47u/31614049748094.jpg": {
+  "web": "bdj6y47u/31614049748094.jpg",
+  "bytes": 194791
+ },
+ "https://assets.pubpub.org/bijmsmjv/41649999039473.jpg": {
+  "web": "bijmsmjv/41649999039473.jpg",
+  "bytes": 317237
+ },
+ "https://assets.pubpub.org/bkk66duh/21654954668935.mp4": {
+  "poster": "posters/bkk66duh/21654954668935.jpg",
+  "bytes": 110332,
+  "duration": "154.002917",
+  "source_file": "2022/other/workshops/6/video1.mp4"
+ },
+ "https://assets.pubpub.org/bl1bnojr/21650740904591.jpg": {
+  "web": "bl1bnojr/21650740904591.jpg",
+  "bytes": 33219
+ },
+ "https://assets.pubpub.org/br6lwhr0/21649977702260.mp4": {
+  "poster": "posters/br6lwhr0/21649977702260.jpg",
+  "bytes": 48146,
+  "duration": "136.960000",
+  "source_file": "2022/in_proceedings/papers/nime2022_17/video2.mp4"
+ },
+ "https://assets.pubpub.org/biujbujx/71612044158634.png": {
+  "web": "biujbujx/71612044158634.png",
+  "bytes": 22495
+ },
+ "https://assets.pubpub.org/bokfgjja/71650741236124.jpg": {
+  "web": "bokfgjja/71650741236124.jpg",
+  "bytes": 10743
+ },
+ "https://assets.pubpub.org/brbsc89c/21642014004874.mp4": {
+  "poster": "posters/brbsc89c/21642014004874.jpg",
+  "bytes": 68572,
+  "duration": "450.453333",
+  "source_file": "2022/in_proceedings/papers/nime2022_20/video3.mp4"
+ },
+ "https://assets.pubpub.org/blvaf5gh/61612104809819.png": {
+  "web": "blvaf5gh/61612104809819.jpg",
+  "bytes": 41220
+ },
+ "https://assets.pubpub.org/bm9ee2ia/71614657788453.png": {
+  "web": "bm9ee2ia/71614657788453.png",
+  "bytes": 238
+ },
+ "https://assets.pubpub.org/bkxphe6o/01649604194578.jpg": {
+  "web": "bkxphe6o/01649604194578.jpg",
+  "bytes": 222797
+ },
+ "https://assets.pubpub.org/bw7z6qiy/51613661808771.mp4": {
+  "poster": "posters/bw7z6qiy/51613661808771.jpg",
+  "bytes": 61651,
+  "duration": "191.573333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_32/video1.mp4"
+ },
+ "https://assets.pubpub.org/bg9dau2p/11642859829859.png": {
+  "web": "bg9dau2p/11642859829859.png",
+  "bytes": 333422
+ },
+ "https://assets.pubpub.org/bucbsk4l/31642751874503.png": {
+  "web": "bucbsk4l/31642751874503.png",
+  "bytes": 14253
+ },
+ "https://assets.pubpub.org/bxl3q9um/31617788598212.mp4": {
+  "poster": "posters/bxl3q9um/31617788598212.jpg",
+  "bytes": 25696,
+  "duration": "73.834000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_20/video2.mp4"
+ },
+ "https://assets.pubpub.org/c0vpvwst/41622630963568.svg": {
+  "web": "c0vpvwst/41622630963568.svg",
+  "bytes": 58814
+ },
+ "https://assets.pubpub.org/bm5912is/51643432612730.jpeg": {
+  "web": "bm5912is/51643432612730.jpg",
+  "bytes": 244690
+ },
+ "https://assets.pubpub.org/by13jqt7/21648567890519.png": {
+  "web": "by13jqt7/21648567890519.jpg",
+  "bytes": 19126
+ },
+ "https://assets.pubpub.org/c4co94j6/41621711228437.jpg": {
+  "web": "c4co94j6/41621711228437.jpg",
+  "bytes": 45399
+ },
+ "https://assets.pubpub.org/c279lnth/01649971032830.png": {
+  "web": "c279lnth/01649971032830.png",
+  "bytes": 21904
+ },
+ "https://assets.pubpub.org/bxkj41nx/51610660401384.png": {
+  "web": "bxkj41nx/51610660401384.jpg",
+  "bytes": 141916
+ },
+ "https://assets.pubpub.org/c7czacut/61618064545325.mp4": {
+  "poster": "posters/c7czacut/61618064545325.jpg",
+  "bytes": 26977,
+  "duration": "524.357167",
+  "source_file": "2021/other/work-in-progress_showcase/25/video1.mp4"
+ },
+ "https://assets.pubpub.org/brxzmi0m/61643711476818.png": {
+  "web": "brxzmi0m/61643711476818.png",
+  "bytes": 178723
+ },
+ "https://assets.pubpub.org/cara8wsu/21643476087937.svg": {
+  "web": "cara8wsu/21643476087937.svg",
+  "bytes": 2206
+ },
+ "https://assets.pubpub.org/bz4xzyi2/41642848370328.png": {
+  "web": "bz4xzyi2/41642848370328.jpg",
+  "bytes": 56138
+ },
+ "https://assets.pubpub.org/cccgtwfb/51618027063738.jpg": {
+  "web": "cccgtwfb/51618027063738.jpg",
+  "bytes": 65426
+ },
+ "https://assets.pubpub.org/cema29ou/11617886915711.svg": {
+  "web": "cema29ou/11617886915711.svg",
+  "bytes": 345403
+ },
+ "https://assets.pubpub.org/bybwi691/31618078994176.jpg": {
+  "web": "bybwi691/31618078994176.jpg",
+  "bytes": 284113
+ },
+ "https://assets.pubpub.org/c5du2njy/71641794828700.png": {
+  "web": "c5du2njy/71641794828700.jpg",
+  "bytes": 161039
+ },
+ "https://assets.pubpub.org/cl336vio/21617780252282.svg": {
+  "web": "cl336vio/21617780252282.svg",
+  "bytes": 172760
+ },
+ "https://assets.pubpub.org/cf58menn/11643575623958.png": {
+  "web": "cf58menn/11643575623958.jpg",
+  "bytes": 71575
+ },
+ "https://assets.pubpub.org/cit4yszq/71611351067033.jpg": {
+  "web": "cit4yszq/71611351067033.jpg",
+  "bytes": 73029
+ },
+ "https://assets.pubpub.org/c1mgzqfo/41642854187473.png": {
+  "web": "c1mgzqfo/41642854187473.jpg",
+  "bytes": 211553
+ },
+ "https://assets.pubpub.org/cne3tovs/31611984949971.jpg": {
+  "web": "cne3tovs/31611984949971.jpg",
+  "bytes": 328704
+ },
+ "https://assets.pubpub.org/by7ofu5y/11649970854726.png": {
+  "web": "by7ofu5y/11649970854726.jpg",
+  "bytes": 123516
+ },
+ "https://assets.pubpub.org/c9ts4yw9/31649604148365.png": {
+  "web": "c9ts4yw9/31649604148365.jpg",
+  "bytes": 75735
+ },
+ "https://assets.pubpub.org/cq0umuqb/31638184806673.JPG": {
+  "web": "cq0umuqb/31638184806673.jpg",
+  "bytes": 149858
+ },
+ "https://assets.pubpub.org/cp2u2192/11650064203924.png": {
+  "web": "cp2u2192/11650064203924.png",
+  "bytes": 37116
+ },
+ "https://assets.pubpub.org/cqfagjn2/71617319889286.mp4": {
+  "poster": "posters/cqfagjn2/71617319889286.jpg",
+  "bytes": 19256,
+  "duration": "172.038542",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_81/video2.mp4"
+ },
+ "https://assets.pubpub.org/coyc5ss8/41642889224006.png": {
+  "web": "coyc5ss8/41642889224006.png",
+  "bytes": 333422
+ },
+ "https://assets.pubpub.org/csbat9rj/71613773753889.mp4": {
+  "poster": "posters/csbat9rj/71613773753889.jpg",
+  "bytes": 102285,
+  "duration": "295.262325",
+  "source_file": "2021/in_proceedings/music/nime2021_music_30/video1.mp4"
+ },
+ "https://assets.pubpub.org/cqhqupcp/21643128126550.svg": {
+  "web": "cqhqupcp/21643128126550.svg",
+  "bytes": 123872
+ },
+ "https://assets.pubpub.org/cs3h2xz6/31621244943291.jpg": {
+  "web": "cs3h2xz6/31621244943291.jpg",
+  "bytes": 43944
+ },
+ "https://assets.pubpub.org/c9b5zpuw/41648567960256.png": {
+  "web": "c9b5zpuw/41648567960256.jpg",
+  "bytes": 140834
+ },
+ "https://assets.pubpub.org/cs9bdpme/41612127207261.jpg": {
+  "web": "cs9bdpme/41612127207261.jpg",
+  "bytes": 173613
+ },
+ "https://assets.pubpub.org/confrx46/31642957033188.png": {
+  "web": "confrx46/31642957033188.png",
+  "bytes": 327644
+ },
+ "https://assets.pubpub.org/cxi7fw7k/01650064353634.mp4": {
+  "poster": "posters/cxi7fw7k/01650064353634.jpg",
+  "bytes": 57713,
+  "duration": "54.983333",
+  "source_file": "2022/in_proceedings/papers/nime2022_23/video1.mp4"
+ },
+ "https://assets.pubpub.org/cp5cfp97/61623731174241.png": {
+  "web": "cp5cfp97/61623731174241.jpg",
+  "bytes": 48460
+ },
+ "https://assets.pubpub.org/cuec9e7q/71643034880832.png": {
+  "web": "cuec9e7q/71643034880832.jpg",
+  "bytes": 98364
+ },
+ "https://assets.pubpub.org/cvk78iem/01614202336875.png": {
+  "web": "cvk78iem/01614202336875.jpg",
+  "bytes": 92436
+ },
+ "https://assets.pubpub.org/cz37wvys/31611833008852.png": {
+  "web": "cz37wvys/31611833008852.jpg",
+  "bytes": 27347
+ },
+ "https://assets.pubpub.org/c7gkt5gx/51650328455895.png": {
+  "web": "c7gkt5gx/51650328455895.jpg",
+  "bytes": 328354
+ },
+ "https://assets.pubpub.org/ctsyjs1x/61653332144907.png": {
+  "web": "ctsyjs1x/61653332144907.jpg",
+  "bytes": 44802
+ },
+ "https://assets.pubpub.org/d3hl8plt/71643582663433.svg": {
+  "web": "d3hl8plt/71643582663433.svg",
+  "bytes": 796347
+ },
+ "https://assets.pubpub.org/cxmxpey0/61650023837088.png": {
+  "web": "cxmxpey0/61650023837088.png",
+  "bytes": 11097
+ },
+ "https://assets.pubpub.org/damhglen/51642806400679.PNG": {
+  "web": "damhglen/51642806400679.jpg",
+  "bytes": 94769
+ },
+ "https://assets.pubpub.org/d3djwif0/61610667112138.jpeg": {
+  "web": "d3djwif0/61610667112138.jpg",
+  "bytes": 82132
+ },
+ "https://assets.pubpub.org/ai3fr0et/11642645216049.png": {
+  "web": "ai3fr0et/11642645216049.jpg",
+  "bytes": 86173
+ },
+ "https://assets.pubpub.org/d3zua72q/21643671378980.png": {
+  "web": "d3zua72q/21643671378980.png",
+  "bytes": 460437
+ },
+ "https://assets.pubpub.org/dcdo3y9h/41643545236555.mp4": {
+  "poster": "posters/dcdo3y9h/41643545236555.jpg",
+  "bytes": 106168,
+  "duration": "563.629733",
+  "source_file": "2022/in_proceedings/papers/nime2022_25/video2.mp4"
+ },
+ "https://assets.pubpub.org/dag1werw/61610474926255.png": {
+  "web": "dag1werw/61610474926255.png",
+  "bytes": 30509
+ },
+ "https://assets.pubpub.org/daclo6ln/21617887207833.svg": {
+  "web": "daclo6ln/21617887207833.svg",
+  "bytes": 119829
+ },
+ "https://assets.pubpub.org/de1ohd5v/51611332500865.jpeg": {
+  "web": "de1ohd5v/51611332500865.jpg",
+  "bytes": 160579
+ },
+ "https://assets.pubpub.org/d5m2016k/31643397846091.jpg": {
+  "web": "d5m2016k/31643397846091.jpg",
+  "bytes": 283124
+ },
+ "https://assets.pubpub.org/db5gwbxj/11608294725015.png": {
+  "web": "db5gwbxj/11608294725015.jpg",
+  "bytes": 20045
+ },
+ "https://assets.pubpub.org/d996xvm9/21613755186669.jpg": {
+  "web": "d996xvm9/21613755186669.jpg",
+  "bytes": 144981
+ },
+ "https://assets.pubpub.org/cwn6hgg3/51649970258761.png": {
+  "web": "cwn6hgg3/51649970258761.png",
+  "bytes": 318526
+ },
+ "https://assets.pubpub.org/dly1qcu4/41642885689227.mp4": {
+  "poster": "posters/dly1qcu4/41642885689227.jpg",
+  "bytes": 8424,
+  "duration": "104.149000",
+  "source_file": "2022/in_proceedings/papers/nime2022_24/video3.mp4"
+ },
+ "https://assets.pubpub.org/di0d36ik/31611224205960.png": {
+  "web": "di0d36ik/31611224205960.png",
+  "bytes": 43918
+ },
+ "https://assets.pubpub.org/diebjg3g/71610659272499.jpeg": {
+  "web": "diebjg3g/71610659272499.jpg",
+  "bytes": 314410
+ },
+ "https://assets.pubpub.org/dl61dhak/11617911024094.png": {
+  "web": "dl61dhak/11617911024094.png",
+  "bytes": 10877
+ },
+ "https://assets.pubpub.org/de9sprp5/01642800443758.jpg": {
+  "web": "de9sprp5/01642800443758.jpg",
+  "bytes": 27055
+ },
+ "https://assets.pubpub.org/d65cvppv/71652474520266.png": {
+  "web": "d65cvppv/71652474520266.jpg",
+  "bytes": 179760
+ },
+ "https://assets.pubpub.org/dgac5js2/31642797018615.jpeg": {
+  "web": "dgac5js2/31642797018615.jpg",
+  "bytes": 53181
+ },
+ "https://assets.pubpub.org/dk37y1jq/31612052917933.png": {
+  "web": "dk37y1jq/31612052917933.png",
+  "bytes": 130916
+ },
+ "https://assets.pubpub.org/dltnpkok/51642854116232.png": {
+  "web": "dltnpkok/51642854116232.png",
+  "bytes": 21207
+ },
+ "https://assets.pubpub.org/dnk442b8/21642753366801.png": {
+  "web": "dnk442b8/21642753366801.png",
+  "bytes": 16806
+ },
+ "https://assets.pubpub.org/dtjybejp/11612969518751.jpg": {
+  "web": "dtjybejp/11612969518751.jpg",
+  "bytes": 181112
+ },
+ "https://assets.pubpub.org/dturwjad/41648946472294.png": {
+  "web": "dturwjad/41648946472294.png",
+  "bytes": 11708
+ },
+ "https://assets.pubpub.org/dxs8v4uo/41612050201043.svg": {
+  "web": "dxs8v4uo/41612050201043.svg",
+  "bytes": 1227236
+ },
+ "https://assets.pubpub.org/dv254dxa/71643397231916.mp4": {
+  "poster": "posters/dv254dxa/71643397231916.jpg",
+  "bytes": 121741,
+  "duration": "164.714563",
+  "source_file": "2022/in_proceedings/papers/nime2022_38/video2.mp4"
+ },
+ "https://assets.pubpub.org/dsnast1d/31613762182204.jpg": {
+  "web": "dsnast1d/31613762182204.jpg",
+  "bytes": 397593
+ },
+ "https://assets.pubpub.org/e00hhvit/41611694723983.png": {
+  "web": "e00hhvit/41611694723983.png",
+  "bytes": 32232
+ },
+ "https://assets.pubpub.org/dpo0k0gw/01617842798342.jpg": {
+  "web": "dpo0k0gw/01617842798342.jpg",
+  "bytes": 115364
+ },
+ "https://assets.pubpub.org/dyaizqe8/41642966482917.jpg": {
+  "web": "dyaizqe8/41642966482917.jpg",
+  "bytes": 84234
+ },
+ "https://assets.pubpub.org/e1kxwmfg/21649149555845.svg": {
+  "web": "e1kxwmfg/21649149555845.svg",
+  "bytes": 53333
+ },
+ "https://assets.pubpub.org/cnma9cl4/11612053073717.png": {
+  "web": "cnma9cl4/11612053073717.jpg",
+  "bytes": 150807
+ },
+ "https://assets.pubpub.org/e5gxbw07/41610898510099.JPG": {
+  "web": "e5gxbw07/41610898510099.jpg",
+  "bytes": 314008
+ },
+ "https://assets.pubpub.org/e7krkbk4/41622631083864.svg": {
+  "web": "e7krkbk4/41622631083864.svg",
+  "bytes": 179971
+ },
+ "https://assets.pubpub.org/e98tvlla/51617722040373.mp4": {
+  "poster": "posters/e98tvlla/51617722040373.jpg",
+  "bytes": 48772,
+  "duration": "168.333333",
+  "source_file": "2021/in_proceedings/installations/nime20201_installations_3/video1.mp4"
+ },
+ "https://assets.pubpub.org/e0qxo1vb/21650740947694.jpg": {
+  "web": "e0qxo1vb/21650740947694.jpg",
+  "bytes": 46192
+ },
+ "https://assets.pubpub.org/efjl8l5i/21617780312996.svg": {
+  "web": "efjl8l5i/21617780312996.svg",
+  "bytes": 118381
+ },
+ "https://assets.pubpub.org/efocxdd8/51617903956327.svg": {
+  "web": "efocxdd8/51617903956327.svg",
+  "bytes": 595932
+ },
+ "https://assets.pubpub.org/e2rqp2ph/01610358357633.jpg": {
+  "web": "e2rqp2ph/01610358357633.jpg",
+  "bytes": 319318
+ },
+ "https://assets.pubpub.org/cp65yebi/11643474727232.png": {
+  "web": "cp65yebi/11643474727232.jpg",
+  "bytes": 80680
+ },
+ "https://assets.pubpub.org/eix7ey12/61643496924904.JPG": {
+  "web": "eix7ey12/61643496924904.jpg",
+  "bytes": 144407
+ },
+ "https://assets.pubpub.org/eksv07dn/71649999106761.jpg": {
+  "web": "eksv07dn/71649999106761.jpg",
+  "bytes": 39340
+ },
+ "https://assets.pubpub.org/ej8pcpwh/41618534931847.jpg": {
+  "web": "ej8pcpwh/41618534931847.jpg",
+  "bytes": 188936
+ },
+ "https://assets.pubpub.org/dq5mtg9a/41618078909996.png": {
+  "web": "dq5mtg9a/41618078909996.jpg",
+  "bytes": 242206
+ },
+ "https://assets.pubpub.org/e67e8cv8/21643504714042.png": {
+  "web": "e67e8cv8/21643504714042.jpg",
+  "bytes": 76571
+ },
+ "https://assets.pubpub.org/emufxco0/71642844793383.jpg": {
+  "web": "emufxco0/71642844793383.jpg",
+  "bytes": 251654
+ },
+ "https://assets.pubpub.org/emw7gfgo/31618014984976.png": {
+  "web": "emw7gfgo/31618014984976.jpg",
+  "bytes": 43439
+ },
+ "https://assets.pubpub.org/epay4awr/21618034451283.png": {
+  "web": "epay4awr/21618034451283.png",
+  "bytes": 166754
+ },
+ "https://assets.pubpub.org/du8qrze2/11616430958202.png": {
+  "web": "du8qrze2/11616430958202.jpg",
+  "bytes": 203923
+ },
+ "https://assets.pubpub.org/es2au1t8/51650741490138.jpg": {
+  "web": "es2au1t8/51650741490138.jpg",
+  "bytes": 130682
+ },
+ "https://assets.pubpub.org/ejpsp9ld/31612100368121.png": {
+  "web": "ejpsp9ld/31612100368121.jpg",
+  "bytes": 179286
+ },
+ "https://assets.pubpub.org/etveqie1/41612247051328.svg": {
+  "web": "etveqie1/41612247051328.svg",
+  "bytes": 17409
+ },
+ "https://assets.pubpub.org/eu7rxcgd/01617695342401.svg": {
+  "web": "eu7rxcgd/01617695342401.svg",
+  "bytes": 17716
+ },
+ "https://assets.pubpub.org/ew7zn038/51652171920436.mp4": {
+  "poster": "posters/ew7zn038/51652171920436.jpg",
+  "bytes": 16395,
+  "duration": "885.100000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_23/video1.mp4"
+ },
+ "https://assets.pubpub.org/es6mc540/61643166457389.png": {
+  "web": "es6mc540/61643166457389.jpg",
+  "bytes": 128060
+ },
+ "https://assets.pubpub.org/eyrrxifz/71612011231793.png": {
+  "web": "eyrrxifz/71612011231793.jpg",
+  "bytes": 60429
+ },
+ "https://assets.pubpub.org/f029tdig/71643571086573.mp4": {
+  "poster": "posters/f029tdig/71643571086573.jpg",
+  "bytes": 13387,
+  "duration": "27.669292",
+  "source_file": "2022/in_proceedings/papers/nime2022_9/video1.mp4"
+ },
+ "https://assets.pubpub.org/erefktuo/41643656071858.png": {
+  "web": "erefktuo/41643656071858.png",
+  "bytes": 385338
+ },
+ "https://assets.pubpub.org/do2gh7y1/41643694948523.png": {
+  "web": "do2gh7y1/41643694948523.jpg",
+  "bytes": 128794
+ },
+ "https://assets.pubpub.org/f0672yn7/11617842608487.jpg": {
+  "web": "f0672yn7/11617842608487.jpg",
+  "bytes": 93404
+ },
+ "https://assets.pubpub.org/bd3qdgmq/21613725466309.png": {
+  "web": "bd3qdgmq/21613725466309.jpg",
+  "bytes": 105664
+ },
+ "https://assets.pubpub.org/f1aemf8t/11617904309270.svg": {
+  "web": "f1aemf8t/11617904309270.svg",
+  "bytes": 247702
+ },
+ "https://assets.pubpub.org/f4bsvp36/01643482012808.JPG": {
+  "web": "f4bsvp36/01643482012808.jpg",
+  "bytes": 186435
+ },
+ "https://assets.pubpub.org/f077535l/21616431818771.png": {
+  "web": "f077535l/21616431818771.png",
+  "bytes": 44442
+ },
+ "https://assets.pubpub.org/f4iqpvqi/41611221139377.jpg": {
+  "web": "f4iqpvqi/41611221139377.jpg",
+  "bytes": 53050
+ },
+ "https://assets.pubpub.org/f4ghnxqx/41650064203696.png": {
+  "web": "f4ghnxqx/41650064203696.png",
+  "bytes": 35160
+ },
+ "https://assets.pubpub.org/f604vuzs/11643462465308.svg": {
+  "web": "f604vuzs/11643462465308.svg",
+  "bytes": 401522
+ },
+ "https://assets.pubpub.org/eyqoxhmo/61612238673893.png": {
+  "web": "eyqoxhmo/61612238673893.jpg",
+  "bytes": 87792
+ },
+ "https://assets.pubpub.org/ezhogmn3/71618079570299.jpg": {
+  "web": "ezhogmn3/71618079570299.jpg",
+  "bytes": 231084
+ },
+ "https://assets.pubpub.org/f9rxb5pa/31617833938526.mp4": {
+  "poster": "posters/f9rxb5pa/31617833938526.jpg",
+  "bytes": 104452,
+  "duration": "235.640000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_38/video2.mp4"
+ },
+ "https://assets.pubpub.org/f6rfidgt/01612121199714.png": {
+  "web": "f6rfidgt/01612121199714.jpg",
+  "bytes": 40963
+ },
+ "https://assets.pubpub.org/f8hhuvdq/21643034291976.jpg": {
+  "web": "f8hhuvdq/21643034291976.jpg",
+  "bytes": 79136
+ },
+ "https://assets.pubpub.org/fatkdabh/11643667902057.png": {
+  "web": "fatkdabh/11643667902057.png",
+  "bytes": 12206
+ },
+ "https://assets.pubpub.org/f83tks5w/31612044158397.png": {
+  "web": "f83tks5w/31612044158397.png",
+  "bytes": 23684
+ },
+ "https://assets.pubpub.org/f8eheycz/11643575623970.png": {
+  "web": "f8eheycz/11643575623970.png",
+  "bytes": 118874
+ },
+ "https://assets.pubpub.org/fa5g0ghx/61650064205359.png": {
+  "web": "fa5g0ghx/61650064205359.jpg",
+  "bytes": 84191
+ },
+ "https://assets.pubpub.org/f4cwe6o8/21618004140441.png": {
+  "web": "f4cwe6o8/21618004140441.png",
+  "bytes": 137029
+ },
+ "https://assets.pubpub.org/fewr8pm9/41643557901423.png": {
+  "web": "fewr8pm9/41643557901423.png",
+  "bytes": 3338
+ },
+ "https://assets.pubpub.org/en5bbo70/01648632476605.png": {
+  "web": "en5bbo70/01648632476605.jpg",
+  "bytes": 321639
+ },
+ "https://assets.pubpub.org/ffe5q31c/21642476668961.png": {
+  "web": "ffe5q31c/21642476668961.jpg",
+  "bytes": 22459
+ },
+ "https://assets.pubpub.org/f05c38sw/01612267013222.png": {
+  "web": "f05c38sw/01612267013222.png",
+  "bytes": 57694
+ },
+ "https://assets.pubpub.org/fc3jrwzs/61612086739491.png": {
+  "web": "fc3jrwzs/61612086739491.jpg",
+  "bytes": 31037
+ },
+ "https://assets.pubpub.org/fga4fqx7/11612130200945.svg": {
+  "web": "fga4fqx7/11612130200945.svg",
+  "bytes": 12104
+ },
+ "https://assets.pubpub.org/fk4ivd4d/51618036433950.mp4": {
+  "poster": "posters/fk4ivd4d/51618036433950.jpg",
+  "bytes": 45713,
+  "duration": "474.040233",
+  "source_file": "2021/other/work-in-progress_showcase/24/video1.mp4",
+  "note": "matched by item (CDN size unknown)"
+ },
+ "https://assets.pubpub.org/fg4viedd/71611378972319.jpg": {
+  "web": "fg4viedd/71611378972319.jpg",
+  "bytes": 102301
+ },
+ "https://assets.pubpub.org/fr14tf49/41617710001411.mp4": {
+  "poster": "posters/fr14tf49/41617710001411.jpg",
+  "bytes": 66014,
+  "duration": "179.946438",
+  "source_file": "2021/other/work-in-progress_showcase/34/video3.mp4"
+ },
+ "https://assets.pubpub.org/ffr04o15/31617977229902.png": {
+  "web": "ffr04o15/31617977229902.jpg",
+  "bytes": 84640
+ },
+ "https://assets.pubpub.org/fn42wu6w/51611186075952.jpg": {
+  "web": "fn42wu6w/51611186075952.jpg",
+  "bytes": 193463
+ },
+ "https://assets.pubpub.org/fk9yqxej/41643032924195.jpg": {
+  "web": "fk9yqxej/41643032924195.jpg",
+  "bytes": 70719
+ },
+ "https://assets.pubpub.org/fs5zj97g/31618107279812.mp4": {
+  "poster": "posters/fs5zj97g/31618107279812.jpg",
+  "bytes": 29318,
+  "duration": "29.546000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_49/video2.mp4"
+ },
+ "https://assets.pubpub.org/ftbjll5i/11642789258553.mp4": {
+  "poster": "posters/ftbjll5i/11642789258553.jpg",
+  "bytes": 11638,
+  "duration": "15.092993",
+  "source_file": "2022/other/demo/20/video1.mp4"
+ },
+ "https://assets.pubpub.org/ffudph6k/51618004114300.png": {
+  "web": "ffudph6k/51618004114300.png",
+  "bytes": 272180
+ },
+ "https://assets.pubpub.org/fv3q4p90/41643263741772.mp4": {
+  "poster": "posters/fv3q4p90/41643263741772.jpg",
+  "bytes": 39650,
+  "duration": "56.169333",
+  "source_file": "2022/in_proceedings/papers/nime2022_51/figure13.mp4"
+ },
+ "https://assets.pubpub.org/exot3val/71617968823572.png": {
+  "web": "exot3val/71617968823572.jpg",
+  "bytes": 118036
+ },
+ "https://assets.pubpub.org/fn6i01bl/71605802144496.png": {
+  "web": "fn6i01bl/71605802144496.jpg",
+  "bytes": 64854
+ },
+ "https://assets.pubpub.org/fh0vrhgj/41617898326021.png": {
+  "web": "fh0vrhgj/41617898326021.jpg",
+  "bytes": 288734
+ },
+ "https://assets.pubpub.org/fxohojom/01643575623939.PNG": {
+  "web": "fxohojom/01643575623939.jpg",
+  "bytes": 33124
+ },
+ "https://assets.pubpub.org/ftfj4jyi/61643861301294.jpg": {
+  "web": "ftfj4jyi/61643861301294.jpg",
+  "bytes": 84927
+ },
+ "https://assets.pubpub.org/fsmrx1lz/11612044137213.jpg": {
+  "web": "fsmrx1lz/11612044137213.jpg",
+  "bytes": 351044
+ },
+ "https://assets.pubpub.org/fxzty99t/31610073975017.jpg": {
+  "web": "fxzty99t/31610073975017.jpg",
+  "bytes": 41401
+ },
+ "https://assets.pubpub.org/fzp7hfwg/61650740892591.jpg": {
+  "web": "fzp7hfwg/61650740892591.jpg",
+  "bytes": 24612
+ },
+ "https://assets.pubpub.org/f58p1o7r/61643217359104.png": {
+  "web": "f58p1o7r/61643217359104.jpg",
+  "bytes": 261636
+ },
+ "https://assets.pubpub.org/fslqbufe/31611952292851.png": {
+  "web": "fslqbufe/31611952292851.jpg",
+  "bytes": 93202
+ },
+ "https://assets.pubpub.org/g1b9bx0l/01622630823007.svg": {
+  "web": "g1b9bx0l/01622630823007.svg",
+  "bytes": 34714
+ },
+ "https://assets.pubpub.org/g3u2o84l/21617882100973.jpg": {
+  "web": "g3u2o84l/21617882100973.jpg",
+  "bytes": 69983
+ },
+ "https://assets.pubpub.org/eskrhb42/31618106263201.png": {
+  "web": "eskrhb42/31618106263201.jpg",
+  "bytes": 79123
+ },
+ "https://assets.pubpub.org/g14bhgt3/41611649833286.jpg": {
+  "web": "g14bhgt3/41611649833286.jpg",
+  "bytes": 101488
+ },
+ "https://assets.pubpub.org/fvulkf8b/51612080793334.png": {
+  "web": "fvulkf8b/51612080793334.jpg",
+  "bytes": 148540
+ },
+ "https://assets.pubpub.org/g5cqgt7b/71622630713376.svg": {
+  "web": "g5cqgt7b/71622630713376.svg",
+  "bytes": 218423
+ },
+ "https://assets.pubpub.org/fzz6s6f8/61613802066416.jpg": {
+  "web": "fzz6s6f8/61613802066416.jpg",
+  "bytes": 173677
+ },
+ "https://assets.pubpub.org/gb9kwox9/21643263653715.mp4": {
+  "poster": "posters/gb9kwox9/21643263653715.jpg",
+  "bytes": 46334,
+  "duration": "57.001333",
+  "source_file": "2022/in_proceedings/papers/nime2022_51/figure11.mp4"
+ },
+ "https://assets.pubpub.org/gf4zux3k/01619217287306.jpeg": {
+  "web": "gf4zux3k/01619217287306.jpg",
+  "bytes": 33742
+ },
+ "https://assets.pubpub.org/gi6po5f5/11610824261668.jpg": {
+  "web": "gi6po5f5/11610824261668.jpg",
+  "bytes": 35556
+ },
+ "https://assets.pubpub.org/g4c1067g/61650100855102.png": {
+  "web": "g4c1067g/61650100855102.jpg",
+  "bytes": 67956
+ },
+ "https://assets.pubpub.org/gkxt4zhl/21613698242904.mp4": {
+  "poster": "posters/gkxt4zhl/21613698242904.jpg",
+  "bytes": 112369,
+  "duration": "1083.220000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_24/video1.mp4"
+ },
+ "https://assets.pubpub.org/fb8em2l4/61618071589881.png": {
+  "web": "fb8em2l4/61618071589881.jpg",
+  "bytes": 150088
+ },
+ "https://assets.pubpub.org/gj8vargt/21612176629628.png": {
+  "web": "gj8vargt/21612176629628.png",
+  "bytes": 45216
+ },
+ "https://assets.pubpub.org/gd5b04kl/61612877708290.jpg": {
+  "web": "gd5b04kl/61612877708290.jpg",
+  "bytes": 100152
+ },
+ "https://assets.pubpub.org/g98u5m59/31612175897992.png": {
+  "web": "g98u5m59/31612175897992.jpg",
+  "bytes": 67389
+ },
+ "https://assets.pubpub.org/gpx7we7s/61612953356149.JPG": {
+  "web": "gpx7we7s/61612953356149.jpg",
+  "bytes": 146198
+ },
+ "https://assets.pubpub.org/fup7xiow/41618014984973.png": {
+  "web": "fup7xiow/41618014984973.jpg",
+  "bytes": 117588
+ },
+ "https://assets.pubpub.org/gqg9ar55/01618022176031.mp4": {
+  "poster": "posters/gqg9ar55/01618022176031.jpg",
+  "bytes": 22040,
+  "duration": "379.648000",
+  "source_file": "2021/other/work-in-progress_showcase/14/video1.mp4"
+ },
+ "https://assets.pubpub.org/gt7sveu5/31643687126222.mp4": {
+  "poster": "posters/gt7sveu5/31643687126222.jpg",
+  "bytes": 26725,
+  "duration": "817.750271",
+  "source_file": "2022/in_proceedings/music/nime2022_music_27/video1.mp4"
+ },
+ "https://assets.pubpub.org/gm9q67nc/01618096660639.svg": {
+  "web": "gm9q67nc/01618096660639.svg",
+  "bytes": 249355
+ },
+ "https://assets.pubpub.org/gybrd34l/41617654901653.mp4": {
+  "poster": "posters/gybrd34l/41617654901653.jpg",
+  "bytes": 38669,
+  "duration": "129.386000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_20/video1.mp4"
+ },
+ "https://assets.pubpub.org/g6ezd54r/71612108389975.png": {
+  "web": "g6ezd54r/71612108389975.jpg",
+  "bytes": 91053
+ },
+ "https://assets.pubpub.org/h6fwmipm/11611673449804.JPG": {
+  "web": "h6fwmipm/11611673449804.jpg",
+  "bytes": 109799
+ },
+ "https://assets.pubpub.org/gupiv5w3/41612095825563.svg": {
+  "web": "gupiv5w3/41612095825563.svg",
+  "bytes": 2223042
+ },
+ "https://assets.pubpub.org/gd440y5s/01613670782918.jpg": {
+  "web": "gd440y5s/01613670782918.jpg",
+  "bytes": 589169
+ },
+ "https://assets.pubpub.org/gkzxccgy/41611054514381.png": {
+  "web": "gkzxccgy/41611054514381.jpg",
+  "bytes": 114650
+ },
+ "https://assets.pubpub.org/h8jwi3lx/31642758967438.mp4": {
+  "poster": "posters/h8jwi3lx/31642758967438.jpg",
+  "bytes": 14327,
+  "duration": "21.433333",
+  "source_file": "2022/in_proceedings/papers/nime2022_18/video3.mp4"
+ },
+ "https://assets.pubpub.org/gtr01dhg/31611191397298.jpg": {
+  "web": "gtr01dhg/31611191397298.jpg",
+  "bytes": 135003
+ },
+ "https://assets.pubpub.org/gtjb0osg/31617922183262.png": {
+  "web": "gtjb0osg/31617922183262.jpg",
+  "bytes": 52423
+ },
+ "https://assets.pubpub.org/h6ntccss/61642782394102.JPG": {
+  "web": "h6ntccss/61642782394102.jpg",
+  "bytes": 253769
+ },
+ "https://assets.pubpub.org/gwt7zb8r/21650024901756.png": {
+  "web": "gwt7zb8r/21650024901756.jpg",
+  "bytes": 49070
+ },
+ "https://assets.pubpub.org/hd72iyfw/01611960668669.svg": {
+  "web": "hd72iyfw/01611960668669.svg",
+  "bytes": 103832
+ },
+ "https://assets.pubpub.org/hcriipip/11642939011188.mp4": {
+  "poster": "posters/hcriipip/11642939011188.jpg",
+  "bytes": 78905,
+  "duration": "460.833333",
+  "source_file": "2022/in_proceedings/installations/nime20202_installations_5/video2.mp4"
+ },
+ "https://assets.pubpub.org/h83e4qo4/11612930447793.png": {
+  "web": "h83e4qo4/11612930447793.png",
+  "bytes": 128167
+ },
+ "https://assets.pubpub.org/hce1hu5t/11643568075467.jpg": {
+  "web": "hce1hu5t/11643568075467.jpg",
+  "bytes": 114206
+ },
+ "https://assets.pubpub.org/hcxki5yv/01648287646129.jpg": {
+  "web": "hcxki5yv/01648287646129.jpg",
+  "bytes": 71172
+ },
+ "https://assets.pubpub.org/gzmkstlb/31612044158223.png": {
+  "web": "gzmkstlb/31612044158223.png",
+  "bytes": 14795
+ },
+ "https://assets.pubpub.org/hg71jvyf/41654273444739.mp4": {
+  "poster": "posters/hg71jvyf/41654273444739.jpg",
+  "bytes": 115949,
+  "duration": "392.703333",
+  "source_file": "2022/in_proceedings/papers/nime2022_20/video1.mp4"
+ },
+ "https://assets.pubpub.org/hg425lfv/41642793278341.png": {
+  "web": "hg425lfv/41642793278341.png",
+  "bytes": 71720
+ },
+ "https://assets.pubpub.org/et6zbqtt/11612087958831.png": {
+  "web": "et6zbqtt/11612087958831.jpg",
+  "bytes": 112359
+ },
+ "https://assets.pubpub.org/hi0dvqjr/01611925616605.svg": {
+  "web": "hi0dvqjr/01611925616605.svg",
+  "bytes": 46190
+ },
+ "https://assets.pubpub.org/hf4oa1p0/31643673621119.svg": {
+  "web": "hf4oa1p0/31643673621119.svg",
+  "bytes": 111012
+ },
+ "https://assets.pubpub.org/hjk30x62/21643056736792.jpg": {
+  "web": "hjk30x62/21643056736792.jpg",
+  "bytes": 146935
+ },
+ "https://assets.pubpub.org/h8guygza/31623731842734.jpg": {
+  "web": "h8guygza/31623731842734.jpg",
+  "bytes": 163561
+ },
+ "https://assets.pubpub.org/hqracjco/11643666242740.svg": {
+  "web": "hqracjco/11643666242740.svg",
+  "bytes": 236536
+ },
+ "https://assets.pubpub.org/hprfi26h/11643647463607.svg": {
+  "web": "hprfi26h/11643647463607.svg",
+  "bytes": 5011
+ },
+ "https://assets.pubpub.org/hs238pni/31643433758394.m4v": {
+  "poster": "posters/hs238pni/31643433758394.jpg",
+  "bytes": 43552,
+  "duration": "207.900000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_3/video1.m4v"
+ },
+ "https://assets.pubpub.org/hfjcivn9/71612048324550.png": {
+  "web": "hfjcivn9/71612048324550.png",
+  "bytes": 73357
+ },
+ "https://assets.pubpub.org/hqp199c2/01650740556902.jpg": {
+  "web": "hqp199c2/01650740556902.jpg",
+  "bytes": 16402
+ },
+ "https://assets.pubpub.org/htgxv8t6/01617908944405.mp4": {
+  "poster": "posters/htgxv8t6/01617908944405.jpg",
+  "bytes": 96767,
+  "duration": "92.333000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_39/video1.mp4"
+ },
+ "https://assets.pubpub.org/hqz9zyyo/41642674004381.png": {
+  "web": "hqz9zyyo/41642674004381.png",
+  "bytes": 33831
+ },
+ "https://assets.pubpub.org/hobdpf53/31611864080094.png": {
+  "web": "hobdpf53/31611864080094.jpg",
+  "bytes": 116473
+ },
+ "https://assets.pubpub.org/hu6hgj49/31612148825100.png": {
+  "web": "hu6hgj49/31612148825100.jpg",
+  "bytes": 38504
+ },
+ "https://assets.pubpub.org/hruxbt8s/51633217793558.png": {
+  "web": "hruxbt8s/51633217793558.png",
+  "bytes": 141672
+ },
+ "https://assets.pubpub.org/huhuxf0l/51618283642033.jpeg": {
+  "web": "huhuxf0l/51618283642033.jpg",
+  "bytes": 42190
+ },
+ "https://assets.pubpub.org/hwscupmq/31650155182915.mp4": {
+  "poster": "posters/hwscupmq/31650155182915.jpg",
+  "bytes": 41141,
+  "duration": "23.680000",
+  "source_file": "2022/in_proceedings/papers/nime2022_24/video4.mp4"
+ },
+ "https://assets.pubpub.org/g1g71acf/31642784096128.png": {
+  "web": "g1g71acf/31642784096128.png",
+  "bytes": 1073751
+ },
+ "https://assets.pubpub.org/hvbpeyb9/71611054295493.png": {
+  "web": "hvbpeyb9/71611054295493.jpg",
+  "bytes": 62007
+ },
+ "https://assets.pubpub.org/hx3os84e/11617319981271.mp4": {
+  "poster": "posters/hx3os84e/11617319981271.jpg",
+  "bytes": 22639,
+  "duration": "283.583300",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_81/video1.mp4"
+ },
+ "https://assets.pubpub.org/hyx1h5tc/41617577177223.mp4": {
+  "poster": "posters/hyx1h5tc/41617577177223.jpg",
+  "bytes": 65690,
+  "duration": "181.418000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_35/video1.mp4"
+ },
+ "https://assets.pubpub.org/i0o5rybs/41633217945611.mp4": {
+  "poster": "posters/i0o5rybs/41633217945611.jpg",
+  "bytes": 93764,
+  "duration": "112.616780",
+  "source_file": "2022/other/demo/11/video1.mp4"
+ },
+ "https://assets.pubpub.org/huiyqz1h/51618283642034.png": {
+  "web": "huiyqz1h/51618283642034.jpg",
+  "bytes": 183827
+ },
+ "https://assets.pubpub.org/hwjkibs2/31618535015677.jpg": {
+  "web": "hwjkibs2/31618535015677.jpg",
+  "bytes": 154990
+ },
+ "https://assets.pubpub.org/hz3crsw9/11611066187701.png": {
+  "web": "hz3crsw9/11611066187701.png",
+  "bytes": 113823
+ },
+ "https://assets.pubpub.org/h6pblt3o/71611428429809.png": {
+  "web": "h6pblt3o/71611428429809.jpg",
+  "bytes": 109891
+ },
+ "https://assets.pubpub.org/i3tcgmet/71611673338412.JPG": {
+  "web": "i3tcgmet/71611673338412.jpg",
+  "bytes": 107358
+ },
+ "https://assets.pubpub.org/i0owi5zi/21617898275144.png": {
+  "web": "i0owi5zi/21617898275144.jpg",
+  "bytes": 62109
+ },
+ "https://assets.pubpub.org/hvldrjuf/61611323382053.png": {
+  "web": "hvldrjuf/61611323382053.png",
+  "bytes": 457192
+ },
+ "https://assets.pubpub.org/i4v7e4oi/41650023735406.mp4": {
+  "poster": "posters/i4v7e4oi/41650023735406.jpg",
+  "bytes": 111334,
+  "duration": "26.837000",
+  "source_file": "2022/in_proceedings/papers/nime2022_42/video1.mp4"
+ },
+ "https://assets.pubpub.org/i61kuxn8/01612235381630.mp4": {
+  "poster": "posters/i61kuxn8/01612235381630.jpg",
+  "bytes": 40112,
+  "duration": "138.138000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_57/video1.mp4"
+ },
+ "https://assets.pubpub.org/i397drow/31643032235520.jpg": {
+  "web": "i397drow/31643032235520.jpg",
+  "bytes": 123323
+ },
+ "https://assets.pubpub.org/i2ufg6lv/21613763361101.jpg": {
+  "web": "i2ufg6lv/21613763361101.jpg",
+  "bytes": 131167
+ },
+ "https://assets.pubpub.org/i1ujtcgs/51643711915727.png": {
+  "web": "i1ujtcgs/51643711915727.jpg",
+  "bytes": 98683
+ },
+ "https://assets.pubpub.org/i6cz8wcw/71643375596167.svg": {
+  "web": "i6cz8wcw/71643375596167.svg",
+  "bytes": 607273
+ },
+ "https://assets.pubpub.org/i9gopjo3/41643034152251.jpg": {
+  "web": "i9gopjo3/41643034152251.jpg",
+  "bytes": 39433
+ },
+ "https://assets.pubpub.org/i22s3at5/51612148746010.jpg": {
+  "web": "i22s3at5/51612148746010.jpg",
+  "bytes": 338937
+ },
+ "https://assets.pubpub.org/ic9xqe8r/51612122778287.svg": {
+  "web": "ic9xqe8r/51612122778287.svg",
+  "bytes": 428570
+ },
+ "https://assets.pubpub.org/g7jarxnq/01643725221457.png": {
+  "web": "g7jarxnq/01643725221457.jpg",
+  "bytes": 101103
+ },
+ "https://assets.pubpub.org/ia1c4nga/11641780686017.jpg": {
+  "web": "ia1c4nga/11641780686017.jpg",
+  "bytes": 280018
+ },
+ "https://assets.pubpub.org/igpmwk18/01618145883829.mp4": {
+  "poster": "posters/igpmwk18/01618145883829.jpg",
+  "bytes": 98343,
+  "duration": "322.499000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_39/video6.mp4"
+ },
+ "https://assets.pubpub.org/igqnv9ch/61643267009058.mp4": {
+  "poster": "posters/igqnv9ch/61643267009058.jpg",
+  "bytes": 33182,
+  "duration": "78.292000",
+  "source_file": "2022/in_proceedings/papers/nime2022_51/figure17.mp4"
+ },
+ "https://assets.pubpub.org/ibphmua2/61643566617536.jpg": {
+  "web": "ibphmua2/61643566617536.jpg",
+  "bytes": 274871
+ },
+ "https://assets.pubpub.org/i4udf9tl/31643566617562.png": {
+  "web": "i4udf9tl/31643566617562.jpg",
+  "bytes": 70656
+ },
+ "https://assets.pubpub.org/icgfkfxg/41650740933208.jpg": {
+  "web": "icgfkfxg/41650740933208.jpg",
+  "bytes": 44459
+ },
+ "https://assets.pubpub.org/e3lc4hxi/11643683657574.png": {
+  "web": "e3lc4hxi/11643683657574.jpg",
+  "bytes": 222727
+ },
+ "https://assets.pubpub.org/ill4sv9i/21648823983189.mp4": {
+  "poster": "posters/ill4sv9i/21648823983189.jpg",
+  "bytes": 32306,
+  "duration": "59.933333",
+  "source_file": "2022/other/demo/8/video1.mp4"
+ },
+ "https://assets.pubpub.org/i65zmj36/31611701294215.jpg": {
+  "web": "i65zmj36/31611701294215.jpg",
+  "bytes": 73447
+ },
+ "https://assets.pubpub.org/iiw90d8s/71611500043167.png": {
+  "web": "iiw90d8s/71611500043167.png",
+  "bytes": 9472
+ },
+ "https://assets.pubpub.org/i4dcxv3u/31611044807253.png": {
+  "web": "i4dcxv3u/31611044807253.jpg",
+  "bytes": 180227
+ },
+ "https://assets.pubpub.org/illlzxux/21610824516258.jpg": {
+  "web": "illlzxux/21610824516258.jpg",
+  "bytes": 31086
+ },
+ "https://assets.pubpub.org/ihzx31ku/01650064203865.png": {
+  "web": "ihzx31ku/01650064203865.png",
+  "bytes": 18341
+ },
+ "https://assets.pubpub.org/i7f7d4rp/71611091578163.png": {
+  "web": "i7f7d4rp/71611091578163.jpg",
+  "bytes": 141585
+ },
+ "https://assets.pubpub.org/inf8we4w/11618502253968.jpg": {
+  "web": "inf8we4w/11618502253968.jpg",
+  "bytes": 129060
+ },
+ "https://assets.pubpub.org/inpyoa92/61650741225343.jpg": {
+  "web": "inpyoa92/61650741225343.jpg",
+  "bytes": 7991
+ },
+ "https://assets.pubpub.org/iohm1rf2/71619217287308.jpeg": {
+  "web": "iohm1rf2/71619217287308.jpg",
+  "bytes": 33322
+ },
+ "https://assets.pubpub.org/inc0y3k8/01611461278432.png": {
+  "web": "inc0y3k8/01611461278432.png",
+  "bytes": 19819
+ },
+ "https://assets.pubpub.org/ihjivxom/71642794117661.png": {
+  "web": "ihjivxom/71642794117661.jpg",
+  "bytes": 46528
+ },
+ "https://assets.pubpub.org/ir62991k/01618729609396.mp4": {
+  "poster": "posters/ir62991k/01618729609396.jpg",
+  "bytes": 76100,
+  "duration": "628.160875",
+  "source_file": "2021/other/work-in-progress_showcase/27/pubpub_assets/ir62991k/01618729609396.mp4"
+ },
+ "https://assets.pubpub.org/iouq03ax/11611585813212.jpg": {
+  "web": "iouq03ax/11611585813212.jpg",
+  "bytes": 145408
+ },
+ "https://assets.pubpub.org/ihqkh646/41612953269965.jpg": {
+  "web": "ihqkh646/41612953269965.jpg",
+  "bytes": 195895
+ },
+ "https://assets.pubpub.org/ir6vr2m0/51611808992216.jpg": {
+  "web": "ir6vr2m0/51611808992216.jpg",
+  "bytes": 67610
+ },
+ "https://assets.pubpub.org/ipv15str/61618027093789.jpg": {
+  "web": "ipv15str/61618027093789.jpg",
+  "bytes": 65530
+ },
+ "https://assets.pubpub.org/is3p2r7o/11617704007886.svg": {
+  "web": "is3p2r7o/11617704007886.svg",
+  "bytes": 526533
+ },
+ "https://assets.pubpub.org/irlx5sem/51643566617544.PNG": {
+  "web": "irlx5sem/51643566617544.jpg",
+  "bytes": 22897
+ },
+ "https://assets.pubpub.org/ih3f8aub/61623731928768.jpg": {
+  "web": "ih3f8aub/61623731928768.jpg",
+  "bytes": 139494
+ },
+ "https://assets.pubpub.org/ix88kwfp/51617885426658.svg": {
+  "web": "ix88kwfp/51617885426658.svg",
+  "bytes": 669544
+ },
+ "https://assets.pubpub.org/ixzt7opn/01616836200403.mp4": {
+  "poster": "posters/ixzt7opn/01616836200403.jpg",
+  "bytes": 140084,
+  "duration": "71.600000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_25/video1.mp4"
+ },
+ "https://assets.pubpub.org/iyj9o0dx/41622630906214.svg": {
+  "web": "iyj9o0dx/41622630906214.svg",
+  "bytes": 27007
+ },
+ "https://assets.pubpub.org/ivxj3geg/41605800236499.png": {
+  "web": "ivxj3geg/41605800236499.jpg",
+  "bytes": 78474
+ },
+ "https://assets.pubpub.org/j3ifoio6/11611259943515.jpg": {
+  "web": "j3ifoio6/11611259943515.jpg",
+  "bytes": 119181
+ },
+ "https://assets.pubpub.org/ip3fbcmy/31611880670431.jpg": {
+  "web": "ip3fbcmy/31611880670431.jpg",
+  "bytes": 381274
+ },
+ "https://assets.pubpub.org/hrsji1ei/11642426112749.png": {
+  "web": "hrsji1ei/11642426112749.jpg",
+  "bytes": 891232
+ },
+ "https://assets.pubpub.org/j20dw4ac/31622630549933.mp4": {
+  "poster": "posters/j20dw4ac/31622630549933.jpg",
+  "bytes": 100700,
+  "duration": "79.112434",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_2/video2.mp4"
+ },
+ "https://assets.pubpub.org/j4dqeu6x/61643664645246.svg": {
+  "web": "j4dqeu6x/61643664645246.svg",
+  "bytes": 40856
+ },
+ "https://assets.pubpub.org/igfoodgt/61612175269530.png": {
+  "web": "igfoodgt/61612175269530.jpg",
+  "bytes": 125905
+ },
+ "https://assets.pubpub.org/j933yaa2/71618095023730.mp4": {
+  "poster": "posters/j933yaa2/71618095023730.jpg",
+  "bytes": 29257,
+  "duration": "109.776333",
+  "source_file": "2021/other/work-in-progress_showcase/5/video1.mp4"
+ },
+ "https://assets.pubpub.org/izpetdb3/71642633829612.png": {
+  "web": "izpetdb3/71642633829612.png",
+  "bytes": 52985
+ },
+ "https://assets.pubpub.org/j8i6o8w5/61617803939624.svg": {
+  "web": "j8i6o8w5/61617803939624.svg",
+  "bytes": 635836
+ },
+ "https://assets.pubpub.org/j2zrogpa/61612049546932.png": {
+  "web": "j2zrogpa/61612049546932.png",
+  "bytes": 129447
+ },
+ "https://assets.pubpub.org/ixfv2ir0/51618040155698.jpg": {
+  "web": "ixfv2ir0/51618040155698.jpg",
+  "bytes": 221840
+ },
+ "https://assets.pubpub.org/j7wxquzw/51612091280342.jpg": {
+  "web": "j7wxquzw/51612091280342.jpg",
+  "bytes": 198144
+ },
+ "https://assets.pubpub.org/jda2orwi/21643634832580.svg": {
+  "web": "jda2orwi/21643634832580.svg",
+  "bytes": 457037
+ },
+ "https://assets.pubpub.org/jdifkwlk/01613775900907.mp4": {
+  "poster": "posters/jdifkwlk/01613775900907.jpg",
+  "bytes": 20072,
+  "duration": "598.297708",
+  "source_file": "2021/in_proceedings/music/nime2021_music_27/video1.mp4"
+ },
+ "https://assets.pubpub.org/j93mahpn/61617460602760.png": {
+  "web": "j93mahpn/61617460602760.jpg",
+  "bytes": 32406
+ },
+ "https://assets.pubpub.org/j7k4q9yq/31611322926782.png": {
+  "web": "j7k4q9yq/31611322926782.png",
+  "bytes": 199896
+ },
+ "https://assets.pubpub.org/jcclz5ku/31643667871190.png": {
+  "web": "jcclz5ku/31643667871190.png",
+  "bytes": 11347
+ },
+ "https://assets.pubpub.org/j411i8sm/41623731917361.jpg": {
+  "web": "j411i8sm/41623731917361.jpg",
+  "bytes": 110103
+ },
+ "https://assets.pubpub.org/jrf066vz/01642735240188.jpg": {
+  "web": "jrf066vz/01642735240188.jpg",
+  "bytes": 92270
+ },
+ "https://assets.pubpub.org/j8qyb5he/71643629632972.png": {
+  "web": "j8qyb5he/71643629632972.jpg",
+  "bytes": 43137
+ },
+ "https://assets.pubpub.org/jr9yvo0n/71611267339443.jpg": {
+  "web": "jr9yvo0n/71611267339443.jpg",
+  "bytes": 110380
+ },
+ "https://assets.pubpub.org/jsk09mye/51611955508150.svg": {
+  "web": "jsk09mye/51611955508150.svg",
+  "bytes": 19353
+ },
+ "https://assets.pubpub.org/jtfbdshh/11643345038940.jpg": {
+  "web": "jtfbdshh/11643345038940.jpg",
+  "bytes": 126576
+ },
+ "https://assets.pubpub.org/jtqseq1t/01618014984976.jpg": {
+  "web": "jtqseq1t/01618014984976.jpg",
+  "bytes": 37786
+ },
+ "https://assets.pubpub.org/js4fx84t/11618113880479.jpg": {
+  "web": "js4fx84t/11618113880479.jpg",
+  "bytes": 189673
+ },
+ "https://assets.pubpub.org/jk7ndebk/51612248131541.png": {
+  "web": "jk7ndebk/51612248131541.jpg",
+  "bytes": 58635
+ },
+ "https://assets.pubpub.org/juf4hmji/71618824572211.jpg": {
+  "web": "juf4hmji/71618824572211.jpg",
+  "bytes": 258261
+ },
+ "https://assets.pubpub.org/hphsmaxj/21618051772292.png": {
+  "web": "hphsmaxj/21618051772292.jpg",
+  "bytes": 133335
+ },
+ "https://assets.pubpub.org/jvtfdecz/51642849223977.png": {
+  "web": "jvtfdecz/51642849223977.png",
+  "bytes": 14323
+ },
+ "https://assets.pubpub.org/jlx2kdr8/11618071589891.png": {
+  "web": "jlx2kdr8/11618071589891.jpg",
+  "bytes": 64520
+ },
+ "https://assets.pubpub.org/jpu9dvr1/61650064207143.png": {
+  "web": "jpu9dvr1/61650064207143.jpg",
+  "bytes": 40852
+ },
+ "https://assets.pubpub.org/k1musaky/11652493289804.mp4": {
+  "poster": "posters/k1musaky/11652493289804.jpg",
+  "bytes": 20128,
+  "duration": "150.150000",
+  "source_file": "2022/in_proceedings/installations/nime20202_installations_2/video1.mp4"
+ },
+ "https://assets.pubpub.org/jwp9y1ob/51648740705236.png": {
+  "web": "jwp9y1ob/51648740705236.jpg",
+  "bytes": 27061
+ },
+ "https://assets.pubpub.org/k3z15y8a/71617909177179.mp4": {
+  "poster": "posters/k3z15y8a/71617909177179.jpg",
+  "bytes": 96985,
+  "duration": "135.533000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_39/video3.mp4"
+ },
+ "https://assets.pubpub.org/k0si34j4/61643504143266.png": {
+  "web": "k0si34j4/61643504143266.jpg",
+  "bytes": 25216
+ },
+ "https://assets.pubpub.org/k4s9r2yq/01612036871085.png": {
+  "web": "k4s9r2yq/01612036871085.png",
+  "bytes": 4318
+ },
+ "https://assets.pubpub.org/kc6tyltl/71612129439748.JPG": {
+  "web": "kc6tyltl/71612129439748.jpg",
+  "bytes": 53969
+ },
+ "https://assets.pubpub.org/is0tfj7r/71650328868097.png": {
+  "web": "is0tfj7r/71650328868097.jpg",
+  "bytes": 249044
+ },
+ "https://assets.pubpub.org/jxxtnj08/61611812226405.png": {
+  "web": "jxxtnj08/61611812226405.jpg",
+  "bytes": 90407
+ },
+ "https://assets.pubpub.org/k4xrur49/11642438997791.jpg": {
+  "web": "k4xrur49/11642438997791.jpg",
+  "bytes": 70716
+ },
+ "https://assets.pubpub.org/keswzwy8/21649867635598.mp4": {
+  "poster": "posters/keswzwy8/21649867635598.jpg",
+  "bytes": 52456,
+  "duration": "304.916667",
+  "source_file": "2022/in_proceedings/papers/nime2022_9/video3.mp4"
+ },
+ "https://assets.pubpub.org/jyetbcx5/01618027466438.png": {
+  "web": "jyetbcx5/01618027466438.png",
+  "bytes": 239139
+ },
+ "https://assets.pubpub.org/k1t0zvuc/61611044786557.png": {
+  "web": "k1t0zvuc/61611044786557.jpg",
+  "bytes": 166560
+ },
+ "https://assets.pubpub.org/k6mki7xm/11643628690000.png": {
+  "web": "k6mki7xm/11643628690000.png",
+  "bytes": 24684
+ },
+ "https://assets.pubpub.org/keiqdizj/21649977803613.mp4": {
+  "poster": "posters/keiqdizj/21649977803613.jpg",
+  "bytes": 46258,
+  "duration": "74.260000",
+  "source_file": "2022/in_proceedings/papers/nime2022_17/video3.mp4"
+ },
+ "https://assets.pubpub.org/kalbov9h/11643263575058.png": {
+  "web": "kalbov9h/11643263575058.png",
+  "bytes": 21031
+ },
+ "https://assets.pubpub.org/kgiwcsoj/31610824026485.jpg": {
+  "web": "kgiwcsoj/31610824026485.jpg",
+  "bytes": 38051
+ },
+ "https://assets.pubpub.org/ki5g85lb/31643238194078.png": {
+  "web": "ki5g85lb/31643238194078.png",
+  "bytes": 13098
+ },
+ "https://assets.pubpub.org/kh95p2k2/61643667068465.jpg": {
+  "web": "kh95p2k2/61643667068465.jpg",
+  "bytes": 64256
+ },
+ "https://assets.pubpub.org/jv27r80j/41643682184842.png": {
+  "web": "jv27r80j/41643682184842.jpg",
+  "bytes": 85241
+ },
+ "https://assets.pubpub.org/kitgpbgb/21610358342040.jpg": {
+  "web": "kitgpbgb/21610358342040.jpg",
+  "bytes": 142106
+ },
+ "https://assets.pubpub.org/k998w4t6/31643603655540.png": {
+  "web": "k998w4t6/31643603655540.png",
+  "bytes": 68731
+ },
+ "https://assets.pubpub.org/klqfshbf/21612848405462.mp4": {
+  "poster": "posters/klqfshbf/21612848405462.jpg",
+  "bytes": 132291,
+  "duration": "751.333917",
+  "source_file": "2021/in_proceedings/music/nime2021_music_25/video1.mp4"
+ },
+ "https://assets.pubpub.org/kp155i6n/01643559407110.png": {
+  "web": "kp155i6n/01643559407110.png",
+  "bytes": 5094
+ },
+ "https://assets.pubpub.org/knbt7d3u/61618075583338.png": {
+  "web": "knbt7d3u/61618075583338.png",
+  "bytes": 46610
+ },
+ "https://assets.pubpub.org/kjzgwbe0/71613309759732.jpg": {
+  "web": "kjzgwbe0/71613309759732.jpg",
+  "bytes": 181329
+ },
+ "https://assets.pubpub.org/kh7aflid/61642789748301.png": {
+  "web": "kh7aflid/61642789748301.png",
+  "bytes": 242162
+ },
+ "https://assets.pubpub.org/knb66xaz/61618036993905.jpg": {
+  "web": "knb66xaz/61618036993905.jpg",
+  "bytes": 217242
+ },
+ "https://assets.pubpub.org/kfaz27wa/61642962420355.png": {
+  "web": "kfaz27wa/61642962420355.png",
+  "bytes": 271573
+ },
+ "https://assets.pubpub.org/kqfqypwy/51617708813670.png": {
+  "web": "kqfqypwy/51617708813670.png",
+  "bytes": 269364
+ },
+ "https://assets.pubpub.org/ky87s0f0/21611227367396.jpg": {
+  "web": "ky87s0f0/21611227367396.jpg",
+  "bytes": 201000
+ },
+ "https://assets.pubpub.org/kxkhu7a3/21642919735074.jpg": {
+  "web": "kxkhu7a3/21642919735074.jpg",
+  "bytes": 170243
+ },
+ "https://assets.pubpub.org/kzjl1bjr/21612176126321.png": {
+  "web": "kzjl1bjr/21612176126321.jpg",
+  "bytes": 63594
+ },
+ "https://assets.pubpub.org/hk96vvjs/41611363221247.png": {
+  "web": "hk96vvjs/41611363221247.jpg",
+  "bytes": 140404
+ },
+ "https://assets.pubpub.org/l2ugbz3t/21618039875461.mp4": {
+  "poster": "posters/l2ugbz3t/21618039875461.jpg",
+  "bytes": 45720,
+  "duration": "378.111067",
+  "source_file": "2021/other/work-in-progress_showcase/24/video2.mp4"
+ },
+ "https://assets.pubpub.org/kj3jr4oj/31618104288794.png": {
+  "web": "kj3jr4oj/31618104288794.png",
+  "bytes": 1407105
+ },
+ "https://assets.pubpub.org/kywubf62/41650740912826.jpg": {
+  "web": "kywubf62/41650740912826.jpg",
+  "bytes": 37775
+ },
+ "https://assets.pubpub.org/l240w1o0/31617780298783.svg": {
+  "web": "l240w1o0/31617780298783.svg",
+  "bytes": 238179
+ },
+ "https://assets.pubpub.org/kea1hcvs/51643712794013.png": {
+  "web": "kea1hcvs/51643712794013.jpg",
+  "bytes": 48813
+ },
+ "https://assets.pubpub.org/l7jr7c6y/01650028069430.mp4": {
+  "poster": "posters/l7jr7c6y/01650028069430.jpg",
+  "bytes": 94468,
+  "duration": "87.320567",
+  "source_file": "2022/in_proceedings/papers/nime2022_22/video1.mp4"
+ },
+ "https://assets.pubpub.org/lbssrveu/61653225010599.mp4": {
+  "poster": "posters/lbssrveu/61653225010599.jpg",
+  "bytes": 39752,
+  "duration": "568.678458",
+  "source_file": "2022/in_proceedings/music/nime2022_music_14/pubpub_assets/lbssrveu/61653225010599.mp4"
+ },
+ "https://assets.pubpub.org/lfz8jcap/31612001103648.JPG": {
+  "web": "lfz8jcap/31612001103648.jpg",
+  "bytes": 181799
+ },
+ "https://assets.pubpub.org/l7yw74t9/31613780724337.jpg": {
+  "web": "l7yw74t9/31613780724337.jpg",
+  "bytes": 43793
+ },
+ "https://assets.pubpub.org/ju5rpyfc/51643629992312.png": {
+  "web": "ju5rpyfc/51643629992312.png",
+  "bytes": 2342986
+ },
+ "https://assets.pubpub.org/lf5xndxh/61642689393912.png": {
+  "web": "lf5xndxh/61642689393912.png",
+  "bytes": 5132
+ },
+ "https://assets.pubpub.org/kqh1ovlz/51610755004703.png": {
+  "web": "kqh1ovlz/51610755004703.jpg",
+  "bytes": 116199
+ },
+ "https://assets.pubpub.org/li0l3r52/31649960421025.png": {
+  "web": "li0l3r52/31649960421025.png",
+  "bytes": 21418
+ },
+ "https://assets.pubpub.org/ldp2q9d8/51618026954574.jpg": {
+  "web": "ldp2q9d8/51618026954574.jpg",
+  "bytes": 109852
+ },
+ "https://assets.pubpub.org/lknkwbe7/71610000158852.jpg": {
+  "web": "lknkwbe7/71610000158852.jpg",
+  "bytes": 119881
+ },
+ "https://assets.pubpub.org/l90506qf/51611182458093.jpg": {
+  "web": "l90506qf/51611182458093.jpg",
+  "bytes": 285314
+ },
+ "https://assets.pubpub.org/lljx7r13/71643431650475.jpeg": {
+  "web": "lljx7r13/71643431650475.jpg",
+  "bytes": 142110
+ },
+ "https://assets.pubpub.org/l31hiubt/71612086418429.png": {
+  "web": "l31hiubt/71612086418429.png",
+  "bytes": 362009
+ },
+ "https://assets.pubpub.org/lkksuyvu/71611267339442.jpg": {
+  "web": "lkksuyvu/71611267339442.jpg",
+  "bytes": 76121
+ },
+ "https://assets.pubpub.org/lkjqpx29/41611442611877.png": {
+  "web": "lkjqpx29/41611442611877.jpg",
+  "bytes": 54476
+ },
+ "https://assets.pubpub.org/kykdepf5/21613758258192.png": {
+  "web": "kykdepf5/21613758258192.jpg",
+  "bytes": 83187
+ },
+ "https://assets.pubpub.org/louzze7t/51650064203862.png": {
+  "web": "louzze7t/51650064203862.png",
+  "bytes": 21303
+ },
+ "https://assets.pubpub.org/lqvnph1w/11611322314289.jpg": {
+  "web": "lqvnph1w/11611322314289.jpg",
+  "bytes": 118851
+ },
+ "https://assets.pubpub.org/lp1nnc64/41643732778970.jpg": {
+  "web": "lp1nnc64/41643732778970.jpg",
+  "bytes": 96003
+ },
+ "https://assets.pubpub.org/lr8sqv7r/11605802063653.png": {
+  "web": "lr8sqv7r/11605802063653.jpg",
+  "bytes": 32208
+ },
+ "https://assets.pubpub.org/lrk1ag66/61648864226757.jpg": {
+  "web": "lrk1ag66/61648864226757.jpg",
+  "bytes": 256122
+ },
+ "https://assets.pubpub.org/ls8cd5ux/21650028231846.jpg": {
+  "web": "ls8cd5ux/21650028231846.jpg",
+  "bytes": 94595
+ },
+ "https://assets.pubpub.org/lp17loed/11612173535402.png": {
+  "web": "lp17loed/11612173535402.jpg",
+  "bytes": 150725
+ },
+ "https://assets.pubpub.org/lubh6six/61642735404651.jpg": {
+  "web": "lubh6six/61642735404651.jpg",
+  "bytes": 55220
+ },
+ "https://assets.pubpub.org/jofac15q/51617786907884.png": {
+  "web": "jofac15q/51617786907884.png",
+  "bytes": 613290
+ },
+ "https://assets.pubpub.org/lucvuqn2/11612121199317.png": {
+  "web": "lucvuqn2/11612121199317.jpg",
+  "bytes": 83353
+ },
+ "https://assets.pubpub.org/klsfe5hv/41612087411737.png": {
+  "web": "klsfe5hv/41612087411737.png",
+  "bytes": 1015552
+ },
+ "https://assets.pubpub.org/lz0h9vkd/31648540367575.svg": {
+  "web": "lz0h9vkd/31648540367575.svg",
+  "bytes": 940248
+ },
+ "https://assets.pubpub.org/lxbuwwxe/51642825709507.jpeg": {
+  "web": "lxbuwwxe/51642825709507.jpg",
+  "bytes": 283717
+ },
+ "https://assets.pubpub.org/m0bci706/71648748435218.png": {
+  "web": "m0bci706/71648748435218.jpg",
+  "bytes": 50201
+ },
+ "https://assets.pubpub.org/m5p2vyv3/41618070684305.mp4": {
+  "poster": "posters/m5p2vyv3/41618070684305.jpg",
+  "bytes": 59042,
+  "duration": "51.885167",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_59/video1.mp4"
+ },
+ "https://assets.pubpub.org/m0h8twn8/41611984794595.jpg": {
+  "web": "m0h8twn8/41611984794595.jpg",
+  "bytes": 168208
+ },
+ "https://assets.pubpub.org/m91ukr9g/31643575623965.PNG": {
+  "web": "m91ukr9g/31643575623965.png",
+  "bytes": 7358
+ },
+ "https://assets.pubpub.org/lnf1bgdl/51616631576250.png": {
+  "web": "lnf1bgdl/51616631576250.png",
+  "bytes": 534190
+ },
+ "https://assets.pubpub.org/l171o29c/41612123083792.png": {
+  "web": "l171o29c/41612123083792.jpg",
+  "bytes": 233384
+ },
+ "https://assets.pubpub.org/m8cyq6if/51617719321923.png": {
+  "web": "m8cyq6if/51617719321923.jpg",
+  "bytes": 71477
+ },
+ "https://assets.pubpub.org/lg0ug5qy/41618100194149.png": {
+  "web": "lg0ug5qy/41618100194149.jpg",
+  "bytes": 192221
+ },
+ "https://assets.pubpub.org/mchbdr5d/41617975593446.svg": {
+  "web": "mchbdr5d/41617975593446.svg",
+  "bytes": 289201
+ },
+ "https://assets.pubpub.org/luvqs7hx/41643034409087.png": {
+  "web": "luvqs7hx/41643034409087.jpg",
+  "bytes": 42767
+ },
+ "https://assets.pubpub.org/mcbti2li/01611267339444.jpg": {
+  "web": "mcbti2li/01611267339444.jpg",
+  "bytes": 61636
+ },
+ "https://assets.pubpub.org/mf8gzamh/61612132108765.JPG": {
+  "web": "mf8gzamh/61612132108765.jpg",
+  "bytes": 156135
+ },
+ "https://assets.pubpub.org/m6uewhod/51611679008605.jpg": {
+  "web": "m6uewhod/51611679008605.jpg",
+  "bytes": 215834
+ },
+ "https://assets.pubpub.org/mg8u9hog/41611686905257.jpg": {
+  "web": "mg8u9hog/41611686905257.jpg",
+  "bytes": 70431
+ },
+ "https://assets.pubpub.org/mgu7aqc4/71643190389167.png": {
+  "web": "mgu7aqc4/71643190389167.png",
+  "bytes": 42209
+ },
+ "https://assets.pubpub.org/maw3556d/01643166355634.png": {
+  "web": "maw3556d/01643166355634.jpg",
+  "bytes": 78338
+ },
+ "https://assets.pubpub.org/mimnrizz/11642759162672.mp4": {
+  "poster": "posters/mimnrizz/11642759162672.jpg",
+  "bytes": 111937,
+  "duration": "69.240000",
+  "source_file": "2022/in_proceedings/papers/nime2022_18/video4.mp4"
+ },
+ "https://assets.pubpub.org/lw5m5ud4/01611063542217.png": {
+  "web": "lw5m5ud4/01611063542217.jpg",
+  "bytes": 110252
+ },
+ "https://assets.pubpub.org/mnnu4qyy/71617904217522.png": {
+  "web": "mnnu4qyy/71617904217522.png",
+  "bytes": 8722
+ },
+ "https://assets.pubpub.org/ml8rtb9d/11611332500864.jpeg": {
+  "web": "ml8rtb9d/11611332500864.jpg",
+  "bytes": 225540
+ },
+ "https://assets.pubpub.org/m6s3t5eo/21642962560332.png": {
+  "web": "m6s3t5eo/21642962560332.png",
+  "bytes": 365810
+ },
+ "https://assets.pubpub.org/mfn03ihh/51650327377653.png": {
+  "web": "mfn03ihh/51650327377653.jpg",
+  "bytes": 468820
+ },
+ "https://assets.pubpub.org/mdltrgsi/31648736692151.jpg": {
+  "web": "mdltrgsi/31648736692151.jpg",
+  "bytes": 108464
+ },
+ "https://assets.pubpub.org/mit3fwq3/41613812120703.jpg": {
+  "web": "mit3fwq3/41613812120703.jpg",
+  "bytes": 105147
+ },
+ "https://assets.pubpub.org/moh5bypj/31618021641310.jpg": {
+  "web": "moh5bypj/31618021641310.jpg",
+  "bytes": 106700
+ },
+ "https://assets.pubpub.org/mpamklxh/41618017890890.mp4": {
+  "poster": "posters/mpamklxh/41618017890890.jpg",
+  "bytes": 28974,
+  "duration": "40.523817",
+  "source_file": "2021/other/work-in-progress_showcase/15/video1.mp4"
+ },
+ "https://assets.pubpub.org/mpxp86o2/51653689256867.mp4": {
+  "poster": "posters/mpxp86o2/51653689256867.jpg",
+  "bytes": 49890,
+  "duration": "836.720000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_7/video1.mp4"
+ },
+ "https://assets.pubpub.org/kzbbdb8b/71613042942914.png": {
+  "web": "kzbbdb8b/71613042942914.jpg",
+  "bytes": 199722
+ },
+ "https://assets.pubpub.org/lkj1hdxe/71643567977967.png": {
+  "web": "lkj1hdxe/71643567977967.png",
+  "bytes": 801713
+ },
+ "https://assets.pubpub.org/mq2rmu7j/61613801126453.jpg": {
+  "web": "mq2rmu7j/61613801126453.jpg",
+  "bytes": 133469
+ },
+ "https://assets.pubpub.org/mt1l6jss/41612044157801.png": {
+  "web": "mt1l6jss/41612044157801.png",
+  "bytes": 26564
+ },
+ "https://assets.pubpub.org/mw0q3w1p/41642688891148.png": {
+  "web": "mw0q3w1p/41642688891148.png",
+  "bytes": 6319
+ },
+ "https://assets.pubpub.org/mmmjandy/51643658911244.jpeg": {
+  "web": "mmmjandy/51643658911244.jpg",
+  "bytes": 23319
+ },
+ "https://assets.pubpub.org/n1pcnyu8/01650741221166.jpg": {
+  "web": "n1pcnyu8/01650741221166.jpg",
+  "bytes": 6955
+ },
+ "https://assets.pubpub.org/mzheo6p1/51611811364978.jpg": {
+  "web": "mzheo6p1/51611811364978.jpg",
+  "bytes": 210640
+ },
+ "https://assets.pubpub.org/n1r8ssq5/11614049851577.jpg": {
+  "web": "n1r8ssq5/11614049851577.jpg",
+  "bytes": 127766
+ },
+ "https://assets.pubpub.org/mzqzr89c/51611198701927.JPG": {
+  "web": "mzqzr89c/51611198701927.jpg",
+  "bytes": 96051
+ },
+ "https://assets.pubpub.org/mwjczzd8/71641842959631.png": {
+  "web": "mwjczzd8/71641842959631.jpg",
+  "bytes": 54150
+ },
+ "https://assets.pubpub.org/n7jqt5p5/61643671114746.JPG": {
+  "web": "n7jqt5p5/61643671114746.jpg",
+  "bytes": 137348
+ },
+ "https://assets.pubpub.org/ncjyps4n/31647753813580.mp4": {
+  "poster": "posters/ncjyps4n/31647753813580.jpg",
+  "bytes": 64187,
+  "duration": "719.981134",
+  "source_file": "2022/other/demo/1/video1.mp4"
+ },
+ "https://assets.pubpub.org/ndtceo7r/01655456624240.mp4": {
+  "poster": "posters/ndtceo7r/01655456624240.jpg",
+  "bytes": 5621,
+  "duration": "599.100000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_26/video1.mp4"
+ },
+ "https://assets.pubpub.org/msnera4s/51618097481705.png": {
+  "web": "msnera4s/51618097481705.jpg",
+  "bytes": 184244
+ },
+ "https://assets.pubpub.org/ndzq4pmz/41643378748321.svg": {
+  "web": "ndzq4pmz/41643378748321.svg",
+  "bytes": 7107
+ },
+ "https://assets.pubpub.org/ndxlgc43/31617883740489.svg": {
+  "web": "ndxlgc43/31617883740489.svg",
+  "bytes": 623838
+ },
+ "https://assets.pubpub.org/n2kxxaiq/51618021745529.png": {
+  "web": "n2kxxaiq/51618021745529.jpg",
+  "bytes": 60947
+ },
+ "https://assets.pubpub.org/lm8oachg/51618098982329.png": {
+  "web": "lm8oachg/51618098982329.jpg",
+  "bytes": 205002
+ },
+ "https://assets.pubpub.org/nfh7xiwq/71642443040141.JPG": {
+  "web": "nfh7xiwq/71642443040141.jpg",
+  "bytes": 235013
+ },
+ "https://assets.pubpub.org/neravoh6/21611346545114.mp4": {
+  "poster": "posters/neravoh6/21611346545114.jpg",
+  "bytes": 87202,
+  "duration": "299.166667",
+  "source_file": "2021/in_proceedings/music/nime2021_music_17/video1.mp4"
+ },
+ "https://assets.pubpub.org/n7gep8q8/41612121200170.png": {
+  "web": "n7gep8q8/41612121200170.png",
+  "bytes": 119666
+ },
+ "https://assets.pubpub.org/ned2182t/71611272048458.jpg": {
+  "web": "ned2182t/71611272048458.jpg",
+  "bytes": 155400
+ },
+ "https://assets.pubpub.org/ngkfmqes/61609927522415.jpg": {
+  "web": "ngkfmqes/61609927522415.jpg",
+  "bytes": 15949
+ },
+ "https://assets.pubpub.org/nedj61cf/31616499772766.svg": {
+  "web": "nedj61cf/31616499772766.svg",
+  "bytes": 4940781
+ },
+ "https://assets.pubpub.org/ni7a3t5b/31618103158096.mp4": {
+  "poster": "posters/ni7a3t5b/31618103158096.jpg",
+  "bytes": 64462,
+  "duration": "115.365250",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_58/video2.mp4"
+ },
+ "https://assets.pubpub.org/nheufm6u/61642874767617.jpg": {
+  "web": "nheufm6u/61642874767617.jpg",
+  "bytes": 98956
+ },
+ "https://assets.pubpub.org/nkau0xg6/01612130962295.jpg": {
+  "web": "nkau0xg6/01612130962295.jpg",
+  "bytes": 93140
+ },
+ "https://assets.pubpub.org/n5fwum54/01612107586057.png": {
+  "web": "n5fwum54/01612107586057.jpg",
+  "bytes": 77568
+ },
+ "https://assets.pubpub.org/nkxlpkx6/11613331977631.jpg": {
+  "web": "nkxlpkx6/11613331977631.jpg",
+  "bytes": 58872
+ },
+ "https://assets.pubpub.org/ngj2vdqf/71643518533385.png": {
+  "web": "ngj2vdqf/71643518533385.jpg",
+  "bytes": 130732
+ },
+ "https://assets.pubpub.org/mqbuuc7a/11619628497984.png": {
+  "web": "mqbuuc7a/11619628497984.jpg",
+  "bytes": 86244
+ },
+ "https://assets.pubpub.org/npyzsbxc/21642877844052.svg": {
+  "web": "npyzsbxc/21642877844052.svg",
+  "bytes": 47431
+ },
+ "https://assets.pubpub.org/npa9bpqk/21617984408308.svg": {
+  "web": "npa9bpqk/21617984408308.svg",
+  "bytes": 38089
+ },
+ "https://assets.pubpub.org/nasupo3y/61618079486751.png": {
+  "web": "nasupo3y/61618079486751.jpg",
+  "bytes": 154663
+ },
+ "https://assets.pubpub.org/nsu66oed/01617778769905.svg": {
+  "web": "nsu66oed/01617778769905.svg",
+  "bytes": 77149
+ },
+ "https://assets.pubpub.org/nq3d4nv1/21643628747906.png": {
+  "web": "nq3d4nv1/21643628747906.png",
+  "bytes": 34092
+ },
+ "https://assets.pubpub.org/noa1anst/41617649594605.png": {
+  "web": "noa1anst/41617649594605.png",
+  "bytes": 758213
+ },
+ "https://assets.pubpub.org/nqf26tlh/21650023897664.png": {
+  "web": "nqf26tlh/21650023897664.jpg",
+  "bytes": 52761
+ },
+ "https://assets.pubpub.org/nx4i5yy1/71621244314219.jpg": {
+  "web": "nx4i5yy1/71621244314219.jpg",
+  "bytes": 64281
+ },
+ "https://assets.pubpub.org/nwiatug3/41642774407987.jpg": {
+  "web": "nwiatug3/41642774407987.jpg",
+  "bytes": 65335
+ },
+ "https://assets.pubpub.org/nyiej103/21611778512636.png": {
+  "web": "nyiej103/21611778512636.png",
+  "bytes": 138478
+ },
+ "https://assets.pubpub.org/nqb4r8bn/11648786918434.png": {
+  "web": "nqb4r8bn/11648786918434.png",
+  "bytes": 607094
+ },
+ "https://assets.pubpub.org/nzoet6kf/51624028281045.svg": {
+  "web": "nzoet6kf/51624028281045.svg",
+  "bytes": 254386
+ },
+ "https://assets.pubpub.org/nyzse887/21611459885352.PNG": {
+  "web": "nyzse887/21611459885352.jpg",
+  "bytes": 79512
+ },
+ "https://assets.pubpub.org/o0w757h3/21611332500866.jpeg": {
+  "web": "o0w757h3/21611332500866.jpg",
+  "bytes": 200662
+ },
+ "https://assets.pubpub.org/ns7ir73l/41611984082956.jpg": {
+  "web": "ns7ir73l/41611984082956.jpg",
+  "bytes": 174784
+ },
+ "https://assets.pubpub.org/o3arrd6k/61610660492411.png": {
+  "web": "o3arrd6k/61610660492411.png",
+  "bytes": 62114
+ },
+ "https://assets.pubpub.org/nzpkbjg1/71638185484646.png": {
+  "web": "nzpkbjg1/71638185484646.jpg",
+  "bytes": 82982
+ },
+ "https://assets.pubpub.org/o8di6n70/61611334480306.jpg": {
+  "web": "o8di6n70/61611334480306.jpg",
+  "bytes": 58100
+ },
+ "https://assets.pubpub.org/o5qpwyyb/41611850516379.png": {
+  "web": "o5qpwyyb/41611850516379.jpg",
+  "bytes": 54422
+ },
+ "https://assets.pubpub.org/mepvxr24/11613671122086.png": {
+  "web": "mepvxr24/11613671122086.jpg",
+  "bytes": 86870
+ },
+ "https://assets.pubpub.org/mv3u3ut4/41616417352031.png": {
+  "web": "mv3u3ut4/41616417352031.png",
+  "bytes": 1410840
+ },
+ "https://assets.pubpub.org/oa1yao4q/41611332500865.jpeg": {
+  "web": "oa1yao4q/41611332500865.jpg",
+  "bytes": 364433
+ },
+ "https://assets.pubpub.org/o8t4t46j/41649671167924.png": {
+  "web": "o8t4t46j/41649671167924.jpg",
+  "bytes": 78655
+ },
+ "https://assets.pubpub.org/o2qrzim8/01611701152835.jpg": {
+  "web": "o2qrzim8/01611701152835.jpg",
+  "bytes": 100152
+ },
+ "https://assets.pubpub.org/ob3fefpf/71611674551856.jpg": {
+  "web": "ob3fefpf/71611674551856.jpg",
+  "bytes": 85736
+ },
+ "https://assets.pubpub.org/ob0g8p3x/61610816630467.png": {
+  "web": "ob0g8p3x/61610816630467.png",
+  "bytes": 15575
+ },
+ "https://assets.pubpub.org/oe6e03cx/61611227154051.jpg": {
+  "web": "oe6e03cx/61611227154051.jpg",
+  "bytes": 431020
+ },
+ "https://assets.pubpub.org/o9nul5gn/01612051864048.png": {
+  "web": "o9nul5gn/01612051864048.jpg",
+  "bytes": 180054
+ },
+ "https://assets.pubpub.org/oez1iqmp/31612158747508.png": {
+  "web": "oez1iqmp/31612158747508.png",
+  "bytes": 24402
+ },
+ "https://assets.pubpub.org/ogtqpd8k/51612102956689.svg": {
+  "web": "ogtqpd8k/51612102956689.svg",
+  "bytes": 16618
+ },
+ "https://assets.pubpub.org/ogj0koij/11642760156690.png": {
+  "web": "ogj0koij/11642760156690.png",
+  "bytes": 82847
+ },
+ "https://assets.pubpub.org/od4jofnt/31643238194073.png": {
+  "web": "od4jofnt/31643238194073.jpg",
+  "bytes": 138079
+ },
+ "https://assets.pubpub.org/miixa55q/41612122743840.png": {
+  "web": "miixa55q/41612122743840.jpg",
+  "bytes": 198907
+ },
+ "https://assets.pubpub.org/oh7vl7u0/71611812180245.png": {
+  "web": "oh7vl7u0/71611812180245.jpg",
+  "bytes": 97145
+ },
+ "https://assets.pubpub.org/oiy4s2e4/51611813070857.png": {
+  "web": "oiy4s2e4/51611813070857.jpg",
+  "bytes": 100085
+ },
+ "https://assets.pubpub.org/ogyia50y/31612091727146.png": {
+  "web": "ogyia50y/31612091727146.jpg",
+  "bytes": 114149
+ },
+ "https://assets.pubpub.org/ok2qa5as/61612121199916.png": {
+  "web": "ok2qa5as/61612121199916.jpg",
+  "bytes": 77777
+ },
+ "https://assets.pubpub.org/ok8b2oyy/31617905435977.png": {
+  "web": "ok8b2oyy/31617905435977.jpg",
+  "bytes": 41647
+ },
+ "https://assets.pubpub.org/oqnyp918/01612102997617.svg": {
+  "web": "oqnyp918/01612102997617.svg",
+  "bytes": 21029
+ },
+ "https://assets.pubpub.org/op13gadw/01650023811667.png": {
+  "web": "op13gadw/01650023811667.jpg",
+  "bytes": 48446
+ },
+ "https://assets.pubpub.org/o6ksmfm0/21643214928809.png": {
+  "web": "o6ksmfm0/21643214928809.jpg",
+  "bytes": 94472
+ },
+ "https://assets.pubpub.org/oq8c6rdv/71642656808756.jpg": {
+  "web": "oq8c6rdv/71642656808756.jpg",
+  "bytes": 125986
+ },
+ "https://assets.pubpub.org/osxj0749/61612953308110.JPG": {
+  "web": "osxj0749/61612953308110.jpg",
+  "bytes": 261062
+ },
+ "https://assets.pubpub.org/orkqlmfp/11612044159036.png": {
+  "web": "orkqlmfp/11612044159036.png",
+  "bytes": 34920
+ },
+ "https://assets.pubpub.org/ne8k2uzx/21649982380337.png": {
+  "web": "ne8k2uzx/21649982380337.jpg",
+  "bytes": 243926
+ },
+ "https://assets.pubpub.org/ossoi792/21642347047037.png": {
+  "web": "ossoi792/21642347047037.png",
+  "bytes": 23274
+ },
+ "https://assets.pubpub.org/osmipvzd/11642619577770.jpg": {
+  "web": "osmipvzd/11642619577770.jpg",
+  "bytes": 168405
+ },
+ "https://assets.pubpub.org/otru6mwg/01617974704900.jpg": {
+  "web": "otru6mwg/01617974704900.jpg",
+  "bytes": 76385
+ },
+ "https://assets.pubpub.org/ou4656yn/51641713952175.mp4": {
+  "poster": "posters/ou4656yn/51641713952175.jpg",
+  "bytes": 5620,
+  "duration": "381.700000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_1/video1.mp4"
+ },
+ "https://assets.pubpub.org/oh9hg18w/01643671931297.png": {
+  "web": "oh9hg18w/01643671931297.png",
+  "bytes": 418689
+ },
+ "https://assets.pubpub.org/ou37uen5/21612870960917.jpg": {
+  "web": "ou37uen5/21612870960917.jpg",
+  "bytes": 88496
+ },
+ "https://assets.pubpub.org/ote5gy68/11611695613622.png": {
+  "web": "ote5gy68/11611695613622.jpg",
+  "bytes": 187261
+ },
+ "https://assets.pubpub.org/o1n5kl19/31642789018517.png": {
+  "web": "o1n5kl19/31642789018517.png",
+  "bytes": 998923
+ },
+ "https://assets.pubpub.org/p7tf04v4/31612050119022.svg": {
+  "web": "p7tf04v4/31612050119022.svg",
+  "bytes": 287418
+ },
+ "https://assets.pubpub.org/p3101vij/51611992592475.jpg": {
+  "web": "p3101vij/51611992592475.jpg",
+  "bytes": 116371
+ },
+ "https://assets.pubpub.org/p8v9esf9/01617696876030.jpg": {
+  "web": "p8v9esf9/01617696876030.jpg",
+  "bytes": 221333
+ },
+ "https://assets.pubpub.org/owjhc4xm/31612051908541.png": {
+  "web": "owjhc4xm/31612051908541.jpg",
+  "bytes": 81656
+ },
+ "https://assets.pubpub.org/p3ho7f38/01612063988164.jpg": {
+  "web": "p3ho7f38/01612063988164.jpg",
+  "bytes": 295136
+ },
+ "https://assets.pubpub.org/oz9wcxfk/01643260473206.png": {
+  "web": "oz9wcxfk/01643260473206.jpg",
+  "bytes": 47655
+ },
+ "https://assets.pubpub.org/p8tip7xt/71618040803736.jpg": {
+  "web": "p8tip7xt/71618040803736.jpg",
+  "bytes": 179372
+ },
+ "https://assets.pubpub.org/pb2ik6h5/61643033854574.png": {
+  "web": "pb2ik6h5/61643033854574.jpg",
+  "bytes": 50815
+ },
+ "https://assets.pubpub.org/pgf2qzyu/01643665576902.svg": {
+  "web": "pgf2qzyu/01643665576902.svg",
+  "bytes": 161247
+ },
+ "https://assets.pubpub.org/pfkgzudl/71610857176167.jpg": {
+  "web": "pfkgzudl/71610857176167.jpg",
+  "bytes": 127540
+ },
+ "https://assets.pubpub.org/pgu55u7m/71617778796345.svg": {
+  "web": "pgu55u7m/71617778796345.svg",
+  "bytes": 596556
+ },
+ "https://assets.pubpub.org/pecg7spl/71648737228076.jpg": {
+  "web": "pecg7spl/71648737228076.jpg",
+  "bytes": 162988
+ },
+ "https://assets.pubpub.org/pi6ogxeb/61617910772727.png": {
+  "web": "pi6ogxeb/61617910772727.png",
+  "bytes": 10293
+ },
+ "https://assets.pubpub.org/pk5fbg1j/01618064358493.jpeg": {
+  "web": "pk5fbg1j/01618064358493.jpg",
+  "bytes": 96915
+ },
+ "https://assets.pubpub.org/pkkgp8y0/11618020765350.mp4": {
+  "poster": "posters/pkkgp8y0/11618020765350.jpg",
+  "bytes": 75656,
+  "duration": "23.716667",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_11/video1.mp4"
+ },
+ "https://assets.pubpub.org/pmle54yd/31643563149553.png": {
+  "web": "pmle54yd/31643563149553.jpg",
+  "bytes": 132174
+ },
+ "https://assets.pubpub.org/pimkrtif/11643680388356.jpeg": {
+  "web": "pimkrtif/11643680388356.jpg",
+  "bytes": 151131
+ },
+ "https://assets.pubpub.org/pmi77d4t/01643682123481.png": {
+  "web": "pmi77d4t/01643682123481.jpg",
+  "bytes": 49714
+ },
+ "https://assets.pubpub.org/nohkilgp/11617604385410.png": {
+  "web": "nohkilgp/11617604385410.jpg",
+  "bytes": 342327
+ },
+ "https://assets.pubpub.org/poxif0rt/71611377870439.jpg": {
+  "web": "poxif0rt/71611377870439.jpg",
+  "bytes": 30532
+ },
+ "https://assets.pubpub.org/pmpnay1d/01612930195021.png": {
+  "web": "pmpnay1d/01612930195021.png",
+  "bytes": 212057
+ },
+ "https://assets.pubpub.org/pp7r0h47/71642845669462.png": {
+  "web": "pp7r0h47/71642845669462.png",
+  "bytes": 16595
+ },
+ "https://assets.pubpub.org/pp632oi9/61611255802695.png": {
+  "web": "pp632oi9/61611255802695.jpg",
+  "bytes": 98107
+ },
+ "https://assets.pubpub.org/p7i3z7b6/21611064275331.png": {
+  "web": "p7i3z7b6/21611064275331.jpg",
+  "bytes": 83832
+ },
+ "https://assets.pubpub.org/psf6aw8s/51618009091732.mp4": {
+  "poster": "posters/psf6aw8s/51618009091732.jpg",
+  "bytes": 90547,
+  "duration": "317.200000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_38/video4.mp4"
+ },
+ "https://assets.pubpub.org/ppv1wqri/61617949494078.png": {
+  "web": "ppv1wqri/61617949494078.png",
+  "bytes": 15140
+ },
+ "https://assets.pubpub.org/pnpay6f2/71612008828889.jpg": {
+  "web": "pnpay6f2/71612008828889.jpg",
+  "bytes": 355427
+ },
+ "https://assets.pubpub.org/poxr05kk/51649998995505.jpg": {
+  "web": "poxr05kk/51649998995505.jpg",
+  "bytes": 220310
+ },
+ "https://assets.pubpub.org/pt7aa64x/31643659340738.svg": {
+  "web": "pt7aa64x/31643659340738.svg",
+  "bytes": 530405
+ },
+ "https://assets.pubpub.org/pylphx9b/01617904346121.svg": {
+  "web": "pylphx9b/01617904346121.svg",
+  "bytes": 231721
+ },
+ "https://assets.pubpub.org/pqruc73q/41617825300070.png": {
+  "web": "pqruc73q/41617825300070.png",
+  "bytes": 166841
+ },
+ "https://assets.pubpub.org/q4n6ocbl/01642184041666.JPG": {
+  "web": "q4n6ocbl/01642184041666.jpg",
+  "bytes": 192360
+ },
+ "https://assets.pubpub.org/o1rezkch/61642439639473.png": {
+  "web": "o1rezkch/61642439639473.png",
+  "bytes": 1840842
+ },
+ "https://assets.pubpub.org/q3040g9q/01617974597600.jpg": {
+  "web": "q3040g9q/01617974597600.jpg",
+  "bytes": 99783
+ },
+ "https://assets.pubpub.org/pt6dyedh/31618534991243.jpg": {
+  "web": "pt6dyedh/31618534991243.jpg",
+  "bytes": 184481
+ },
+ "https://assets.pubpub.org/px10veee/31612052081607.png": {
+  "web": "px10veee/31612052081607.jpg",
+  "bytes": 183923
+ },
+ "https://assets.pubpub.org/q963bsgh/41642785955471.jpg": {
+  "web": "q963bsgh/41642785955471.jpg",
+  "bytes": 17762
+ },
+ "https://assets.pubpub.org/q3c4ulki/71643563176058.png": {
+  "web": "q3c4ulki/71643563176058.jpg",
+  "bytes": 119793
+ },
+ "https://assets.pubpub.org/qe3qdabi/61611072182170.JPG": {
+  "web": "qe3qdabi/61611072182170.jpg",
+  "bytes": 97003
+ },
+ "https://assets.pubpub.org/ohlz28o1/21642724837051.png": {
+  "web": "ohlz28o1/21642724837051.jpg",
+  "bytes": 189245
+ },
+ "https://assets.pubpub.org/pmi0j22n/51610106094541.png": {
+  "web": "pmi0j22n/51610106094541.png",
+  "bytes": 996690
+ },
+ "https://assets.pubpub.org/qe585j4v/71618040837518.mp4": {
+  "poster": "posters/qe585j4v/71618040837518.jpg",
+  "bytes": 45720,
+  "duration": "292.191900",
+  "source_file": "2021/other/work-in-progress_showcase/24/video3.mp4"
+ },
+ "https://assets.pubpub.org/q5u92r6c/31617034616026.png": {
+  "web": "q5u92r6c/31617034616026.jpg",
+  "bytes": 254407
+ },
+ "https://assets.pubpub.org/qbb58ngk/01656581663465.jpg": {
+  "web": "qbb58ngk/01656581663465.jpg",
+  "bytes": 229881
+ },
+ "https://assets.pubpub.org/qfvx0v4g/01617897175267.mp4": {
+  "poster": "posters/qfvx0v4g/01617897175267.jpg",
+  "bytes": 14508,
+  "duration": "507.627659",
+  "source_file": "2021/other/work-in-progress_showcase/19/video1.mp4"
+ },
+ "https://assets.pubpub.org/qhynoqoi/01612044161009.png": {
+  "web": "qhynoqoi/01612044161009.png",
+  "bytes": 53849
+ },
+ "https://assets.pubpub.org/qh6jz13p/41617447496409.JPG": {
+  "web": "qh6jz13p/41617447496409.jpg",
+  "bytes": 139829
+ },
+ "https://assets.pubpub.org/q8y4c6tw/11610660271951.png": {
+  "web": "q8y4c6tw/11610660271951.jpg",
+  "bytes": 120180
+ },
+ "https://assets.pubpub.org/qdbbwm7w/01617865412022.png": {
+  "web": "qdbbwm7w/01617865412022.jpg",
+  "bytes": 28832
+ },
+ "https://assets.pubpub.org/qht3rkx7/21642207767460.jpg": {
+  "web": "qht3rkx7/21642207767460.jpg",
+  "bytes": 127226
+ },
+ "https://assets.pubpub.org/qhwdji03/21612176419345.png": {
+  "web": "qhwdji03/21612176419345.png",
+  "bytes": 46468
+ },
+ "https://assets.pubpub.org/qndjd9db/21651875518524.mp4": {
+  "poster": "posters/qndjd9db/21651875518524.jpg",
+  "bytes": 19768,
+  "duration": "900.200000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_10/video1.mp4"
+ },
+ "https://assets.pubpub.org/qnp5qxub/71643687324285.mp4": {
+  "poster": "posters/qnp5qxub/71643687324285.jpg",
+  "bytes": 36538,
+  "duration": "118.125000",
+  "source_file": "2022/in_proceedings/papers/nime2022_27/video1.mp4"
+ },
+ "https://assets.pubpub.org/qkjsfy3e/61610720684738.png": {
+  "web": "qkjsfy3e/61610720684738.png",
+  "bytes": 32891
+ },
+ "https://assets.pubpub.org/qmhkbfyr/41618064407946.jpg": {
+  "web": "qmhkbfyr/41618064407946.jpg",
+  "bytes": 44375
+ },
+ "https://assets.pubpub.org/qsw34bl4/31618077717377.mp4": {
+  "poster": "posters/qsw34bl4/31618077717377.jpg",
+  "bytes": 92501,
+  "duration": "432.760000",
+  "source_file": "2021/other/work-in-progress_showcase/20/video1.mp4"
+ },
+ "https://assets.pubpub.org/qps7mpia/31617900512712.svg": {
+  "web": "qps7mpia/31617900512712.svg",
+  "bytes": 230263
+ },
+ "https://assets.pubpub.org/qmcjyf39/01612128376412.jpg": {
+  "web": "qmcjyf39/01612128376412.jpg",
+  "bytes": 118123
+ },
+ "https://assets.pubpub.org/omm0825e/31618656495410.gif": {
+  "web": "omm0825e/31618656495410.gif",
+  "bytes": 413724
+ },
+ "https://assets.pubpub.org/qwiq4kfd/21618023921127.mp4": {
+  "poster": "posters/qwiq4kfd/21618023921127.jpg",
+  "bytes": 17864,
+  "duration": "693.000000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_22/video1.mp4"
+ },
+ "https://assets.pubpub.org/qfsk5og9/61610747351811.png": {
+  "web": "qfsk5og9/61610747351811.png",
+  "bytes": 625316
+ },
+ "https://assets.pubpub.org/qnxgxsby/71642801337106.png": {
+  "web": "qnxgxsby/71642801337106.jpg",
+  "bytes": 95605
+ },
+ "https://assets.pubpub.org/pvovswt3/21639984920747.png": {
+  "web": "pvovswt3/21639984920747.jpg",
+  "bytes": 116495
+ },
+ "https://assets.pubpub.org/qx2g1319/41643665964182.svg": {
+  "web": "qx2g1319/41643665964182.svg",
+  "bytes": 354641
+ },
+ "https://assets.pubpub.org/qjzleqrs/01610747635803.png": {
+  "web": "qjzleqrs/01610747635803.png",
+  "bytes": 231924
+ },
+ "https://assets.pubpub.org/qdajgbam/51650010466078.jpg": {
+  "web": "qdajgbam/51650010466078.jpg",
+  "bytes": 89298
+ },
+ "https://assets.pubpub.org/qx552ob9/61612044156742.png": {
+  "web": "qx552ob9/61612044156742.png",
+  "bytes": 13437
+ },
+ "https://assets.pubpub.org/qtbkpbwu/11612009589121.png": {
+  "web": "qtbkpbwu/11612009589121.jpg",
+  "bytes": 103155
+ },
+ "https://assets.pubpub.org/qjl4i8wv/41642792249623.png": {
+  "web": "qjl4i8wv/41642792249623.jpg",
+  "bytes": 96595
+ },
+ "https://assets.pubpub.org/qyvujmqq/51618107483597.mp4": {
+  "poster": "posters/qyvujmqq/51618107483597.jpg",
+  "bytes": 28628,
+  "duration": "38.059000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_49/video3.mp4"
+ },
+ "https://assets.pubpub.org/qxiigke9/01643217687487.jpg": {
+  "web": "qxiigke9/01643217687487.jpg",
+  "bytes": 194099
+ },
+ "https://assets.pubpub.org/quztqi69/21642575768664.png": {
+  "web": "quztqi69/21642575768664.jpg",
+  "bytes": 112533
+ },
+ "https://assets.pubpub.org/qytmiftl/51641802054700.png": {
+  "web": "qytmiftl/51641802054700.png",
+  "bytes": 53806
+ },
+ "https://assets.pubpub.org/qzq9zpy2/71618014984974.jpg": {
+  "web": "qzq9zpy2/71618014984974.jpg",
+  "bytes": 74486
+ },
+ "https://assets.pubpub.org/qxjhtrpb/01617922183258.png": {
+  "web": "qxjhtrpb/01617922183258.jpg",
+  "bytes": 46337
+ },
+ "https://assets.pubpub.org/qze75cor/21610672334562.png": {
+  "web": "qze75cor/21610672334562.jpg",
+  "bytes": 30045
+ },
+ "https://assets.pubpub.org/qz6l7h9w/61643545017067.mp4": {
+  "poster": "posters/qz6l7h9w/61643545017067.jpg",
+  "bytes": 108658,
+  "duration": "621.821208",
+  "source_file": "2022/in_proceedings/papers/nime2022_25/video1.mp4"
+ },
+ "https://assets.pubpub.org/r16bi9cg/11614657553922.jpg": {
+  "web": "r16bi9cg/11614657553922.jpg",
+  "bytes": 95229
+ },
+ "https://assets.pubpub.org/qyh8lr2r/21618078940807.jpg": {
+  "web": "qyh8lr2r/21618078940807.jpg",
+  "bytes": 225555
+ },
+ "https://assets.pubpub.org/r2w4nchw/11612870839779.jpg": {
+  "web": "r2w4nchw/11612870839779.jpg",
+  "bytes": 112155
+ },
+ "https://assets.pubpub.org/r16q8sc3/61610647693268.png": {
+  "web": "r16q8sc3/61610647693268.png",
+  "bytes": 354847
+ },
+ "https://assets.pubpub.org/r6vquxc2/41610857339969.mp4": {
+  "poster": "posters/r6vquxc2/41610857339969.jpg",
+  "bytes": 19790,
+  "duration": "509.742567",
+  "source_file": "2021/in_proceedings/music/nime2021_music_6/video1.mp4"
+ },
+ "https://assets.pubpub.org/r4wm3xdl/11642845817451.png": {
+  "web": "r4wm3xdl/11642845817451.png",
+  "bytes": 17415
+ },
+ "https://assets.pubpub.org/r1zujofi/31612994100615.png": {
+  "web": "r1zujofi/31612994100615.jpg",
+  "bytes": 102961
+ },
+ "https://assets.pubpub.org/r87ptfog/31618003468812.mp4": {
+  "poster": "posters/r87ptfog/31618003468812.jpg",
+  "bytes": 29687,
+  "duration": "112.213333",
+  "source_file": "2021/other/work-in-progress_showcase/23/video1.mp4"
+ },
+ "https://assets.pubpub.org/r8hfzxma/21613703579796.mp4": {
+  "poster": "posters/r8hfzxma/21613703579796.jpg",
+  "bytes": 5621,
+  "duration": "2412.159751",
+  "source_file": "2021/in_proceedings/music/nime2021_music_35/video2.mp4"
+ },
+ "https://assets.pubpub.org/qz9mq6ct/51650013826601.png": {
+  "web": "qz9mq6ct/51650013826601.jpg",
+  "bytes": 457578
+ },
+ "https://assets.pubpub.org/rcuq8ibz/21618102655407.mp4": {
+  "poster": "posters/rcuq8ibz/21618102655407.jpg",
+  "bytes": 23724,
+  "duration": "18.000000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_58/video1.mp4"
+ },
+ "https://assets.pubpub.org/qyxojbya/61649994520347.png": {
+  "web": "qyxojbya/61649994520347.jpg",
+  "bytes": 176971
+ },
+ "https://assets.pubpub.org/r59qiizl/51612930670944.png": {
+  "web": "r59qiizl/51612930670944.png",
+  "bytes": 323411
+ },
+ "https://assets.pubpub.org/rc0z5egz/41618014984974.jpg": {
+  "web": "rc0z5egz/41618014984974.jpg",
+  "bytes": 52152
+ },
+ "https://assets.pubpub.org/rdfzlq36/01653581056082.mp4": {
+  "poster": "posters/rdfzlq36/01653581056082.jpg",
+  "bytes": 31539,
+  "duration": "598.912000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_20/video1.mp4"
+ },
+ "https://assets.pubpub.org/rc9drtvy/31617144848434.png": {
+  "web": "rc9drtvy/31617144848434.png",
+  "bytes": 4005
+ },
+ "https://assets.pubpub.org/r875nics/71617714849025.png": {
+  "web": "r875nics/71617714849025.jpg",
+  "bytes": 35048
+ },
+ "https://assets.pubpub.org/rj9gzv5t/11642798560638.JPG": {
+  "web": "rj9gzv5t/11642798560638.jpg",
+  "bytes": 53096
+ },
+ "https://assets.pubpub.org/r3a3gpga/21605800104588.png": {
+  "web": "r3a3gpga/21605800104588.jpg",
+  "bytes": 101503
+ },
+ "https://assets.pubpub.org/rhhgzjwy/61643326983323.mp4": {
+  "poster": "posters/rhhgzjwy/61643326983323.jpg",
+  "bytes": 43415,
+  "duration": "44.926667",
+  "source_file": "2022/in_proceedings/papers/nime2022_51/figure9.mp4"
+ },
+ "https://assets.pubpub.org/rgpw51g5/21656581785476.mp4": {
+  "poster": "posters/rgpw51g5/21656581785476.jpg",
+  "bytes": 110168,
+  "duration": "339.130458",
+  "source_file": "2022/in_proceedings/music/nime2022_music_21/video1.mp4"
+ },
+ "https://assets.pubpub.org/rijy2igr/61642848095910.jpeg": {
+  "web": "rijy2igr/61642848095910.jpg",
+  "bytes": 331261
+ },
+ "https://assets.pubpub.org/rg7y0g05/11618108761119.png": {
+  "web": "rg7y0g05/11618108761119.jpg",
+  "bytes": 113275
+ },
+ "https://assets.pubpub.org/r773m69q/41611963512249.jpg": {
+  "web": "r773m69q/41611963512249.jpg",
+  "bytes": 161145
+ },
+ "https://assets.pubpub.org/roirio79/21649694910883.mp4": {
+  "poster": "posters/roirio79/21649694910883.jpg",
+  "bytes": 10979,
+  "duration": "238.186000",
+  "source_file": "2022/in_proceedings/papers/nime2022_34/figure1.mp4"
+ },
+ "https://assets.pubpub.org/rocdk43x/71652550035474.mp4": {
+  "poster": "posters/rocdk43x/71652550035474.jpg",
+  "bytes": 13987,
+  "duration": "810.100000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_9/video1.mp4"
+ },
+ "https://assets.pubpub.org/rj8g2cwq/11617671861278.png": {
+  "web": "rj8g2cwq/11617671861278.jpg",
+  "bytes": 54770
+ },
+ "https://assets.pubpub.org/rrltpg9a/11643465703688.svg": {
+  "web": "rrltpg9a/11643465703688.svg",
+  "bytes": 463887
+ },
+ "https://assets.pubpub.org/rsnizktj/01611922915883.svg": {
+  "web": "rsnizktj/01611922915883.svg",
+  "bytes": 530210
+ },
+ "https://assets.pubpub.org/rkzcvwj5/11618112781926.png": {
+  "web": "rkzcvwj5/11618112781926.jpg",
+  "bytes": 57462
+ },
+ "https://assets.pubpub.org/q2ffzi8n/21614342479460.png": {
+  "web": "q2ffzi8n/21614342479460.jpg",
+  "bytes": 235668
+ },
+ "https://assets.pubpub.org/rjpy62z1/41637694277964.png": {
+  "web": "rjpy62z1/41637694277964.jpg",
+  "bytes": 122711
+ },
+ "https://assets.pubpub.org/rt5xizh2/21642844690277.png": {
+  "web": "rt5xizh2/21642844690277.png",
+  "bytes": 37662
+ },
+ "https://assets.pubpub.org/rtaxerbf/11617672444380.png": {
+  "web": "rtaxerbf/11617672444380.png",
+  "bytes": 346545
+ },
+ "https://assets.pubpub.org/rt53hpbf/51652474520268.png": {
+  "web": "rt53hpbf/51652474520268.jpg",
+  "bytes": 66085
+ },
+ "https://assets.pubpub.org/rxe2virs/71617604638347.PNG": {
+  "web": "rxe2virs/71617604638347.jpg",
+  "bytes": 34891
+ },
+ "https://assets.pubpub.org/s019e5hd/01621182677401.mp4": {
+  "poster": "posters/s019e5hd/01621182677401.jpg",
+  "bytes": 103602,
+  "duration": "557.290067",
+  "source_file": "2021/in_proceedings/music/nime2021_music_4/video1.mp4"
+ },
+ "https://assets.pubpub.org/rsr54ebh/01649663962941.png": {
+  "web": "rsr54ebh/01649663962941.jpg",
+  "bytes": 98662
+ },
+ "https://assets.pubpub.org/r15r3ts7/71618094929303.png": {
+  "web": "r15r3ts7/71618094929303.jpg",
+  "bytes": 103425
+ },
+ "https://assets.pubpub.org/rygoxxid/01643263832327.png": {
+  "web": "rygoxxid/01643263832327.png",
+  "bytes": 13409
+ },
+ "https://assets.pubpub.org/rtqokpnt/61643696367350.jpg": {
+  "web": "rtqokpnt/61643696367350.jpg",
+  "bytes": 87265
+ },
+ "https://assets.pubpub.org/s0cup5ji/51610660897444.png": {
+  "web": "s0cup5ji/51610660897444.png",
+  "bytes": 16610
+ },
+ "https://assets.pubpub.org/s09hp1ov/61643569577309.mp4": {
+  "poster": "posters/s09hp1ov/61643569577309.jpg",
+  "bytes": 21941,
+  "duration": "390.720000",
+  "source_file": "2022/in_proceedings/papers/nime2022_37/video1.mp4"
+ },
+ "https://assets.pubpub.org/s0o130eo/11643032569912.jpg": {
+  "web": "s0o130eo/11643032569912.jpg",
+  "bytes": 16035
+ },
+ "https://assets.pubpub.org/s1offg3s/31643575623977.PNG": {
+  "web": "s1offg3s/31643575623977.png",
+  "bytes": 10462
+ },
+ "https://assets.pubpub.org/s1qy8fgu/51618137609078.JPG": {
+  "web": "s1qy8fgu/51618137609078.jpg",
+  "bytes": 209317
+ },
+ "https://assets.pubpub.org/s18xmf7c/51608294735821.png": {
+  "web": "s18xmf7c/51608294735821.jpg",
+  "bytes": 14842
+ },
+ "https://assets.pubpub.org/rvkyx179/31643415007659.png": {
+  "web": "rvkyx179/31643415007659.jpg",
+  "bytes": 123680
+ },
+ "https://assets.pubpub.org/s5mqoyit/11617447270630.PNG": {
+  "web": "s5mqoyit/11617447270630.jpg",
+  "bytes": 80755
+ },
+ "https://assets.pubpub.org/s3xmz4je/11614657510062.jpg": {
+  "web": "s3xmz4je/11614657510062.jpg",
+  "bytes": 57137
+ },
+ "https://assets.pubpub.org/ryrpax7i/51649664488482.png": {
+  "web": "ryrpax7i/51649664488482.jpg",
+  "bytes": 123370
+ },
+ "https://assets.pubpub.org/pcvv1toi/71611701952260.png": {
+  "web": "pcvv1toi/71611701952260.jpg",
+  "bytes": 130822
+ },
+ "https://assets.pubpub.org/s6ibvb5i/61648747303139.svg": {
+  "web": "s6ibvb5i/61648747303139.svg",
+  "bytes": 52131
+ },
+ "https://assets.pubpub.org/s3xgn0w0/01612044157627.png": {
+  "web": "s3xgn0w0/01612044157627.png",
+  "bytes": 26555
+ },
+ "https://assets.pubpub.org/s806sm5p/21618070559870.png": {
+  "web": "s806sm5p/21618070559870.png",
+  "bytes": 49717
+ },
+ "https://assets.pubpub.org/sarrkhu3/61642438461403.jpg": {
+  "web": "sarrkhu3/61642438461403.jpg",
+  "bytes": 89600
+ },
+ "https://assets.pubpub.org/s1vzaaet/11612877828472.jpg": {
+  "web": "s1vzaaet/11612877828472.jpg",
+  "bytes": 73447
+ },
+ "https://assets.pubpub.org/se0yotb5/61650742111098.png": {
+  "web": "se0yotb5/61650742111098.png",
+  "bytes": 13458
+ },
+ "https://assets.pubpub.org/se5s9l4l/31611267339443.jpg": {
+  "web": "se5s9l4l/31611267339443.jpg",
+  "bytes": 26874
+ },
+ "https://assets.pubpub.org/s2k3w02v/31643471822345.png": {
+  "web": "s2k3w02v/31643471822345.jpg",
+  "bytes": 91854
+ },
+ "https://assets.pubpub.org/selgwi3l/61611071322578.png": {
+  "web": "selgwi3l/61611071322578.png",
+  "bytes": 44941
+ },
+ "https://assets.pubpub.org/seinvi0s/01611182761671.jpg": {
+  "web": "seinvi0s/01611182761671.jpg",
+  "bytes": 107692
+ },
+ "https://assets.pubpub.org/s0b141yv/71643580604305.png": {
+  "web": "s0b141yv/71643580604305.png",
+  "bytes": 653361
+ },
+ "https://assets.pubpub.org/sitxj0qt/21622137183080.svg": {
+  "web": "sitxj0qt/21622137183080.svg",
+  "bytes": 581160
+ },
+ "https://assets.pubpub.org/sh3u3y6l/21613728023444.jpg": {
+  "web": "sh3u3y6l/21613728023444.jpg",
+  "bytes": 134437
+ },
+ "https://assets.pubpub.org/sm4lxra3/41642891001926.mp4": {
+  "poster": "posters/sm4lxra3/41642891001926.jpg",
+  "bytes": 108658,
+  "duration": "621.821208",
+  "source_file": "2022/in_proceedings/music/nime2022_music_22/video1.mp4"
+ },
+ "https://assets.pubpub.org/r3aux0q9/41642635228391.png": {
+  "web": "r3aux0q9/41642635228391.jpg",
+  "bytes": 122957
+ },
+ "https://assets.pubpub.org/sntypkqx/41642810940362.mp4": {
+  "poster": "posters/sntypkqx/41642810940362.jpg",
+  "bytes": 36182,
+  "duration": "102.635875",
+  "source_file": "2022/in_proceedings/papers/nime2022_14/video1.mp4"
+ },
+ "https://assets.pubpub.org/sjy1253y/01643503693751.png": {
+  "web": "sjy1253y/01643503693751.jpg",
+  "bytes": 23842
+ },
+ "https://assets.pubpub.org/sbd525d6/71617898230191.png": {
+  "web": "sbd525d6/71617898230191.jpg",
+  "bytes": 205623
+ },
+ "https://assets.pubpub.org/slnto2pk/21650023913069.png": {
+  "web": "slnto2pk/21650023913069.png",
+  "bytes": 11435
+ },
+ "https://assets.pubpub.org/soc5zsdw/61611992190348.jpg": {
+  "web": "soc5zsdw/61611992190348.jpg",
+  "bytes": 166455
+ },
+ "https://assets.pubpub.org/ssudi8x8/51648824146114.mp4": {
+  "poster": "posters/ssudi8x8/51648824146114.jpg",
+  "bytes": 42178,
+  "duration": "160.833333",
+  "source_file": "2022/other/demo/8/video2.mp4"
+ },
+ "https://assets.pubpub.org/sku5nw9c/61618071589883.jpg": {
+  "web": "sku5nw9c/61618071589883.jpg",
+  "bytes": 306436
+ },
+ "https://assets.pubpub.org/sonxc8t3/31642885154682.png": {
+  "web": "sonxc8t3/31642885154682.jpg",
+  "bytes": 120107
+ },
+ "https://assets.pubpub.org/sor66y5z/41643266591997.png": {
+  "web": "sor66y5z/41643266591997.png",
+  "bytes": 140800
+ },
+ "https://assets.pubpub.org/ssddaa21/71617871152997.png": {
+  "web": "ssddaa21/71617871152997.png",
+  "bytes": 196500
+ },
+ "https://assets.pubpub.org/su6ylmmq/11611919933633.png": {
+  "web": "su6ylmmq/11611919933633.jpg",
+  "bytes": 14253
+ },
+ "https://assets.pubpub.org/stvhsecs/31643562091637.png": {
+  "web": "stvhsecs/31643562091637.png",
+  "bytes": 6117
+ },
+ "https://assets.pubpub.org/stu5jj0r/51643031551324.jpg": {
+  "web": "stu5jj0r/51643031551324.jpg",
+  "bytes": 98898
+ },
+ "https://assets.pubpub.org/spvraupx/61642526721692.jpeg": {
+  "web": "spvraupx/61642526721692.jpg",
+  "bytes": 339477
+ },
+ "https://assets.pubpub.org/sut8gvdt/31622631025949.svg": {
+  "web": "sut8gvdt/31622631025949.svg",
+  "bytes": 206474
+ },
+ "https://assets.pubpub.org/suxqcrte/71650043061550.jpg": {
+  "web": "suxqcrte/71650043061550.jpg",
+  "bytes": 143961
+ },
+ "https://assets.pubpub.org/sn8e53s3/41642144688592.jpg": {
+  "web": "sn8e53s3/41642144688592.jpg",
+  "bytes": 295511
+ },
+ "https://assets.pubpub.org/svso8zgd/01617974621700.jpg": {
+  "web": "svso8zgd/01617974621700.jpg",
+  "bytes": 511983
+ },
+ "https://assets.pubpub.org/t1vl6m0h/11618144291207.mp4": {
+  "poster": "posters/t1vl6m0h/11618144291207.jpg",
+  "bytes": 98274,
+  "duration": "67.633000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_39/video5.mp4"
+ },
+ "https://assets.pubpub.org/rtm0utle/11642635228384.png": {
+  "web": "rtm0utle/11642635228384.jpg",
+  "bytes": 146071
+ },
+ "https://assets.pubpub.org/swcvn7i0/71612006876526.svg": {
+  "web": "swcvn7i0/71612006876526.svg",
+  "bytes": 54381
+ },
+ "https://assets.pubpub.org/sw2t9ob4/61649999015504.jpg": {
+  "web": "sw2t9ob4/61649999015504.jpg",
+  "bytes": 55408
+ },
+ "https://assets.pubpub.org/t7hwlddg/11642886094496.mp4": {
+  "poster": "posters/t7hwlddg/11642886094496.jpg",
+  "bytes": 46830,
+  "duration": "40.576000",
+  "source_file": "2022/in_proceedings/papers/nime2022_24/video5.mp4"
+ },
+ "https://assets.pubpub.org/t752141i/61653503542641.mp4": {
+  "poster": "posters/t752141i/61653503542641.jpg",
+  "bytes": 71390,
+  "duration": "900.000000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_18/video1.mp4"
+ },
+ "https://assets.pubpub.org/swnju3p0/21612256144165.svg": {
+  "web": "swnju3p0/21612256144165.svg",
+  "bytes": 4450050
+ },
+ "https://assets.pubpub.org/t1dewswu/51642850511593.png": {
+  "web": "t1dewswu/51642850511593.png",
+  "bytes": 12848
+ },
+ "https://assets.pubpub.org/t8fp42wr/01613724701174.mp4": {
+  "poster": "posters/t8fp42wr/01613724701174.jpg",
+  "bytes": 32190,
+  "duration": "616.120000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_29/video1.mp4"
+ },
+ "https://assets.pubpub.org/td2ayu0s/31617839218878.mp4": {
+  "poster": "posters/td2ayu0s/31617839218878.jpg",
+  "bytes": 88128,
+  "duration": "206.339467",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_38/video3.mp4"
+ },
+ "https://assets.pubpub.org/sw1wwouo/01612138520812.png": {
+  "web": "sw1wwouo/01612138520812.jpg",
+  "bytes": 88741
+ },
+ "https://assets.pubpub.org/t86md7d7/61642785996048.jpg": {
+  "web": "t86md7d7/61642785996048.jpg",
+  "bytes": 147914
+ },
+ "https://assets.pubpub.org/tdxxbhl0/51652539027751.mp4": {
+  "poster": "posters/tdxxbhl0/51652539027751.jpg",
+  "bytes": 53522,
+  "duration": "852.101250",
+  "source_file": "2022/in_proceedings/music/nime2022_music_25/video1.mp4"
+ },
+ "https://assets.pubpub.org/t9qfvnau/61642688854206.png": {
+  "web": "t9qfvnau/61642688854206.png",
+  "bytes": 6130
+ },
+ "https://assets.pubpub.org/ti9jonwv/61617648236912.JPG": {
+  "web": "ti9jonwv/61617648236912.jpg",
+  "bytes": 249463
+ },
+ "https://assets.pubpub.org/takbqalk/01612125030086.png": {
+  "web": "takbqalk/01612125030086.jpg",
+  "bytes": 48838
+ },
+ "https://assets.pubpub.org/rm13e4k1/01642800517807.png": {
+  "web": "rm13e4k1/01642800517807.png",
+  "bytes": 1286582
+ },
+ "https://assets.pubpub.org/thnhmg0q/71618020910749.mp4": {
+  "poster": "posters/thnhmg0q/71618020910749.jpg",
+  "bytes": 73429,
+  "duration": "93.550000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_11/video2.mp4"
+ },
+ "https://assets.pubpub.org/tex0fxyo/21612050510492.svg": {
+  "web": "tex0fxyo/21612050510492.svg",
+  "bytes": 133258
+ },
+ "https://assets.pubpub.org/tcbizmxo/31610659576109.jpg": {
+  "web": "tcbizmxo/31610659576109.jpg",
+  "bytes": 231664
+ },
+ "https://assets.pubpub.org/tme8jci3/51612053906634.png": {
+  "web": "tme8jci3/51612053906634.jpg",
+  "bytes": 41749
+ },
+ "https://assets.pubpub.org/tukddhrw/01648885761520.mp4": {
+  "poster": "posters/tukddhrw/01648885761520.jpg",
+  "bytes": 43136,
+  "duration": "202.435567",
+  "source_file": "2022/other/demo/9/video1.mp4"
+ },
+ "https://assets.pubpub.org/sxj0n3yz/51643713205762.png": {
+  "web": "sxj0n3yz/51643713205762.png",
+  "bytes": 85029
+ },
+ "https://assets.pubpub.org/tmrpijlr/51618502201136.jpg": {
+  "web": "tmrpijlr/51618502201136.jpg",
+  "bytes": 175885
+ },
+ "https://assets.pubpub.org/tukrmw68/41649977613819.mp4": {
+  "poster": "posters/tukrmw68/41649977613819.jpg",
+  "bytes": 50265,
+  "duration": "59.433333",
+  "source_file": "2022/in_proceedings/papers/nime2022_17/video1.mp4"
+ },
+ "https://assets.pubpub.org/sunkfnse/71642924153557.png": {
+  "web": "sunkfnse/71642924153557.jpg",
+  "bytes": 99081
+ },
+ "https://assets.pubpub.org/rwvu2ol4/21647900044330.png": {
+  "web": "rwvu2ol4/21647900044330.jpg",
+  "bytes": 135670
+ },
+ "https://assets.pubpub.org/tuvbatbr/21611954680302.svg": {
+  "web": "tuvbatbr/21611954680302.svg",
+  "bytes": 111197
+ },
+ "https://assets.pubpub.org/tweblq58/01611589534021.jpg": {
+  "web": "tweblq58/01611589534021.jpg",
+  "bytes": 80392
+ },
+ "https://assets.pubpub.org/u0c0lnkk/11612123414157.svg": {
+  "web": "u0c0lnkk/11612123414157.svg",
+  "bytes": 427285
+ },
+ "https://assets.pubpub.org/tkbclf6b/11608296441331.png": {
+  "web": "tkbclf6b/11608296441331.jpg",
+  "bytes": 35833
+ },
+ "https://assets.pubpub.org/tp7egk27/11650064194491.png": {
+  "web": "tp7egk27/11650064194491.jpg",
+  "bytes": 92716
+ },
+ "https://assets.pubpub.org/tzx69qri/31618064384316.jpg": {
+  "web": "tzx69qri/31618064384316.jpg",
+  "bytes": 74934
+ },
+ "https://assets.pubpub.org/tznp4b4m/71643543767445.jpeg": {
+  "web": "tznp4b4m/71643543767445.jpg",
+  "bytes": 199582
+ },
+ "https://assets.pubpub.org/u28xaxbc/11650155664775.mp4": {
+  "poster": "posters/u28xaxbc/11650155664775.jpg",
+  "bytes": 36612,
+  "duration": "49.002000",
+  "source_file": "2022/in_proceedings/papers/nime2022_24/video2.mp4"
+ },
+ "https://assets.pubpub.org/u1546td2/01617892177102.jpeg": {
+  "web": "u1546td2/01617892177102.jpg",
+  "bytes": 30007
+ },
+ "https://assets.pubpub.org/tpc2g40h/41612051014902.png": {
+  "web": "tpc2g40h/41612051014902.jpg",
+  "bytes": 192776
+ },
+ "https://assets.pubpub.org/u3c43l55/11643667826231.png": {
+  "web": "u3c43l55/11643667826231.png",
+  "bytes": 10285
+ },
+ "https://assets.pubpub.org/u1u4inai/11643582620298.svg": {
+  "web": "u1u4inai/11643582620298.svg",
+  "bytes": 639733
+ },
+ "https://assets.pubpub.org/u1if5h5t/31611459804604.png": {
+  "web": "u1if5h5t/31611459804604.png",
+  "bytes": 73442
+ },
+ "https://assets.pubpub.org/u7reinw6/61643462429576.svg": {
+  "web": "u7reinw6/61643462429576.svg",
+  "bytes": 641191
+ },
+ "https://assets.pubpub.org/tyh2hsrc/31649604171885.png": {
+  "web": "tyh2hsrc/31649604171885.jpg",
+  "bytes": 47603
+ },
+ "https://assets.pubpub.org/u5y0zn2w/01618108761121.png": {
+  "web": "u5y0zn2w/01618108761121.jpg",
+  "bytes": 92937
+ },
+ "https://assets.pubpub.org/u5zyu8tr/71611915943864.jpg": {
+  "web": "u5zyu8tr/71611915943864.jpg",
+  "bytes": 175449
+ },
+ "https://assets.pubpub.org/uaz3pr9s/31642853265811.png": {
+  "web": "uaz3pr9s/31642853265811.png",
+  "bytes": 385338
+ },
+ "https://assets.pubpub.org/uaiy805m/71613802357526.jpg": {
+  "web": "uaiy805m/71613802357526.jpg",
+  "bytes": 201915
+ },
+ "https://assets.pubpub.org/u5hvh7ns/31611332500862.jpeg": {
+  "web": "u5hvh7ns/31611332500862.jpg",
+  "bytes": 187088
+ },
+ "https://assets.pubpub.org/ufn35tq9/21623731530061.mp4": {
+  "poster": "posters/ufn35tq9/21623731530061.jpg",
+  "bytes": 19339,
+  "duration": "102.240000",
+  "source_file": "2021/other/work-in-progress_showcase/28/video1.mp4"
+ },
+ "https://assets.pubpub.org/udwuzdwa/11642851035091.png": {
+  "web": "udwuzdwa/11642851035091.png",
+  "bytes": 5788
+ },
+ "https://assets.pubpub.org/ua0u8009/31618631727406.mp4": {
+  "poster": "posters/ua0u8009/31618631727406.jpg",
+  "bytes": 79081,
+  "duration": "124.290833",
+  "source_file": "2021/other/work-in-progress_showcase/29/video1.mp4"
+ },
+ "https://assets.pubpub.org/uemgeg8a/31611588652701.jpg": {
+  "web": "uemgeg8a/31611588652701.jpg",
+  "bytes": 215937
+ },
+ "https://assets.pubpub.org/ugwp2ykv/31649999056840.jpg": {
+  "web": "ugwp2ykv/31649999056840.jpg",
+  "bytes": 184058
+ },
+ "https://assets.pubpub.org/og84ev5n/41617053197239.png": {
+  "web": "og84ev5n/41617053197239.jpg",
+  "bytes": 216784
+ },
+ "https://assets.pubpub.org/uh8ezlg1/51611054228803.png": {
+  "web": "uh8ezlg1/51611054228803.jpg",
+  "bytes": 47814
+ },
+ "https://assets.pubpub.org/twgyxf1t/41650064207800.png": {
+  "web": "twgyxf1t/41650064207800.jpg",
+  "bytes": 224193
+ },
+ "https://assets.pubpub.org/uduubjlg/71650053908844.png": {
+  "web": "uduubjlg/71650053908844.png",
+  "bytes": 130624
+ },
+ "https://assets.pubpub.org/uj9gnrx5/71613756828099.jpeg": {
+  "web": "uj9gnrx5/71613756828099.jpg",
+  "bytes": 60210
+ },
+ "https://assets.pubpub.org/ulzds9uq/71622630748273.svg": {
+  "web": "ulzds9uq/71622630748273.svg",
+  "bytes": 33761
+ },
+ "https://assets.pubpub.org/udrol9jp/41650064194416.png": {
+  "web": "udrol9jp/41650064194416.jpg",
+  "bytes": 243941
+ },
+ "https://assets.pubpub.org/uj1ih2mc/41642901604392.jpg": {
+  "web": "uj1ih2mc/41642901604392.jpg",
+  "bytes": 267222
+ },
+ "https://assets.pubpub.org/uj2d6r8j/01611322802649.png": {
+  "web": "uj2d6r8j/01611322802649.png",
+  "bytes": 149349
+ },
+ "https://assets.pubpub.org/uj6bjkig/21612144277006.png": {
+  "web": "uj6bjkig/21612144277006.png",
+  "bytes": 83213
+ },
+ "https://assets.pubpub.org/umkhebjn/51643263716852.png": {
+  "web": "umkhebjn/51643263716852.png",
+  "bytes": 21107
+ },
+ "https://assets.pubpub.org/ure8r0ra/31612256102248.svg": {
+  "web": "ure8r0ra/31612256102248.svg",
+  "bytes": 4399276
+ },
+ "https://assets.pubpub.org/ujzq1vv1/01612174704889.png": {
+  "web": "ujzq1vv1/01612174704889.png",
+  "bytes": 114177
+ },
+ "https://assets.pubpub.org/unr9oawi/31649966893768.png": {
+  "web": "unr9oawi/31649966893768.png",
+  "bytes": 19159
+ },
+ "https://assets.pubpub.org/uwife7d8/71612123913531.svg": {
+  "web": "uwife7d8/71612123913531.svg",
+  "bytes": 829686
+ },
+ "https://assets.pubpub.org/upsy55u2/31618027543212.jpg": {
+  "web": "upsy55u2/31618027543212.jpg",
+  "bytes": 66577
+ },
+ "https://assets.pubpub.org/uscjrekr/01650740930357.jpg": {
+  "web": "uscjrekr/01650740930357.jpg",
+  "bytes": 42392
+ },
+ "https://assets.pubpub.org/ule3696w/01643035687543.png": {
+  "web": "ule3696w/01643035687543.jpg",
+  "bytes": 73424
+ },
+ "https://assets.pubpub.org/v2qsjknk/31642732487954.png": {
+  "web": "v2qsjknk/31642732487954.jpg",
+  "bytes": 28195
+ },
+ "https://assets.pubpub.org/v5afr6y1/01617658170377.mp4": {
+  "poster": "posters/v5afr6y1/01617658170377.jpg",
+  "bytes": 15888,
+  "duration": "46.720000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_7/video3.mp4"
+ },
+ "https://assets.pubpub.org/upm8jybn/61643180095063.png": {
+  "web": "upm8jybn/61643180095063.jpg",
+  "bytes": 102196
+ },
+ "https://assets.pubpub.org/v28ka70m/61605801637827.png": {
+  "web": "v28ka70m/61605801637827.jpg",
+  "bytes": 43076
+ },
+ "https://assets.pubpub.org/uznlgrqi/01642777910709.jpg": {
+  "web": "uznlgrqi/01642777910709.jpg",
+  "bytes": 67616
+ },
+ "https://assets.pubpub.org/usyq5lht/41637696983177.png": {
+  "web": "usyq5lht/41637696983177.jpg",
+  "bytes": 59203
+ },
+ "https://assets.pubpub.org/v5kaz8g4/51619217287306.png": {
+  "web": "v5kaz8g4/51619217287306.jpg",
+  "bytes": 27140
+ },
+ "https://assets.pubpub.org/vgmz0kpq/21643685510242.JPG": {
+  "web": "vgmz0kpq/21643685510242.jpg",
+  "bytes": 280966
+ },
+ "https://assets.pubpub.org/vc0nbi6p/01610754967235.png": {
+  "web": "vc0nbi6p/01610754967235.png",
+  "bytes": 12211
+ },
+ "https://assets.pubpub.org/vb0hf85r/21649666042329.jpg": {
+  "web": "vb0hf85r/21649666042329.jpg",
+  "bytes": 259216
+ },
+ "https://assets.pubpub.org/v6ba3i2o/01623731872489.jpg": {
+  "web": "v6ba3i2o/01623731872489.jpg",
+  "bytes": 153886
+ },
+ "https://assets.pubpub.org/tbfxrm6q/71618100926803.png": {
+  "web": "tbfxrm6q/71618100926803.jpg",
+  "bytes": 179771
+ },
+ "https://assets.pubpub.org/vbvrnszb/31617671806209.png": {
+  "web": "vbvrnszb/31617671806209.jpg",
+  "bytes": 64805
+ },
+ "https://assets.pubpub.org/vh2gdw2t/01643510112361.jpg": {
+  "web": "vh2gdw2t/01643510112361.jpg",
+  "bytes": 49596
+ },
+ "https://assets.pubpub.org/vhdckfxq/41611124638494.mp4": {
+  "poster": "posters/vhdckfxq/41611124638494.jpg",
+  "bytes": 41765,
+  "duration": "742.293333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_12/video1.mp4"
+ },
+ "https://assets.pubpub.org/ugqv87yo/11613656415538.jpg": {
+  "web": "ugqv87yo/11613656415538.jpg",
+  "bytes": 208859
+ },
+ "https://assets.pubpub.org/vd7frt06/31643034077349.png": {
+  "web": "vd7frt06/31643034077349.jpg",
+  "bytes": 63120
+ },
+ "https://assets.pubpub.org/vidtwhs8/11648946531311.png": {
+  "web": "vidtwhs8/11648946531311.png",
+  "bytes": 26580
+ },
+ "https://assets.pubpub.org/vdgt9dwt/71610747327147.jpeg": {
+  "web": "vdgt9dwt/71610747327147.jpg",
+  "bytes": 399217
+ },
+ "https://assets.pubpub.org/vos7x59q/11643462629532.svg": {
+  "web": "vos7x59q/11643462629532.svg",
+  "bytes": 469839
+ },
+ "https://assets.pubpub.org/vfzb1iuu/51612175638065.png": {
+  "web": "vfzb1iuu/51612175638065.jpg",
+  "bytes": 71707
+ },
+ "https://assets.pubpub.org/vqdadbni/31618027030140.jpg": {
+  "web": "vqdadbni/31618027030140.jpg",
+  "bytes": 54627
+ },
+ "https://assets.pubpub.org/vmphpa9g/71643575623949.PNG": {
+  "web": "vmphpa9g/71643575623949.jpg",
+  "bytes": 162427
+ },
+ "https://assets.pubpub.org/vtt8s5bk/31611255298517.jpg": {
+  "web": "vtt8s5bk/31611255298517.jpg",
+  "bytes": 51494
+ },
+ "https://assets.pubpub.org/vra17mpq/71642901693991.png": {
+  "web": "vra17mpq/71642901693991.jpg",
+  "bytes": 33207
+ },
+ "https://assets.pubpub.org/vv7d3s9s/61651867613699.mp4": {
+  "poster": "posters/vv7d3s9s/61651867613699.jpg",
+  "bytes": 195183,
+  "duration": "763.358800",
+  "source_file": "2022/in_proceedings/music/nime2022_music_5/video1.mp4"
+ },
+ "https://assets.pubpub.org/vkqir0m6/31613755388028.jpg": {
+  "web": "vkqir0m6/31613755388028.jpg",
+  "bytes": 100924
+ },
+ "https://assets.pubpub.org/vrsusc3p/31617982722014.png": {
+  "web": "vrsusc3p/31617982722014.png",
+  "bytes": 49042
+ },
+ "https://assets.pubpub.org/vuxbfsjj/71611199019952.jpg": {
+  "web": "vuxbfsjj/71611199019952.jpg",
+  "bytes": 15001
+ },
+ "https://assets.pubpub.org/vym5m7i2/71613512019759.mp4": {
+  "poster": "posters/vym5m7i2/71613512019759.jpg",
+  "bytes": 7638,
+  "duration": "456.080000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_33/video1.mp4"
+ },
+ "https://assets.pubpub.org/vwa9z3oi/41652494393482.mp4": {
+  "poster": "posters/vwa9z3oi/41652494393482.jpg",
+  "bytes": 28048,
+  "duration": "743.409333",
+  "source_file": "2022/in_proceedings/music/nime2022_music_24/video1.mp4"
+ },
+ "https://assets.pubpub.org/vw4feyom/51616430932177.jpg": {
+  "web": "vw4feyom/51616430932177.jpg",
+  "bytes": 132471
+ },
+ "https://assets.pubpub.org/vz9raq3u/51612174635909.svg": {
+  "web": "vz9raq3u/51612174635909.svg",
+  "bytes": 13518
+ },
+ "https://assets.pubpub.org/vrjj5nkz/21643597514441.jpg": {
+  "web": "vrjj5nkz/21643597514441.jpg",
+  "bytes": 212084
+ },
+ "https://assets.pubpub.org/vxk376vt/01643304517233.png": {
+  "web": "vxk376vt/01643304517233.jpg",
+  "bytes": 33370
+ },
+ "https://assets.pubpub.org/tv3dd1ij/61611687626283.png": {
+  "web": "tv3dd1ij/61611687626283.jpg",
+  "bytes": 357951
+ },
+ "https://assets.pubpub.org/v9yhhmci/71649284464928.png": {
+  "web": "v9yhhmci/71649284464928.jpg",
+  "bytes": 166221
+ },
+ "https://assets.pubpub.org/w552ue1a/61611184428184.mp4": {
+  "poster": "posters/w552ue1a/61611184428184.jpg",
+  "bytes": 26073,
+  "duration": "33.698333",
+  "source_file": "2021/in_proceedings/music/nime2021_music_13/video1.mp4"
+ },
+ "https://assets.pubpub.org/vi38158e/51611253608072.jpeg": {
+  "web": "vi38158e/51611253608072.jpg",
+  "bytes": 134644
+ },
+ "https://assets.pubpub.org/u05kb4om/21643696150949.png": {
+  "web": "u05kb4om/21643696150949.jpg",
+  "bytes": 276663
+ },
+ "https://assets.pubpub.org/vxks4q8p/11618065515436.jpeg": {
+  "web": "vxks4q8p/11618065515436.jpg",
+  "bytes": 57680
+ },
+ "https://assets.pubpub.org/w54uuyes/41611255240779.jpg": {
+  "web": "w54uuyes/41611255240779.jpg",
+  "bytes": 52289
+ },
+ "https://assets.pubpub.org/w9ux3lu7/71618088119152.svg": {
+  "web": "w9ux3lu7/71618088119152.svg",
+  "bytes": 23519
+ },
+ "https://assets.pubpub.org/w851ou48/31617727358192.JPG": {
+  "web": "w851ou48/31617727358192.jpg",
+  "bytes": 204614
+ },
+ "https://assets.pubpub.org/w4msp6km/31611217628388.jpg": {
+  "web": "w4msp6km/31611217628388.jpg",
+  "bytes": 195349
+ },
+ "https://assets.pubpub.org/wb2xkjrs/31643563891152.png": {
+  "web": "wb2xkjrs/31643563891152.png",
+  "bytes": 17596
+ },
+ "https://assets.pubpub.org/vlu4kgtt/31643226243553.jpeg": {
+  "web": "vlu4kgtt/31643226243553.jpg",
+  "bytes": 119962
+ },
+ "https://assets.pubpub.org/wd7ueiwf/21643747901606.jpg": {
+  "web": "wd7ueiwf/21643747901606.jpg",
+  "bytes": 96934
+ },
+ "https://assets.pubpub.org/w9kbp6im/61650150699546.png": {
+  "web": "w9kbp6im/61650150699546.png",
+  "bytes": 19118
+ },
+ "https://assets.pubpub.org/w07eodz6/41643035332998.png": {
+  "web": "w07eodz6/41643035332998.jpg",
+  "bytes": 74119
+ },
+ "https://assets.pubpub.org/wcpfy9tw/71642619556609.jpg": {
+  "web": "wcpfy9tw/71642619556609.jpg",
+  "bytes": 123424
+ },
+ "https://assets.pubpub.org/wfmj73gg/61648756941261.mp4": {
+  "poster": "posters/wfmj73gg/61648756941261.jpg",
+  "bytes": 51006,
+  "duration": "223.880000",
+  "source_file": "2022/other/demo/4/video1.mp4"
+ },
+ "https://assets.pubpub.org/wh9jtkmt/51642786358228.mp4": {
+  "poster": "posters/wh9jtkmt/51642786358228.jpg",
+  "bytes": 18318,
+  "duration": "611.527583",
+  "source_file": "2022/in_proceedings/music/nime2022_music_16/video1.mp4"
+ },
+ "https://assets.pubpub.org/wgwtx9pq/21617370184537.svg": {
+  "web": "wgwtx9pq/21617370184537.svg",
+  "bytes": 242558
+ },
+ "https://assets.pubpub.org/w17l4k9q/11643586932154.png": {
+  "web": "w17l4k9q/11643586932154.jpg",
+  "bytes": 206805
+ },
+ "https://assets.pubpub.org/w5ioukne/31642760025489.png": {
+  "web": "w5ioukne/31642760025489.jpg",
+  "bytes": 94639
+ },
+ "https://assets.pubpub.org/w68siwrc/01643488675694.png": {
+  "web": "w68siwrc/01643488675694.jpg",
+  "bytes": 92912
+ },
+ "https://assets.pubpub.org/w8655jl8/51617759686560.jpeg": {
+  "web": "w8655jl8/51617759686560.jpg",
+  "bytes": 91101
+ },
+ "https://assets.pubpub.org/wjf8qkjk/11643587967822.png": {
+  "web": "wjf8qkjk/11643587967822.png",
+  "bytes": 2167
+ },
+ "https://assets.pubpub.org/wl5fq5ma/11612129465813.jpg": {
+  "web": "wl5fq5ma/11612129465813.jpg",
+  "bytes": 90181
+ },
+ "https://assets.pubpub.org/wdxnhrwq/41610672265073.png": {
+  "web": "wdxnhrwq/41610672265073.jpg",
+  "bytes": 30249
+ },
+ "https://assets.pubpub.org/w9xrh0ek/31614573473147.png": {
+  "web": "w9xrh0ek/31614573473147.jpg",
+  "bytes": 22812
+ },
+ "https://assets.pubpub.org/wp6xcvya/11619789457419.mp4": {
+  "poster": "posters/wp6xcvya/11619789457419.jpg",
+  "bytes": 54512,
+  "duration": "410.552018",
+  "source_file": "2021/other/work-in-progress_showcase/33/video1.mp4"
+ },
+ "https://assets.pubpub.org/wli97n4o/41643509929536.jpg": {
+  "web": "wli97n4o/41643509929536.jpg",
+  "bytes": 175108
+ },
+ "https://assets.pubpub.org/wj0c5ogz/51612051125618.png": {
+  "web": "wj0c5ogz/51612051125618.jpg",
+  "bytes": 84101
+ },
+ "https://assets.pubpub.org/wp3fl1fm/21616701959552.jpg": {
+  "web": "wp3fl1fm/21616701959552.jpg",
+  "bytes": 49723
+ },
+ "https://assets.pubpub.org/wllr6j51/11612044161545.png": {
+  "web": "wllr6j51/11612044161545.jpg",
+  "bytes": 93888
+ },
+ "https://assets.pubpub.org/wqe1zovl/31617887264617.svg": {
+  "web": "wqe1zovl/31617887264617.svg",
+  "bytes": 271581
+ },
+ "https://assets.pubpub.org/wpw90f23/01643263873167.mp4": {
+  "poster": "posters/wpw90f23/01643263873167.jpg",
+  "bytes": 42196,
+  "duration": "43.033333",
+  "source_file": "2022/in_proceedings/papers/nime2022_51/figure15.mp4"
+ },
+ "https://assets.pubpub.org/wqioe0ui/11643559507326.png": {
+  "web": "wqioe0ui/11643559507326.png",
+  "bytes": 7214
+ },
+ "https://assets.pubpub.org/wvrvd9av/21612977380176.mp4": {
+  "poster": "posters/wvrvd9av/21612977380176.jpg",
+  "bytes": 12659,
+  "duration": "328.212000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_9/video1.mp4"
+ },
+ "https://assets.pubpub.org/wvp74g72/21643547098439.svg": {
+  "web": "wvp74g72/21643547098439.svg",
+  "bytes": 544345
+ },
+ "https://assets.pubpub.org/wt9xa37c/51617849177611.jpg": {
+  "web": "wt9xa37c/51617849177611.jpg",
+  "bytes": 118234
+ },
+ "https://assets.pubpub.org/whhaekn4/21618071589886.png": {
+  "web": "whhaekn4/21618071589886.jpg",
+  "bytes": 115501
+ },
+ "https://assets.pubpub.org/wtgjvi82/21612044156725.png": {
+  "web": "wtgjvi82/21612044156725.png",
+  "bytes": 41845
+ },
+ "https://assets.pubpub.org/wuxsncce/31614573202162.png": {
+  "web": "wuxsncce/31614573202162.png",
+  "bytes": 217278
+ },
+ "https://assets.pubpub.org/wi0vd4wd/61612266998562.png": {
+  "web": "wi0vd4wd/61612266998562.png",
+  "bytes": 95046
+ },
+ "https://assets.pubpub.org/wvswt3r1/41650740553298.jpg": {
+  "web": "wvswt3r1/41650740553298.jpg",
+  "bytes": 14068
+ },
+ "https://assets.pubpub.org/wybd9f0f/01612062789573.jpg": {
+  "web": "wybd9f0f/01612062789573.jpg",
+  "bytes": 615819
+ },
+ "https://assets.pubpub.org/wpn4qivl/61642105758244.png": {
+  "web": "wpn4qivl/61642105758244.jpg",
+  "bytes": 34940
+ },
+ "https://assets.pubpub.org/wz96tbxn/71643392874759.mp4": {
+  "poster": "posters/wz96tbxn/71643392874759.jpg",
+  "bytes": 84208,
+  "duration": "183.308125",
+  "source_file": "2022/in_proceedings/papers/nime2022_38/video1.mp4"
+ },
+ "https://assets.pubpub.org/x34hb9hn/41611461297266.png": {
+  "web": "x34hb9hn/41611461297266.png",
+  "bytes": 47916
+ },
+ "https://assets.pubpub.org/wyt9ydet/41642792641744.png": {
+  "web": "wyt9ydet/41642792641744.jpg",
+  "bytes": 84679
+ },
+ "https://assets.pubpub.org/x1sbm0xn/11643563447669.png": {
+  "web": "x1sbm0xn/11643563447669.jpg",
+  "bytes": 111626
+ },
+ "https://assets.pubpub.org/x1tw99vp/61611350894643.jpg": {
+  "web": "x1tw99vp/61611350894643.jpg",
+  "bytes": 46141
+ },
+ "https://assets.pubpub.org/x42axbix/51622630770390.svg": {
+  "web": "x42axbix/51622630770390.svg",
+  "bytes": 26770
+ },
+ "https://assets.pubpub.org/x66wrtch/11647897394761.mp4": {
+  "poster": "posters/x66wrtch/11647897394761.jpg",
+  "bytes": 24128,
+  "duration": "60.040000",
+  "source_file": "2022/other/demo/3/video1.mp4"
+ },
+ "https://assets.pubpub.org/x1m3s2bp/31623731989335.jpg": {
+  "web": "x1m3s2bp/31623731989335.jpg",
+  "bytes": 169988
+ },
+ "https://assets.pubpub.org/w9wvmhc6/41618079311865.png": {
+  "web": "w9wvmhc6/41618079311865.jpg",
+  "bytes": 152015
+ },
+ "https://assets.pubpub.org/x9bhw3s2/71650740953709.jpg": {
+  "web": "x9bhw3s2/71650740953709.jpg",
+  "bytes": 48386
+ },
+ "https://assets.pubpub.org/wn6ehfnm/41611217435646.jpg": {
+  "web": "wn6ehfnm/41611217435646.jpg",
+  "bytes": 461234
+ },
+ "https://assets.pubpub.org/x8aaq6sq/21610167365505.jpg": {
+  "web": "x8aaq6sq/21610167365505.jpg",
+  "bytes": 62720
+ },
+ "https://assets.pubpub.org/xdy0p8bb/61649789580154.mp4": {
+  "poster": "posters/xdy0p8bb/61649789580154.jpg",
+  "bytes": 5621,
+  "duration": "78.785306",
+  "source_file": "2022/in_proceedings/music/nime2022_music_22/video2.mp4"
+ },
+ "https://assets.pubpub.org/xdtxtf1y/01611128886171.JPG": {
+  "web": "xdtxtf1y/01611128886171.jpg",
+  "bytes": 255830
+ },
+ "https://assets.pubpub.org/xbbl2zt3/71643431165760.jpeg": {
+  "web": "xbbl2zt3/71643431165760.jpg",
+  "bytes": 203234
+ },
+ "https://assets.pubpub.org/xgbp4n7q/21617778727490.svg": {
+  "web": "xgbp4n7q/21617778727490.svg",
+  "bytes": 338621
+ },
+ "https://assets.pubpub.org/xartltix/01613801472536.jpg": {
+  "web": "xartltix/01613801472536.jpg",
+  "bytes": 203408
+ },
+ "https://assets.pubpub.org/x7aivgnr/51618079236821.png": {
+  "web": "x7aivgnr/51618079236821.jpg",
+  "bytes": 120462
+ },
+ "https://assets.pubpub.org/xdu8zr5g/01614592383853.jpg": {
+  "web": "xdu8zr5g/01614592383853.jpg",
+  "bytes": 340807
+ },
+ "https://assets.pubpub.org/xifv65zf/21618045117134.mp4": {
+  "poster": "posters/xifv65zf/21618045117134.jpg",
+  "bytes": 88564,
+  "duration": "229.080000",
+  "source_file": "2021/other/work-in-progress_showcase/21/video1.mp4"
+ },
+ "https://assets.pubpub.org/xi4pajos/71611128962673.JPG": {
+  "web": "xi4pajos/71611128962673.jpg",
+  "bytes": 208585
+ },
+ "https://assets.pubpub.org/xk1dqvji/51617984518661.svg": {
+  "web": "xk1dqvji/51617984518661.svg",
+  "bytes": 61104
+ },
+ "https://assets.pubpub.org/wfwn503b/21611063676771.png": {
+  "web": "wfwn503b/21611063676771.jpg",
+  "bytes": 123664
+ },
+ "https://assets.pubpub.org/xgqmih1k/61612044156742.png": {
+  "web": "xgqmih1k/61612044156742.png",
+  "bytes": 24301
+ },
+ "https://assets.pubpub.org/xk4z1upy/71650740908957.jpg": {
+  "web": "xk4z1upy/71650740908957.jpg",
+  "bytes": 34297
+ },
+ "https://assets.pubpub.org/xes013w6/61617905292413.png": {
+  "web": "xes013w6/61617905292413.jpg",
+  "bytes": 45867
+ },
+ "https://assets.pubpub.org/xlypbcnc/51611957549374.jpg": {
+  "web": "xlypbcnc/51611957549374.jpg",
+  "bytes": 103924
+ },
+ "https://assets.pubpub.org/xk9d23kc/51611377266038.jpg": {
+  "web": "xk9d23kc/51611377266038.jpg",
+  "bytes": 431020
+ },
+ "https://assets.pubpub.org/xt9ns8z6/11643706346471.svg": {
+  "web": "xt9ns8z6/11643706346471.svg",
+  "bytes": 5614
+ },
+ "https://assets.pubpub.org/xtb9x0mq/71617911510683.mp4": {
+  "poster": "posters/xtb9x0mq/71617911510683.jpg",
+  "bytes": 99273,
+  "duration": "89.999000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_39/video2.mp4"
+ },
+ "https://assets.pubpub.org/xhajcknz/31642732752187.png": {
+  "web": "xhajcknz/31642732752187.jpg",
+  "bytes": 196088
+ },
+ "https://assets.pubpub.org/xpn4edpm/01610675849378.jpg": {
+  "web": "xpn4edpm/01610675849378.jpg",
+  "bytes": 231664
+ },
+ "https://assets.pubpub.org/xxsguvw8/41618014984973.jpg": {
+  "web": "xxsguvw8/41618014984973.jpg",
+  "bytes": 49086
+ },
+ "https://assets.pubpub.org/xv06nbld/61611957010559.png": {
+  "web": "xv06nbld/61611957010559.png",
+  "bytes": 43724
+ },
+ "https://assets.pubpub.org/xlzz45to/51643434368536.png": {
+  "web": "xlzz45to/51643434368536.jpg",
+  "bytes": 75776
+ },
+ "https://assets.pubpub.org/xzzpe1wr/51612007232835.svg": {
+  "web": "xzzpe1wr/51612007232835.svg",
+  "bytes": 165898
+ },
+ "https://assets.pubpub.org/y3rl4igg/41617899668976.mp4": {
+  "poster": "posters/y3rl4igg/41617899668976.jpg",
+  "bytes": 167088,
+  "duration": "420.513379",
+  "source_file": "2021/other/work-in-progress_showcase/19/video2.mp4"
+ },
+ "https://assets.pubpub.org/xo9ipdnm/01643713052887.png": {
+  "web": "xo9ipdnm/01643713052887.jpg",
+  "bytes": 46128
+ },
+ "https://assets.pubpub.org/xcbunni1/31614573331300.png": {
+  "web": "xcbunni1/31614573331300.png",
+  "bytes": 1813588
+ },
+ "https://assets.pubpub.org/y0p1m8or/01610364128275.jpg": {
+  "web": "y0p1m8or/01610364128275.jpg",
+  "bytes": 68429
+ },
+ "https://assets.pubpub.org/x0xw94ra/71611811459766.png": {
+  "web": "x0xw94ra/71611811459766.png",
+  "bytes": 65510
+ },
+ "https://assets.pubpub.org/y6k0zrz9/61618104391090.mp4": {
+  "poster": "posters/y6k0zrz9/61618104391090.jpg",
+  "bytes": 19410,
+  "duration": "228.000000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_58/video4.mp4"
+ },
+ "https://assets.pubpub.org/y0lig3bu/11611969613601.png": {
+  "web": "y0lig3bu/11611969613601.jpg",
+  "bytes": 141372
+ },
+ "https://assets.pubpub.org/y88s1ybn/01617899574366.svg": {
+  "web": "y88s1ybn/01617899574366.svg",
+  "bytes": 405972
+ },
+ "https://assets.pubpub.org/y5iop4xt/41610358322799.jpg": {
+  "web": "y5iop4xt/41610358322799.jpg",
+  "bytes": 160030
+ },
+ "https://assets.pubpub.org/y8hc5d4h/51649684612468.mp4": {
+  "poster": "posters/y8hc5d4h/51649684612468.jpg",
+  "bytes": 65903,
+  "duration": "116.736000",
+  "source_file": "2022/in_proceedings/papers/nime2022_35/figure5.mp4"
+ },
+ "https://assets.pubpub.org/xnp2ogs3/41610747376762.png": {
+  "web": "xnp2ogs3/41610747376762.png",
+  "bytes": 784430
+ },
+ "https://assets.pubpub.org/y4ma60x4/11618064432896.jpg": {
+  "web": "y4ma60x4/11618064432896.jpg",
+  "bytes": 42861
+ },
+ "https://assets.pubpub.org/y3ub1cn6/01643431743233.jpeg": {
+  "web": "y3ub1cn6/01643431743233.jpg",
+  "bytes": 312064
+ },
+ "https://assets.pubpub.org/xz8zk4ms/51649663533674.png": {
+  "web": "xz8zk4ms/51649663533674.jpg",
+  "bytes": 27616
+ },
+ "https://assets.pubpub.org/yelsce5p/61643480982876.mp4": {
+  "poster": "posters/yelsce5p/61643480982876.jpg",
+  "bytes": 102201,
+  "duration": "134.667710",
+  "source_file": "2022/in_proceedings/papers/nime2022_56/video1.mp4"
+ },
+ "https://assets.pubpub.org/yg17q9lb/31643659200002.mp4": {
+  "poster": "posters/yg17q9lb/31643659200002.jpg",
+  "bytes": 8350,
+  "duration": "107.008000",
+  "source_file": "2022/in_proceedings/installations/nime20202_installations_6/pubpub_assets/yg17q9lb/31643659200002.mp4"
+ },
+ "https://assets.pubpub.org/yewuap8r/41611765636541.jpg": {
+  "web": "yewuap8r/41611765636541.jpg",
+  "bytes": 63116
+ },
+ "https://assets.pubpub.org/y53h7qa0/31611960920455.jpg": {
+  "web": "y53h7qa0/31611960920455.jpg",
+  "bytes": 230916
+ },
+ "https://assets.pubpub.org/yk4pumgv/71613703653231.mp4": {
+  "poster": "posters/yk4pumgv/71613703653231.jpg",
+  "bytes": 62329,
+  "duration": "2150.314833",
+  "source_file": "2021/in_proceedings/music/nime2021_music_35/video3.mp4"
+ },
+ "https://assets.pubpub.org/yf8o4er7/61611351013398.jpg": {
+  "web": "yf8o4er7/61611351013398.jpg",
+  "bytes": 60129
+ },
+ "https://assets.pubpub.org/ygugnd22/31617904415028.svg": {
+  "web": "ygugnd22/31617904415028.svg",
+  "bytes": 74183
+ },
+ "https://assets.pubpub.org/yk7imogd/41617887238697.mp4": {
+  "poster": "posters/yk7imogd/41617887238697.jpg",
+  "bytes": 62594,
+  "duration": "144.633333",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_47/video1.mp4"
+ },
+ "https://assets.pubpub.org/yj77nwoj/21648946503721.png": {
+  "web": "yj77nwoj/21648946503721.png",
+  "bytes": 8365
+ },
+ "https://assets.pubpub.org/ybryyggk/41617816987777.png": {
+  "web": "ybryyggk/41617816987777.png",
+  "bytes": 73823
+ },
+ "https://assets.pubpub.org/y9q81gz0/51618283642034.jpeg": {
+  "web": "y9q81gz0/51618283642034.jpg",
+  "bytes": 278693
+ },
+ "https://assets.pubpub.org/yk6vgvu2/31618086431935.jpg": {
+  "web": "yk6vgvu2/31618086431935.jpg",
+  "bytes": 139088
+ },
+ "https://assets.pubpub.org/ylvt9q6z/21611682959177.svg": {
+  "web": "ylvt9q6z/21611682959177.svg",
+  "bytes": 304560
+ },
+ "https://assets.pubpub.org/yp4pxh0u/31619529171868.mp4": {
+  "poster": "posters/yp4pxh0u/31619529171868.jpg",
+  "bytes": 17495,
+  "duration": "446.866667",
+  "source_file": "2021/in_proceedings/music/nime2021_music_1/video1.mp4"
+ },
+ "https://assets.pubpub.org/y3dubsqe/31611064450950.png": {
+  "web": "y3dubsqe/31611064450950.jpg",
+  "bytes": 94811
+ },
+ "https://assets.pubpub.org/yn6szekt/31611217652125.mp4": {
+  "poster": "posters/yn6szekt/31611217652125.jpg",
+  "bytes": 42023,
+  "duration": "494.500000",
+  "source_file": "2021/in_proceedings/music/nime2021_music_3/video1.mp4"
+ },
+ "https://assets.pubpub.org/ykixsab0/41642426050517.jpg": {
+  "web": "ykixsab0/41642426050517.jpg",
+  "bytes": 109589
+ },
+ "https://assets.pubpub.org/yod0l7je/41648821912860.png": {
+  "web": "yod0l7je/41648821912860.png",
+  "bytes": 54342
+ },
+ "https://assets.pubpub.org/yv9nvlr0/01647753384945.mp4": {
+  "poster": "posters/yv9nvlr0/01647753384945.jpg",
+  "bytes": 56008,
+  "duration": "379.623039",
+  "source_file": "2022/other/demo/1/video2.mp4"
+ },
+ "https://assets.pubpub.org/ynm3zjgd/31605801436118.png": {
+  "web": "ynm3zjgd/31605801436118.jpg",
+  "bytes": 23553
+ },
+ "https://assets.pubpub.org/yrheed4h/01610153907905.jpg": {
+  "web": "yrheed4h/01610153907905.jpg",
+  "bytes": 71217
+ },
+ "https://assets.pubpub.org/yy8hbp3u/41641842044140.jpg": {
+  "web": "yy8hbp3u/41641842044140.jpg",
+  "bytes": 91335
+ },
+ "https://assets.pubpub.org/ytw69gxk/01618107377697.png": {
+  "web": "ytw69gxk/01618107377697.jpg",
+  "bytes": 95677
+ },
+ "https://assets.pubpub.org/ypgigxaq/01618037530492.jpg": {
+  "web": "ypgigxaq/01618037530492.jpg",
+  "bytes": 193048
+ },
+ "https://assets.pubpub.org/yyy0ejn1/41612130186282.svg": {
+  "web": "yyy0ejn1/41612130186282.svg",
+  "bytes": 12096
+ },
+ "https://assets.pubpub.org/x1k5ieec/01618658219688.gif": {
+  "web": "x1k5ieec/01618658219688.gif",
+  "bytes": 2934173
+ },
+ "https://assets.pubpub.org/z37uyuuf/61616839727175.mp4": {
+  "poster": "posters/z37uyuuf/61616839727175.jpg",
+  "bytes": 128797,
+  "duration": "37.080000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_25/video3.mp4"
+ },
+ "https://assets.pubpub.org/z4ehheq6/01618142940882.mp4": {
+  "poster": "posters/z4ehheq6/01618142940882.jpg",
+  "bytes": 99660,
+  "duration": "191.699000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_39/video4.mp4"
+ },
+ "https://assets.pubpub.org/ykvib468/41623731403747.png": {
+  "web": "ykvib468/41623731403747.jpg",
+  "bytes": 153075
+ },
+ "https://assets.pubpub.org/z3rxq22l/31614573298353.png": {
+  "web": "z3rxq22l/31614573298353.png",
+  "bytes": 16459
+ },
+ "https://assets.pubpub.org/yziwmpk1/41650066198493.png": {
+  "web": "yziwmpk1/41650066198493.jpg",
+  "bytes": 57499
+ },
+ "https://assets.pubpub.org/z7em2a2l/01643628917064.png": {
+  "web": "z7em2a2l/01643628917064.jpg",
+  "bytes": 43285
+ },
+ "https://assets.pubpub.org/ykbbdriv/31643680200851.png": {
+  "web": "ykbbdriv/31643680200851.jpg",
+  "bytes": 99436
+ },
+ "https://assets.pubpub.org/zb2qgswl/21643649537223.JPG": {
+  "web": "zb2qgswl/21643649537223.jpg",
+  "bytes": 319022
+ },
+ "https://assets.pubpub.org/zb87qm2z/01642724794263.JPG": {
+  "web": "zb87qm2z/01642724794263.jpg",
+  "bytes": 145176
+ },
+ "https://assets.pubpub.org/z9h5b1ac/41650741247007.jpg": {
+  "web": "z9h5b1ac/41650741247007.jpg",
+  "bytes": 12709
+ },
+ "https://assets.pubpub.org/zcdsgog4/01642860975332.JPG": {
+  "web": "zcdsgog4/01642860975332.jpg",
+  "bytes": 256755
+ },
+ "https://assets.pubpub.org/zdck5wtk/11617780333763.svg": {
+  "web": "zdck5wtk/11617780333763.svg",
+  "bytes": 440355
+ },
+ "https://assets.pubpub.org/zba8hoiv/21643748410203.jpg": {
+  "web": "zba8hoiv/21643748410203.jpg",
+  "bytes": 84968
+ },
+ "https://assets.pubpub.org/ypy2jr4d/21642697586231.png": {
+  "web": "ypy2jr4d/21642697586231.png",
+  "bytes": 115188
+ },
+ "https://assets.pubpub.org/z57f4d97/21612012919350.png": {
+  "web": "z57f4d97/21612012919350.jpg",
+  "bytes": 342280
+ },
+ "https://assets.pubpub.org/zavowf5h/21611158454505.png": {
+  "web": "zavowf5h/21611158454505.jpg",
+  "bytes": 151888
+ },
+ "https://assets.pubpub.org/zeu4ezf2/61611914048419.jpeg": {
+  "web": "zeu4ezf2/61611914048419.jpg",
+  "bytes": 157268
+ },
+ "https://assets.pubpub.org/yzidku4e/31618071589867.png": {
+  "web": "yzidku4e/31618071589867.jpg",
+  "bytes": 141628
+ },
+ "https://assets.pubpub.org/zfat9bny/11642841524757.jpeg": {
+  "web": "zfat9bny/11642841524757.jpg",
+  "bytes": 169060
+ },
+ "https://assets.pubpub.org/zee7o9la/51637696920512.png": {
+  "web": "zee7o9la/51637696920512.jpg",
+  "bytes": 176978
+ },
+ "https://assets.pubpub.org/znd525cx/51643476388701.jpeg": {
+  "web": "znd525cx/51643476388701.jpg",
+  "bytes": 230398
+ },
+ "https://assets.pubpub.org/zdh17j30/01614049797901.jpg": {
+  "web": "zdh17j30/01614049797901.jpg",
+  "bytes": 136039
+ },
+ "https://assets.pubpub.org/yvdpnie0/41643652011176.png": {
+  "web": "yvdpnie0/41643652011176.png",
+  "bytes": 897675
+ },
+ "https://assets.pubpub.org/zntkbpcs/01650740634337.jpg": {
+  "web": "zntkbpcs/01650740634337.jpg",
+  "bytes": 18848
+ },
+ "https://assets.pubpub.org/x30yjt3w/71617819703397.gif": {
+  "web": "x30yjt3w/71617819703397.gif",
+  "bytes": 524086
+ },
+ "https://assets.pubpub.org/zo0gptlx/51643557671901.jpg": {
+  "web": "zo0gptlx/51643557671901.jpg",
+  "bytes": 153178
+ },
+ "https://assets.pubpub.org/zgvzpk3j/71612086705217.png": {
+  "web": "zgvzpk3j/71612086705217.jpg",
+  "bytes": 33041
+ },
+ "https://assets.pubpub.org/yxknngns/51608048608270.png": {
+  "web": "yxknngns/51608048608270.png",
+  "bytes": 2361655
+ },
+ "https://assets.pubpub.org/zljb1a12/71623731795982.jpg": {
+  "web": "zljb1a12/71623731795982.jpg",
+  "bytes": 175950
+ },
+ "https://assets.pubpub.org/zt5r9hja/31616836646532.mp4": {
+  "poster": "posters/zt5r9hja/31616836646532.jpg",
+  "bytes": 212109,
+  "duration": "59.800000",
+  "source_file": "2021/in_proceedings/papers(full_short_demo)/nime2021_25/video4.mp4"
+ },
+ "https://assets.pubpub.org/zplirz1i/01612100438131.png": {
+  "web": "zplirz1i/01612100438131.jpg",
+  "bytes": 32345
+ },
+ "https://assets.pubpub.org/zqjejrlx/31617865369718.png": {
+  "web": "zqjejrlx/31617865369718.jpg",
+  "bytes": 116612
+ },
+ "https://assets.pubpub.org/zuvcs3ow/71651709328378.mp4": {
+  "poster": "posters/zuvcs3ow/71651709328378.jpg",
+  "bytes": 7305,
+  "duration": "333.160000",
+  "source_file": "2022/in_proceedings/music/nime2022_music_4/video1.mp4",
+  "note": "matched by item (CDN size unknown)"
+ },
+ "https://assets.pubpub.org/zehf7e0z/41612159336043.jpg": {
+  "web": "zehf7e0z/41612159336043.jpg",
+  "bytes": 253368
+ },
+ "https://assets.pubpub.org/zohto3zo/01611915974042.png": {
+  "web": "zohto3zo/01611915974042.jpg",
+  "bytes": 139477
+ },
+ "https://assets.pubpub.org/zt6gzuwc/41653585742573.mp4": {
+  "poster": "posters/zt6gzuwc/41653585742573.jpg",
+  "bytes": 55793,
+  "duration": "597.129875",
+  "source_file": "2022/in_proceedings/music/nime2022_music_12/video1.mp4"
+ },
+ "https://assets.pubpub.org/zoaqdtt8/71618044955894.png": {
+  "web": "zoaqdtt8/71618044955894.png",
+  "bytes": 322422
+ },
+ "https://assets.pubpub.org/zttthosc/01643575623952.png": {
+  "web": "zttthosc/01643575623952.png",
+  "bytes": 3808
+ },
+ "https://assets.pubpub.org/zv3usp1m/21642889142362.JPG": {
+  "web": "zv3usp1m/21642889142362.jpg",
+  "bytes": 256755
+ },
+ "https://assets.pubpub.org/zwq3lt4p/31650740577039.jpg": {
+  "web": "zwq3lt4p/31650740577039.jpg",
+  "bytes": 12432
+ },
+ "https://assets.pubpub.org/ztyhvfn4/11611298351232.png": {
+  "web": "ztyhvfn4/11611298351232.png",
+  "bytes": 133626
+ },
+ "https://assets.pubpub.org/zulx5h50/21610996740076.png": {
+  "web": "zulx5h50/21610996740076.jpg",
+  "bytes": 53226
+ },
+ "https://assets.pubpub.org/zr7hcjx5/41650803653951.jpg": {
+  "web": "zr7hcjx5/41650803653951.jpg",
+  "bytes": 243580
+ },
+ "https://assets.pubpub.org/x53we5lu/31618137635621.png": {
+  "web": "x53we5lu/31618137635621.jpg",
+  "bytes": 90955
+ },
+ "https://assets.pubpub.org/zohkjrmg/01650047409396.png": {
+  "web": "zohkjrmg/01650047409396.jpg",
+  "bytes": 120790
+ },
+ "https://assets.pubpub.org/zdm6vv6j/11611994617579.png": {
+  "web": "zdm6vv6j/11611994617579.png",
+  "bytes": 1470172
+ },
+ "https://assets.pubpub.org/zzkjjq22/01612087885063.png": {
+  "web": "zzkjjq22/01612087885063.jpg",
+  "bytes": 100870
+ }
+}

@@ -13,6 +13,9 @@ PubPub (https://nime.pubpub.org) remains the version of record. This is a test o
 - `scripts/` — the pipeline (see below).
 - `inventory.csv` / `inventory.json` — per-item inventory of the export: identifiers, DOIs, media, external links and their liveness, Wayback coverage.
 - `REPORT.md` — what the December 2025 export contains and what it lacks.
+- `PDF-CONVERSION-LOG.md` — method, revision history, metrics and open issues for the PDF regeneration.
+- `STATUS.md` — where everything is and how to pick the work up again.
+- `data/` — intermediate outputs (manifest, asset check, Crossref lookup, media map, Wayback index) so the scripts can be re-run without redoing the network work.
 
 ## Source
 
