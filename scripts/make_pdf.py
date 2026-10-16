@@ -11,6 +11,8 @@ Pipeline
   nimeart.cls     -> pdflatex + bibtex
 """
 import sys, re, json, subprocess, pathlib, shutil, html, argparse, base64
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from pubpub_tex import table_caption_text
 
 HERE = pathlib.Path(__file__).resolve().parent
 TEMPLATE = HERE / "pdf-pilot" / "template"
@@ -201,10 +203,7 @@ def fix_table(mm):
     capline = f"\\caption{{{cap.group(1)}}}" if cap and not re.fullmatch(r"\s*Table\s*\d+\s*", cap.group(1)) else ""
     # image gallery tables (PubPub authors often lay figures out in a table): figure* with images side by side
     imgs = re.findall(r"\\begin\{figure\}\[htbp\]\\centering(\\includegraphics\[[^\]]*\]\{[^}]+\})\\caption\{(.*?)\}\\end\{figure\}|(\\includegraphics\[[^\]]*\]\{[^}]+\})", inner, re.S)
-    stripped = re.sub(r"\\begin\{figure\}.*?\\end\{figure\}|\\includegraphics\[[^\]]*\]\{[^}]+\}", " ", inner, flags=re.S)
-    stripped = re.sub(r"\\multicolumn\{\d+\}\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}\{%?", " ", stripped)
-    words = re.sub(r"\\[A-Za-z]+\*?(?:\[[^\]]*\])?|[&{}\[\]%]|\(\\?[a-z]+ - \d+\\?[a-z]+\) \* \\?real\{[\d.]+\}( \+ \d\\?[a-z]+)?", " ", stripped)
-    words = re.sub(r"\s+", " ", words).strip()
+    words = table_caption_text(inner)
     if imgs and len(words) < 160:
         rows = [r for r in re.split(r"\\tabularnewline|\\\\", inner) if "includegraphics" in r]
         out = []
@@ -246,7 +245,7 @@ ccs_block = "".join("\\ccsdesc{" + tex_escape(c).replace("\\textasciitilde{}", "
 kw_block = ("\\keywords{" + tex_escape(keywords) + "}") if keywords else ""
 doc = f"""\\documentclass[sigconf]{{nimeart}}
 \\usepackage{{bm}}
-\\usepackage{{array,calc,adjustbox}}
+\\usepackage{{array,calc,adjustbox,multirow}}
 \\DeclareUnicodeCharacter{{202F}}{{\\,}}\\DeclareUnicodeCharacter{{2009}}{{\\,}}\\DeclareUnicodeCharacter{{200B}}{{}}\\DeclareUnicodeCharacter{{FEFF}}{{}}\\DeclareUnicodeCharacter{{22C5}}{{\\ensuremath{{\\cdot}}}}\\DeclareUnicodeCharacter{{21A9}}{{}}\\DeclareUnicodeCharacter{{2192}}{{\\ensuremath{{\\rightarrow}}}}
 \\DeclareUnicodeCharacter{{2248}}{{\\ensuremath{{\\approx}}}}\\DeclareUnicodeCharacter{{2264}}{{\\ensuremath{{\\leq}}}}\\DeclareUnicodeCharacter{{2265}}{{\\ensuremath{{\\geq}}}}
 \\DeclareUnicodeCharacter{{2208}}{{\\ensuremath{{\\in}}}}\\DeclareUnicodeCharacter{{221E}}{{\\ensuremath{{\\infty}}}}\\DeclareUnicodeCharacter{{223C}}{{\\ensuremath{{\\sim}}}}
