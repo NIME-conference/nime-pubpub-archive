@@ -1,0 +1,18 @@
+<svg width="212.4mm" height="38.64mm" version="1.1" viewBox="0 0 212.4302 38.64275" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#00f" fill-rule="evenodd" stroke="#00f" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mstart" overflow="visible" orient="auto">
+   <path transform="matrix(.4 0 0 .4 4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#00f" fill-rule="evenodd" stroke="#00f" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(-9.446 -104.6)">
+  <rect x="9.446" y="104.6" width="212.4" height="38.64" fill="#fff" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+  <path d="m13.47 125.6h204.4" fill="#00f" marker-end="url(#Arrow1Mend)" marker-start="url(#Arrow1Mstart)" stroke="#00f" stroke-dashoffset="11.41" stroke-linecap="round" stroke-width="1.029" style="paint-order:fill markers stroke"/>
+  <path d="m48.58 120.3 0.0395-7.91h51.65m78.05 7.91 0.1186-7.91h-40.58" fill="none" stroke="#000" stroke-dashoffset="11.41" stroke-linecap="round" stroke-width=".529" style="paint-order:fill markers stroke"/>
+  <g fill="#000000" font-family="Arial" font-size="6px" text-anchor="middle">
+   <text x="152.4386" y="133.9256" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:6.02px;paint-order:fill markers stroke" xml:space="preserve"><tspan x="152.4386" y="133.9256">Augmented</tspan><tspan x="152.4386" y="139.9456">virtuality (AV)</tspan><tspan x="195.2379" y="133.8984">Virtual</tspan><tspan x="195.2379" y="139.9184">environment</tspan><tspan x="76.31053" y="127.7384"/><tspan x="76.31053" y="133.7584" stroke-width="1.029">Augmented</tspan><tspan x="76.31053" y="139.7784" stroke-width="1.029">reality (AR)</tspan><tspan x="118.8823" y="110.9337">Mixed</tspan><tspan x="118.8823" y="116.9537">reality (MR)</tspan><tspan x="37.74482" y="133.9077">Real</tspan><tspan x="37.74482" y="139.9277">environment</tspan></text>
+  </g>
+ </g>
+</svg>

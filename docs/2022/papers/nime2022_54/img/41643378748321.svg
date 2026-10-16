@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="742px" height="293px" viewBox="0 0 742 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>proto-langspil_diagram</title>
+    <g id="proto-langspil_diagram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="742" height="293"></rect>
+        <rect id="Rectangle" stroke="#000000" x="640" y="60" width="100" height="64"></rect>
+        <rect id="Rectangle-Copy" stroke="#000000" x="506" y="61" width="100" height="64"></rect>
+        <rect id="Rectangle-Copy-6" stroke="#000000" x="132" y="70" width="100" height="49"></rect>
+        <rect id="Rectangle-Copy-9" stroke="#000000" x="1" y="55" width="100" height="79"></rect>
+        <rect id="Rectangle-Copy-2" stroke="#000000" x="507" y="143" width="100" height="49"></rect>
+        <rect id="Rectangle-Copy-3" stroke="#000000" x="146" y="237" width="76" height="25"></rect>
+        <rect id="Rectangle-Copy-7" stroke="#000000" x="264" y="58" width="100" height="72"></rect>
+        <rect id="Rectangle-Copy-8" stroke="#000000" x="396" y="63" width="76" height="62"></rect>
+        <rect id="Rectangle-Copy-5" stroke="#000000" x="275" y="237" width="76" height="55"></rect>
+        <rect id="Rectangle-Copy-4" stroke="#000000" x="132" y="180" width="208" height="32"></rect>
+        <text id="20W-Tactile-Transduc" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="656.519287" y="81">20W Tactile </tspan>
+            <tspan x="657.363525" y="97">Transducer</tspan>
+            <tspan x="649.905029" y="113">(DAEX32Q-8)</tspan>
+        </text>
+        <text id="50W-Class-D-Amplifie" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="518.075928" y="82">50W Class D </tspan>
+            <tspan x="530.717285" y="98">Amplifier</tspan>
+            <tspan x="517.218994" y="114">(TPA3116D2)</tspan>
+        </text>
+        <text id="3x-Pickups-(Cycfi-Nu" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="150.56958" y="91">3x Pickups</tspan>
+            <tspan x="153.111816" y="107">(Cycfi Nu)</tspan>
+        </text>
+        <text id="Ferromagnetic-Guitar" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="9.09594727" y="76">Ferromagnetic </tspan>
+            <tspan x="11.2636719" y="92">Guitar Strings</tspan>
+            <tspan x="22.4577637" y="108">(Daddario </tspan>
+            <tspan x="27.5200195" y="124">ECG26)</tspan>
+        </text>
+        <text id="5-12V-Step-Up-Conver" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="514.362793" y="164">5-12V Step Up </tspan>
+            <tspan x="528.460938" y="180">Converter</tspan>
+        </text>
+        <text id="9V-Battery" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="153.651855" y="255">9V Battery</tspan>
+        </text>
+        <text id="Single-Board-Compute" font-family="Helvetica" font-size="12" font-weight="normal" fill="#000000">
+            <tspan x="279.643555" y="75">Single Board </tspan>
+            <tspan x="287.65625" y="89">Computer</tspan>
+            <tspan x="279.658203" y="103">(Bela Mini w/</tspan>
+            <tspan x="269.304688" y="117">Audio Expander)</tspan>
+        </text>
+        <text id="1/4”-Audio-Output-(O" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="404.724609" y="83">1/4” Audio </tspan>
+            <tspan x="414.487305" y="99">Output</tspan>
+            <tspan x="405.460938" y="115">(Optional)</tspan>
+        </text>
+        <text id="Acoustic-Feedback" font-family="Helvetica-BoldOblique, Helvetica" font-size="13" font-style="italic" font-weight="bold" fill="#888888">
+            <tspan x="343.549561" y="16">Acoustic </tspan>
+            <tspan x="341.013672" y="32">Feedback</tspan>
+        </text>
+        <text id="USB-Powerbank-(≥10Ah" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="300.63501" y="253">USB </tspan>
+            <tspan x="281.480957" y="269">Powerbank</tspan>
+            <tspan x="290.923096" y="285">(≥10Ah)</tspan>
+        </text>
+        <text id="Single-Throw-Double" font-family="Helvetica" font-size="13" font-weight="normal" fill="#000000">
+            <tspan x="140.510742" y="202">Single Throw Double Pole Switch</tspan>
+        </text>
+        <path id="Line" d="M255,89 L264,93.5 L255,98 L255,94 L233,94 L233,93 L255,93 L255,89 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-13" d="M123,90 L132,94.5 L123,99 L123,95 L101,95 L101,94 L123,94 L123,90 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-3" d="M314.5,129 L319,138 L315,138 L315,180 L314,180 L314,138 L310,138 L314.5,129 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-7" d="M314.5,211.704918 L319,220.704918 L315,220.704 L315,237.295082 L314,237.295082 L314,220.704 L310,220.704918 L314.5,211.704918 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-8" d="M183.5,211.704918 L188,220.704918 L184,220.704 L184,237.295082 L183,237.295082 L183,220.704 L179,220.704918 L183.5,211.704918 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-6" d="M183.5,118.87037 L188,127.87037 L184,127.87 L184,180 L183,180 L183,127.87 L179,127.87037 L183.5,118.87037 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-9" d="M51.5,38 L56,47 L52,47 L52,55 L51,55 L51,47 L47,47 L51.5,38 Z" transform="translate(51.500000, 46.500000) scale(1, -1) translate(-51.500000, -46.500000) " fill="#888888" fill-rule="nonzero"></path>
+        <line x1="689.5" y1="59.5" x2="689.5" y2="38.5" id="Line-Copy-10" stroke="#888888" stroke-linecap="square" stroke-dasharray="8" transform="translate(689.500000, 49.000000) scale(1, -1) translate(-689.500000, -49.000000) "></line>
+        <line x1="689.5" y1="38.5" x2="51.5" y2="38.5" id="Line-Copy-11" stroke="#888888" stroke-linecap="square" stroke-dasharray="8" transform="translate(370.500000, 38.500000) scale(1, -1) translate(-370.500000, -38.500000) "></line>
+        <path id="Line-Copy-4" d="M556.5,124 L561,133 L557,133 L557,143 L556,143 L556,133 L552,133 L556.5,124 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy" d="M386,89 L395,93.5 L386,98 L386,94 L365,94 L365,93 L386,93 L386,89 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-12" d="M498,89 L507,93.5 L498,98 L498,94 L472,94 L472,93 L498,93 L498,89 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-5" d="M498,163 L507,167.5 L498,172 L498,168 L314,168 L314,167 L498,167 L498,163 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-Copy-2" d="M632,88 L641,92.5 L632,97 L632,93 L606,93 L606,92 L632,92 L632,88 Z" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
