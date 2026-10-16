@@ -1,0 +1,81 @@
+\documentclass[sigconf]{nimeart}
+\usepackage{bm}
+\usepackage{array,calc,adjustbox,multirow,fvextra,xurl}
+\emergencystretch=2em
+\DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}\DeclareUnicodeCharacter{00B1}{\ensuremath{\pm}}\DeclareUnicodeCharacter{2032}{\ensuremath{'}}\DeclareUnicodeCharacter{2A09}{\ensuremath{\times}}
+\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
+\DeclareUnicodeCharacter{2713}{\checkmark}\DeclareUnicodeCharacter{2717}{\ensuremath{\times}}\DeclareUnicodeCharacter{25B6}{\ensuremath{\blacktriangleright}}\DeclareUnicodeCharacter{2B06}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2B07}{\ensuremath{\downarrow}}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}\DeclareUnicodeCharacter{03B9}{\ensuremath{\iota}}\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}\DeclareUnicodeCharacter{03C6}{\ensuremath{\varphi}}\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}\DeclareUnicodeCharacter{2207}{\ensuremath{\nabla}}\DeclareUnicodeCharacter{221A}{\ensuremath{\surd}}\DeclareUnicodeCharacter{221D}{\ensuremath{\propto}}\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}\DeclareUnicodeCharacter{220F}{\ensuremath{\prod}}\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}\DeclareUnicodeCharacter{2229}{\ensuremath{\cap}}\DeclareUnicodeCharacter{222A}{\ensuremath{\cup}}\DeclareUnicodeCharacter{2282}{\ensuremath{\subset}}\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}\DeclareUnicodeCharacter{2261}{\ensuremath{\equiv}}\DeclareUnicodeCharacter{21D0}{\ensuremath{\Leftarrow}}\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}\DeclareUnicodeCharacter{21D4}{\ensuremath{\Leftrightarrow}}\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}\DeclareUnicodeCharacter{2026}{\ensuremath{\ldots}}\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}\DeclareUnicodeCharacter{2218}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2205}{\ensuremath{\emptyset}}\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}\DeclareUnicodeCharacter{00F7}{\ensuremath{\div}}\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}\DeclareUnicodeCharacter{2225}{\ensuremath{\parallel}}\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\DeclareUnicodeCharacter{2299}{\ensuremath{\odot}}\DeclareUnicodeCharacter{25CB}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2062}{}\DeclareUnicodeCharacter{2061}{}
+\AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
+\setcopyright{cc}\copyrightyear{2021}\acmYear{2021}\acmDOI{10.21428/92fbeb44.d3354ff3}
+\acmConference[NIME '21]{International Conference on New Interfaces for Musical Expression}{June 14--18, 2021}{Shanghai, China}
+\settopmatter{printacmref=false}\acmISBN{}
+\providecommand{\pandocbounded}[1]{#1}
+\begin{document}
+\title[Hybridization No. 1: Standing at the Boundary between Physical and…]{Hybridization No. 1: Standing at the Boundary between Physical and Virtual Space}
+\author{Milton Riaño}
+\affiliation{\institution{}\country{}}
+\renewcommand{\shortauthors}{Riaño}
+\begin{abstract}
+\emph{Hybridization No. 1} is a wireless hand-held rotary instrument that allows the performer to simultaneously interact with physical and virtual spaces. The instrument emits visible laser lights and invisible ultrasonic waves which scan the architecture of a physical space. The instrument is also connected to a virtual 3D model of the same space, which allows the performer to create an immersive audiovisual composition that blurs the limits between physical and virtual space. In this paper I describe the instrument, its operation and its integrated multimedia system.
+\end{abstract}
+\ccsdesc{Applied computing~Media arts; Sound and music computing; •Information systems~Spatial-temporal systems}
+
+\keywords{Hybrid space, Real-time Audiovisual Performance, Sound and light, New Interfaces}
+\maketitle
+\section{Introduction}\label{introduction}
+
+\emph{Hybridization No. 1} is a new interface for audiovisual expression designed to create a \emph{poetic} hybridization between physical and virtual spaces through the body of the performer. Technology plays a fundamental role in our understanding of time and space and inevitably new technologies or devices play a role in redefining preconceived notions of space. We live in a ``hybrid space'' where the distance between physical and virtual spaces is eliminated through technology \cite{c1}.
+
+Horn and Riskin have explored the connection between body and space through the use of \emph{body-extensions} or bodily attachments that fill the ``empty space between body and space'' \cite{c2,c3,c4}. \emph{Hybridization No. 1} is a first attempt to explore these relationships through a digital musical instrument. Through this instrument, the performer can directly interact with and create a hybrid space, i.e. the space that emerges from intersection between physical and virtual spaces. The instrument poetically creates an anchor point in which performer, physical place and virtual space converge. This point, or \emph{origo,} is a reference to the concept of \emph{deictic centre} used in linguistics to identify the centre of a coordinate system of perception from which a speaker can organise and orient their discourse in spatio-temporal terms \cite{c5}.
+
+\section{Hybridization No. 1}\label{hybridization-no.-1}
+
+\emph{Hybridization No. 1} consists of a central wireless controller composed by a handle and an attachable rotary disc (Image 1). The handle has a BNO055 orientation sensor that measures the orientation of the controller in 3D space. The instrument operates in a similar way to a RPLIDAR \cite{c6}, as it uses rotation and a central point to create a digital model from which a simplified version of physical space can be ``reconstructed'', thanks to its geometric and topological properties \cite{c7}. The rotary disc has eight 650nm 5mW laser diodes. The rotation of the lasers create a wall of light that illuminates cross-sections of the performance space. The rotary disc also has a HC-SR04P ultrasonic sensor that measures distances between the controller and the performance space. The controller also uses two Feather HUZZAH ESP8266 microcontrollers for wireless transmission of the sensor's data, as well as batteries to power all of the controller's components.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/473s4iyc_41618112151268.jpg}\caption{\emph{Hybridization No. 1:} Wireless controller.}\end{figure}
+
+
+The orientation of the wireless controller is mapped to a 3D model of the performance space. This model also maps sound samples of the physical performance space to the surfaces of its virtual counterpart. Likewise the ultrasonic data is sonified with pulses. Thus, as the performer traverses the physical space with the instrument and projects the spinning lasers onto the surfaces of the space, rhythmic sequences emerge from the combination of sound samples of the surfaces and the sonification of the distances between performer and the surfaces, which become faster as the performer approaches them. Furthermore, different rhythmic patterns emerge as the orientation of the controller is shifted around. The performer can also experiment with different combinations of parameters (speed of rotation and angle of rotation of the sequencer) that modify the resulting soundscape and rhythms.~
+
+In addition to the wireless controller, at least one camera watching the performance's space is needed. This data, as well as the controllers data are integrated and processed with two patches (TouchDesigner and Pure Data), which produce three videos: the direct performance space (physical space), a render of the virtual space and a render of the hybrid space (Image 2).
+
+The system can also receive commands through a 19-key Bluetooth numeric pad for the remote control of several audiovisual parameters of the interface remotely.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/rkzcvwj5_11618112781926.png}\caption{\emph{Hybridization No. 1:} Integrated multimedia system.}\end{figure}
+
+
+This paper includes a tryptic video (see video 1) that shows the three different spaces of a performance (physical, virtual and hybrid space). The performance space is an empty bedroom of around 36 m\textsuperscript{3}, divided into ten surfaces. The sound space is composed of ten short sound samples from contact microphone recordings of mechanical gestures over the surfaces of the performance space. The performer follows a simple path holding the controller in their hand. The main changes in the orientation of the controller are mapped to different presets of the instrument, which modify the audiovisual output of the interface. The data from the instrument is recorded through the system.
+
+
+\begin{quote}\small\textbf{Video 1.} \emph{Hybridization No. 1:} Demo - Three different spaces of a performance (physical, virtual and hybrid space) Available at \url{https://player.vimeo.com/video/535403335?app_id=122963}.\end{quote}
+
+
+\section{Conclusions}\label{conclusions}
+
+\emph{Hybridization No. 1} is an exploration of the concept \emph{origo} and the emergence of hybrid spaces. The movement of the performer through both physical and virtual spaces is an essential component of the performance with the instrument. The instrument also aims to allow the performer to ``carry'' their soundscapes with them and to explore musical expression through~ spatial interactions. Each space may contain a different soundscape which may provide a multitude of ways of making a musical performance within that space. The light projection automatically adapts to any space and, when processed by the system, it can also be used to create live superposition effects on the hybrid space (see Video 1). A slight caveat of the laser light projection is that it requires controlled light conditions.
+
+The main limitation of the interface is the anchoring of the \emph{origo} to the center of the 3D model, which somewhat restricts the freedom of movement of the performer in the physical space in which the instrument is played. This might be adjusted by tracking the position of the instrument in three-dimensional space through data processing from the camera and the already used sensors. The orientation sensor could also be used to integrate hand gestures to change the parameters of the interface. Nevertheless, the video capabilities of the interface make it an ideal interface for online performances.
+
+Another area of further exploration is to observe the interaction with an audience within the performance space. In the future, we aim to explore whether \emph{Hybridization No. 1} can be deployed in an installation context where the public can create their own hybrid spaces using the instrument.
+
+\section{Acknowledgments}\label{acknowledgments}
+
+I thank Ana Dall'Ara-Majek (University of Montreal) for her comments as a supervisor of the project. I thank the Specialized Graduate Program in Fine Arts and Creative Technologies, the Faculty of Arts and Science and the Faculty of Music of the University of Montreal for providing a platform for the development of this project. I also thank Santiago Tavera, multimedia artist, for assisting the prototyping of the instrument and Juan Martinez Avila (NIME Diversity Officer and University of Nottingham) for his support with the editing of this paper.
+
+\begin{thebibliography}{7}
+\bibitem{c1} {{ }}  Rajendran, L. P., \& Odeleye, N. D. (Eds.). (2020). \emph{Mediated Identities in the Futures of Place: Emerging Practices and Spatial Cultures}. \emph{Springer Series in Adaptive Environments}. Springer International Publishing. \url{https://doi.org/10.1007/978-3-030-06237-8}{}
+\bibitem{c2} Art Basel. (n.d.). How Rebecca Horn expanded the boundaries of the human body. \url{https://www.artbasel.com/news/rebecca-horn-museum-tinguely-koerperfantasien-art-basel}
+\bibitem{c3} {{ }}  Riskin, S. (2020). Light Dance. \emph{Leonardo}, \emph{53}(1), 90--91. \url{https://doi.org/10.1162/leon_a_01636}{}
+\bibitem{c4} SFCI. (1991). Archives: 6 Versions of Seth Riskin's Light Dance. \url{https://vimeo.com/27346668}
+\bibitem{c5} {{ }}  Stukenbrock, A. (2014). Pointing to an `empty' space: Deixis am Phantasma in face-to-face interaction. \emph{Journal of Pragmatics}, \emph{74}, 70--93. \url{https://doi.org/10.1016/j.pragma.2014.08.001}{}
+\bibitem{c6} Slamtec. (2020). RPLIDAR 360 Laser Range Scanner. \url{https://www.slamtec.com/en/Lidar/A1}
+\bibitem{c7} Longley, P. et al. (2005). Geographic Information Systems and Science, 2nd edition. John Wiley \& Sons, Ltd. ISBNs: 0-470-87000-1 (HB); 0-470-87001-X (PB)
+\end{thebibliography}
+\end{document}

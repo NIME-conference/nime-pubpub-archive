@@ -22,12 +22,16 @@ args = ap.parse_args()
 ITEM = pathlib.Path(args.item); OUT = pathlib.Path(args.out); OUT.mkdir(parents=True, exist_ok=True)
 uuid = next(p.stem for p in ITEM.glob("*.xml"))
 xml = (ITEM / f"{uuid}.xml").read_text(errors="replace"); htm = (ITEM / f"{uuid}.html").read_text(errors="replace")
+import unicodedata
+htm = unicodedata.normalize("NFC", htm); htm = re.sub(r"[\u0300-\u036f]", "", htm)
+xml = unicodedata.normalize("NFC", xml)
 
 def run(cmd, **kw): return subprocess.run(cmd, capture_output=True, text=True, errors="replace", **kw)
 def tex_escape(s): return re.sub(r"([&%$#_{}])", r"\\\1", s).replace("~", "\\textasciitilde{}").replace("^", "\\textasciicircum{}")
+def bibkey(k): return re.sub(r"[^A-Za-z0-9_.:-]", lambda c: "U%04X" % ord(c.group(0)), k)
 def h2tex(fragment):
     fragment = re.sub(r'<div class="csl-(?:bib-body|entry)"[^>]*>|</div>', "", fragment)
-    return run(["pandoc", "-f", "html", "-t", "latex", "--wrap=none"], input=fragment).stdout.strip()
+    return run(["pandoc", "-f", "html-tex_math_dollars-tex_math_double_backslash", "-t", "latex", "--wrap=none"], input=fragment).stdout.strip()
 def strip_tags(s): return html.unescape(re.sub(r"<[^>]+>", "", s)).strip()
 def resize_to_asset(url):
     m = re.match(r"https://resize-v3\.pubpub\.org/([A-Za-z0-9+/=_-]+)", url)
@@ -73,7 +77,7 @@ def cite(mm):
     tag = mm.group(0); cid = re.search(r'id="(citation-[^"]+)-inline"', tag).group(1)
     val = html.unescape(re.search(r'data-value="([^"]*)"', tag).group(1)) if 'data-value="' in tag else ""
     km = re.match(r"\s*@\w+\{([^,]+),", val)
-    if structured and km: key = km.group(1).strip()
+    if structured and km: key = bibkey(km.group(1).strip())
     else:
         key = f"c{cite_order.get(cid, 0)}"
         if structured:  # mixed: unstructured entry inside a structured paper -> synthesise a bib entry
@@ -126,7 +130,8 @@ def figure(mm):
     size = re.search(r'data-size="(\d+)"', fig); size = int(size.group(1)) if size else 100
     path = local_graphic(url.group(1)) if url else None
     fig_n += 1
-    return tok("FIG", {"path": path, "cap": h2tex(cap), "size": size, "n": fig_n})
+    captex = re.sub(r"\\hfill\\break|\n\s*\n", " ", h2tex(cap)).strip()
+    return tok("FIG", {"path": path, "cap": re.sub(r"\s+", " ", captex), "size": size, "n": fig_n})
 body = re.sub(r'<figure[^>]*data-node-type="image"[^>]*>.*?</figure>', figure, body, flags=re.S)
 def media(mm):
     fig = mm.group(0); kind = re.search(r'data-node-type="(\w+)"', fig).group(1)
@@ -139,7 +144,7 @@ def media(mm):
     label = re.search(r"<strong[^>]*>\s*((?:Video|Audio)\s*\d+)\s*</strong>", cap); label = label.group(1) if label else {"video": "Video", "audio": "Audio", "iframe": "Embedded content", "file": "Attachment"}[kind]
     cap = re.sub(r"<strong[^>]*>\s*(Video|Audio)\s*\d+\s*</strong>", "", cap)
     name = re.search(r'data-file-name="([^"]*)"', fig)
-    return tok("MEDIA", {"label": label, "cap": h2tex(cap), "url": url, "name": html.unescape(name.group(1)) if name else None})
+    return tok("MEDIA", {"label": label, "cap": re.sub(r"\s+", " ", re.sub(r"\\hfill\\break|\n\s*\n", " ", h2tex(cap))).strip(), "url": url, "name": html.unescape(name.group(1)) if name else None})
 body = re.sub(r'<figure[^>]*data-node-type="(?:video|audio|iframe|file)"[^>]*>.*?</figure>', media, body, flags=re.S)
 # images inside tables
 def img_in_table(mm):
@@ -165,16 +170,26 @@ if abs_m:
     if not abstract_tex: abstract_tex = h2tex(abs_m.group(1))
     body = body.replace(abs_m.group(0), "")
 
-tex = run(["pandoc", "-f", "html", "-t", "latex", "--wrap=none", "--top-level-division=section"], input=body).stdout
+tex = run(["pandoc", "-f", "html-tex_math_dollars-tex_math_double_backslash", "-t", "latex", "--wrap=none", "--top-level-division=section"], input=body).stdout
 (OUT / "body_raw.tex").write_text(tex)
 
 # ---- expand tokens ----------------------------------------------------------------
+def katex_to_latex(m):
+    m = re.sub(r"\\text\{\s*\\(?:textstyle|scriptstyle|displaystyle|scriptscriptstyle)\s*", "\\text{", m)
+    m = re.sub(r"\\(?:textstyle|scriptscriptstyle|scriptsize|footnotesize|small|tiny|normalsize|large)\b", "", m)
+    m = m.replace("\\degree", "^{\\circ}").replace("\\lparen", "(").replace("\\rparen", ")").replace("\\lbrace", "\\{").replace("\\rbrace", "\\}")
+    m = re.sub(r"\\(?:tag|htmlClass|htmlId|htmlStyle|htmlData)\{[^}]*\}", "", m)
+    m = m.replace("\\mathbb{1}", "\\mathbf{1}").replace("\\R ", "\\mathbb{R} ")
+    return m
 def expand(mm):
     k = mm.group(0); p = TOK.get(k)
     if p is None: return k
     kind = re.match(r"ZZ([A-Z]+)", k).group(1)
     if kind == "CITE": return f"\\cite{{{p}}}"
     if kind == "FN": return f"\\footnote{{{p}}}"
+    if kind in ("MI", "MB"):
+        p = katex_to_latex(p).strip()
+        if not p: return ""
     if kind == "MI": return f"${p}$"
     if kind == "MB": return f"\n\\begin{{equation}}{p}\\end{{equation}}\n"
     if kind == "IMG": return f"\\includegraphics[width=\\linewidth]{{{p}}}" if p else "[missing image]"
@@ -191,6 +206,8 @@ def expand(mm):
 tex = re.sub(r"ZZ[A-Z]+\d{4}ZZ", expand, tex)
 tex = re.sub(r"(\\cite\{[^}]+\})(\s*\\cite\{[^}]+\})+", lambda mm: "\\cite{" + ",".join(re.findall(r"\\cite\{([^}]+)\}", mm.group(0))) + "}", tex)
 tex = tex.replace("\\tightlist", "")
+tex = re.sub(r"\\hyperref\[[^\]]*\]\{((?:[^{}]|\{[^{}]*\})*)\}", r"\1", tex)
+tex = tex.replace("\\begin{verbatim}", "\\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\\footnotesize]").replace("\\end{verbatim}", "\\end{Verbatim}")
 tex = re.sub(r"^\\hfill\\break\s*$", "", tex, flags=re.M)
 tex = tex.replace("\\hfill\\break\n", "")
 # tables: pandoc longtable -> tabular inside table (two-column friendly); shrink wide ones
@@ -246,7 +263,10 @@ def fix_table(mm):
                 inner = inner[:k] + rep + inner[mend:]; k += len(rep)
             else: k += 1
         inner = re.sub(r"\n\s*\n", "\n", inner)
-    return f"\\begin{{table}}[htbp]\\centering\\small{capline}\n\\begin{{adjustbox}}{{max width=\\columnwidth}}\\begin{{tabular}}{{{spec_fixed}}}{inner}\\end{{tabular}}\\end{{adjustbox}}\\end{{table}}"
+    est_chars = sum(sorted((len(re.sub(r"\\[A-Za-z]+\*?|[{}]", "", c).strip()) for c in cells), reverse=True)[:ncol]) if cells else 0
+    wide = ncol >= 6 or est_chars > 60 or longest > 70
+    env, maxw = ("table*", "\\textwidth") if wide else ("table", "\\columnwidth")
+    return f"\\begin{{{env}}}[htbp]\\centering\\small{capline}\n\\begin{{adjustbox}}{{max width={maxw}}}\\begin{{tabular}}{{{spec_fixed}}}{inner}\\end{{tabular}}\\end{{adjustbox}}\\end{{{env}}}"
 class _M:
     def __init__(self, a, b): self._g = (None, a, b)
     def group(self, i): return self._g[i]
@@ -277,6 +297,16 @@ tex = tex.replace("\\real{", "\\real{")
 # references
 if structured:
     bib = run(["pandoc", "-f", "jats", "-t", "bibtex", str(uuid) + ".xml"], cwd=ITEM).stdout
+    bib = re.sub(r"[\u0300-\u036f]", "", unicodedata.normalize("NFC", bib))
+    seen, entries = set(), []
+    for e in re.split(r"\n(?=@)", bib.strip()):
+        k = re.match(r"@\w+\{([^,]+),", e)
+        if k:
+            nk = bibkey(k.group(1))
+            if nk in seen: continue
+            seen.add(nk); e = e.replace("{" + k.group(1) + ",", "{" + nk + ",", 1)
+        entries.append(e)
+    bib = "\n".join(entries) + "\n"
     for key, txt in extra_bib: bib += f"\n@misc{{{key},\n  title = {{{tex_escape(txt)}}}\n}}\n"
     (OUT / "refs.bib").write_text(bib)
     bibblock = "\\bibliographystyle{ACM-Reference-Format}\n\\bibliography{refs}"
@@ -299,7 +329,7 @@ ccs_block = "".join("\\ccsdesc{" + tex_escape(c).replace("\\textasciitilde{}", "
 kw_block = ("\\keywords{" + tex_escape(keywords) + "}") if keywords else ""
 doc = f"""\\documentclass[sigconf]{{nimeart}}
 \\usepackage{{bm}}
-\\usepackage{{array,calc,adjustbox,multirow}}
+\\usepackage{{array,calc,adjustbox,multirow,fvextra,xurl}}\n\\emergencystretch=2em
 \\DeclareUnicodeCharacter{{202F}}{{\\,}}\\DeclareUnicodeCharacter{{2009}}{{\\,}}\\DeclareUnicodeCharacter{{200B}}{{}}\\DeclareUnicodeCharacter{{FEFF}}{{}}\\DeclareUnicodeCharacter{{22C5}}{{\\ensuremath{{\\cdot}}}}\\DeclareUnicodeCharacter{{21A9}}{{}}\\DeclareUnicodeCharacter{{2192}}{{\\ensuremath{{\\rightarrow}}}}
 \\DeclareUnicodeCharacter{{2248}}{{\\ensuremath{{\\approx}}}}\\DeclareUnicodeCharacter{{2264}}{{\\ensuremath{{\\leq}}}}\\DeclareUnicodeCharacter{{2265}}{{\\ensuremath{{\\geq}}}}
 \\DeclareUnicodeCharacter{{2208}}{{\\ensuremath{{\\in}}}}\\DeclareUnicodeCharacter{{221E}}{{\\ensuremath{{\\infty}}}}\\DeclareUnicodeCharacter{{223C}}{{\\ensuremath{{\\sim}}}}
@@ -335,6 +365,23 @@ for cmd in (["pdflatex", "-interaction=nonstopmode", "paper.tex"], ["bibtex", "p
     if cmd[0] == "bibtex" and not structured: continue
     r = run(cmd, cwd=OUT); steps.append((cmd[0], r.returncode))
 log = (OUT / "paper.log").read_text(errors="replace")
+wide = [int(l) for pt, l in re.findall(r"Overfull \\hbox \((\d+\.\d+)pt too wide\) detected at line (\d+)", log) if float(pt) > 10]
+if wide:
+    lines = (OUT / "paper.tex").read_text().split("\n"); changed = 0
+    for ln in sorted(set(wide), reverse=True):
+        for i in range(ln - 1, max(ln - 40, 0), -1):
+            if i < len(lines) and lines[i].startswith("\\begin{equation}"):
+                if "\\resizebox" in lines[i]: break
+                j = next((k for k in range(i, min(i + 40, len(lines))) if lines[k].rstrip().endswith("\\end{equation}")), None)
+                if j is None or j < ln - 1: break
+                inner = "\n".join(lines[i:j + 1])[len("\\begin{equation}"):-len("\\end{equation}")]
+                lines[i:j + 1] = ["\\begin{equation}\\resizebox{0.92\\columnwidth}{!}{$\\displaystyle " + inner + "$}\\end{equation}"]; changed += 1
+                break
+    if changed:
+        (OUT / "paper.tex").write_text("\n".join(lines))
+        for cmd in (["pdflatex", "-interaction=nonstopmode", "paper.tex"], ["pdflatex", "-interaction=nonstopmode", "paper.tex"]):
+            r = run(cmd, cwd=OUT); steps.append((cmd[0] + "(eq-resize)", r.returncode))
+        log = (OUT / "paper.log").read_text(errors="replace")
 errs = sorted(set(re.findall(r"^! .*", log, re.M)))
 pages = re.search(r"Output written on paper.pdf \((\d+) pages", log)
 print(json.dumps({"item": ITEM.name, "pages": int(pages.group(1)) if pages else None, "steps": steps, "latex_errors": errs[:10], "n_err_lines": len(re.findall(r'^! ', log, re.M)),

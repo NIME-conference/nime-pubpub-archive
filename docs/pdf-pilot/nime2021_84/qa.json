@@ -1,0 +1,42 @@
+{
+ "key": "nime2021_84",
+ "latex_errors": 0,
+ "overfull": 0,
+ "overfull_max_pt": 0,
+ "undefined_cites": 0,
+ "undefined_refs": 0,
+ "missing_graphics": 0,
+ "pdf_words": 1110,
+ "html_words": 948,
+ "word_coverage": 1.17,
+ "missing_headings": [],
+ "pdf_images": 2,
+ "html_figures": 2,
+ "figures_not_in_archive": 0,
+ "pages": 2,
+ "pubpub_pages": 6,
+ "small_words": 30,
+ "small_word_frac": 0.022,
+ "pages_detail": [
+  {
+   "page": 1,
+   "ink": 0.08,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 2,
+   "ink": 0.042,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  }
+ ],
+ "pages_overflow": [],
+ "pages_big_gap": [],
+ "pages_sparse": [],
+ "flags": [
+  "small text 2% of words"
+ ]
+}

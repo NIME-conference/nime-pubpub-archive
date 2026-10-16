@@ -1,6 +1,7 @@
 \documentclass[sigconf]{nimeart}
 \usepackage{bm}
-\usepackage{array,calc,adjustbox,multirow}
+\usepackage{array,calc,adjustbox,multirow,fvextra,xurl}
+\emergencystretch=2em
 \DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
 \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
 \DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
@@ -52,7 +53,7 @@ Audio stream loopers have become popular in the form of commercial live-looping 
 
 \subsubsection{SoundCatcher}\label{soundcatcher}
 
-\emph{SoundCatcher} \cite{c10} (\hyperref[fig:soundcatcher]{Image 1}) is a live-looping system with a mid-air gestural control interface. The distance between the performer's hands is mapped to the loop length and vibrotactile feedback. \emph{SoundCatcher} is an example of the usage of an explicit mapping strategy for the control of live-looping.
+\emph{SoundCatcher} \cite{c10} (Image 1) is a live-looping system with a mid-air gestural control interface. The distance between the performer's hands is mapped to the loop length and vibrotactile feedback. \emph{SoundCatcher} is an example of the usage of an explicit mapping strategy for the control of live-looping.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/1ar3ondl_01612044157824.png}\caption{Gesture-to-sound interface of \emph{SoundCatcher}. The performer is holding the actuators, and the ultrasonic sensors are mounted to a microphone stand.}\end{figure}
@@ -60,7 +61,7 @@ Audio stream loopers have become popular in the form of commercial live-looping 
 
 \subsubsection{SoundGrasp}\label{soundgrasp}
 
-\emph{SoundGrasp} \cite{c11} (\hyperref[fig:soundgrasp]{Image 2}) features a mid-air gestural control interface with a glove controlling the recording/playback state and parameters for reverb and echo effects. Postures are classified into a vocabulary of control commands such as record/play/stop. \emph{SoundGrasp} is an example of using machine learning as a mapping strategy for the control of live-looping.
+\emph{SoundGrasp} \cite{c11} (Image 2) features a mid-air gestural control interface with a glove controlling the recording/playback state and parameters for reverb and echo effects. Postures are classified into a vocabulary of control commands such as record/play/stop. \emph{SoundGrasp} is an example of using machine learning as a mapping strategy for the control of live-looping.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/wtgjvi82_21612044156725.png}\caption{Gesture-to-sound interface of \emph{SoundGrasp}. Gestures are recognized using a neural network. The identified postures are used as commands for controlling the looper. Sensor data is also mapped directly to audio effect parameters.}\end{figure}
@@ -72,7 +73,7 @@ Streams of control data such as MIDI or Open Sound Control (OSC) messages or ana
 
 \subsubsection{MidiREX and Midilooper}\label{midirex-and-midilooper}
 
-\emph{MidiREX} \cite{c12} by Peter Kvitek and \emph{Midilooper} \cite{c13} by Bastl Instruments (\hyperref[fig:midi-loopers]{Image 3}) take their inspiration from digital loop pedals both in appearance and functionality. The devices record incoming MIDI messages into a buffer, also compatible with MIDI Polyphonic Expression (MPE) \cite{c14}. Midilooper can modulate MIDI velocity either randomly or using a control voltage input as a modulation source. Random modulation has become an increasingly popular feature of music sequencers as a tool for ``humanization'' \cite{c15}---a trend Cascone characterizes as an era of ``post-digital'' music defined by the aesthetics of failure and audible glitches \cite{c16}. \emph{Midilooper}'s random velocity feature, labeled ``human velocity'', can add dynamic variation to the recorded loops.
+\emph{MidiREX} \cite{c12} by Peter Kvitek and \emph{Midilooper} \cite{c13} by Bastl Instruments (Image 3) take their inspiration from digital loop pedals both in appearance and functionality. The devices record incoming MIDI messages into a buffer, also compatible with MIDI Polyphonic Expression (MPE) \cite{c14}. Midilooper can modulate MIDI velocity either randomly or using a control voltage input as a modulation source. Random modulation has become an increasingly popular feature of music sequencers as a tool for ``humanization'' \cite{c15}---a trend Cascone characterizes as an era of ``post-digital'' music defined by the aesthetics of failure and audible glitches \cite{c16}. \emph{Midilooper}'s random velocity feature, labeled ``human velocity'', can add dynamic variation to the recorded loops.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/xgqmih1k_61612044156742.png}\caption{Gesture-to-sound interface of \emph{MidiREX} and \emph{Midilooper}. The MIDI protocol allows using any MPE-compatible gestural controller.}\end{figure}
@@ -80,7 +81,7 @@ Streams of control data such as MIDI or Open Sound Control (OSC) messages or ana
 
 \subsubsection{Ribn and Tetrapad}\label{ribn-and-tetrapad}
 
-\emph{Ribn} \cite{c17} by Nobjsa Petrovic and \emph{Tetrapad} \cite{c18} by Intellijel (\hyperref[fig:ribn-tetrapad]{Image 4}) have touch interfaces to record horizontal or vertical gestures. Up to eight sliders can be added to Ribn's interface, with each sending a single MIDI control change message. Recording starts when the slider is touched and ends on release. Playback starts immediately after recording, and loop lengths can not be changed after recording. \emph{Tetrapad} is a Eurorack module with four touch zones that sense both position and pressure, allowing for two-dimensional gesture recordings. \emph{Tetrapad} has eight control voltage outputs that can be patched to any parameter within a Eurorack system. With the \emph{Tête} expander module, recorded sequences can be quantized in both time and value, with the possibility of quantizing control voltage outputs to a selection of musical scales.
+\emph{Ribn} \cite{c17} by Nobjsa Petrovic and \emph{Tetrapad} \cite{c18} by Intellijel (Image 4) have touch interfaces to record horizontal or vertical gestures. Up to eight sliders can be added to Ribn's interface, with each sending a single MIDI control change message. Recording starts when the slider is touched and ends on release. Playback starts immediately after recording, and loop lengths can not be changed after recording. \emph{Tetrapad} is a Eurorack module with four touch zones that sense both position and pressure, allowing for two-dimensional gesture recordings. \emph{Tetrapad} has eight control voltage outputs that can be patched to any parameter within a Eurorack system. With the \emph{Tête} expander module, recorded sequences can be quantized in both time and value, with the possibility of quantizing control voltage outputs to a selection of musical scales.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/mt1l6jss_41612044157801.png}\caption{Gesture-to-sound interface of Ribn and Tetrapad + Tête. Touch sensor is embedded in the interface.}\end{figure}
@@ -88,7 +89,7 @@ Streams of control data such as MIDI or Open Sound Control (OSC) messages or ana
 
 \subsubsection{Drile}\label{drile}
 
-\emph{Drile} \cite{c19} by Berthaut et al. (\hyperref[fig:drile]{Image 5}) is a virtual reality-based live-looping system. A bi-manual 6-DoF controller is used to create loops and control audio effects in a 3D space. Unlike the other looping tools, \emph{Drile} supports both audio and control streams, and offers hierarchical live-looping by grouping loop layers in a hierarchical tree instead of a flat structure. Loops can be layered per instrument or section in a piece.
+\emph{Drile} \cite{c19} by Berthaut et al. (Image 5) is a virtual reality-based live-looping system. A bi-manual 6-DoF controller is used to create loops and control audio effects in a 3D space. Unlike the other looping tools, \emph{Drile} supports both audio and control streams, and offers hierarchical live-looping by grouping loop layers in a hierarchical tree instead of a flat structure. Loops can be layered per instrument or section in a piece.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/2tdhcdg0_01612044159943.png}\caption{Traditional and hierarchical live-looping structures with \emph{Drile}.}\end{figure}
@@ -96,10 +97,10 @@ Streams of control data such as MIDI or Open Sound Control (OSC) messages or ana
 
 \subsection{Summary}\label{summary}
 
-We provide a comparison of related work versus our tool \emph{MapLooper} in \hyperref[nig9qxt62qc]{Table 1}. \emph{Interact} refers to the gestural interface where \emph{*(x)} means all devices supported by \emph{x}. \emph{Loop} refers to the interface for switching recording and playback state. \emph{Quantize} refers to time quantization. \emph{Manipulate} refers to any real-time processing of the recorded loops.
+We provide a comparison of related work versus our tool \emph{MapLooper} in Table 1. \emph{Interact} refers to the gestural interface where \emph{*(x)} means all devices supported by \emph{x}. \emph{Loop} refers to the interface for switching recording and playback state. \emph{Quantize} refers to time quantization. \emph{Manipulate} refers to any real-time processing of the recorded loops.
 
-\begin{table}[htbp]\centering\small
-\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{llllllll}
+\begin{table*}[htbp]\centering\small
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{llllllll}
 \toprule
 \midrule
 Project & Stream & Interact & Loop & Quantize & Synchronize & Manipulate & Map \\
@@ -112,7 +113,7 @@ Project & Stream & Interact & Loop & Quantize & Synchronize & Manipulate & Map \
 \emph{Drile} & Both & 6-DoF & 6-DoF & Yes & No & No & Explicit \\
 \emph{MapLooper} & Control & *(\emph{libmapper}) & *(\emph{libmapper}) & Yes & Yes & Random & Open-ended \\
 \bottomrule
-\end{tabular}\end{adjustbox}\end{table}
+\end{tabular}\end{adjustbox}\end{table*}
 
 While most of the tools reviewed contain their own gestural interface; only \emph{MidiRex} and \emph{Midilooper} can use external gestural interfaces. However, with these two tools, the recording and playback state can only be controlled using a button. All of the reviewed tools feature either time quantization, external synchronization, or loop manipulation. Most of the tools' mapping strategies are explicit, except for \emph{SoundGrasp}, which employs mapping using machine learning.
 
@@ -179,7 +180,7 @@ To facilitate embedding \emph{libmapper} support in DMIs like the T-Stick DMI us
 
 \subsubsection{Testing}\label{testing}
 
-We measured round-trip latency, jitter, and package loss for data transmitted through embedded \emph{libmapper}. Our test setup consisted of applications running on two computing devices. 1) The firmware of an ESP32 WROVER KIT development board \cite{c26} running the \emph{libmapper-esp} library creates one input and one output signals. The input signal handler is set to forward incoming data to the output signal. 2) A software application running on a MacBook Pro laptop (16-inch, 2019, macOS 10.15) sends a 100 Hz signal to the ESP32, and we measure the time between sending and receiving data. The ESP32 was running in access-point mode and the computer was connected to this access-point through WiFi. The results are in \hyperref[n94uq2t5ng7]{Image 7} .
+We measured round-trip latency, jitter, and package loss for data transmitted through embedded \emph{libmapper}. Our test setup consisted of applications running on two computing devices. 1) The firmware of an ESP32 WROVER KIT development board \cite{c26} running the \emph{libmapper-esp} library creates one input and one output signals. The input signal handler is set to forward incoming data to the output signal. 2) A software application running on a MacBook Pro laptop (16-inch, 2019, macOS 10.15) sends a 100 Hz signal to the ESP32, and we measure the time between sending and receiving data. The ESP32 was running in access-point mode and the computer was connected to this access-point through WiFi. The results are in Image 7 .
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/b1nfu8zj_41618020287436.pdf}\caption{Histogram of round-trip latency measurement with power saving feature disabled. A 100 Hz is signal measured over a period of 100 seconds. The dashed line shows the mean round-trip latency of 4.81 ms.}\end{figure}
@@ -187,16 +188,16 @@ We measured round-trip latency, jitter, and package loss for data transmitted th
 
 We found that the ESP32 has a WiFi power-saving feature enabled by default. Disabling this feature had a significant impact on low latency performance. We performed measurements with power-saving enabled or disabled. The mean of the round-trip latency was 406 ms with power saving enabled and 4.81 ms when disabled. According to our results, in a one-way communication situation, where the ESP32 is only transmitting data, an average end-to-end latency $L_m = 2.41\;\mathrm{ms}$ (half of round-trip) can be expected.
 
-We performed three more measurements at increasing rates for testing latency, jitter; and packet loss $P_L$ at different signal rates. The results are in \hyperref[fig:latency-frequency]{Image 8}.
+We performed three more measurements at increasing rates for testing latency, jitter; and packet loss $P_L$ at different signal rates. The results are in Image 8.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/wllr6j51_11612044161545.png}\caption{Histograms of round-trip latency of test signals at 100 Hz, 200 Hz, 500 Hz, and 1000 Hz, with 10,000 test points recorded for each signal. Packet loss {\emph{P}\textsubscript{\emph{L}}} and frequency is listed in the title of each histogram.}\end{figure}
 
 
-We found that the system has a significant packet loss for signals at 500 Hz. For signals at 1000 Hz, the packet loss is substantial, with 55\% of packets being dropped. The jitter also increases with frequency, which can be observed in the increase of the standard deviation of the latency listed in . There is no significant change in the mean latency for signals at 100 Hz and 200 Hz. For signals at 500 Hz, the latency increases by a factor of 3. Signals at 500 Hz and 1000 Hz had similar performance in terms of latency and jitter, but the packet loss increases from 7.8\% at 500 Hz to 55\% at 1000 Hz. \hyperref[n1sxcw62xn5]{Table 2} provides results from latency measurements.
+We found that the system has a significant packet loss for signals at 500 Hz. For signals at 1000 Hz, the packet loss is substantial, with 55\% of packets being dropped. The jitter also increases with frequency, which can be observed in the increase of the standard deviation of the latency listed in . There is no significant change in the mean latency for signals at 100 Hz and 200 Hz. For signals at 500 Hz, the latency increases by a factor of 3. Signals at 500 Hz and 1000 Hz had similar performance in terms of latency and jitter, but the packet loss increases from 7.8\% at 500 Hz to 55\% at 1000 Hz. Table 2 provides results from latency measurements.
 
-\begin{table}[htbp]\centering\small
-\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{llll}
+\begin{table*}[htbp]\centering\small
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{llll}
 \toprule
 \midrule
 Signal rate {[}Hz{]} & Mean latency {[}ms{]} & Std. dev. of latency {[}ms{]} & Packet loss $P_L$ \\
@@ -205,7 +206,7 @@ Signal rate {[}Hz{]} & Mean latency {[}ms{]} & Std. dev. of latency {[}ms{]} & P
 500 & 16.6 & 1.92 & 0.078 \\
 1000 & 17.9 & 1.98 & 0.55 \\
 \bottomrule
-\end{tabular}\end{adjustbox}\end{table}
+\end{tabular}\end{adjustbox}\end{table*}
 
 Our results for the embedded \emph{libmapper} implementation were slightly better than previous studies by Wang et al. \cite{c27}, who conducted tests of latency and jitter with OSC communication over WiFi using ESP32. They measured a mean round-trip latency of 6.62 ms, which is slightly higher than the 4.81 ms we measured in this project, both at 100 Hz. Both measurements remain well below the ``acceptable upper bound on the computer's audible reaction to gesture at 10 ms'' proposed by Wessel and Wright \cite{c9}.
 
@@ -234,7 +235,7 @@ We distribute this library as an open-source ESP-IDF component: link-esp \cite{c
 
 \subsubsection{Testing}\label{testing-1}
 
-To test our embedded port of Ableton Link, we created a test setup for measuring the delay between peers. The test setup consisted of two MacBook Pro laptop computers (Computer 1: 16-inch, 2019 and Computer 2: 15-inch, 2018; both running macOS 10.15) and an ESP32 board, all connected to a RIGOL DS1054 oscilloscope. Two probes were connected to an audio jack from the headphone output of each of the computers. One probe was connected to a GPIO pin of the ESP32. The computers synthesized a pulse signal through Ableton Live \cite{c31}. The ESP32 ran a test software outputting a pulse on a GPIO pin. All devices were connected through an Ableton Link session and outputted a periodic pulse on every quarter note at 120 BPM. A plot of the measurements is in \hyperref[fig:link-test]{Image 9}.
+To test our embedded port of Ableton Link, we created a test setup for measuring the delay between peers. The test setup consisted of two MacBook Pro laptop computers (Computer 1: 16-inch, 2019 and Computer 2: 15-inch, 2018; both running macOS 10.15) and an ESP32 board, all connected to a RIGOL DS1054 oscilloscope. Two probes were connected to an audio jack from the headphone output of each of the computers. One probe was connected to a GPIO pin of the ESP32. The computers synthesized a pulse signal through Ableton Live \cite{c31}. The ESP32 ran a test software outputting a pulse on a GPIO pin. All devices were connected through an Ableton Link session and outputted a periodic pulse on every quarter note at 120 BPM. A plot of the measurements is in Image 9.
 
 We found that the ESP32 performs similarly to the two laptop computers in terms of inter-onset delay. Over 10 minutes, the average delay between Computer 1 and ESP32 was 3.03 ms (min: -6.62 ms, max: 0.02 ms).
 
@@ -248,7 +249,7 @@ This section describes \emph{MapLooper}, our gesture-to-sound looping tool built
 
 \subsection{Looping with a delay-line}\label{looping-with-a-delay-line}
 
-We can build a digital looper by adding feedback to a delay-line. A digital delay-line is a special case of IIR filtering, which is supported by \emph{libmapper} for exponential smoothing. The discrete-time system implementing a digital looper can be expressed in terms of a linear interpolation between an input $x[n]$, and a delayed output term $y[n-D]$, with the linear interpolation factor representing a record signal $r[n]$ so that: $y[n] = r[n] \cdot x[n] + (1-r[n]) \cdot y[n-D]$. A block diagram of this system is in \hyperref[fig:loop-block]{Image 10}. For most live-looping devices, the record/playback state is boolean, and the signal $r[t]$ is either 0 or 1. When $r[t] = 0$, only the delay-line output is passed to the system's output. When $r[t] = 1$, the input is passed directly to the output and into the delay-line, thereby being recorded. For $0 < r[t] < 1$, overdub can be achieved as the input is mixed with the delayed input.
+We can build a digital looper by adding feedback to a delay-line. A digital delay-line is a special case of IIR filtering, which is supported by \emph{libmapper} for exponential smoothing. The discrete-time system implementing a digital looper can be expressed in terms of a linear interpolation between an input $x[n]$, and a delayed output term $y[n-D]$, with the linear interpolation factor representing a record signal $r[n]$ so that: $y[n] = r[n] \cdot x[n] + (1-r[n]) \cdot y[n-D]$. A block diagram of this system is in Image 10. For most live-looping devices, the record/playback state is boolean, and the signal $r[t]$ is either 0 or 1. When $r[t] = 0$, only the delay-line output is passed to the system's output. When $r[t] = 1$, the input is passed directly to the output and into the delay-line, thereby being recorded. For $0 < r[t] < 1$, overdub can be achieved as the input is mixed with the delayed input.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/gzmkstlb_31612044158223.png}\caption{Block diagram of basic looping system implemented as a delay-line with feedback.}\end{figure}
@@ -270,7 +271,7 @@ For a 1-bar loop with a tempo of 140 bpm and time signature 4/4, this results in
 
 At the time of our initial implementation, delay-lines in \emph{libmapper} were non-interpolating in terms of delay-length. We first solved this issue by sampling the input at a rate given by an integer subdivision of the tempo, ensuring that delay-lengths were always an integer multiple of the loop-length in beats. We have since added fractional delay lengths to \emph{libmapper}.
 
-We added a sample-and-hold structure to the system to implement tempo-synchronized sampling. A clock signal $c[t]$ synchronized with the tempo triggers a sampling of the input signal $x[t]$. The rate of the clock determines the quantization. This rate is commonly given for analog synchronization systems in the unit \emph{pulses per quarter note} (PPQN). A block diagram of this system is in \hyperref[fig:loop-sh-block]{Image 11}.
+We added a sample-and-hold structure to the system to implement tempo-synchronized sampling. A clock signal $c[t]$ synchronized with the tempo triggers a sampling of the input signal $x[t]$. The rate of the clock determines the quantization. This rate is commonly given for analog synchronization systems in the unit \emph{pulses per quarter note} (PPQN). A block diagram of this system is in Image 11.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/biujbujx_71612044158634.png}\caption{Block diagram of looping system with time quantization.}\end{figure}
@@ -278,7 +279,7 @@ We added a sample-and-hold structure to the system to implement tempo-synchroniz
 
 \subsection{Loop manipulation}\label{loop-manipulation}
 
-We implemented a simple modulation system modelled on the sample-and-hold structure. We used a uniform noise generator as a modulation source, sampled at the same rate as the input. We added this modulation signal within the feedback path, so that an input sequence could be recorded, after which modulation could be applied to make the sequence slowly evolve over time. A block diagram of the system is in \hyperref[fig:loop-noise-block]{Image 12}.
+We implemented a simple modulation system modelled on the sample-and-hold structure. We used a uniform noise generator as a modulation source, sampled at the same rate as the input. We added this modulation signal within the feedback path, so that an input sequence could be recorded, after which modulation could be applied to make the sequence slowly evolve over time. A block diagram of the system is in Image 12.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/orkqlmfp_11612044159036.png}\caption{Block diagram of loop manipulation system. The loop is modulated by noise through a sample-and-hold structure. The modulation is within the feedback path.}\end{figure}
@@ -288,10 +289,10 @@ The uniform noise generator creates a noise signal with a range between {[}-1, 1
 
 \subsection{Control signals}\label{control-signals}
 
-\emph{MapLooper} instantiates a \emph{libmapper} device and initiates a Link session. The control interface consists of five signals (\hyperref[nzulbavu87u]{Table 3}): \emph{record}, \emph{length}, \emph{division}, \emph{modulation}, and \emph{mute}.
+\emph{MapLooper} instantiates a \emph{libmapper} device and initiates a Link session. The control interface consists of five signals (Table 3): \emph{record}, \emph{length}, \emph{division}, \emph{modulation}, and \emph{mute}.
 
-\begin{table}[htbp]\centering\small
-\begin{adjustbox}{max width=\columnwidth}\begin{tabular}{lllll}
+\begin{table*}[htbp]\centering\small
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{lllll}
 \toprule
 \midrule
 Signal & Description & Unit & Min & Max \\
@@ -301,11 +302,11 @@ division & Time quantization & PPQN & 1 & 100 \\
 modulation & Amount of modulation & - & 0 & 1 \\
 mute & Controls whether output is active & - & 0 & 1 \\
 \bottomrule
-\end{tabular}\end{adjustbox}\end{table}
+\end{tabular}\end{adjustbox}\end{table*}
 
 The \emph{record} signal represents the $r[t]$ signal in . The \emph{length} and \emph{division} signals determine the length $D$ of the delay-line by the relation: $D = \text{length} \cdot \text{division}$. The \emph{length} signal is limited by the current maximum of 100 samples of delay in \emph{libmapper}, though the library can be recompiled with additional memory. The \emph{modulation} signal represents the $m[t]$ signal in . The \emph{mute} signal was added to control whether the output from \emph{local/recv} propagates to the \emph{output} signal.
 
-For each loop instance, a convergent map is created between the control signals, the \emph{local/send}, and the \emph{local/recv} signal. A map expression is created for the map, describing the system in \hyperref[fig:final-mapping-interface]{Image 13}.
+For each loop instance, a convergent map is created between the control signals, the \emph{local/send}, and the \emph{local/recv} signal. A map expression is created for the map, describing the system in Image 13.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/s3xgn0w0_01612044157627.png}\caption{Block diagram of mapping configuration. Each block represents a signal. The solid lines represent the convergent mapping between the control signals and the local send and receive signals. The dashed lines are internal mappings done outside of \emph{libmapper}.}\end{figure}
@@ -313,7 +314,7 @@ For each loop instance, a convergent map is created between the control signals,
 
 During loop updates, the input is sampled at a rate synchronized with Link. The sampled value is sent to the \emph{local/send} signal, and the map expression is evaluated. Finally, if the Loop instance is not muted, the value of the \emph{local/recv} signal is copied to the output signal.
 
-By mapping a gestural controller to the input signal and a sound generator to the output signal (\hyperref[n13uvfasqv7]{Video 1} and \hyperref[fig:local-mapping-webmapper]{Image 14}), a DMI with looping capabilities can be implemented.
+By mapping a gestural controller to the input signal and a sound generator to the output signal (Video 1 and Image 14), a DMI with looping capabilities can be implemented.
 
 
 \begin{quote}\small\textbf{Video 1.} Construction of the mapping in visualization tool Webmapper. Available at \url{https://assets.pubpub.org/pkkgp8y0/11618020765350.mp4}.\end{quote}
@@ -323,7 +324,7 @@ By mapping a gestural controller to the input signal and a sound generator to th
 
 \subsection{Graphical User Interface}\label{graphical-user-interface}
 
-For testing, we created a cross-platform GUI application based on the JUCE framework \cite{c33}, containing six sliders and a button (\hyperref[fig:maplooper-gui]{Image 15}). When launching the GUI, a loop instance is created, and sliders are initialized to the default values of control signals. Slider 1 \emph{input} sends its value to the loop's input, and similarly to Ribn and Tetrapad the value of the slider is only recorded when the slider is pressed. Slider 2 \emph{output} displays the output of the loop and is not editable. The remaining four sliders control: the loop length in beats (slider 3), the amount of noise modulation (slider 4), division in pulses per quarter note (slider 5), and tempo in beats per minute (slider 6). A toggle at the bottom controls whether the local loop map's output propagates to the loop's output. We distribute \emph{MapLooper-gui} as an open-source project \cite{c34}.
+For testing, we created a cross-platform GUI application based on the JUCE framework \cite{c33}, containing six sliders and a button (Image 15). When launching the GUI, a loop instance is created, and sliders are initialized to the default values of control signals. Slider 1 \emph{input} sends its value to the loop's input, and similarly to Ribn and Tetrapad the value of the slider is only recorded when the slider is pressed. Slider 2 \emph{output} displays the output of the loop and is not editable. The remaining four sliders control: the loop length in beats (slider 3), the amount of noise modulation (slider 4), division in pulses per quarter note (slider 5), and tempo in beats per minute (slider 6). A toggle at the bottom controls whether the local loop map's output propagates to the loop's output. We distribute \emph{MapLooper-gui} as an open-source project \cite{c34}.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/f4cwe6o8_21618004140441.png}\caption{Screenshot of JUCE-based \emph{MapLooper-GUI}.}\end{figure}
@@ -337,7 +338,7 @@ We implemented a new SuperCollider UGen server extension called \emph{MapperUGen
 
 \subsubsection{Harp demo}\label{harp-demo}
 
-We created one musical demo by mapping the output signal to a harp synthesizer implemented in SuperCollider (\hyperref[n3t347ew12w]{Video 2}).
+We created one musical demo by mapping the output signal to a harp synthesizer implemented in SuperCollider (Video 2).
 
 
 \begin{quote}\small\textbf{Video 2.} Demo with harp synthesizer implemented in SuperCollider. Available at \url{https://assets.pubpub.org/thnhmg0q/71618020910749.mp4}.\end{quote}
@@ -345,7 +346,7 @@ We created one musical demo by mapping the output signal to a harp synthesizer i
 
 The harp synthesizer is based on a Karplus-Strong string model. Two input signals, \emph{frequency} and \emph{amplitude} control the frequency and amplitude of the string model. The frequency input is quantized to a melodic scale within the synthesizer, and a slope detector on the quantized frequency triggers the string excitation. As a result, when moving the input slider, melodic notes are triggered along with the range of the slider. The interaction provides a similar feel as when sliding fingers over the strings of a harp. The SuperCollider code for the demo is:
 
-\begin{verbatim}
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\footnotesize]
 fork {
   Mapper.enable;
   // Wait 2 seconds for libmapper initialization
@@ -368,17 +369,17 @@ fork {
     src * 0.5;
   }.play;
 }
-\end{verbatim}
+\end{Verbatim}
 
 \subsubsection{Embedded Sound Synthesis}\label{embedded-sound-synthesis}
 
-We also created a proof-of-concept demo of using the looper with embedded sound synthesis (\hyperref[n74hmvz5d1z]{Video 3}).
+We also created a proof-of-concept demo of using the looper with embedded sound synthesis (Video 3).
 
 
 \begin{quote}\small\textbf{Video 3.} Embedded demo with pink noise passed through a Moog-style voltage-controlled filter emulation. Available at \url{https://assets.pubpub.org/3iq6vd0n/61618021153322.mp4}.\end{quote}
 
 
-The demo was based on the ESP32 LyraT board \cite{c36} (\hyperref[fig:lyra]{Image 16}), which contains an ESP32 WROVER module and an audio codec chip along with 1/8 inch TRS connectors for headphones and auxiliary audio input.
+The demo was based on the ESP32 LyraT board \cite{c36} (Image 16), which contains an ESP32 WROVER module and an audio codec chip along with 1/8 inch TRS connectors for headphones and auxiliary audio input.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/fsmrx1lz_11612044137213.jpg}\caption{The LyraT board.}\end{figure}
@@ -386,15 +387,15 @@ The demo was based on the ESP32 LyraT board \cite{c36} (\hyperref[fig:lyra]{Imag
 
 We release our demo \cite{c37} as an open-source project using the Faust library \cite{c38} for compiling a DSP program to the LyraT board, which is supported by the Faust compiler \cite{c39}. The DSP program used for the demo is:
 
-\begin{verbatim}
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\footnotesize]
 import("stdfaust.lib");
 ctFreq = hslider("cutoffFrequency", 500, 50, 3000, 0.01);
 res = hslider("resonance", 0.5, 0, 1, 0.1);
 gain = hslider("gain", 1, 0, 1, 0.01);
 process = no.pink_noise : ve.moog_vcf(res, ctFreq) * gain;
-\end{verbatim}
+\end{Verbatim}
 
-The program generates pink noise and passes it through a Moog-style voltage-controlled filter emulation. The program has three parameters: cutoff frequency, filter resonance, and output gain. A Loop is created for each parameter mapped to a \emph{libmapper} signal that updates the parameter when receiving a value. A random number generator sends an input signal to each of the loop layers. The recorded signal is 1.0 when the program starts and is set to 0.0 after 10 seconds. The program continues indefinitely, repeating the same 1 bar sequence. A block diagram of the demo program is in \hyperref[fig:block-embedded-synthesis]{Image 17}.
+The program generates pink noise and passes it through a Moog-style voltage-controlled filter emulation. The program has three parameters: cutoff frequency, filter resonance, and output gain. A Loop is created for each parameter mapped to a \emph{libmapper} signal that updates the parameter when receiving a value. A random number generator sends an input signal to each of the loop layers. The recorded signal is 1.0 when the program starts and is set to 0.0 after 10 seconds. The program continues indefinitely, repeating the same 1 bar sequence. A block diagram of the demo program is in Image 17.
 
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/f83tks5w_31612044158397.png}\caption{Block diagram of embedded sound synthesis example.}\end{figure}

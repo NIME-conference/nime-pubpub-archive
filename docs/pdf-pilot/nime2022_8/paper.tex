@@ -1,0 +1,348 @@
+\documentclass[sigconf]{nimeart}
+\usepackage{bm}
+\usepackage{array,calc,adjustbox,multirow,fvextra,xurl}
+\emergencystretch=2em
+\DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}\DeclareUnicodeCharacter{00B1}{\ensuremath{\pm}}\DeclareUnicodeCharacter{2032}{\ensuremath{'}}\DeclareUnicodeCharacter{2A09}{\ensuremath{\times}}
+\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
+\DeclareUnicodeCharacter{2713}{\checkmark}\DeclareUnicodeCharacter{2717}{\ensuremath{\times}}\DeclareUnicodeCharacter{25B6}{\ensuremath{\blacktriangleright}}\DeclareUnicodeCharacter{2B06}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2B07}{\ensuremath{\downarrow}}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}\DeclareUnicodeCharacter{03B9}{\ensuremath{\iota}}\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}\DeclareUnicodeCharacter{03C6}{\ensuremath{\varphi}}\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}\DeclareUnicodeCharacter{2207}{\ensuremath{\nabla}}\DeclareUnicodeCharacter{221A}{\ensuremath{\surd}}\DeclareUnicodeCharacter{221D}{\ensuremath{\propto}}\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}\DeclareUnicodeCharacter{220F}{\ensuremath{\prod}}\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}\DeclareUnicodeCharacter{2229}{\ensuremath{\cap}}\DeclareUnicodeCharacter{222A}{\ensuremath{\cup}}\DeclareUnicodeCharacter{2282}{\ensuremath{\subset}}\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}\DeclareUnicodeCharacter{2261}{\ensuremath{\equiv}}\DeclareUnicodeCharacter{21D0}{\ensuremath{\Leftarrow}}\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}\DeclareUnicodeCharacter{21D4}{\ensuremath{\Leftrightarrow}}\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}\DeclareUnicodeCharacter{2026}{\ensuremath{\ldots}}\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}\DeclareUnicodeCharacter{2218}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2205}{\ensuremath{\emptyset}}\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}\DeclareUnicodeCharacter{00F7}{\ensuremath{\div}}\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}\DeclareUnicodeCharacter{2225}{\ensuremath{\parallel}}\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\DeclareUnicodeCharacter{2299}{\ensuremath{\odot}}\DeclareUnicodeCharacter{25CB}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2062}{}\DeclareUnicodeCharacter{2061}{}
+\AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
+\setcopyright{cc}\copyrightyear{2022}\acmYear{2022}\acmDOI{10.21428/92fbeb44.4308fb94}
+\acmConference[NIME '22]{International Conference on New Interfaces for Musical Expression}{June 28--July 1, 2022}{Auckland, New Zealand}
+\settopmatter{printacmref=false}\acmISBN{}
+\providecommand{\pandocbounded}[1]{#1}
+\begin{document}
+\title[Voice at NIME: a Taxonomy of New Interfaces for Vocal Musical…]{Voice at NIME: a Taxonomy of New Interfaces for Vocal Musical Expression}
+\author{Rébecca Kleinberger}
+\affiliation{\institution{MIT Media Lab, Massachusetts Institute of Technology, Cambridge, MA,}\country{}}
+\author{Nikhil Singh}
+\affiliation{\institution{MIT Media Lab, Massachusetts Institute of Technology, Cambridge, MA,}\country{}}
+\author{Xiao Xiao}
+\affiliation{\institution{Léonard de Vinci Pôle Universitaire, Research Center, 92916 Paris La Défense, France,}\country{}}
+\author{Akito van Troyer}
+\affiliation{\institution{Berklee College of Music, Electronic Production and Design (EPD), Boston, MA}\country{}}
+\renewcommand{\shortauthors}{Kleinberger et al.}
+\begin{abstract}
+We present a systematic review of voice-centered NIME publications from the past two decades. Musical expression has been a key driver of innovation in voice-based technologies, from traditional architectures that amplify singing to cutting-edge research in vocal synthesis. NIME conference has emerged as~ a prime venue for innovative vocal interfaces. However, there hasn't been a systematic analysis of all voice-related work or an effort to characterize their features. Analyzing trends in Vocal NIMEs can help the community better understand common interests, identify uncharted territories, and explore directions for future research. We identified a corpus of 98 papers about Vocal NIMEs from 2001 to 2021, which we analyzed in 3 ways. First, we automatically extracted latent themes and possible categories using natural language processing. Taking inspiration from concepts surfaced through this process, we then defined several core dimensions with associated descriptors of Vocal NIMEs and assigned each paper relevant descriptors under each dimension. Finally, we defined a classification system, which we then used to uniquely and more precisely situate each paper on a map, taking into account the overall goals of each work. Based on our analyses, we present trends and challenges, including questions of gender and diversity in our community, and reflect on opportunities for future work.
+\end{abstract}
+\ccsdesc{Applied computing~Arts and humanities~Sound and music computing; Media arts; Performing arts}
+\ccsdesc{General and reference~Document types~Surveys and overviews}
+\ccsdesc{Human-centered computing~Human computer interaction (HCI)~Interactive systems and tools}
+
+\keywords{voice, vocal, singing, speech, analysis, synthesis, review, survey}
+\maketitle
+\section{Introduction}\label{introduction}
+
+The history of voice technology is intimately connected to musical expression. From the atrium of Ancient Greek temples to the vaults of Byzantine and Gothic churches, the desire to enhance the singing voice has driven the study and engineering of acoustics in architecture \cite{declercq2007acoustic,noxon2001understanding}. More recently, musical expression driving technological innovation can be seen in the history of audio recording. Both the first known audio recording by Martinville in 1860 and the first demonstration of the phonograph by Thomas Edison not only used human voices but human voices singing \cite{feaster2010edouard,linder2001thomas} -- respectively "Au clair de la lune'' and ``Mary had a little lamb''. Although tools for audio recording, playback and synthesis are now commonplace, the proliferation of such technologies led to profound shifts in our society as depicted by the controversial work of anthropologist Carpenter, who studies isolated populations being exposed to audio and video recording technology for the first time \cite{prins2001edmund}. \textbf{} The intersection of voice technology with music can also have strong neurological and behavioral effects on individuals. Musically modulating the way someone hears their own voice, by manipulating pitch, formants, or using filters, has been associated with modifications in emotion \cite{costa2018regulating,aucouturier2016covert}, semantic content \cite{kleinberger2019speech}, even disfluency regulation \cite{kleinberger2020vocal}, highlighting the potential of musical voice technologies to create powerful transformative experiences.
+
+Because of their musical affinities, artists and creative technologists have taken part in this impactful trend by creating vocal experiences that push the boundaries of technological innovation and musical expression. Notable examples include Alvin Lucier's ``I am sitting in a room'' (1969) which uses the voice to deepen our perception of space. Far from being used merely a input signal, the voice is here considered both in relation to the external architectural space, and in its connection with the self as Lucier had a severe stutter and used the inherent music of the room as a way to ``\hspace{0pt}\hspace{0pt}smooth out any irregularities {[}his{]} speech might have'' \cite{lucier1970sitting}. Another example is Laurie Anderson's ``Handphone Table'' that challenges silence and materiality by transmitting a silent vocal signal by bone conduction directly to visitor's ear \cite{li2013voice}; and Machover's ``Philadelphia Voices'' that creates a dialogue between diverse voices. In this piece, digital technologies allow the public to contribute their own voice to the final symphony \cite{van2013constellation}.
+
+The international conference on New Interfaces for Musical Expression began in 2001 as a workshop at the Conference on Human Factors in Computing Systems (CHI). After 20 years, the conference is well established and has reached a state of maturity. In recent years, the number of review articles presented at NIME has increased, indicating an introspective drive of the community to better understand its own roots, evolution, and possible future trajectories. Such review articles have targeted overarching values and questions in the research community such as evaluation \cite{barbosa2015does}, community \cite{marquez2015fourteen}, gender balance \cite{xambo2018women}, sustainability \cite{masu2021nime} as well as types and presentation of work including sound installations \cite{fraisse2021visualization}, live performance \cite{west2021making}, and score-centered NIMES \cite{masu2021nime}.
+
+Given the musical potential, high degrees of expressivity, and universality of the voice, the presence of voice-centered work at NIME is not surprising. Darwin even suggested that the voice is likely to be the first musical instrument \cite{darwin1964origin}. But despite its familiarity, it can be challenging to clearly define what the voice is. Often considered solely in its acoustic manifestation, the voice is also studied in terms of its complex neurological basis, its mechanical and muscular processes, its biology in the context of clinical medicine, its cognitive and behavioral effects in psychology, etc. This is to say that the object ``voice'' can take a number of forms and is a fruitful ground for creative and innovative thinking around expressivity.~Because of its diversity of backgrounds, skills and traditions, its freedom of not staying within the constraints of specific field boundaries, and its drive for expressivity, the NIME community appears uniquely equipped to explore the voice in creative and non-traditional ways. Thus, an encompassing categorization of Vocal NIMEs should start from a holistic and open-minded view of the voice.~
+
+Works about the voice have indeed been a consistent presence at NIME, and related academic communities, and previous attempts have been made at categorization. For example, d'Alessandro et al. present an overview encompassing decades of work on singing interfaces \cite{d2019instruments}. Focusing specifically on the NIME community, Reed and colleagues analyzed 20 papers on the control of the singing voice and proposed to distinguish between ``voice as controller,'' ``controllers for vocal synthesis,'' and ``direct control'' \cite{reed2020surface}. While this approach highlights the important distinction of the voice as an input versus output, we believe that the richness of Vocal NIMES can be described with more granularity and would benefit from including systems that invoke the voice not only in traditional singing contexts but within the full diversity of voice modalities.
+
+Starting from a broad interpretation of what the voice can encompass, we present an attempt to gather, organize, classify, and categorize Vocal NIMEs. We seek to describe diverse characteristics of existing Vocal NIMES and to inform future NIME works in which voice might play a central role. We aim to provide a qualitative yet structured assessment that is both critical and informative. To this end, we combined manual review and automatic natural language processing (NLP) in our effort to~ gather, extract, sort and categorize information to make sense of the field of Vocal NIMEs.
+
+We first describe our methodology for selecting papers and choices for types of demographic data to include, including methods of encoding gender and diversity, and present overall trends. We then present an initial investigation using unsupervised document clustering and topic modeling in an attempt to structure concepts for our corpus. Inspired by the emerging themes and informed by a thorough reading of all papers in our corpus, we propose a system of descriptors to encode the characteristics and key features of Vocal NIMEs. Finally, integrating the authors' intent and context of the work, we categorize articles according to their similarities. This analysis produced five categories, which we propose to use as a taxonomy to classify past and future Vocal NIMEs. We conclude with insights, trends, and observations derived from our analysis.
+
+
+\section{\texorpdfstring{\textbf{Corpus and demographics}}{Corpus and demographics}}\label{corpus-and-demographics}
+
+\subsection{Corpus}\label{corpus}
+
+In line with previous reflective studies of the NIME conference, we collected our corpus from the scientific proceedings of NIME from 2001 to 2021, with a total of 1,972 documents that include papers of all lengths. To identify publications with voice as a core component, we searched for all papers containing the words ``voice,'' ``vocal,'' ``sing,'' ``singing'' or ``singer'' at least once, yielding 521 documents. We then manually verified that the voice was a central element of the work and discarded instances where voice is only used to refer to hardware (``voice-coil'', ``singing bowl'') or is used metaphorically in reference to music tracks, melody lines, MIDI messages or voice-leading. We also excluded papers for which the voice was clearly a secondary part of the system, an afterthought, or used as an example on the same level as other instruments (``media such as voice, ambient sound and music''). We included six articles that described a collection of various works, a common format for~early NIME publications, if at least one work was about the voice. The final corpus contained a total of 98 papers.
+
+The temporal distribution of papers shows strong consistency as a minority but persistently present theme in the conference. Figure 1 plots for each year the number of Vocal NIME papers against the total number of publications that year. Ranging from 1 to 10 per year, Vocal NIME papers never represent more than 10\% of the total proceedings but remained between 3 and 10\% for the past decade.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/sjy1253y_01643503693751.png}\caption{Figure 1: Number of Vocal NIME papers (in blue) compared to the total number of NIME publications (in red) from 2001 to 2021}\end{figure}
+
+
+\subsection{\texorpdfstring{Gender representation}{ Gender representation}}\label{gender-representation}
+
+We are interested in the gender representation of voice-related projects from our corpus because the voice is inherently connected with identity and gender. In terms of biology, the human voice is highly sexually dimorphic and can be seen as a strong marker of our hormonal identity. Social norms have also shaped the voice differently for men, women, and non-binary people throughout history \cite{pemberton1998have,watson2019unheard,collins2003vocal}.
+
+We identified publications involving at least one woman author through internet searches on authors' profiles, publicly available biographical information, and other texts from the author. This approach presents limitations as it does not account for non-binary authors or authors whose gender identity may not be reflected in publicly available information. To compare with the gender breakdown of NIME at large, we established the percentage of NIME publications including at least one woman author. The percentage from 2001 to 2018 was extracted from Xambó's paper on gender balance \cite{xambo2018women}, whose methodology we followed to derive the data for subsequent years. The results are shown in Figure 2. A Wilcoxon signed-rank test revealed that the observed difference between the ratio of papers with at least one woman author in our Vocal NIME corpus for each year (Mdn.=38.78\%) compared to the entire NIME corpus (Mdn.=24.89\%) are statistically significant, p=.0089\textless.05.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/k0si34j4_61643504143266.png}\caption{Figure 2: Percentage of papers with at least one woman author in the Vocal NIME corpus (in blue) and in the general NIME corpus (in red)}\end{figure}
+
+
+\subsection{Geographical origins, accessibility, and diversity}\label{geographical-origins-accessibility-and-diversity}
+
+Vocal traditions are a rich part of cultures around the world, and the voice presents an opportunity to introduce elements of geographic and cultural diversity at NIME. Our analysis first examined the geographic origins of Vocal NIMEs compared to NIME at large based on the authors' country of affiliation. One limitation of this approach is that authors' original country of origin are not taken into account if they work in a different country. Figure 3 shows the distribution of non-unique authors by their affiliation country for Vocal NIMES on the left and for the entire NIME corpus on the right adapted from \cite{fasciani202120}. While at least one work from our corpus has come from five continents, the authors' affiliation countries are slightly less extensive than for NIME at large.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/e67e8cv8_21643504714042.png}\caption{Figure 3: Distribution of non-unique authors by affiliation's country for Vocal NIMES (in blue) and for the entire NIME corpus (in red)}\end{figure}
+
+
+
+We also identified work that extends the understanding of the voice beyond traditional Western musical contexts and work that extends to underrepresented or marginalized populations. For each paper in our corpus, we determined whether some elements of non-western, indigenous, street, or folk cultures played a central role in some stage of the project, such as inspiration, or choice of practitioners. Looking for the inclusion of perspectives from underrepresented and otherly abled populations, we identified 17 works that make some reference to such themes. The first of these Vocal NIMEs appeared only in 2007, and subsequent works maintain a marginal presence, averaging around 1 paper per year.
+
+
+\section{\texorpdfstring{\textbf{Unsupervised theme identification}}{Unsupervised theme identification}}\label{unsupervised-theme-identification}
+
+To begin analyzing our corpus, we applied techniques from natural language processing to categorize papers and to suggest latent themes. We used two unsupervised machine learning methods to yield complementary insights: clustering to provide a top-down organization of the corpus, and topic models to identify latent topics. Results from both analyses were then interpreted to inform downstream manual annotation.
+
+\subsection{Preprocessing}\label{preprocessing}
+
+From each paper's PDF file, we extracted text and addressed mis-read words (e.g. at line breaks). We then tokenized and lemmatized the corpus, removing words from a stopword list including standard English stopwords, and voice-specific and NIME-specific terms that we identified as not useful to our analysis.
+
+\subsection{Document Clustering}\label{document-clustering}
+
+Clustering attempts to automatically group data into discrete sets. Here, we expect these sets to correspond to a useful categorization of corpus papers. As a first step, we transformed our documents into a numerical feature representation: the popular term frequency-inverse document frequency (TF-IDF) technique. TF-IDF reflects how important a given word is to a document, and a document's TF-IDF feature vector has one such dimensional value for each word in the corpus vocabulary. In our case, this resulted in \textgreater800-dimensional feature vectors for our corpus. We applied k-Means clustering to our dataset, with k=8 clusters based on iterative manual inspection of documents and cluster coherence.
+
+\subsection{Topic Modeling}\label{topic-modeling}
+
+To explore possible latent themes in our corpus (in contrast to an imposed category structure), we used topic modeling via latent Dirichlet allocation (LDA). LDA is a generative model that uses latent variables to probabilistically explain similarity between data observations, in this case documents. Similar to the document clustering, we set the number of topics to 8 after an initial manual exploration.
+
+\subsection{Example}\label{example}
+
+This automated analysis aimed to provide an overall view and initial insights to inform our survey approach. Rather than comprehensively survey these results, we detail results where relevant to our later analysis. For example, the largest cluster (N=28) in our cluster analysis contained several papers related to live performance. Inspecting word contributions by feature importance, we find the words \emph{performer}, \emph{sensor}, \emph{gesture}, and \emph{audience} to be most central to this cluster.
+
+We later identify a category we call ``Voice in performance/experience,'' which shares similar concepts. Conversely, smaller clusters contained central words like \emph{mouth}, \emph{tongue}, \emph{microphone}, \emph{shape;} which points to ``Voice beyond audio'', another category we later identify and define. In the sections that detail our manual characterization of papers in our corpus, ~we offer additional background information about aspects of the automated analysis.
+
+
+\section{\texorpdfstring{\textbf{Characteristics and descriptors}}{Characteristics and descriptors}}\label{characteristics-and-descriptors}
+
+In this section, we use a hybrid deductive-inductive approach inspired by thematic analysis in identifying useful characteristics to describe Vocal NIME works. We deductively apply concepts from both prior work and our NLP-based automated analysis results, and inductively seek to discover details and other salient topics from the corpus. The pilot NLP-based analysis highlighted a series of important terms and possible ways to describe common themes and unique characteristics. However, these results could not be automatically converted to clear categories and characteristics (e.g. topic models are notoriously difficult to interpret), so we treated these results as surfacing useful concepts to consider in a methodical qualitative analysis procedure. One researcher created an initial set of characteristics and categories by thoroughly examining and sorting papers in the corpus and reviewing NLP results. Two other researchers subsequently reviewed this categorization, and any disagreements were resolved through discussion. Following this, we propose five characteristics that can help describe Vocal NIMEs: Voice I/O, Behavioral Modality, Presentation Modality, Number of Voices, and Synchrony. Each of these five characteristics derives a series of possible attributes. In the following section, we define each characteristic and describe their attributes. Learnings from using this system to survey our corpus are presented in Figure 4.~
+
+\subsection{Voice I/O}\label{voice-io}
+
+Prior work \cite{reed2020surface} has already highlighted the important distinction between systems where the voice is used as an input control vs systems generating and controlling a synthesized vocal output. Our topic model results surfaced some relevant terms, for example, topic 2 (top-4 words: synthesis, pitch, feature, user; suggesting analysis and control). Several related terms also had high TF-IDF scores (summed across documents), such as ``controller'' (\#17 of all \textgreater800 words), ``input'' (\#18), ``microphone'' (\#33), and ``output'' (\#51). By analyzing the corpus, it appears that this characterization goes further than a simple input vs output dichotomy. By considering NIME systems as black boxes, we noted six possible ways for the voice to interface with a system, which define as descriptors:
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/uduubjlg_71650053908844.png}\caption{}\end{figure}
+
+
+Some of these descriptors can co-exist, for instance when the instruments operate in several different modes \cite{schlessinger2012concept}, when papers describe a collection of different projects \cite{levin2005personal}, or in the case of live looping \cite{barbosa2017exploring}
+
+These descriptors allow us to define the context in which the voice is considered in the NIME community. In the case of voice as control, the voice often takes the shape of a given, natural instrument is then extended. In the case of voice synthesis, it is seen as an intricate signal that we aim to teach machines to replicate. This I/O perspective also suggests different perspectives on expressivity depending on whether a NIME is used to shed light on or operate alongside a live performer (voice accompaniment), versus if the system inputs or outputs prerecorded static recordings (voice samples).~
+
+\subsection{Behavioral modality}\label{behavioral-modality}
+
+The focus of most NIME works is to enhance musical expression, in this sense, musical use of the voice through singing represents a large part of our corpus. However, our previous analysis also hints at the importance of the spoken voice, for example, topic 3 from our topic model (top-4 words: speech, synthesis, model, tract), with ``speech'' also being the 4th word in our corpus, by TF-IDF score (summed across all documents).
+
+Looking at the corpus in more depth, we identified an even broader range of possible voice modalities denoting a rich, varied interpretation of vocal expressivity that includes vocalizations such as laughing and screaming. For simplicity, we segment the vocal modality used into three categories:
+
+\begin{enumerate}
+\item
+  singing voice
+\item
+  spoken voice~
+\item
+  other voice modalities
+\end{enumerate}
+
+We noted a wide diversity of additional voice modalities from our corpus including breathing \cite{nagashima2003bio,jaimovich2016emovere,kiefer2018towards,kleinberger2018vocal,alarcon2019intimal,cotton2021body,li2021wearable}, tangible vibrations \cite{andersson2013designing,kleinberger2018vocal,poepel2014design,kiefer2018towards,cotton2021body,holbrow2014vocal}, whispering \cite{brown2015rawr,lind2018animated,bergsland2011six}, mouthing \cite{mclean2013paralinguistic,lyons2020designing}, vocal spasm \cite{d2011room}, beatboxing \cite{lui2013compact,fasciani2012voice}, laughing \cite{oh2013lolol}, roaring \cite{brown2015rawr}, throat singing \cite{wu2017towards}, screaming \cite{lind2018animated}, humming \cite{lind2018animated}, whistling \cite{chandran2018interface}, croaking \cite{schedel2021rhumbline}, clicking \cite{villicana2021speculator}, and buzzing \cite{villicana2021speculator}.
+
+\subsection{Presentation modality}\label{presentation-modality}
+
+The NLP-based analysis highlights the embodiment of the voice. Topic 7 from our topic model strongly points to physical components of vocal production (top-4 words: mouth, tongue, microphone, shape). Even though most projects treat the voice as an audio signal, our corpus also contains work considering the voice as a complex, multimodal sensorial experience, such as laryngeal gestures, accompanying facial expressions, or muscle activation and movement. This denotes various levels of embodiment in the presentation of the vocal experience as an internal mechanical process. This internal feature of the voice is further shown through work considering the voice as purely internal by focussing on the inner voice. For the purpose of this work, we understand the term embodiment as the involvement of the body in the consideration of the voice. The body can be seen as secondary when the voice is only considered as a sound: the body can be in the foreground when the voice is considered as a movement, finally when the voice is considered as a neurological, silent phenomenon, it can be considered pre-embodied as the inner voice has been associated with neurological predictive signals for motor action preceding actual vocal action. From these considerations, we identified three descriptors for this characteristic:
+
+
+The NLP-based analysis highlights the embodiment of the voice. Topic 7 from our topic model strongly points to physical components of vocal production (top-4 words: mouth, tongue, microphone, shape). Even though most projects treat the voice as an audio signal, our corpus also contains work considering the voice as a complex, multimodal sensorial experience, such as laryngeal gestures, accompanying facial expressions, or muscle activation and movement. This denotes various levels of embodiment in the presentation of the vocal experience as an internal mechanical process. This internal feature of the voice is further shown through work considering the voice as purely internal by focussing on the inner voice. For the purpose of this work, we understand the term embodiment as the involvement of the body in the consideration of the voice. The body can be seen as secondary when the voice is only considered as a sound: the body can be in the foreground when the voice is considered as a movement, finally when the voice is considered as a neurological, silent phenomenon, it can be considered pre-embodied as the inner voice has been associated with neurological predictive signals for motor action preceding actual vocal action. From these considerations, we identified three descriptors for this characteristic:
+
+\begin{enumerate}
+\item
+  the voice after leaving the body as a sound signal,~
+\item
+  the voice in its embodied characteristics of movement, gesture or motor control
+\item
+  the voice in its pre-embodied form in the purely internal signal of an inner voice~
+\end{enumerate}
+
+These three possibilities often coexist, as in systems using internal voice-related signals (such as EEG, EMG, or camera vision of mouth shape) to control a synthesized vocal output.
+
+When the voice is considered primarily as a sound signal, we noted a wide variety of acoustic features used by authors. Some of them are common, though at times appearing under different names or mathematical definitions such as Pitch/F0, Formants, Voicedness, or Vocal Timbre. Others are less common and not always consistent in their definition. This includes vibrato, loudness, amplitude, resonances, localization, intensity, vocal fold tenseness, MFCC Coefficients, LPC roots, timing, inhale/exhale, decay, threshold, glottal waveform, inharmonicity, clarity, spectral centroid, spectral spread, spectral kurtosis, vocal effort, tongue shape, tenseness, and velum (nasality). This lack of consistency and common language highlights a potential need for unifying the terminology of voice parameters.
+
+\subsection{\texorpdfstring{Number of voices}{ Number of voices}}\label{number-of-voices}
+
+The voice is a fundamental instrument both for personal expression and for interpersonal communication. The voice as a tool for projection and expression is rich both on its own and in its potential to engage in dialogues. We marked a distinction between NIME works that consider one vocal signal and those that consider multiple voices. Again, results from our topic model pointed to distinct associations between solo and group activity: topic 1 (top-4 words: performer, sensor, gesture, audience) vs. topic 6 (top-4 words: participant, vibration, experience, group).
+
+\subsection{Synchrony}\label{synchrony}
+
+The level of synchrony also appears as a possible descriptor of our corpus. Indeed, although analysis or synthesis-based projects often aim at reducing processing delay for a seamless experience, other works use delay as an artistic tool (or even pre-recorded audio samples) to achieve new experiences. We distinguish three attributes for this characteristic:
+
+\begin{enumerate}
+\item
+  Real-time processing \textbf{} (not introducing additional delay other internal processing lags)
+\item
+  Delayed (when the delay is intentional)
+\item
+  Use of voice samples (when the sound is decoupled in time from its generation)~\\
+\end{enumerate}
+
+Figure 4 summarizes the review of the Vocal NIME corpus according to the five characteristics.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/0age3esi_31643656532413.png}\caption{Figure 4: Distributions of paper characteristics (A) over time (normalized within each dimension), and (B) in aggregate. BM = Behavioral Modality, NUM = Number, PM = Presentation Modality, SYNC = Synchrony, I/O = Voice I/O. We exclude Voice I/O from (A) due to the number of characteristics.}\end{figure}
+
+
+
+\section{\texorpdfstring{\textbf{Toward a taxonomy}}{Toward a taxonomy}}\label{toward-a-taxonomy}
+
+Our characterization of Vocal NIMEs attempted to describe common features and different approaches. In this section, we go a step further by deriving a taxonomy that allows vocal NIMEs to be situated in a semantic map of the research space. Inspired by Ishii's pyramid \cite{c62}, which postulates that research may be driven by pushing the boundaries of enabling technologies (bottom level), finding new applications (middle level), or in service of a vision (top level), our taxonomy also has three levels. These levels are similar in concept, but we find it more helpful to define each of them by the key question they ask about the system to categorize.~
+
+The top level which asks about the context, intention or vision behind the research, and a middle level that asks what the system does or enables people to do. The first two items of the top level (control of voice synthesis, voice as control) are taken directly from our previous categorization and are motivated by clear scientific goals. We established other new categories for similar but more artistic or exploratory work, as well as emerging applications.
+
+\begin{itemize}
+\item
+  \textbf{Voice in performance:} Two different contexts emerged for papers with identical characterizations such as hand-based control of singing voice synthesis. Some are evaluated in terms of engineering feats and seek to push the boundaries of technical capabilities while others are designed for performance and evaluated as artistic experiences.~
+\item
+  \textbf{Voice training:} While only three papers belong to this category, training the voice is an age-old question with many nuances (e.g. breath control, rhythm, ear training), where new technologies can make contributions.
+\item
+  \textbf{Voice Beyond Audio:} The framing of the voice as more than an audio signal is noteworthy in the context of expression and encompasses different angles including invoice voice, tangible vocal vibrations, and face/tongue movement tracking.~
+\item
+  \textbf{Non-Human Voices:} We \textbf{} observed a few works focusing on non-human voices, with most of them occurring in the past 5 years which may represent a rising trend. In two cases, the authors intentionally anthropomorphized to give ``voice'' to electrical components or socially interacting robots. In other cases, the papers consider~ the vocal experiences of other animals. A common theme of these explorations is the voice as a means to sensitize humans for other beings.
+\end{itemize}
+
+To disambiguate between works with similar motivation and design, we introduce a lower level that asks how the system is technically implemented. For instance, the large number of NIMEs that transfer the control of the voice to the hands can be differentiated based on the type of device controlled by the hands (e.g. augmented instrument, tablet, free-hand gestures). We present the result of this categorization situating the 98 papers of the corpus in Table 1.
+
+\textbf{Table 1 : Categorisation of Vocal NIMEs}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{table*}[htbp]\centering\small
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{@{} >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}} >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}} >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}} >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\midrule
+
+\textbf{Category (vision)} & \textbf{Subcategory (application)} & \textbf{Implementation} & \textbf{Papers} \\
+\multirow{6}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+Control of voice synthesis / morphing
+
+
+\strut
+\end{minipage}} & \multirow{5}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+Hand-based control
+
+
+\strut
+\end{minipage}} & tangible object / augmented instrument & \cite{cook20172001,cook2005real,cook2009re,wang2011squeezy,astrinaki2013mage,yamamoto2016livo,wu2015tibetan,advincula2019grain,yoshimura2019voice,champagne2021investigation} \\
+& & screen/stylus & \cite{d2006real,d2007handsketch,astrinaki2012mage,oh2013lolol,feugere2013digitartic,perrotin2013adaptive,feugere2014rule,barbosa2017exploring,delalez2017vokinesis} \\
+& & free movements (camera, BCI, EMG) & \cite{wu2017towards,xiao2019t,erdem2020raw} \\
+& & glove/wearable & \cite{yonezawa2005handysinger,pritchard2006grassp,fels2009fortouch,han2012futuregrab,wang2012investigation} \\
+& & joystick & \cite{kessous2002bi,kessous2003bimanuality,vigoda2007jamioki} \\
+& Other~ & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{kawahara2004acappella,donovan2014talking,reed2020surface,venkatesh2020designing} \\
+\multirow{2}{=}{Voice as control} & Spoken & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{baumann2002interdisciplinary,mclean2009words,mclean2009words} \\
+& Sung & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{janer2005voice,loscos2005wahwactor,fasciani2012voice,cartwright2014synthassist} \\
+\multirow{6}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+Voice in performance / experience
+
+
+\strut
+\end{minipage}} & \multirow{3}{=}{\begin{minipage}[t]{\linewidth}\raggedright
+Hand-based control
+
+
+\strut
+\end{minipage}} & tangible object / augmented instrument & \cite{hewitt2003mic,park2012voicon,schlessinger2012concept,wu2016evaluating} \\
+& & free movements (camera, BCI, EMG) & \cite{endo2012tweet} \\
+& & glove/wearable & \cite{bokowiec2011v,wang2012investigation} \\
+& Voice Visualization~ & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{levin2005personal,taylor2005using,kanda2009mims,perrotin2014visualizing} \\
+& Social / Collaborative & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{ramakrishnan2004architecture,perez2007diamair,nakamoto2007circle,camurri2008mappe,d2011room,booth2012collaborative,d2012digital,andersson2013designing,lind2018animated,kiefer2018towards,alarcon2019intimal} \\
+& Other & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{d2002creating,orio2003score,nagashima2003bio,d2004recycling,rodrigues2005cybersong,stowell2008discourse,bencina2008gesture,stahl2010auditory,bergsland2011six,bergsland2012using,jaimovich2016emovere,formo2018orchestra,hege2021instrument,cotton2021body,tomas2021embodied} \\
+\multirow{3}{=}{Voice beyond audio} & Face/tongue tracking & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{vogt2002tongue,lyons2020designing,mclean2013paralinguistic,poepel2014design,chandran2018interface} \\
+& Inner voice & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{collins2007matching,lee2016live} \\
+& Other / vibrations & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{holbrow2014vocal,kleinberger2018vocal} \\
+Voice training & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{ferguson2006learning,lui2013compact,li2021wearable} \\
+Non-human voices & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{de2020novel,brown2015rawr,villicana2018mechatronic,schedel2021rhumbline,dunham2021click,villicana2021speculator} \\
+Uncategorized & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+
+\strut
+\end{minipage} & \cite{pedrosa2009evaluation,fasciani2013self} \\
+\bottomrule
+\end{tabular}\end{adjustbox}\end{table*}
+}
+
+To encourage easy exploration of this corpus through our taxonomy, we provide an interactive web-based tool {[}\href{}{https://nimevoice2022.vercel.app/}{]}.
+
+
+\begin{quote}\small\textbf{Embedded content.}  \end{quote}
+
+
+\section{\texorpdfstring{\textbf{Discussion and insights}}{Discussion and insights}}\label{discussion-and-insights}
+
+As previously observed Vocal NIMEs have been a small but consistent part of the community over the years. Some works come from a small but dedicated contingent of researchers who consistently contribute new publications that explore similar themes. Others seem to be one-off explorations on some aspect of the voice with no follow-up in subsequent years. Here, we identify some opportunities for future research in terms of diversity-related themes and the implications of Vocal NIME research beyond NIME.
+
+\subsection{\texorpdfstring{Diversity \textbf{}}{Diversity }}\label{diversity}
+
+Only seven papers in our corpus consider the voice beyond the context of traditional western music. In terms of extensions to ancient traditions, indigenous and marginalized communities, we noted references to Buddhist chanting, American street culture, ancient Egypt, Irish folk culture, Papua New Guinea, Tuvan throat singing, Chinese traditions, and Colombian migrants. This list represents geographic diversity, but there are even many more unique vocal traditions from around the world that can inspire future Vocal NIMEs.
+
+In terms of work promoting inclusivity, we only noted two references to underrepresented populations in the deaf community and people with severe disabilities. Projects considering the voice beyond words and even beyond acoustic representations could be particularly relevant for people with disabilities, such as non-verbal children and adults, stroke survivors, or people who stutter.
+
+Finally, one clear insight from our corpus demographics is the increased gender parity of Vocal NIMEs (38.7\% with at least one woman author) compared to NIME at large (24.9\%). Although still far from gender balanced, the voice is one theme that can promote more collaborations between NIME researchers and researchers from fields with stronger women's representation, such as Speech Language Pathology\cite{boyd2001gender} and Linguistics \cite{schrader2021state}.
+
+Our analysis highlights the potential of the theme "voice" in inspiring researchers from various backgrounds. This may inform actions to increase equity and diversity in the community by bringing voice to the forefront or creating special interest groups around the theme of the voice.
+
+\subsection{Beyond NIME~}\label{beyond-nime}
+
+As Vocal NIMEs present new analytic, interactive, and conceptual approaches to working with the voice, we explored how their impact might extend beyond the NIME community into other voice-related work. We gathered metadata from papers that cited those in our Vocal NIME corpus using Semantic Scholar (excepting 5 not-found papers; N=1169 from 920 unique papers). From each, we then extracted venue and field of study with the Semantic Scholar graph API, post-processing venues manually to aggregate (e.g. ``NIME'' and ``NIME `07'').
+
+References to Vocal NIMEs appear in a wide range of research venues, most commonly computer music and HCI venues including NIME (N=209), ICMC (N=38), the Computer Music Journal (N=31), SIGGRAPH ASIA (N=28), CHI (N=26), SIGGRAPH and Organized Sound (N=18 each), and TEI (N=17). ICASSP and INTERSPEECH, popular for speech and vocal processing, also appeared prominently (N=11 each). Other venues included multimedia (ACM Multimedia, N=9), movement (MOCO, N=6), acoustics (JASA, N=6), accessibility (ASSETS, N=2), psychology (Front. Psych., N=2), and particular works in further domains including robotics (IROS, HRI), affective computing (ACII, Trans. Aff. Comp.), and AI (AAAI, PRICAI).
+
+We also looked at fields of study represented, via the Semantic Scholar API. The most frequently appearing field is Computer Science (N=854). Others include Engineering (N=133), Psychology (N=62), Art (N=30), Medicine (N=15), Sociology (N=13), Mathematics (N=13), Philosophy (N=7), Physics (N=2), Materials Science (N=1), and Geography (N=1). Although in practice we find these labels can often only be approximate(e.g. ``Medicine'' might reflect Physiology), we believe they broadly reflect the diversity of citing work.
+
+Overall, vocal NIMEs have a wide-ranging impact on many near and distant academic fields. This suggests insights and methods from NIME can inform various aspects of the broader voice research landscape. We encourage authors interested in vocal NIMEs to consider the potential impact of their work~ in diverse disciplines.
+
+\section{Conclusion}\label{conclusion}
+
+This work contributes a taxonomy and descriptive system of key characteristics of Vocal NIMEs, based on a corpus we defined and analyzed with a mixed-methods approach. Our work offers a unified vocabulary to describe Vocal NIMEs, organizes trends in research themes, and identifies underexplored territories for future voice-related research. Our work has several limitations. For example, we only address research publications at NIME, not installations or performances. Our investigation suggests that the voice can be a bridge between diverse areas of research and artistic practice. We hope that our reflections can inspire new Vocal NIMEs to enhance expression, connection, and well-being.\\
+
+\section{Ethics statement}\label{ethics-statement}
+
+None of the authors of this paper reported a conflict of interest. We addressed accessibility and inclusion by reviewing our corpus in light of gender balance and geographic diversity, as well as additionally discussing accessibility and references to non-western and marginalized cultures, which contributes to the open dialogue on inclusion within the NIME community. Our diversity- and inclusion-related findings are presented with the hope of encouraging more research in these directions. In terms of data privacy, only publicly available data were used in the analysis. This work didn't include human participants or animals.~
+
+\section{}\label{section}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+\end{document}

@@ -1,0 +1,346 @@
+\documentclass[sigconf]{nimeart}
+\usepackage{bm}
+\usepackage{array,calc,adjustbox,multirow,fvextra,xurl}
+\emergencystretch=2em
+\DeclareUnicodeCharacter{202F}{\,}\DeclareUnicodeCharacter{2009}{\,}\DeclareUnicodeCharacter{200B}{}\DeclareUnicodeCharacter{FEFF}{}\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}\DeclareUnicodeCharacter{21A9}{}\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}\DeclareUnicodeCharacter{223C}{\ensuremath{\sim}}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}\DeclareUnicodeCharacter{00B1}{\ensuremath{\pm}}\DeclareUnicodeCharacter{2032}{\ensuremath{'}}\DeclareUnicodeCharacter{2A09}{\ensuremath{\times}}
+\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}
+\DeclareUnicodeCharacter{2713}{\checkmark}\DeclareUnicodeCharacter{2717}{\ensuremath{\times}}\DeclareUnicodeCharacter{25B6}{\ensuremath{\blacktriangleright}}\DeclareUnicodeCharacter{2B06}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2B07}{\ensuremath{\downarrow}}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}\DeclareUnicodeCharacter{03B9}{\ensuremath{\iota}}\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}\DeclareUnicodeCharacter{03C6}{\ensuremath{\varphi}}\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}\DeclareUnicodeCharacter{2207}{\ensuremath{\nabla}}\DeclareUnicodeCharacter{221A}{\ensuremath{\surd}}\DeclareUnicodeCharacter{221D}{\ensuremath{\propto}}\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}\DeclareUnicodeCharacter{220F}{\ensuremath{\prod}}\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}\DeclareUnicodeCharacter{2229}{\ensuremath{\cap}}\DeclareUnicodeCharacter{222A}{\ensuremath{\cup}}\DeclareUnicodeCharacter{2282}{\ensuremath{\subset}}\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}\DeclareUnicodeCharacter{2261}{\ensuremath{\equiv}}\DeclareUnicodeCharacter{21D0}{\ensuremath{\Leftarrow}}\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}\DeclareUnicodeCharacter{21D4}{\ensuremath{\Leftrightarrow}}\DeclareUnicodeCharacter{2190}{\ensuremath{\leftarrow}}\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}\DeclareUnicodeCharacter{2191}{\ensuremath{\uparrow}}\DeclareUnicodeCharacter{2193}{\ensuremath{\downarrow}}\DeclareUnicodeCharacter{2026}{\ensuremath{\ldots}}\DeclareUnicodeCharacter{2217}{\ensuremath{\ast}}\DeclareUnicodeCharacter{2218}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2205}{\ensuremath{\emptyset}}\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}\DeclareUnicodeCharacter{00F7}{\ensuremath{\div}}\DeclareUnicodeCharacter{2032}{\ensuremath{\prime}}\DeclareUnicodeCharacter{2225}{\ensuremath{\parallel}}\DeclareUnicodeCharacter{22A5}{\ensuremath{\perp}}\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\DeclareUnicodeCharacter{2299}{\ensuremath{\odot}}\DeclareUnicodeCharacter{25CB}{\ensuremath{\circ}}\DeclareUnicodeCharacter{2062}{}\DeclareUnicodeCharacter{2061}{}
+\AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
+\setcopyright{cc}\copyrightyear{2021}\acmYear{2021}\acmDOI{10.21428/92fbeb44.27d09832}
+\acmConference[NIME '21]{International Conference on New Interfaces for Musical Expression}{June 14--18, 2021}{Shanghai, China}
+\settopmatter{printacmref=false}\acmISBN{}
+\providecommand{\pandocbounded}[1]{#1}
+\begin{document}
+\title[Grisey’s 'Talea': Musical Representation As An Interactive 3D Map]{Grisey’s 'Talea': Musical Representation As An Interactive 3D Map}
+\author{Anne Sophie Andersen}
+\affiliation{\institution{University of California, Irvine,}\country{}}
+\author{Derek Kwan}
+\affiliation{\institution{Georgia Institute of Technology}\country{}}
+\renewcommand{\shortauthors}{Andersen and Kwan}
+\begin{abstract}
+The praxis of using detailed visual models to illustrate complex ideas is widely used in the sciences but less so in music theory. Taking the composer's notes as a starting point, we have developed a complete interactive 3D model of Grisey's \emph{Talea} (1986). Our model presents a novel approach to music education and theory by making understanding of complex musical structures accessible to students and non-musicians, particularly those who struggle with traditional means of learning or whose mode of learning is predominantly visual. The model builds on the foundations of 1) the historical associations between visual and musical arts and those concerning spectralists in particular 2) evidence of recurring cross-modal associations in the general population and consistent associations for individual synesthetes. Research into educational uses of the model is a topic for future exploration.
+\end{abstract}
+\ccsdesc{Applied computing~Arts and humanities~Sound and music computing}
+
+\keywords{Musical mapping strategies, Music-related human-computer interaction, Interactive sound art and installations, Sonic interaction design}
+\maketitle
+
+\section{Introduction}\label{introduction}
+
+Gérard Grisey, a prominent 20th century French composer, was one of the founders of spectralism. Beyond its technical aspects, which involve using Fourier analysis of harmonic spectra\footnote{Also known as overtone series.} as a tool for creating timbre and harmony, the term spectralism carries philosophical implications in its emphasis on perception as central to music analysis. Like their impressionist predecessors, spectralists were inspired by visual metaphors \cite{c1,c2,c3,c4,c5}.
+
+This project contributes to current audio-visual mapping efforts by presenting a complete 3D model of Grisey's \emph{Talea} (1986). When designing this model, we began with the composer\textquotesingle s stated intentions. The analytical framework draws on the composer's notes in the score preface and Baillet's analysis\cite{c6}. The visual representations draw on research examining associations between different auditory and visual parameters as well as phenomenological traditions of music analysis related to the composer's writings on musical perception\cite{c7}.
+
+We chose to use web technology to implement the project with the goal that it would not be geographically limited but instead accessible to anybody with a computer and an Internet connection. The international collaborative nature of the project also contributed to this decision.
+
+\section{Project Background}\label{project-background}
+
+\subsection{Relationship to current research}\label{relationship-to-current-research}
+
+To our knowledge, a comprehensive system of audio-visual mappings has yet to be developed. Many studies suffer from drawbacks such as small sample sizes, demographically skewed participation, and difficulty separating different components of sound and image in meaningful ways. Nevertheless, some associations appear consistent enough to be of significance. Giannakis makes a distinction between `arbitrary' and `empirical' modes of translation\cite{c8} and emphasizes the difficulty of establishing a common research methodology leading to empirically supported approaches due to the interdisciplinary nature of the field\cite{c9}. Researchers generally find it useful to distinguish between physical and perceptual frames of reference\cite{c10}. In a 2006 essay, Giannakis presents an overview of research in the field of audio-visual mappings for sound visualizations\cite{c9}. A summary of more recent research can be found in Sun, Xiuwen et al\cite{c11}.~
+
+Giannakis divides research in the field into three main categories: graphic sound synthesis, color spaces for sound\footnote{Color spaces are models attempting to represent aspects of color in a dimensional space. Caivano and others have used these models to facilitate audio-visual mapping by assigning each color dimension to a corresponding sound dimension. These associations are typically based on physical similarities or arbitrary. See Giannakis (2001) p 15.} \cite{c12}, and synesthesia and cross-modal associations\footnote{Giannakis (2001) p 8}.
+
+A general \textbf{cross-modal association} exists between aspects of \textbf{sharpness} (defined as fundamental frequency) and \textbf{spatial height}\cite{c13}. This correlation has been codified into standard notation practices, as well as musical mapping methods. Through his empirical investigations, Giannakis found general associations between the visual dimensions of \textbf{brightness} and \textbf{saturation} and the auditory dimensions of \textbf{pitch} and \textbf{loudness}, as well as associations between the visual dimensions of \textbf{texture} and the auditory dimensions of \textbf{timbre}\footnote{Giannakis (2001) abstract}. Likewise, Sun, Xiuwen et al have found through their research that \textbf{pitch, tempo, roughness and sharpness} are associated with \textbf{hue and brightness}, replicating and expanding existing findings\footnote{Sun, Xiuwen et al p 21}. Sun, Xiuwen et al further conclude from their studies that certain cross-modal pairings elicit shorter response times to cognitive tasks than others\footnote{Sun, Xiuwen et al p 21}. Through their studies, Disley, Howard et al have attempted to map commonly used associations between \textbf{timbral} qualities of musical instruments and various descriptive terms among musicians (2006)\cite{c14}.~
+
+\textbf{Synesthesia} is a distinct aspect of cross-modal association characterized by being consistent in the individual but inconsistent across different populations, with `colored hearing' being one of the most common forms. Giannakis summarizes synesthesia research as showing \textbf{associations between pitch class and color hue} and \textbf{between pitch height and color lightness}\footnote{Giannakis (2001) p 17}. Hue and pitch are determined by light- and sound frequencies respectively.
+
+\subsection{History of audio-visual synthesis}\label{history-of-audio-visual-synthesis}
+
+Audio-visual synthesis has a long history. Impressionism in music, which arguably constitutes a precursor to spectralism, had deep ties to the visual arts, and spectralism descends from that tradition\cite{c15}. In this way, Malherbe links Grisey and Murail to Seurat\footnote{``As with the effects of the neo-impressionists' optical mixing, which virtually constructs a scale of colours which are not actually present on the canvas, the effects caused by spectral fusion allow coherent timbres to be heard where, on paper, only aggregates of distinct elements are notated'' (Malherbe p 17)
+
+\hfill\break}\cite{c16}.
+
+Scriabin is considered a pioneer among serious composers, with \emph{Prometheus}\cite{c17} being a prominent example. He also invented a `keyboard of light'\cite{c13}. In the mid-20th century, composers like Feldman, E. Brown, Cage\cite{c18}, and Cardew were part of a generation championing the idea of graphic or multisensory scores\cite{c19}. Many of these composers had a strong interest in philosophy and the esoteric in common.
+
+Clifton\cite{c20} and Ihde\cite{c21} paved the way for relating audio-visual mapping to phenomenology in their approaches to music analysis. In the 1970's, Thompson created \emph{Soundpainting}, a musical sign-language which facilitates structured group improvisations\cite{c22}.~
+
+In the field of \textbf{computer music}, Xenakis' UPIC (1992) allows users to draw and manipulate waveforms\footnote{Giannakis (2001) p 10}. Giannakis' \emph{Sound Mosaics} (2001) \emph{} is a prototype user interface for sound synthesis based on direct manipulation of visual representations, based on audio-visual mapping techniques supported by empirically demonstrated correlations\footnote{Giannakis (2001) p 68}. More recently, Tymoczko has developed a model mapping musical chords onto a geometric space\cite{c23}.
+
+Wenk-Wolff\cite{c24} and McCracken\cite{c25} create video-art and paintings respectively, based on their experience of music as \textbf{synesthetes}.~
+
+On the \textbf{educational} front, the \emph{Biophilia Education Project} championed by Björk integrates different academic disciplines into an innovative and creative learning environment. The project is based on apps pairing parameters of music theory with scientific phenomena\cite{c26}. ~
+
+\subsection{\texorpdfstring{About \emph{Talea}}{About Talea}}\label{about-talea}
+
+\emph{Talea or The machine and the rank weeds (1986)}, or \emph{Talea} in short, is scored for flute\footnote{Also flute in G, bass flute and piccolo.}, clarinet in B-flat\footnote{Also clarinet in A and bass clarinet in B-flat. The clarinet part is notated in C and will be referred to as such.}, violin, cello, and piano.
+
+In \emph{Talea}, an initial idea is gradually transformed, or `cut', throughout the piece\footnote{\emph{Talea} means `cutting' in Latin. The term \emph{Talea} ``designates a reiterated rhythmic pattern to which a configuration of pitches called "color"...is grafted''}. The composer tackles two aspects of musical discourse: \emph{speed} and \emph{contrast}. He writes that the two linked parts of the piece (\emph{Part 1} and \emph{Part 2}) represent `\textbf{two auditory angles of a single phenomenon'}, based on a `single gesture (fast, fortissimo, ascending - slow, pianissimo, descending)' Further, the formal process of the second part of the form is described as creating a `\textbf{sort of spiral'}\cite{c27}.~
+
+\section{Analysis}\label{analysis}
+
+\subsection{Part 1}\label{part-1}
+
+The piece consists of two contrasting parts, \textbf{Part 1} and \textbf{Part 2}, linked together by a bridge. At the core of the formal structure are two elements---\emph{a} and \emph{b---}representing contrast on the most basic level. Element \emph{a} is characterized by loud dynamics and fast rhythm, while element \emph{b} is characterized by soft dynamics and slow rhythm.
+
+Other elements are developed from elements \emph{a} and \emph{b}: elements \emph{a'}, \emph{a'\,'}, \emph{b'} and \emph{b'\,'}\footnote{Since the features of these variations are only represented broadly in the model, a more complete discussion is outside of the scope of this paper.}.~Together with elements \emph{s} and \emph{t}, which represent silence and interrupted silence respectively, these elements combine into \emph{phases}, which represent the ``single gesture''.
+
+The formal process of Part 1 resembles the workings of a machine consisting of a layering of phases assigned to five individual \textbf{\emph{voices}}, each played mainly by one instrument\footnote{Voice 1 is mainly assigned to the piano, Voice 2 to the cello, Voice 3 to the clarinet, Voice 4 to the violin and Voice 5 to the flute. In the beginning of the piece, other instruments double the first voices before separating into their own voice, creating a process of fission: All instruments double the piano (Voice 1) in the beginning of the piece, the violin doubles the cello (Voice 2) etc.}. More voices are consecutively added, resulting in \textbf{increased polyphonic complexity.} Element \emph{a} increases in prominence relative to element \emph{b,} resulting in increased \emph{} \textbf{dynamic activity}. Each consecutive phase is shortened resulting in the \textbf{compression of musical time}. \textbf{Contrasts} are gradually blurred and leveled off due the approximation in the duration of \emph{a} and \emph{b} elements (and their varied forms) and the number of voices out of phase with each other.~
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/1cfvk5zs_31610996200810.png}\caption{\emph{Example 1: Relationship of the durations of phases within each voice in Part 1. Compare with example 3 and the design of the spirals.}}\end{figure}
+
+
+
+All notes in Part 1 belong to the overtone spectrum of the \textbf{fundamental c}\footnote{Untempered notes are assigned to instruments other than the piano}. The pitch material is processed through two \textbf{`imaginary bandpass filters'}: The `\textbf{range filter'} causes the pitch range to gradually expand from the middle of the overtone series towards the entire spectrum (increased broadness).~The \textbf{`microtonal filter'} is applied to the microtones in between partials, gradually eliminating them (decreased broadness).
+
+The \textbf{`rank weeds'} are melodic figures representing wild, spontaneous growth. Premonitions of these are increasingly present towards the end of Part 1.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/zulx5h50_21610996740076.png}\caption{\emph{Example 2: Rank weed in the piano.}}\end{figure}
+
+
+\subsubsection{Transition (bridge):}\label{transition-bridge}
+
+The transition executes the shift from a polyphonic to a monophonic structure, as the observer is moving from one vantage point to another. This is achieved through a process of unification of the elements of pitch and rhythm.
+
+\subsection{Part 2}\label{part-2}
+
+In Part 2, the element structure of individual voice phases in Part 1 becomes the macroscopic formal design. This is directly related to the \textbf{dissolution of polyphony}, since the order of voice entries made up the macroscopic formal design in Part 1\footnote{Baillet p 184}.~
+
+The \textbf{formal design} of Part 2 resembles that of Part 1\footnote{To avoid confusion, we call the sequences in Part 2 `chains' instead of `phases'.}. A new formal element is appended to every other repetition of the cycle, resulting in a gradual increase in phase length.~\\
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/1hgpp4xw_11610997639034.png}\caption{\emph{Example 3: Successive formal ``chains'' based on a row of chromatically descending fundamentals in Part 2.}}\end{figure}
+
+
+
+Where Part 1 was based on the overtones of a single pitch class (`c'), Part 2 contains a spectrum of the harmonics on \textbf{chromatically descending fundamentals}. The completion of this descent, together with the reduction of element \emph{A} to a single pitch class causes Part 2 (and the piece) to end.
+
+Two \textbf{`imaginary tools'} have a similar function to the filters in Part 1:~\\
+The \textbf{`microscope'} permits stretching of the tempo and penetration into the microphonics, increasing perception of detail. The \textbf{`frequency shifter'} adds the same number (Hz) to each frequency of the spectrum over a given fundamental, distorting it.
+
+In Part 2, the prominence of elements \emph{A} and \emph{B} diverges towards an extreme difference. The \textbf{tempi} of the \emph{A} sections remain constant and those of the \emph{B} sections become increasingly slower. The form thus evolves towards an \textbf{\emph{expansion}} \emph{} of musical time.~
+
+As the sections based on element \emph{B} increase in length, more and more \textbf{partials} and \textbf{non-harmonic sounds} are added to their spectra, while \emph{A} elements are gradually cut down from cluster chords to containing only a single pitch class. This results in \textbf{increased dissonance}.
+
+In a similar manner to the way the \emph{B} sections invade the domain of the \emph{A} sections, the \textbf{`rank weeds'} invade and overtake the \emph{B} sections as the form progresses, dominating the soundscape completely at the end of the piece.~
+
+\section{Interpretation / Model implementation}\label{interpretation-model-implementation}
+
+The model can be found online at \url{https://derekxkwan.github.io/talea-vis/}.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/6calk7do_51617864218981.png}\caption{\emph{Example 4: The model viewed sideways. The spiral is nested inside the cylinder.}}\end{figure}
+
+
+\subsection{Basis in the composer's intentions}\label{basis-in-the-composers-intentions}
+
+When developing the form of the 3D model, we began with the composer\textquotesingle s stated intention to tackle two aspects of musical discourse: speed and contrast (see above). The spiral represents the formal development that `drives' the process of the piece (like an engine) and thus the \textbf{`speed'} aspect. The cylinder represents the two parts of the piece, displayed as \textbf{`contrast'}. The form of the cylinder was a more intuitive choice than the spiral but was chosen to accommodate both the idea of a machine with an engine and to provide a form within which the spiral can be nested.
+
+A previous draft version is described in Andersen's 2015 TEDxSBU talk \emph{Talea---Music frozen in Space}\footnote{See https://youtu.be/3bknJQ30D2Y}\emph{.}
+
+\subsection{Novel contribution of our model}\label{novel-contribution-of-our-model}
+
+In the context of the field of audio-visual mapping, our model presents a novel contribution through representing a complete 3D interpretation of a piece of music, mapping musical structures onto visual counterparts. Our model goes beyond a simple visual score through visualizing the musical \emph{processes} the composer used as part of his formal design and through allowing the user to interactively explore significant features of the piece.~
+
+\subsection{Method of interpretation}\label{method-of-interpretation}
+
+Inspired by Clifton's phenomenology, the original illustrations were intuitive in nature. We have been drawing on Andersen's experience as a synesthete when developing these ideas. However, our current model also incorporates more commonly found cross-modal associations for which there is partial empirical evidence. We have made direct `translations' between different dimensions, most often the dimensions of (musical) time and (physical) space, in order to maintain similar architectural proportions. Some decisions have been made arbitrarily in order to accommodate other large-scale considerations.~
+
+\subsection{Specifics}\label{specifics}
+
+\subsubsection{Aspects of contrast: the cylinder}\label{aspects-of-contrast-the-cylinder}
+
+The cylinder represents aspects of contrast through complementary or contrasting qualities for Part 1 and Part 2 respectively. The \textbf{proportions} of the cylinder itself are adjusted in order to accommodate the spiral and do not represent musical proportions.
+
+\paragraph{\texorpdfstring{\textbf{Part 1:} Cylinder front}{Part 1: Cylinder front}}\label{part-1-cylinder-front}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/1x5q3bz0_01617864084964.png}\caption{\emph{Example 5: Part 1 (cylinder front) texture.}}\end{figure}
+
+
+\textbf{Chronological direction:} clockwise\textbf{.} The surface can be read as a visual score, starting at the center and moving towards the periphery.~
+
+\textbf{Background color:} Bright yellow (parameter: emissiveness\footnote{Emissiveness is a different parameter than brightness (the latter relates to the color itself), but the overall perceptual effect is similar.}\cite{c28}). Represents a loud, active texture and the \emph{single fundamental} C and its partials, which is the harmonic foundation for Part 1. The color yellow represents the pitch class `c'~ synesthetically to Andersen.~
+
+\textbf{Five colored strands:} representing the five voices of a \emph{polyphonic} \textbf{} texture. Colors chosen in the model: Blue/purple for Voice 1 (piano), red for Voice 2 (cello), orange for Voice 3 (clarinet), green for Voice 4 (violin), light blue for Voice 5 (flute)\footnote{Hex codes: Blue/purple: 4000FF, red: FE0218, orange: FF9500, green: 00C354, light blue: 03F1FE}.
+
+Two considerations have been applied to color selection: \textbf{Timbral qualities of the instruments:} intuitive perception of the strings as `warm' (warm colors) and the winds and piano as `cold' (cold colors) in the context of the piece. \textbf{Context within whole:} The five voices become the ten harmonic fundamentals of Part 2. Therefore they need to fit into the overall color spectrum of Part 2 (see below). The two background colors (yellow and magenta) have been avoided for the sake of visibility.~
+
+\textbf{Imaginary tools}\footnote{These elements belong to both ``speed'' and ``contrast'' but were included on the cylinder since the spiral has been reserved for other parameters.}\textbf{:~}\\
+The increasing `bandwidth' of the colored strands represents the \textbf{`range filter'}: development over time in the melodic ranges of each voice is represented in the movement of the lines, with pitch height ascending from the center towards the periphery.~
+
+The grid represents the `\textbf{microtonal filter'}: development from full microtonal spectrum towards a limited number of partials is represented through an increasingly wide-masked web. Associating sounding pitches with colored matter and empty pitch space with empty color space, we have imagined the respective domains of pitch range and the physical circle as surfaces which can be ``filled'' by material to varying degrees of density\footnote{This development has been portrayed as linear for the sake of simplicity.}.~
+
+\textbf{View of inside/opposite side:} The spiral is nested inside the cylinder. The opposite (contrasting) side of the object can be discerned in the background of the perceptual field.~
+
+\paragraph{Part 2: Cylinder back}\label{part-2-cylinder-back}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/k1t0zvuc_61611044786557.png}\caption{\emph{Example 6: Part 2 (cylinder back) texture.}}\end{figure}
+
+
+\textbf{Chronological direction}: top to bottom
+
+\textbf{Background color:} magenta\footnote{A planned future improvement is making the shade more absorbent}. The color was chosen as the opposite of Part 1 (yellow in the additive color system) to maximize contrast, suggesting a more static texture and lesser amplitude (softer dynamics).~
+
+\textbf{Ten colored strands:} represent the \textbf{chromatically descending fundamentals} of a \textbf{monophonic} texture. The fundamentals are represented by a color spectrum from blue/purple to dark blue\footnote{Hex codes: Blue/purple: 4000FF, pink: FC03E8, red: FE0218, red/orange: FC4E03, orange: FF9500, green/yellow: BAFC03, green: 00C354, green/blue: 03FCAD, light blue: 03F1FE, dark blue: 03BAFC.}. The selection was made arbitrarily in order to accommodate the overall idea of associating the color spectrum with the harmonic spectrum \footnote{Both encompass a frequency range. However, there is no relationship between the relative frequency of each individual pitch and color.}. Line thickness approximates the relative duration of each successive section, following an analogy between duration in musical time and the amount of two-dimensional space occupied on the surface.
+
+\textbf{Imaginary tools:~}\\
+\textbf{`Microscope'}: The gradual expansion and changes in texture of the ten horizontal stripes symbolizes `zooming in' on the melodic material.
+
+`\textbf{Frequency shifter'}: \textbf{} Addition of horizontal lines represent an increasingly distorted harmony.
+
+\textbf{View of inside/opposite side:} The spiral is nested inside the cylinder. The opposite (contrasting) side of the object can be discerned in the background of the perceptual field.~
+
+\paragraph{\texorpdfstring{\textbf{Transition:} Cylinder side}{Transition: Cylinder side}}\label{transition-cylinder-side}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/i4dcxv3u_31611044807253.png}\caption{\emph{Example 7: Transition (cylinder side) texture.}}\end{figure}
+
+
+\textbf{Chronological direction:} left to right
+
+\textbf{Background color:} Bright yellow gradually becomes magenta. Represents the shift from a \textbf{loud} and \textbf{active} to \textbf{quiet} and \textbf{static} texture.~
+
+The \textbf{five voices} of Part 1 branch out and become the \textbf{ten harmonic fundamentals} of Part 2. This represents a structural shift from a \textbf{polyphonic/monoharmonic} to a \textbf{monophonic/polyharmonic} texture\textbf{.}
+
+Weed-like designs in the surface structure represent the \textbf{`rank weeds'}\footnote{For practical reasons, the rank weeds occurring in Part 1 have only been represented on the cylinder side and not the cylinder front.}. The development in density (increasing from beginning to end of the piece) has been portrayed in an approximate chronological manner.
+
+\subsubsection{\texorpdfstring{Aspects of speed: the spiral\\
+}{Aspects of speed: the spiral }}\label{aspects-of-speed-the-spiral}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/zqjejrlx_31617865369718.png}\caption{\emph{Example 8: The spiral. Chronological direction: left to right.}}\end{figure}
+
+
+The spiral represents aspects of \textbf{speed}. Formal speed (the frequency of transitions between formal elements) is represented by the length of each formal unit. Rhythmic speed (predominance of element \emph{a/A} relative to \emph{b/B}) is represented by the level of saturation of the texture. The relationships in length between the different sections of the spiral are a direct translation of their durational relationship in musical time.~
+
+Colors chosen match those of the cylinder texture (see above). \textbf{Dark (highly saturated) shades} represent \textbf{loud, active} elements (elements \emph{a/A} and variations). \textbf{Lighter (less saturated) shades} represent \textbf{soft, static} elements (elements \emph{b/B} and variations). \textbf{Transparent areas} represent \textbf{silence} (element \emph{S}), and \textbf{black areas} represent `\textbf{rank weeds'}\footnote{A planned future improvement is adding bands to the spirals indicating phase beginnings and endings.}\textbf{.}
+
+\paragraph{Part 1: Spiral}\label{part-1-spiral}
+
+\textbf{Chronological direction:} clockwise. Voices and elements are represented in order of entry, measured by quarter note values.
+
+\textbf{Five colored, nested spirals} represent the five voices of the \textbf{polyphonic structure}.~
+
+\paragraph{Part 2: Spiral}\label{part-2-spiral}
+
+\textbf{Chronological direction:} clockwise. Voices and elements are represented in order of entry, measured by quarter note values.
+
+\textbf{Ten colored spiral sections in succession} represent the ten successive harmonic fundamentals of the \textbf{monophonic} structure.~
+
+\paragraph{Transition: Spiral bridge}\label{transition-spiral-bridge}
+
+\textbf{Chronological direction:} left to right
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/qdbbwm7w_01617865412022.png}\caption{\emph{Example 9: Spiral bridge.}}\end{figure}
+
+
+Fractured elements represent the \textbf{dissolution} of the five voices. Semi-transparent elements represent a \textbf{thinning} of the texture towards a single interval (tritone). Solid elements represent the merging of individual voices and textures into a single \textbf{monophonic} texture.
+
+\section{System Overview~}\label{system-overview}
+
+Kwan chose to generate the three-dimensional model using the Three.js JavaScript library\footnote{\url{https://threejs.org/}}. To generate the two-dimensional textures for the models, Kwan used the JavaScript library p5.js\footnote{\url{https://p5js.org/}} and used its original Java-based counterpart Processing\footnote{\url{https://processing.org/}} when he felt that performance gains were possible. Playback of audio corresponding to model features was made possible through Vimeo's Player API\footnote{https://github.com/vimeo/player.js}.
+
+\paragraph{Data Processing}\label{data-processing}
+
+Several options for data transcription were considered, including spectral analysis and OCR-based score transcription. We found spectral analysis unfeasible given the polyphonic nature of available recordings. Attempts at OCR-based score transcription using Audiveris\footnote{\url{https://github.com/Audiveris/}} proved unreliable given the handwritten nature of the available score and the extensive use of non-standard notation. Therefore we ultimately decided to extract data manually based on Baillet's analysis\footnote{Baillet's analysis includes information such as: duration of phases/chains and subsections measured in quarter note units or subdivisions of the quarter note, character of the material (i.e. \emph{a/A or b/B)}, pitch direction, harmonic fundamentals, and tempo indications.}. Range \emph{} data was extracted directly from the score.
+
+We transcribed Baillet's analysis into spreadsheets and hand-converted it into CSV format to be easily parsed. As we were using JavaScript to generate the 3D models and wanted a more structured data format to work with, we used Python scripts to convert the CSV files to JSON.
+
+\paragraph{Textures (cylinder)}\label{textures-cylinder}
+
+The texture for the front (Part 1) end of the cylinder was generated in p5js. Due to the computational cost of diffusion-limited aggregation (code adapted from \cite{c29}) to emulate the \textbf{`rank weeds'}, textures for the cylinder side and the back (Part 2) end were generated in Processing.
+
+The texture for the Part 1 end of the cylinder consists of the part's \textbf{five voices} represented by overlapping Archimedean spirals\cite{c30} with polar equation \emph{r = aθ}\textsuperscript{\emph{1/n}} \emph{} ( \emph{n =} 0.125, \emph{a =} 910) and the same colorings as the three-dimensional spirals and an underlying gray grid against a yellow background.
+
+\textbf{`Range filter':} Each spiral is displaced radially from its usual contour by its respective voice's simplified pitch contour. The pitch contours of each spiral are simplified by comparing the highest and lowest pitches of each element to a central pitch (Eb4) and if a range's overall contour is ascending or descending. If the contour of an element is descending, the radius of the spiral contracts to the displacement from Eb4 of the lowest pitch and expands to the displacement of the highest pitch if ascending. Elements with a flat contour as well as \emph{s} and \emph{t} elements retain the radial displacement of the simplified end of the previous element. Additionally, \emph{s} and \emph{t} elements are drawn with thinner stroke weight and a semi-transparent fill.
+
+\textbf{`Microtonal filter':} The gray grid is drawn with ten lines extending outward from the center of the texture and dividing the image equally. An Archimedian spiral with \emph{n =} 0.25 and \emph{a} = 2730 defines the other axis of the ``grid''. These parameters were chosen according to aesthetic considerations.
+
+The \textbf{texture} for the \textbf{back} (Part 2) end of the cylinder consists of ten horizontal stripes representing the ten successive harmonic fundamentals in increasing thickness against the magenta background. Overlaid over the stripes is a root-like structure representing the \textbf{`rank weeds'}.
+
+\textbf{`Microscope':} Symbolizing a ``zooming in'' on the melodic material, the ten horizontal stripes grow thicker, blurrier, and more transparent towards the bottom of the texture. To achieve this, each horizontal stripe is made up of an increasing number of one-pixel wide lines that stretch across the width of the texture and are increasingly transparent (with random offsets in opacity).~
+
+`\textbf{Frequency shifter'}: To represent the simultaneous process of increasingly distorted harmony, an increasing number of horizontal lines are added over the main stripes. These pixel-width lines do not extend across the width of the texture but instead have their endpoints in increasing distances from the texture's center. Additionally, these lines are shaded with increasingly distinct colors from the main stripe.
+
+The texture for the \textbf{side of the cylinde}r connects the elements of each cylinder end's texture. Part 1's yellow background and Part 2's magenta background are connected in the side texture by a background gradient fading between the two colors. `\textbf{Rank weeds'} are also present in this texture (but do not connect to Part 2's rank weeds) follow an opposite coloring scheme to the background (a yellow to magenta gradient) and are overlaid over all other elements of the side texture. The spirals which converge at the top of Part 1's texture split off into twenty Bézier curves that connect to the left and right ends of Part 2's ten horizontal stripes.
+
+\paragraph{Spirals}\label{spirals}
+
+The rotating spirals that represent \textbf{Parts 1} and \textbf{2} are conical spirals with the parametric equations \emph{x = t r cos (a t)}, \emph{y = t r sin (a t)}, \emph{z = t} with \emph{a} = 201 \cite{c31}. Part 1 consists of five nested spirals for each of the voices with \emph{r} = 1.0, 0.8, 0.6, 0.4, 0.2. Part 2 consists of one spiral with \emph{r} = 1.0. The length of each spiral is multiplied by a constant value (variable\texttt{lenMult} in the code) to adjust their lengths to aesthetic taste and visual clarity.
+
+As Part 2 has multiple changes in tempi, sections of its spiral need to be scaled in order to reflect their proper temporal scale relations. Using Part 1's durations in 80 bpm as a baseline, a pre-processing step on Part 2's data is executed upon loading the 3D model that scales Part 2's durations in relation to Part 1.
+
+Each of the nested spirals for Part 1 represent an individual voice and spiral inward towards a central point. Each voice is represented by a color (see above). Each type of element for each voice is represented by a colored length of the voice's spiral and its particular coloring is based on the spiral's chosen color. \emph{a} elements are of the brightest, fullest shade of the chosen color, \emph{~b} elements are fainter than \emph{a} elements and with significantly more white, \emph{a} elements have a bit more black than \emph{a'} elements, \emph{b'} elements have a bit more black than \emph{b} elements and \emph{a'\,'} elements and \emph{b'\,'} elements tend even more towards black than their A' and B' counterparts. All \emph{a} and \emph{b} elements (including their derivatives \emph{a'}, \emph{a'\,'}, \emph{b'}, and \emph{b'\,'}) are of full opacity, reflectivity, and shininess. \emph{s} elements are of an off-white color (regardless of spiral color) and have 20\% opacity. \emph{t} elements are of a dark-gray color (regardless of spiral color) and have 20\% shininess, 25\% reflectivity, and 65\% opacity. \emph{s} and \emph{t} element qualities were determined by aesthetic taste. The Part 2 spiral follows a similar method to Part 1, except with the colors representing successive harmonic fundamentals following each other sequentially as part of one spiral and additional colors chosen to lie in between the original five colors.~
+
+The coloring of each element's section of a spiral was achieved through creating a material for each individual element and assigning the material to the vertices of a spiral's mesh. As the previous stated parametric equations calculate a spiral progressing outward with increasing values of \emph{t}, calculating and assigning the vertices for Part 1's spiral had to occur backwards as the spiral progresses inwards as it maps Part 1's development.
+
+In between the spirals representing \emph{Talea}'s two main sections, \emph{Talea}'s \textbf{bridge section} is represented by a twisting cylinder of colors blending and fading into transparency and transforming into blue. Except for the first stage of the bridge (where no transition occurs yet), each step of this transition is represented by a slice of the whole cylinder (in reality, each slice is its own cylinder mesh) and each slice has its own unique material. The sequence of textures for the bridge's transforming process were generated in Processing and consist of five initially-distinct stripes for each of Part 1's voices progressively fading more and more into each other in a gradient. In the interest of not having too many texture images, this process of distinction moving into gradation was calculated in nine steps, resulting in nine images.
+
+At the end nearest the end of Part 1's spiral, the cylinder is textured with the image of the five stripes at their most distinct repeated once on the cylinder. To gradually blend the colors together, successive cylinder slices are textured with images further along in the gradient sequence and the images increasingly repeat in a texture, resulting in cylinders textured with ten stripes, fifteen stripes, twenty stripes and so on. Once the bridge cylinder enters its fading-into-transparency stage, the increase in the number of repeats stops and the opacity decreases in successive slices to 0\%. From this point, each successive slice is textured blue and the opacity is increased back to 100\% in successive slices. To highlight the blending of colors and transition to transparent, the beginning of the bridge cylinder and the slices leading up to the transition to 0\% opacity are rotated at successively increasing speeds.
+
+Due to the less-than-straightforward mapping between a spiral's duration scaling and the space the spiral occupies in the Z-dimension, the length of the bridge was chosen by intuition. Future improvements to the model will include a mathematical derivation of this quantity to improve scale accuracy.
+
+\paragraph{Navigating the Model}\label{navigating-the-model}
+
+Navigation through the model is made possible through Three.js's Orbit Control library. It allows mouse and keyboard control to zoom in and out of the model, enabling the user to see both inside and outside the cylinder. It also allows the user to rotate the model and shift the viewpoint. Through event listeners and Three.js's Raycaster, the user can mouse over structures in the model to get details about its individual elements in a text overlay. Through clicking on a text overlay's title or pressing the space bar, the user can get further details about the model on a separate web page. Instructions on how to navigate the model are provided on the project's landing page.
+
+\paragraph{Animation}\label{animation}
+
+Animation is taken care of by a \texttt{render()} function that is called initially on startup and later by JavaScript's \texttt{requestAnimationFrame()} function which is run on screen repainting. In addition to updating the scene's camera through Orbit Controls and rendering the scene, \texttt{render()} calls the function \texttt{animate()}.
+
+The \texttt{animate()} function uses Three.js's Raycaster to determine what information to populate the text overlay with. Additionally, the function is responsible for adding a defined constant \texttt{rotAmt} (chosen to fit aesthetic sensibilities) to Spiral 1's Z-rotation and subtracting the same amount from Spiral 2's Z-rotation. This causes Spiral 1 to rotate counterclockwise and Spiral 2 to rotate clockwise at the same rate. The \texttt{animate()} function is also responsible for the bridge cylinder's aforementioned rotation with increasing speeds of rotation in successive slices.
+
+\section{Conclusions}\label{conclusions}
+
+The purpose of our model is contributing to improved access to understanding complex musical form. ``Learning to play---playing to learn''\footnote{The theme of NIME 2021 (http://nime2021.org)} in this context means taking an active and intuitive approach to learning through playful interaction rather than traditional analysis.
+
+The model particularly addresses the challenges faced by students and audiences whose mode of learning is predominantly visual in today's academic environment. The model is inspired from perceived phenomena such as synesthesia and structural proportion and therefore conceived independently from any one system of notation as a method for analysis (in particular, Western conceptions of musical notation). This independence, along with its Internet-based nature, lends itself to a wider audience beyond traditional 21st century Western art music audiences.
+
+The current version would be suitable for a graduate-level course in 20th- and 21st century western art music. With a few alterations in the descriptions, it would be suitable for lectures for the general public and other types of learning environments as well. We believe similar concepts could also be applied in interactive environments aimed at children.~
+
+We intend to base future versions on continued evolution in current research, particularly research concerning cross-modal association as a tool for improving learning.~Ultimately, we hope to present the model in a physically-interactive acoustic space\footnote{See \href{http://www.allosphere.ucsb.edu/collaborate/}{http://www.allosphere.ucsb.edu} for an example of an interactive exhibition environment}
+
+Following publication, we hope to receive practical feedback from diverse audiences representing educational settings of all levels. This will inform future project developments.
+
+\section{Acknowledgments}\label{acknowledgments}
+
+We extend special thanks to Professor Kimura (UC Irvine) and Professor Lochhead (Stony Brook University), both of whom have made significant contributions to the evolution of this project. We also thank The Parhelion Trio, Stephen Moran, videographer Adele Dusenbury, and affiliated SBU Music Department personnel for providing and assisting with the audio attached to the model\footnote{See model page for audio credits}.
+
+\section{Compliance with Ethical Standards}\label{compliance-with-ethical-standards}
+
+This project has received funding from the \href{https://augustinusfonden.dk/}{Augustinus Foundation}.
+
+\begin{thebibliography}{31}
+\bibitem{c1} {{ }}  Anderson, J. (2001). \emph{Grisey, Gérard}. \emph{Grove Music Online}. Oxford University Press. \url{https://doi.org/10.1093/gmo/9781561592630.article.45479}{}
+\bibitem{c2} {{ }}  Hodges, B. (n.d.). Listening to Gérard Grisey's Talea. Talea Ensemble. Retrieved from \url{http://taleaensemble.org/listening-to-gerard-griseys-talea/}{}
+\bibitem{c3} {{ }}  Bündler, D. (1996). Gerard Grisey. David Bündler. Retrieved from \url{https://www.angelfire.com/music2/davidbundler/grisey.html}{}
+\bibitem{c4} {{ }}  Gérard Grisey. (2020). Ricordi. Retrieved from \url{https://www.ricordi.com/en-US/Composers/G/Grisey-Gerard.aspx}{}
+\bibitem{c5} {{ }}  Arrell, C. (n.d.). The Music of Sound: An Analysis of Partiels by Gérard Grisey. In \emph{Spectral World Musics: Proceedings of the Istanbul Spectral Musics Conference} (pp. 318--333).{}
+\bibitem{c6} {{ }}  Baillet, J. (2000). \emph{Gérard Grisey: Fondments d'une écriture}. L'Harmattan.{}
+\bibitem{c7} {{ }}  Grisey, G. (1987). Tempus ex Machina: A composer's reflections on musical time. \emph{Contemporary Music Review}, \emph{2}(1), 239--275.{}
+\bibitem{c8} {{ }}  Giannakis, K. (2001). \emph{Sound mosaics: a graphical user interface for sound synthesis based on audio-visual associations.} London UK. Retrieved from \url{https://eprints.mdx.ac.uk/6634/1/K}{}
+\bibitem{c9} {{ }}  Giannakis, K. (2006). A comparative evaluation of auditory-visual mappings for sound visualisation. \emph{Organised Sound}, \emph{11}(3), 297--307. \url{https://doi.org/10.1017/S1355771806001531}{}
+\bibitem{c10} {{ }}  Wallmark, Z., \& Kendall, R. A. (2018, June 7). Describing Sound. (E. I. Dolan \& A. Rehding, Eds.), \emph{The Oxford Handbook of Timbre}. Oxford University Press. \url{https://doi.org/10.1093/oxfordhb/9780190637224.013.14}{}
+\bibitem{c11} {{ }}  Sun, X., Li, X., Ji, L., Han, F., Wang, H., Liu, Y., \ldots{} Li, Z. (2018). An extended research of crossmodal correspondence between color and sound in psychology and cognitive ergonomics. \emph{PeerJ}, \emph{6}, e4443. \url{https://doi.org/10.7717/peerj.4443}{}
+\bibitem{c12} {{ }}  Caivano, J. L. (1994). Color and sound: physical and psychophysical relations. \emph{Color Research \& Application}, \emph{19}(2), 126--133.{}
+\bibitem{c13} {{ }}  Hein, E. (2011, October 11). Visualizing music. \emph{The Ethan Hein Blog}. Retrieved from \url{http://www.ethanhein.com/wp/2011/visualizing-music/}{}
+\bibitem{c14} {{ }}  Disley, A. C., Howard, D. M., \& Hunt, A. D. (2006). Timbral description of musical instruments. In \emph{International Conference on Music Perception and Cognition} (pp. 61--68).{}
+\bibitem{c15} {{ }}  Mabury, B. (2006, June 30). \emph{An investigation into the spectral music idiom and its association with visual imagery, particularly that of film and video}. Mount Lawley, Western Australia. Retrieved from \url{https://ro.ecu.edu.au/theses/129}{}  \hfill\break
+\bibitem{c16} {{ }}  Malherbe, C., Fineberg, J., \& Hayward, B. (2000). Seeing light as color; hearing sound as timbre. \emph{Contemporary Music Review}, \emph{19}(3), 15--27. \url{https://doi.org/10.1080/07494460000640341}{}
+\bibitem{c17} {{ }}  Vanechkina, I. L., \& Galeyev, B. M. (n.d.). ``PROMETHEUS'' (SCRIABIN+KANDINSKY): FROM THE EXPERIENCE OF MUSIC AND PAINTING SYNTHESIS. ``Prometheus'' Institute. Retrieved from \url{http://prometheus.kai.ru/ck+kand_e.htm}{}
+\bibitem{c18} {{ }}  Marshall, C. (2018, January 10). Notations: John Cage Publishes a Book of Graphic Musical Scores, Featuring Visualizations of Works by Leonard Bernstein, Igor Stravinsky, The Beatles \& More (1969). Open Culture, LLC. Retrieved from \url{https://www.openculture.com/2018/01/notations-john-cage-publishes-a-book-of-graphic-musical-scores.html}{}
+\bibitem{c19} {{ }}  Hall, D. (2017, August 2). The art of visualising music: graphic scores. David Hall. Retrieved from \url{http://davidhall.io/visualising-music-graphic-scores/}{}
+\bibitem{c20} {{ }}  Clifton, T. (1983). \emph{Music as heard a study in applied phenomenology}. Yale University Press.{}
+\bibitem{c21} {{ }}  Ihde, D. (1976). \emph{Listening and Voice: A Phenomenology of Sound}. Ohio University.{}
+\bibitem{c22} {{ }}  History. (n.d.). \emph{Soundpainting}. Retrieved from \url{http://www.soundpainting.com/history/}{}
+\bibitem{c23} {{ }}  Gudrais, E. (2007, January). Mapping Music. \emph{Harvard Magazine}. Harvard Magazine Inc. Retrieved from \url{https://harvardmagazine.com/2007/01/mapping-music.html}{}
+\bibitem{c24} {{ }}  Ragin Wenk-Wolff. (n.d.). \emph{Image in my Music}. Retrieved from \url{http://raginww.com/}{}
+\bibitem{c25} {{ }}  Zhang, J. (2017, August 14). Artist with Synesthesia Paints Music as Gorgeous Splashes of Color. \emph{My Modern Met}. Retrieved from \url{https://mymodernmet.com/melissa-mccracken-synethesia-paintings/}{}
+\bibitem{c26} {{ }}  Biophilia Educational Project. (n.d.). Ministry for Education, Science \& Culture. Retrieved from \url{http://biophiliaeducational.org}{}
+\bibitem{c27} {{ }}  Grisey, G. (1986). \emph{Talea: Per Flauto, Clarinetto, Violino, Violoncello e Pianoforte}. Ricordi.{}
+\bibitem{c28} {{ }}  Dirksen, J. (n.d.). Emissive map - Learn Three.js - Third Edition {[}Book{]}. O'Reilly Media, Inc. Retrieved from \url{https://www.oreilly.com/library/view/learn-threejs-/9781788833288/b8d2ec08-c0d6-4227-b504-0daadbc1b330.xhtml}{}
+\bibitem{c29} {{ }}  Reas, C., McWilliams, C., \& LUST. (n.d.). Simulate: DIFFUSION-LIMITED AGGREGATION. \emph{FORM+CODE In Design, Art, and Architecture}. Retrieved from \url{http://formandcode.com/code-examples/simulate-dla}{}
+\bibitem{c30} {{ }}  Weisstein, E. W. (n.d.). Archimedean Spiral. \emph{Wolfram MathWorld}. Wolfram Research, Inc. Retrieved from \url{https://mathworld.wolfram.com/ArchimedeanSpiral.html}{}
+\bibitem{c31} {{ }}  Weisstein, E. W. (n.d.). Conical Spiral. \emph{Wolfram MathWorld}. Wolfram Research, Inc. Retrieved from \url{https://mathworld.wolfram.com/ConicalSpiral.html}{}
+\end{thebibliography}
+\end{document}

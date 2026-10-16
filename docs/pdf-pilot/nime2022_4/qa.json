@@ -1,0 +1,106 @@
+{
+ "key": "nime2022_4",
+ "latex_errors": 0,
+ "overfull": 1,
+ "overfull_max_pt": 23.9,
+ "undefined_cites": 0,
+ "undefined_refs": 0,
+ "missing_graphics": 0,
+ "pdf_words": 5933,
+ "html_words": 4802,
+ "word_coverage": 1.24,
+ "missing_headings": [],
+ "pdf_images": 18,
+ "html_figures": 18,
+ "figures_not_in_archive": 0,
+ "pages": 11,
+ "pubpub_pages": 38,
+ "small_words": 506,
+ "small_word_frac": 0.062,
+ "pages_detail": [
+  {
+   "page": 1,
+   "ink": 0.067,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 2,
+   "ink": 0.354,
+   "margin_ink": 0.0,
+   "interior_gap": 0.01,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 3,
+   "ink": 0.061,
+   "margin_ink": 0.0,
+   "interior_gap": 0.01,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 4,
+   "ink": 0.062,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 5,
+   "ink": 0.044,
+   "margin_ink": 0.0,
+   "interior_gap": 0.03,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 6,
+   "ink": 0.046,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 7,
+   "ink": 0.221,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 8,
+   "ink": 0.044,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 9,
+   "ink": 0.041,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 10,
+   "ink": 0.221,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.04
+  },
+  {
+   "page": 11,
+   "ink": 0.017,
+   "margin_ink": 0.0,
+   "interior_gap": 0.02,
+   "trailing_blank": 0.1
+  }
+ ],
+ "pages_overflow": [],
+ "pages_big_gap": [],
+ "pages_sparse": [],
+ "flags": [
+  "overfull up to 23.9pt",
+  "small text 6% of words"
+ ]
+}

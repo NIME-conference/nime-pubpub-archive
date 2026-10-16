@@ -9,7 +9,7 @@ PubPub (https://nime.pubpub.org) remains the version of record. This is a test o
 ## What is here
 
 - `docs/` — the generated site (GitHub Pages). 297 items: all papers, music and installation works, plus workshops, demos and the WiP showcase. Figures are included, web-optimised (max 1600 px). Videos and audio stay on PubPub's CDN and appear as a still frame plus link. Citations, footnotes and maths are PubPub's own exported HTML.
-- `pdf-pilot/` — four papers regenerated in the NIME template from the PubPub export, with the LaTeX sources.
+- `docs/pdf-pilot/` — fourteen papers regenerated in the NIME template from the PubPub export, with LaTeX sources, PubPub originals, contact sheets and QA output. Method and history: `PDF-CONVERSION-LOG.md`.
 - `scripts/` — the pipeline (see below).
 - `inventory.csv` / `inventory.json` — per-item inventory of the export: identifiers, DOIs, media, external links and their liveness, Wayback coverage.
 - `REPORT.md` — what the December 2025 export contains and what it lacks.
